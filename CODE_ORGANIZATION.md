@@ -9,6 +9,7 @@ Public-facing material:
 - `figures`
 - `benchmark_data/benchmark_curve_extraction`
 - `data_literature`
+- `analysis`
 - `code_reference`
 - package-level README, reproducibility notes, and release checklist
 
@@ -33,9 +34,12 @@ The package includes normalized curve points and DOI/panel/catalyst provenance. 
 
 ## Analysis Folder Convention
 
-No public `analysis/` folder is included in this draft. If added later, it
-should contain only curated reported-results tables and source rows that
-correspond directly to the manuscript and SI.
+The public `analysis/` folder contains only curated reported-results tables,
+source rows, and lightweight scripts that correspond directly to the manuscript
+and SI:
+
+- `analysis/01_bvir_eoffset_fitting`
+- `analysis/02_same_panel_ptc_relative`
 
 Large exploratory posterior-draw tables, historical draft plots, and raw local
 audit folders should not be included in the public repository draft.

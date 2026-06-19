@@ -1,0 +1,33 @@
+{
+  "analysis_name": "strict fixed-n_eff=2 BV+iR+Eoffset fitting",
+  "curve_filter": {
+    "reaction": "HER",
+    "axis_requirement": "linear current-density axis with RHE or overpotential reference",
+    "minimum_fit_points": 5,
+    "minimum_jmax_mA_cm2": 20
+  },
+  "models": [
+    "BV",
+    "BV+iR",
+    "BV+Eoffset",
+    "BV+iR+Eoffset"
+  ],
+  "high_quality_fit_r2_threshold": 0.99,
+  "strict_bv": {
+    "n_eff_fixed": 2.0,
+    "temperature_K": 298.15,
+    "alpha_bounds": [0.01, 0.99]
+  },
+  "parameter_bounds": {
+    "R_ohm_cm2": [0.0, 100.0],
+    "Eoffset_mV": [-200.0, 200.0]
+  },
+  "public_outputs": {
+    "model_pass_counts": "outputs/figure5_fit_model_counts.csv",
+    "fitted_descriptor_rows": "outputs/figure5_descriptor_rows.csv",
+    "selected_corrections_summary": "outputs/figure5_selected_corrections_summary.csv",
+    "descriptor_summary": "outputs/figure5_descriptor_summary.csv",
+    "ir_only_control_summary": "outputs/ir_only_control_summary.csv"
+  }
+}
+

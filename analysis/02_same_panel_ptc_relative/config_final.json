@@ -1,0 +1,32 @@
+{
+  "analysis_name": "same-panel Pt/C eta10/eta50 and strict-BV interval decomposition",
+  "same_panel_reference": "Pt/C curve from the same figure panel",
+  "eta_targets_mA_cm2": [10, 50],
+  "branch_definition": {
+    "both_better": "alkaline PM rows with candidate delta_eta10_mV < 0 and delta_eta50_mV < 0 relative to same-panel Pt/C",
+    "remaining_alkaline_pm": "all other alkaline PM rows"
+  },
+  "posterior_fit": {
+    "random_seed": 20260616,
+    "draws": 40000,
+    "model": "weak-prior Bayesian fitted line for delta_eta50_mV versus delta_eta10_mV"
+  },
+  "strict_bv_decomposition": {
+    "source": "strict fixed-n_eff=2 BV+iR+Eoffset paired decomposition",
+    "gap": "Delta(eta50 - eta10)",
+    "accepted_gap_reproduction_tolerance_mV": 10,
+    "note": "Eoffset is current-independent and cancels from the 10-to-50 mA cm^-2 interval."
+  },
+  "public_outputs": {
+    "source_eta10_eta50_rows": "outputs/source_AB_current_same_panel_eta10_eta50_rows.csv",
+    "source_strict_bvir_offset_rows": "outputs/source_CD_current_strict_bvir_offset_rows.csv",
+    "panel_A_summary": "outputs/panel_A_four_group_scatter_summary.csv",
+    "panel_B_summary": "outputs/panel_B_four_group_posterior_summary.csv",
+    "panel_C_summary": "outputs/panel_C_four_group_interval_decomposition_summary.csv",
+    "panel_D_summary": "outputs/panel_D_four_group_descriptor_summary.csv",
+    "panel_E_summary": "outputs/panel_E_alkaline_pm_branch_map_summary.csv",
+    "panel_F_summary": "outputs/panel_F_alkaline_pm_branch_descriptor_summary.csv",
+    "panel_G_summary": "outputs/panel_G_alkaline_pm_rule_enrichment_summary.csv"
+  }
+}
+

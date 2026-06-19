@@ -10,6 +10,7 @@ The repository contains curated data tables, benchmark curve-extraction data, fi
 |---|---|
 | Benchmark curve-extraction dataset | `benchmark_data/benchmark_curve_extraction` |
 | Zenodo-ready literature extracted-curve dataset | `data_literature/zenodo_extracted_curve_dataset_v1.zip` |
+| Curated manuscript/SI analysis summaries | `analysis` |
 | Final/publishable figure packages | `figures` |
 | Frozen framework-code archive | `code_reference/peeragent_code_dc6189f6bc0a.zip` |
 
@@ -23,11 +24,10 @@ The manuscript, supporting information, and reviewer-only claim-validation cards
 
 ## Analysis Scope
 
-The public analysis folder is intentionally not included in this draft. It can
-be added later as a curated reported-results folder after a final audit against
-the manuscript and SI. The local working analysis contains many exploratory
-PDFs, posterior draws, and intermediate tables that should not be copied into
-the public repository wholesale.
+The public `analysis` folder contains only curated manuscript/SI-facing
+analysis modules for Figure 5 and Figure 6. It is not a full working dump: the
+local exploratory analysis included many draft plots, posterior-draw tables, and
+intermediate files that are intentionally excluded.
 
 ## Reproducibility
 
@@ -35,5 +35,6 @@ Start with:
 
 - `REPRODUCIBILITY.md` for the practical rerun order.
 - `CODE_ORGANIZATION.md` for the folder map.
+- `analysis/README.md` for the curated Figure 5/Figure 6 analysis layer.
 - `data_literature/zenodo_extracted_curve_dataset_v1/README.md` for the extracted-curve release.
 - `figures/Figure_06_ptc_relative/main_text_figure6_package_20260619_panelF_bv_interval/README.md` for the current Figure 6 package.

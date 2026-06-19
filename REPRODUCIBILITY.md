@@ -25,23 +25,27 @@ Public package-relative data roots:
 
 Original publication figures, publisher HTML, raw source archives, and DOI-linked proof-card material are not included in this public repository draft.
 
-The public analysis folder is intentionally pending. If added later, it should
-be a curated audit record for reported results, not a complete rerun workspace
-for every interactive analysis session. Some working scripts depended on
-internal canonical source tables and private validation/context files that are
+The public `analysis` folder is a curated audit record for reported Figure 5
+and Figure 6 results, not a complete rerun workspace for every interactive
+analysis session. Some historical working scripts depended on internal
+canonical source tables and private validation/context files that are
 intentionally excluded.
 
 ## Recommended Rerun Order
 
 1. Inspect the extracted-curve release under `data_literature/zenodo_extracted_curve_dataset_v1`.
-2. Run benchmark/figure scripts only if Figure 1 or Figure 3 assets need regeneration.
-3. Use `figures/Figure_05_bvir` for the manuscript-facing strict-BV/BV+iR/BV+Eoffset/BV+iR+Eoffset Figure 5 package.
-4. Use `figures/Figure_06_ptc_relative/main_text_figure6_package_20260619_panelF_bv_interval` for the current manuscript Figure 6 package.
-5. Regenerate the Zenodo extracted-curve package, if needed:
+2. Use `analysis/01_bvir_eoffset_fitting` to audit Figure 5 model counts,
+   fitted descriptors, and the iR-only control.
+3. Use `analysis/02_same_panel_ptc_relative` to audit Figure 6 same-panel Pt/C
+   eta10/eta50, posterior, interval-decomposition, branch, and metadata-rule
+   summaries.
+4. Run benchmark/figure scripts only if Figure 1 or Figure 3 assets need regeneration.
+5. Use `figures/Figure_05_bvir` and `figures/Figure_06_ptc_relative/main_text_figure6_package_20260619_panelF_bv_interval` for manuscript-facing graphic files.
+6. Regenerate the Zenodo extracted-curve package, if needed:
 
    `python data_literature/build_zenodo_extracted_curve_dataset.py`
 
-6. Run a final manuscript/SI consistency audit before submission.
+7. Run a final manuscript/SI consistency audit before submission.
 
 ## Current Manuscript-Facing Analysis Notes
 
