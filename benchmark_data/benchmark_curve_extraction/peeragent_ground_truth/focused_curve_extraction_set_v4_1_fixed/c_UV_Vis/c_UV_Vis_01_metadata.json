@@ -1,0 +1,11 @@
+{
+  "panel_tag": "c",
+  "curve_family": "UV_Vis",
+  "variant_index": 1,
+  "scenario": "three overlapping spectra",
+  "x_column": "wavelength_nm",
+  "y_column": "absorbance_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

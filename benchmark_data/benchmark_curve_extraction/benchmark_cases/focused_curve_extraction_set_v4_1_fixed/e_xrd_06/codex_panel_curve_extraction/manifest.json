@@ -1,0 +1,1296 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T06:44:17.626570+00:00",
+  "runner": "codex_exec_panel_curve_extraction",
+  "case_id": "e_xrd_06",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06",
+  "source_curve_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\curve_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "extracted_curves": 2,
+  "qa_panel_pass_count": 1,
+  "qa_panel_warn_count": 0,
+  "qa_panel_fail_count": 0,
+  "recovery_tasks": 0,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-e_xrd_06-figure_e_xrd_06-panel_e_xrd_06-curve-extraction",
+        "task_type": "curve_extraction",
+        "case_id": "e_xrd_06",
+        "paper_id": "focused-curve-v4-1-e_xrd_06",
+        "paper_title": "Focused curve extraction benchmark v4.1: XRD 06",
+        "figure_id": "figure_e_xrd_06",
+        "figure_label": "e_XRD_06",
+        "panel_id": "panel_e_xrd_06",
+        "panel_label": "",
+        "candidate_catalysts": [],
+        "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\e_xrd_06.png",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\panel_annotated.png",
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\tmp\\axis_fit_output.json",
+        "axis_fit_script_used": true,
+        "crop_box_original": [
+          24,
+          27,
+          1180,
+          939
+        ],
+        "plot_area_box_cropped": [
+          156,
+          13,
+          1136,
+          802
+        ],
+        "x_axis_anchors": [
+          {
+            "axis": "x",
+            "tick_value": "10",
+            "pixel_x": 180.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left x-axis endpoint tick at 10 degree."
+          },
+          {
+            "axis": "x",
+            "tick_value": "20",
+            "pixel_x": 320.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 20."
+          },
+          {
+            "axis": "x",
+            "tick_value": "30",
+            "pixel_x": 460.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 30."
+          },
+          {
+            "axis": "x",
+            "tick_value": "40",
+            "pixel_x": 600.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 40."
+          },
+          {
+            "axis": "x",
+            "tick_value": "50",
+            "pixel_x": 740.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 50."
+          },
+          {
+            "axis": "x",
+            "tick_value": "60",
+            "pixel_x": 880.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 60."
+          },
+          {
+            "axis": "x",
+            "tick_value": "70",
+            "pixel_x": 1020.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 70."
+          },
+          {
+            "axis": "x",
+            "tick_value": "80",
+            "pixel_x": 1160.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Right x-axis endpoint tick at 80 degree."
+          }
+        ],
+        "y_axis_anchors": [
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 180.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom y-axis tick at 0."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 180.5,
+            "pixel_y": 696.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 200."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 180.5,
+            "pixel_y": 565.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 400."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 180.5,
+            "pixel_y": 434.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 600."
+          },
+          {
+            "axis": "y",
+            "tick_value": "800",
+            "pixel_x": 180.5,
+            "pixel_y": 303.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 800."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1000",
+            "pixel_x": 180.5,
+            "pixel_y": 172.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 1000."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1200",
+            "pixel_x": 180.5,
+            "pixel_y": 41.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Top y-axis tick at 1200."
+          }
+        ],
+        "x_axis_type_guess": "linear",
+        "y_axis_type_guess": "linear",
+        "caption_snippet": "Synthetic single-panel XRD benchmark chart, variant 06. Scenario: phase transformation.",
+        "special_notes": "Benchmark task seeded as a single-panel XRD pattern benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+        "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\response.json"
+      },
+      "anchoring_response": {
+        "paper_id": "focused-curve-v4-1-e_xrd_06",
+        "figure_id": "figure_e_xrd_06",
+        "panel_id": "panel_e_xrd_06",
+        "target_panel_label": "e_XRD_06",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          24,
+          27,
+          1180,
+          939
+        ],
+        "plot_area_box_cropped": [
+          156,
+          13,
+          1136,
+          802
+        ],
+        "panel_border_completeness": "complete",
+        "panel_type": "single-panel XRD line chart",
+        "x_axis_tick_labels": [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50",
+          "60",
+          "70",
+          "80"
+        ],
+        "x_axis_label": "2θ",
+        "x_axis_units": "degree",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "200",
+          "400",
+          "600",
+          "800",
+          "1000",
+          "1200"
+        ],
+        "y_axis_label": "Intensity",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "yes",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel XRD pattern with two traces ('before' solid black, 'after' dashed blue). Conservative crop preserves the full axes box, both axis labels, all tick labels, and the in-panel legend.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "10",
+            "pixel_x": 180.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left x-axis endpoint tick at 10 degree."
+          },
+          {
+            "axis": "x",
+            "tick_value": "20",
+            "pixel_x": 320.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 20."
+          },
+          {
+            "axis": "x",
+            "tick_value": "30",
+            "pixel_x": 460.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 30."
+          },
+          {
+            "axis": "x",
+            "tick_value": "40",
+            "pixel_x": 600.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 40."
+          },
+          {
+            "axis": "x",
+            "tick_value": "50",
+            "pixel_x": 740.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 50."
+          },
+          {
+            "axis": "x",
+            "tick_value": "60",
+            "pixel_x": 880.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 60."
+          },
+          {
+            "axis": "x",
+            "tick_value": "70",
+            "pixel_x": 1020.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major x tick label 70."
+          },
+          {
+            "axis": "x",
+            "tick_value": "80",
+            "pixel_x": 1160.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Right x-axis endpoint tick at 80 degree."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 180.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom y-axis tick at 0."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 180.5,
+            "pixel_y": 696.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 200."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 180.5,
+            "pixel_y": 565.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 400."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 180.5,
+            "pixel_y": 434.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 600."
+          },
+          {
+            "axis": "y",
+            "tick_value": "800",
+            "pixel_x": 180.5,
+            "pixel_y": 303.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 800."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1000",
+            "pixel_x": 180.5,
+            "pixel_y": 172.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Major y tick label 1000."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1200",
+            "pixel_x": 180.5,
+            "pixel_y": 41.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Top y-axis tick at 1200."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Major ticks from 10 to 80 are evenly spaced across the bottom axis.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Visible x ticks are uniformly spaced, and the axis-fit utility selected a linear model with normalized RMSE 0.0.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Major ticks from 0 to 1200 are evenly spaced along the left axis.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Visible y ticks are uniformly spaced, and the axis-fit utility selected a linear model with normalized RMSE 0.0; log10 is incompatible with the visible zero tick.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": [
+          "No explicit panel label is printed inside the figure; panel identification relies on the single-panel figure context and provided task metadata."
+        ]
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-e_xrd_06",
+        "figure_id": "figure_e_xrd_06",
+        "panel_id": "panel_e_xrd_06",
+        "panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\tmp\\panel_crop.png",
+        "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_overlay.png",
+        "plot_area_box_cropped": [
+          156,
+          13,
+          1136,
+          802
+        ],
+        "x_axis_type": "linear",
+        "y_axis_type": "linear",
+        "legend_entries": [
+          "before",
+          "after"
+        ],
+        "panel_type": "xrd_pattern",
+        "overlap_recovery_recommended": false,
+        "overlap_recovery_reason": "Both traces are fully visible and vertically separated; no overlap-recovery pass is needed.",
+        "curves": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "before",
+            "condition_label": "before",
+            "catalyst_context": "",
+            "stroke_color": "black",
+            "line_style": "solid",
+            "marker_style": "no markers",
+            "point_coordinate_system": "cropped_panel",
+            "sampled_points": [
+              {
+                "pixel_x": 160,
+                "pixel_y": 708,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 188,
+                "pixel_y": 709.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 216,
+                "pixel_y": 710,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 244,
+                "pixel_y": 710.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 272,
+                "pixel_y": 710.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 280,
+                "pixel_y": 707.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 288,
+                "pixel_y": 696.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 296,
+                "pixel_y": 673.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 304,
+                "pixel_y": 634.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 312,
+                "pixel_y": 587.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 320,
+                "pixel_y": 550.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 328,
+                "pixel_y": 547.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 336,
+                "pixel_y": 575.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 344,
+                "pixel_y": 622.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 352,
+                "pixel_y": 665.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 360,
+                "pixel_y": 693.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 384,
+                "pixel_y": 714,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 412,
+                "pixel_y": 711.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 420,
+                "pixel_y": 699.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 428,
+                "pixel_y": 678.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 436,
+                "pixel_y": 647.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 444,
+                "pixel_y": 621.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 452,
+                "pixel_y": 611.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 460,
+                "pixel_y": 627.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 468,
+                "pixel_y": 658.8,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 476,
+                "pixel_y": 686.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 484,
+                "pixel_y": 704.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 496,
+                "pixel_y": 713,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 524,
+                "pixel_y": 716,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 552,
+                "pixel_y": 717.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 580,
+                "pixel_y": 716.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 608,
+                "pixel_y": 706.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 612,
+                "pixel_y": 699.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 620,
+                "pixel_y": 684,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 628,
+                "pixel_y": 660.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 636,
+                "pixel_y": 638.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 644,
+                "pixel_y": 624.8,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 652,
+                "pixel_y": 630.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 660,
+                "pixel_y": 650,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 668,
+                "pixel_y": 673.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 676,
+                "pixel_y": 694,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 692,
+                "pixel_y": 713.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 720,
+                "pixel_y": 717.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 748,
+                "pixel_y": 718.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 776,
+                "pixel_y": 717.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 804,
+                "pixel_y": 718.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 832,
+                "pixel_y": 718.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 860,
+                "pixel_y": 719.8,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 888,
+                "pixel_y": 719.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 916,
+                "pixel_y": 718.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 944,
+                "pixel_y": 720.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 972,
+                "pixel_y": 719.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1000,
+                "pixel_y": 719.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1028,
+                "pixel_y": 717.8,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1056,
+                "pixel_y": 718.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1084,
+                "pixel_y": 720.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1112,
+                "pixel_y": 720.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1130,
+                "pixel_y": 719,
+                "confidence": 0.97
+              }
+            ],
+            "visible_segment_status": "complete",
+            "overlap_notes": "Main trace is well separated from the upper dashed trace.",
+            "overlap_recovery_candidate": false,
+            "suspected_gap_notes": "",
+            "usable_for_normalization": "yes",
+            "confidence": 0.98
+          },
+          {
+            "curve_id": "curve_2",
+            "curve_label": "after",
+            "condition_label": "after",
+            "catalyst_context": "",
+            "stroke_color": "dark blue",
+            "line_style": "dashed",
+            "marker_style": "no markers",
+            "point_coordinate_system": "cropped_panel",
+            "sampled_points": [
+              {
+                "pixel_x": 160,
+                "pixel_y": 335.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 188,
+                "pixel_y": 336.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 216,
+                "pixel_y": 336.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 244,
+                "pixel_y": 338.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 272,
+                "pixel_y": 338.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 300,
+                "pixel_y": 338.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 328,
+                "pixel_y": 340.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 356,
+                "pixel_y": 339.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 384,
+                "pixel_y": 339.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 392,
+                "pixel_y": 340.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 400,
+                "pixel_y": 312.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 408,
+                "pixel_y": 189.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 416,
+                "pixel_y": 80.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 424,
+                "pixel_y": 202,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 432,
+                "pixel_y": 315.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 440,
+                "pixel_y": 340.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 468,
+                "pixel_y": 341.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 496,
+                "pixel_y": 341.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 516,
+                "pixel_y": 337.8,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 524,
+                "pixel_y": 295.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 532,
+                "pixel_y": 203.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 540,
+                "pixel_y": 184.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 548,
+                "pixel_y": 272.3,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 556,
+                "pixel_y": 331.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 580,
+                "pixel_y": 341.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 608,
+                "pixel_y": 342,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 636,
+                "pixel_y": 342.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 664,
+                "pixel_y": 343.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 692,
+                "pixel_y": 344.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 704,
+                "pixel_y": 339.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 712,
+                "pixel_y": 310.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 720,
+                "pixel_y": 256.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 728,
+                "pixel_y": 242.1,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 736,
+                "pixel_y": 294.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 744,
+                "pixel_y": 334.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 760,
+                "pixel_y": 344.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 776,
+                "pixel_y": 345.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 804,
+                "pixel_y": 343.9,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 832,
+                "pixel_y": 346.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 860,
+                "pixel_y": 345.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 888,
+                "pixel_y": 345.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 916,
+                "pixel_y": 346.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 944,
+                "pixel_y": 345.8,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 972,
+                "pixel_y": 345.2,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1000,
+                "pixel_y": 347.4,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1028,
+                "pixel_y": 348,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1056,
+                "pixel_y": 346.6,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1084,
+                "pixel_y": 347.7,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1112,
+                "pixel_y": 346.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1130,
+                "pixel_y": 345.4,
+                "confidence": 0.97
+              }
+            ],
+            "visible_segment_status": "complete",
+            "overlap_notes": "Main trace is well separated from the lower solid trace; legend dashes were excluded.",
+            "overlap_recovery_candidate": false,
+            "suspected_gap_notes": "",
+            "usable_for_normalization": "yes",
+            "confidence": 0.98
+          }
+        ],
+        "interpretation_notes": "Single XRD panel with two legend-mapped traces: lower solid black 'before' and upper dashed blue 'after'. Points were sampled on the main plot only.",
+        "qc": {
+          "curve_count_estimated_correctly": true,
+          "legend_curve_mapping_complete": "yes",
+          "main_plot_only": "yes",
+          "points_cover_visible_extent": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_overlap_diagnostic.png",
+      "overlap_qa": {
+        "panel_id": "panel_e_xrd_06",
+        "figure_id": "figure_e_xrd_06",
+        "curve_scores": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "before",
+            "stroke_color": "black",
+            "sampled_point_count": 58,
+            "dense_point_count": 1411,
+            "point_hit_rate": 1.0,
+            "median_distance_px": 0.0,
+            "p95_distance_px": 0.0,
+            "x_coverage_fraction": 0.9898,
+            "y_coverage_fraction": 0.218,
+            "dominant_coverage_axis": "x",
+            "dominant_coverage_fraction": 0.9898,
+            "minimum_x_coverage_required": 0.8,
+            "coverage_expectation_met": true,
+            "quality": "pass",
+            "near_left_border_fraction": 0.0172,
+            "near_right_border_fraction": 0.0172,
+            "near_top_border_fraction": 0.0,
+            "near_bottom_border_fraction": 0.0,
+            "dominant_border": "left",
+            "dominant_border_fraction": 0.0172,
+            "border_lock_suspected": false,
+            "marker_center_candidate_count": 0,
+            "marker_center_candidate_fraction": 0.0,
+            "marker_center_alignment_rate": null,
+            "marker_center_warn_alignment_rate": null,
+            "marker_center_median_offset_px": null,
+            "marker_center_p95_offset_px": null,
+            "marker_rim_lock_suspected": false
+          },
+          {
+            "curve_id": "curve_2",
+            "curve_label": "after",
+            "stroke_color": "dark blue",
+            "sampled_point_count": 50,
+            "dense_point_count": 1853,
+            "point_hit_rate": 0.9611,
+            "median_distance_px": 0.0,
+            "p95_distance_px": 3.0,
+            "x_coverage_fraction": 0.9898,
+            "y_coverage_fraction": 0.3397,
+            "dominant_coverage_axis": "x",
+            "dominant_coverage_fraction": 0.9898,
+            "minimum_x_coverage_required": 0.8,
+            "coverage_expectation_met": true,
+            "quality": "pass",
+            "near_left_border_fraction": 0.02,
+            "near_right_border_fraction": 0.02,
+            "near_top_border_fraction": 0.0,
+            "near_bottom_border_fraction": 0.0,
+            "dominant_border": "left",
+            "dominant_border_fraction": 0.02,
+            "border_lock_suspected": false,
+            "marker_center_candidate_count": 0,
+            "marker_center_candidate_fraction": 0.0,
+            "marker_center_alignment_rate": null,
+            "marker_center_warn_alignment_rate": null,
+            "marker_center_median_offset_px": null,
+            "marker_center_p95_offset_px": null,
+            "marker_rim_lock_suspected": false
+          }
+        ],
+        "pairwise_overlap_scores": [
+          {
+            "curve_a": "before",
+            "curve_b": "after",
+            "same_color_group": false,
+            "shared_x_count": 971,
+            "median_vertical_separation_px": 372.5,
+            "p95_vertical_separation_px": 462.7857,
+            "ambiguous_fraction": 0.0,
+            "overlap_x_ranges": [],
+            "review_required": false
+          }
+        ],
+        "summary": {
+          "pass_count": 2,
+          "warn_count": 0,
+          "fail_count": 0,
+          "pairwise_review_count": 0,
+          "panel_quality": "pass",
+          "manual_review_required": false
+        },
+        "recommended_standard": {
+          "curve_fit_to_visible_stroke": {
+            "pass": {
+              "point_hit_rate_gte": 0.85,
+              "median_distance_px_lte": 2.5,
+              "p95_distance_px_lte": 5.0,
+              "minimum_dominant_coverage_complete_curve_gte": 0.8,
+              "minimum_dominant_coverage_partial_curve_gte": 0.55
+            },
+            "warn": {
+              "point_hit_rate_gte": 0.7,
+              "median_distance_px_lte": 4.0,
+              "p95_distance_px_lte": 8.0
+            },
+            "advisories": {
+              "border_lock_threshold_px": 6,
+              "border_lock_suspected_fraction_gte": 0.45,
+              "marker_center_pass_offset_px_lte": 2.5,
+              "marker_center_warn_offset_px_lte": 4.0,
+              "marker_center_min_candidate_count": 8,
+              "marker_curve_pass_point_hit_rate_gte": 0.75,
+              "marker_curve_pass_p95_distance_px_lte": 8.0,
+              "marker_curve_warn_point_hit_rate_gte": 0.55,
+              "marker_curve_warn_p95_distance_px_lte": 11.0,
+              "note": "For marker-bearing curves, strong near-border fractions can indicate marker-rim or frame-lock tracing even when color overlap is high. Hollow-marker centerline traces use relaxed stroke-overlap thresholds only when marker-center alignment is also good."
+            }
+          },
+          "pairwise_overlap": {
+            "ambiguous_if_vertical_separation_px_lte": 4,
+            "minimum_contiguous_overlap_run_px": 12,
+            "review_if_ambiguous_fraction_gt_same_color": 0.08,
+            "review_if_ambiguous_fraction_gt_different_color": 0.15
+          },
+          "panel_acceptance": {
+            "pass": "all curves pass and no pairwise review flags",
+            "warn": "no curve fails, but at least one curve warns or at least one pair is overlap-flagged",
+            "fail": "at least one curve fails stroke agreement or extent coverage"
+          }
+        }
+      },
+      "overlap_qa_error": "",
+      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\contact_sheet.png",
+      "curve_views_manifest": {
+        "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\response.json",
+        "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\panel_crop.png",
+        "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_overlap_score.json",
+        "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views",
+        "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\contact_sheet.png",
+        "curves": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "before",
+            "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\curve_1_before.png",
+            "crop_view_path": "",
+            "crop_box": [
+              90,
+              478,
+              1200,
+              790
+            ],
+            "qa": {
+              "curve_id": "curve_1",
+              "curve_label": "before",
+              "stroke_color": "black",
+              "sampled_point_count": 58,
+              "dense_point_count": 1411,
+              "point_hit_rate": 1.0,
+              "median_distance_px": 0.0,
+              "p95_distance_px": 0.0,
+              "x_coverage_fraction": 0.9898,
+              "y_coverage_fraction": 0.218,
+              "dominant_coverage_axis": "x",
+              "dominant_coverage_fraction": 0.9898,
+              "minimum_x_coverage_required": 0.8,
+              "coverage_expectation_met": true,
+              "quality": "pass",
+              "near_left_border_fraction": 0.0172,
+              "near_right_border_fraction": 0.0172,
+              "near_top_border_fraction": 0.0,
+              "near_bottom_border_fraction": 0.0,
+              "dominant_border": "left",
+              "dominant_border_fraction": 0.0172,
+              "border_lock_suspected": false,
+              "marker_center_candidate_count": 0,
+              "marker_center_candidate_fraction": 0.0,
+              "marker_center_alignment_rate": null,
+              "marker_center_warn_alignment_rate": null,
+              "marker_center_median_offset_px": null,
+              "marker_center_p95_offset_px": null,
+              "marker_rim_lock_suspected": false
+            }
+          },
+          {
+            "curve_id": "curve_2",
+            "curve_label": "after",
+            "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\curve_2_after.png",
+            "crop_view_path": "",
+            "crop_box": [
+              90,
+              10,
+              1200,
+              418
+            ],
+            "qa": {
+              "curve_id": "curve_2",
+              "curve_label": "after",
+              "stroke_color": "dark blue",
+              "sampled_point_count": 50,
+              "dense_point_count": 1853,
+              "point_hit_rate": 0.9611,
+              "median_distance_px": 0.0,
+              "p95_distance_px": 3.0,
+              "x_coverage_fraction": 0.9898,
+              "y_coverage_fraction": 0.3397,
+              "dominant_coverage_axis": "x",
+              "dominant_coverage_fraction": 0.9898,
+              "minimum_x_coverage_required": 0.8,
+              "coverage_expectation_met": true,
+              "quality": "pass",
+              "near_left_border_fraction": 0.02,
+              "near_right_border_fraction": 0.02,
+              "near_top_border_fraction": 0.0,
+              "near_bottom_border_fraction": 0.0,
+              "dominant_border": "left",
+              "dominant_border_fraction": 0.02,
+              "border_lock_suspected": false,
+              "marker_center_candidate_count": 0,
+              "marker_center_candidate_fraction": 0.0,
+              "marker_center_alignment_rate": null,
+              "marker_center_warn_alignment_rate": null,
+              "marker_center_median_offset_px": null,
+              "marker_center_p95_offset_px": null,
+              "marker_rim_lock_suspected": false
+            }
+          }
+        ]
+      },
+      "curve_views_error": "",
+      "revision_metadata": {
+        "revision_attempted": false,
+        "revision_applied": false,
+        "revision_error": ""
+      },
+      "error": "",
+      "overlap_recovery_recommended": false,
+      "overlap_recovery_reason": "Both traces are fully visible and vertically separated; no overlap-recovery pass is needed."
+    }
+  ],
+  "recovery_queue": [],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-e_xrd_06-figure_e_xrd_06-panel_e_xrd_06-normalize-panel-curves",
+      "task_type": "normalize_panel_curves",
+      "case_id": "e_xrd_06",
+      "paper_id": "focused-curve-v4-1-e_xrd_06",
+      "paper_title": "Focused curve extraction benchmark v4.1: XRD 06",
+      "figure_id": "figure_e_xrd_06",
+      "figure_label": "e_XRD_06",
+      "panel_id": "panel_e_xrd_06",
+      "panel_label": "",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\panel_crop.png",
+      "curve_extraction_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\response.json",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\tmp\\axis_fit_output.json",
+      "x_axis_label": "2θ",
+      "x_axis_units": "degree",
+      "y_axis_label": "Intensity",
+      "y_axis_units": "a.u.",
+      "x_axis_type": "linear",
+      "y_axis_type": "linear",
+      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_overlap_diagnostic.png",
+      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_06__panel_e_xrd_06\\curve_views\\contact_sheet.png",
+      "overlap_panel_quality": "pass",
+      "overlap_manual_review_required": false,
+      "overlap_fail_count": 0
+    }
+  ]
+}

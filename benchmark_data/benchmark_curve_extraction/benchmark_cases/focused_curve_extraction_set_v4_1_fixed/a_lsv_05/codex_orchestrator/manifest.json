@@ -1,0 +1,40 @@
+{
+    "schema_version":  "1.0",
+    "generated_at":  "2026-05-09T03:05:12.6227928+00:00",
+    "runner":  "seed_focused_curve_benchmark_tasks_sanitized",
+    "case_id":  "a_lsv_05",
+    "paper_id":  "focused-curve-v4-1-a_lsv_05",
+    "paper_title":  "Focused curve extraction benchmark v4.1: LSV 05",
+    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\figures.json",
+    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\benchmark.html",
+    "queued_panels":  1,
+    "panel_queue":  [
+                        {
+                            "task_id":  "focused-curve-v4-1-a_lsv_05-figure_a_lsv_05-panel_a_lsv_05-panel-anchoring",
+                            "task_type":  "panel_anchoring",
+                            "case_id":  "a_lsv_05",
+                            "paper_id":  "focused-curve-v4-1-a_lsv_05",
+                            "paper_title":  "Focused curve extraction benchmark v4.1: LSV 05",
+                            "figure_id":  "figure_a_lsv_05",
+                            "figure_label":  "a_LSV_05",
+                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\a_lsv_05.png",
+                            "panel_id":  "panel_a_lsv_05",
+                            "panel_label":  "a_LSV_05",
+                            "priority":  "high",
+                            "figure_caption":  "Synthetic single-panel LSV benchmark chart, variant 05. Scenario: raw versus iR-corrected LSV.",
+                            "caption_snippet":  "Synthetic single-panel LSV benchmark chart, variant 05. Scenario: raw versus iR-corrected LSV.",
+                            "candidate_catalysts":  [
+
+                                                    ],
+                            "reason":  "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+                            "special_notes":  "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+                        }
+                    ],
+    "benchmark":  {
+                      "curve_family":  "LSV",
+                      "variant_index":  5,
+                      "scenario":  "raw versus iR-corrected LSV",
+                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\a_lsv_05.png"
+                  }
+}
+

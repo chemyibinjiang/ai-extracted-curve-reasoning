@@ -1,0 +1,14 @@
+rule_category,exact_definition,plotted_in_panel_G,both_better_feature_count,both_better_total_rows,both_better_branch_fraction,remaining_feature_count,remaining_total_rows,remaining_branch_fraction,branch_fraction_delta_both_minus_remaining,category_total_rows,category_both_better_rows,category_both_better_rate,category_total_cases
+Alloy/intermetallic/bimetallic,audit_strict_subfamily contains alloy/intermetallic/bimetallic/multimetal/high-entropy,True,33,89,0.3707865168539326,1,33,0.030303030303030304,0.3404834865509023,34,33,0.9705882352941176,23
+Explicit carbon support,"label/support/substrate/title/subfamily contains carbon, CNT, graphene, CQD, CNF, carbon cloth/foam/fiber, N-doped C, HCS/NHCS, fullerene",True,61,89,0.6853932584269663,14,33,0.42424242424242425,0.26115083418454205,75,61,0.8133333333333334,44
+Pt-containing,Pt_containing is true,True,32,89,0.3595505617977528,5,33,0.15151515151515152,0.20803541028260128,37,32,0.8648648648648649,22
+Ir-containing,Ir_containing is true,True,12,89,0.1348314606741573,0,33,0.0,0.1348314606741573,12,12,1.0,9
+Ru-containing,Ru_containing is true,True,50,89,0.5617977528089888,23,33,0.696969696969697,-0.1351719441607082,73,50,0.684931506849315,44
+Ru + carbon support,Ru_containing and explicit carbon support,True,38,89,0.42696629213483145,12,33,0.36363636363636365,0.0633299284984678,50,38,0.76,29
+Ru + alloy/bimetallic,Ru_containing and alloy/intermetallic/bimetallic rule,True,14,89,0.15730337078651685,1,33,0.030303030303030304,0.12700034048348655,15,14,0.9333333333333333,11
+Phase-controlled Ru nanocages,Ru_containing and phase-controlled Ru nanocage subfamily,True,4,89,0.0449438202247191,0,33,0.0,0.0449438202247191,4,4,1.0,1
+Ru without carbon/alloy/phase,"Ru_containing but no explicit carbon, alloy/bimetallic, or phase-controlled Ru flag",False,7,89,0.07865168539325842,10,33,0.30303030303030304,-0.22437861763704461,17,7,0.4117647058823529,13
+Oxide/hydroxide interface,manual oxide/hydroxide interface or strict subfamily contains oxide/hydroxide/oxyphilic,True,17,89,0.19101123595505617,14,33,0.42424242424242425,-0.23323118828736808,31,17,0.5483870967741935,20
+Other PM chalcogenide/phosphide,audit_strict_subfamily equals other PM chalcogenide/phosphide,True,1,89,0.011235955056179775,5,33,0.15151515151515152,-0.14027919645897174,6,1,0.16666666666666666,5
+Ru chalcogenide/MoS2,Ru_containing plus chalcogenide/selenide/MoS2/WS2 flag,False,4,89,0.0449438202247191,6,33,0.18181818181818182,-0.13687436159346272,10,4,0.4,4
+Ru MOF/framework,Ru_containing plus MOF/framework/CPF/BDC/FeMOF text,False,1,89,0.011235955056179775,3,33,0.09090909090909091,-0.07967313585291114,4,1,0.25,3

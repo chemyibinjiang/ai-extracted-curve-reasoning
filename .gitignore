@@ -1,0 +1,64 @@
+# Operating-system and editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*.swo
+
+# Microsoft Office lock/recovery files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.wbk
+
+# Python, Node, and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Render/checking scratch output
+**/render_check*/
+**/render_QA*/
+**/edge_profile*/
+**/edge_profile2*/
+
+# Private/reviewer-only or raw source material should not enter this public repo.
+0-to_submit/
+_private_reviewer_materials/
+reviewer_only_not_for_publication/
+validation/manual_proof/
+supplementary_information/raw_claim_validation_htmls/
+supplementary_information/backup_*before_deidentifying*/
+supplementary_information/assets/screenshots/
+data/LSV_publication_database/01_source_html_assets/
+data/LSV_publication_database/03_evidence_artifacts/
+data/LSV_publication_database/04_human_annotations/
+data/LSV_publication_database/05_stage_responses/
+data/LSV_publication_database/manifest/
+data/benchmark_curve_extraction/**/_private_eval/
+data/benchmark_curve_extraction/**/_webgui_logs/
+analysis/**/source_html/
+analysis/**/context/
+analysis/**/eta10_eta50_entity_audit_agents/
+figures/Figure_06_ptc_relative/deprecated_figure6_working_variants_*/
+deferred_raw_source_archives/
+
+# Local temp/drop folders
+incoming/
+tmp/
+temp/
+scratch/

@@ -1,0 +1,11 @@
+{
+  "panel_tag": "a",
+  "curve_family": "LSV",
+  "variant_index": 2,
+  "scenario": "HER plotted as positive absolute current",
+  "x_column": "overpotential_V",
+  "y_column": "absolute_current_density_mA_cm-2",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

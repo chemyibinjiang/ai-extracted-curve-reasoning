@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T03:43:15.796615+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "a_lsv_07",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-a_lsv_07-figure_a_lsv_07-panel_a_lsv_07-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "a_lsv_07",
+        "paper_id": "focused-curve-v4-1-a_lsv_07",
+        "paper_title": "Focused curve extraction benchmark v4.1: LSV 07",
+        "figure_id": "figure_a_lsv_07",
+        "figure_label": "a_LSV_07",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\a_lsv_07.png",
+        "panel_id": "panel_a_lsv_07",
+        "panel_label": "a_LSV_07",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel LSV benchmark chart, variant 07. Scenario: cathodic LSV with diffusion-limited plateau.",
+        "caption_snippet": "Synthetic single-panel LSV benchmark chart, variant 07. Scenario: cathodic LSV with diffusion-limited plateau.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-a_lsv_07",
+        "figure_id": "figure_a_lsv_07",
+        "panel_id": "panel_a_lsv_07",
+        "target_panel_label": "a_LSV_07",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          30,
+          27,
+          1144,
+          922
+        ],
+        "plot_area_box_cropped": [
+          134,
+          0,
+          1114,
+          790
+        ],
+        "panel_border_completeness": "full rectangular frame visible",
+        "panel_type": "line plot",
+        "x_axis_tick_labels": [
+          "-0.8",
+          "-0.6",
+          "-0.4",
+          "-0.2",
+          "0.0"
+        ],
+        "x_axis_label": "Potential",
+        "x_axis_units": "V vs. RHE",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "-20",
+          "-40",
+          "-60",
+          "-80"
+        ],
+        "y_axis_label": "Current density",
+        "y_axis_units": "mA cm^-2",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "yes",
+        "inset_present": "no",
+        "interpretation_notes": "Single plotted panel with three sigmoidal curves and an in-panel legend at upper left. The crop retains the full axes frame, tick labels, and both axis labels. No explicit panel letter is printed in the image; identification relies on the figure being single-panel.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "-0.8",
+            "pixel_x": 135.5,
+            "pixel_y": 789,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Leftmost x tick at axis border; derived from tick-mark cluster center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "-0.6",
+            "pixel_x": 364.4,
+            "pixel_y": 789,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Visible bottom-axis tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "-0.4",
+            "pixel_x": 594.5,
+            "pixel_y": 789,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Visible bottom-axis tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "-0.2",
+            "pixel_x": 824.5,
+            "pixel_y": 789,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Visible bottom-axis tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.0",
+            "pixel_x": 1054.5,
+            "pixel_y": 789,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Rightmost labeled x tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 135,
+            "pixel_y": 80.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Top labeled y tick on left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "-20",
+            "pixel_x": 135,
+            "pixel_y": 237.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Visible left-axis tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "-40",
+            "pixel_x": 135,
+            "pixel_y": 394.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Visible left-axis tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "-60",
+            "pixel_x": 135,
+            "pixel_y": 551.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Visible left-axis tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "-80",
+            "pixel_x": 135,
+            "pixel_y": 708.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Bottom labeled y tick on left axis."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Bottom-axis ticks at -0.8, -0.6, -0.4, -0.2, and 0.0 are evenly spaced; the scale includes zero and negative values.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit utility selected a linear model with normalized RMSE 0.0003. Log10 is incompatible because the visible tick values include zero and negatives.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Left-axis ticks at 0, -20, -40, -60, and -80 are evenly spaced; the scale includes zero and negative values.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit utility selected a linear model with normalized RMSE 0.0000. Log10 is incompatible because the visible tick values include zero and negatives.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": [
+          "No explicit panel label is visible in the image; the target panel was identified as the sole panel in this single-panel figure."
+        ]
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-a_lsv_07-figure_a_lsv_07-panel_a_lsv_07-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "a_lsv_07",
+      "paper_id": "focused-curve-v4-1-a_lsv_07",
+      "paper_title": "Focused curve extraction benchmark v4.1: LSV 07",
+      "figure_id": "figure_a_lsv_07",
+      "figure_label": "a_LSV_07",
+      "panel_id": "panel_a_lsv_07",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\a_lsv_07.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        30,
+        27,
+        1144,
+        922
+      ],
+      "plot_area_box_cropped": [
+        134,
+        0,
+        1114,
+        790
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "-0.8",
+          "pixel_x": 135.5,
+          "pixel_y": 789,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Leftmost x tick at axis border; derived from tick-mark cluster center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "-0.6",
+          "pixel_x": 364.4,
+          "pixel_y": 789,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Visible bottom-axis tick mark."
+        },
+        {
+          "axis": "x",
+          "tick_value": "-0.4",
+          "pixel_x": 594.5,
+          "pixel_y": 789,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Visible bottom-axis tick mark."
+        },
+        {
+          "axis": "x",
+          "tick_value": "-0.2",
+          "pixel_x": 824.5,
+          "pixel_y": 789,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Visible bottom-axis tick mark."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.0",
+          "pixel_x": 1054.5,
+          "pixel_y": 789,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Rightmost labeled x tick mark."
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "0",
+          "pixel_x": 135,
+          "pixel_y": 80.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Top labeled y tick on left axis."
+        },
+        {
+          "axis": "y",
+          "tick_value": "-20",
+          "pixel_x": 135,
+          "pixel_y": 237.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Visible left-axis tick mark."
+        },
+        {
+          "axis": "y",
+          "tick_value": "-40",
+          "pixel_x": 135,
+          "pixel_y": 394.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Visible left-axis tick mark."
+        },
+        {
+          "axis": "y",
+          "tick_value": "-60",
+          "pixel_x": 135,
+          "pixel_y": 551.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Visible left-axis tick mark."
+        },
+        {
+          "axis": "y",
+          "tick_value": "-80",
+          "pixel_x": 135,
+          "pixel_y": 708.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Bottom labeled y tick on left axis."
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel LSV benchmark chart, variant 07. Scenario: cathodic LSV with diffusion-limited plateau.",
+      "special_notes": "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_07__panel_a_lsv_07\\response.json"
+    }
+  ]
+}

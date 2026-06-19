@@ -1,0 +1,40 @@
+{
+    "schema_version":  "1.0",
+    "generated_at":  "2026-05-09T03:05:12.6227928+00:00",
+    "runner":  "seed_focused_curve_benchmark_tasks_sanitized",
+    "case_id":  "c_uv_vis_06",
+    "paper_id":  "focused-curve-v4-1-c_uv_vis_06",
+    "paper_title":  "Focused curve extraction benchmark v4.1: UV_Vis 06",
+    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\figures.json",
+    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\benchmark.html",
+    "queued_panels":  1,
+    "panel_queue":  [
+                        {
+                            "task_id":  "focused-curve-v4-1-c_uv_vis_06-figure_c_uv_vis_06-panel_c_uv_vis_06-panel-anchoring",
+                            "task_type":  "panel_anchoring",
+                            "case_id":  "c_uv_vis_06",
+                            "paper_id":  "focused-curve-v4-1-c_uv_vis_06",
+                            "paper_title":  "Focused curve extraction benchmark v4.1: UV_Vis 06",
+                            "figure_id":  "figure_c_uv_vis_06",
+                            "figure_label":  "c_UV_Vis_06",
+                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\c_uv_vis_06.png",
+                            "panel_id":  "panel_c_uv_vis_06",
+                            "panel_label":  "c_UV_Vis_06",
+                            "priority":  "high",
+                            "figure_caption":  "Synthetic single-panel UV_Vis benchmark chart, variant 06. Scenario: two separated bands.",
+                            "caption_snippet":  "Synthetic single-panel UV_Vis benchmark chart, variant 06. Scenario: two separated bands.",
+                            "candidate_catalysts":  [
+
+                                                    ],
+                            "reason":  "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+                            "special_notes":  "Benchmark task seeded as a single-panel UV-Vis spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+                        }
+                    ],
+    "benchmark":  {
+                      "curve_family":  "UV_Vis",
+                      "variant_index":  6,
+                      "scenario":  "two separated bands",
+                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\c_uv_vis_06.png"
+                  }
+}
+

@@ -1,0 +1,52 @@
+{
+  "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_07__panel_e_xrd_07\\response.json",
+  "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_07__panel_e_xrd_07\\panel_crop.png",
+  "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_07__panel_e_xrd_07\\curve_overlap_score.json",
+  "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_07__panel_e_xrd_07\\curve_views",
+  "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_07__panel_e_xrd_07\\curve_views\\contact_sheet.png",
+  "curves": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "main diffraction trace",
+      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_07__panel_e_xrd_07\\curve_views\\curve_1_main_diffraction_trace.png",
+      "crop_view_path": "",
+      "crop_box": [
+        100,
+        192,
+        1190,
+        806
+      ],
+      "qa": {
+        "curve_id": "curve_1",
+        "curve_label": "main diffraction trace",
+        "stroke_color": "black",
+        "sampled_point_count": 60,
+        "dense_point_count": 2787,
+        "point_hit_rate": 0.9982,
+        "median_distance_px": 0.0,
+        "p95_distance_px": 1.0,
+        "x_coverage_fraction": 0.9704,
+        "y_coverage_fraction": 0.6008,
+        "dominant_coverage_axis": "x",
+        "dominant_coverage_fraction": 0.9704,
+        "minimum_x_coverage_required": 0.8,
+        "coverage_expectation_met": true,
+        "quality": "pass",
+        "near_left_border_fraction": 0.0,
+        "near_right_border_fraction": 0.0,
+        "near_top_border_fraction": 0.0,
+        "near_bottom_border_fraction": 0.0,
+        "dominant_border": "left",
+        "dominant_border_fraction": 0.0,
+        "border_lock_suspected": false,
+        "marker_center_candidate_count": 0,
+        "marker_center_candidate_fraction": 0.0,
+        "marker_center_alignment_rate": null,
+        "marker_center_warn_alignment_rate": null,
+        "marker_center_median_offset_px": null,
+        "marker_center_p95_offset_px": null,
+        "marker_rim_lock_suspected": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+table,field,description
+source_publication_records.csv,source_doi,DOI of the source publication.
+source_publication_records.csv,source_doi_url,DOI resolver URL.
+panel_metadata.csv,figure_id,Normalized figure identifier.
+panel_metadata.csv,panel_id,Normalized panel identifier.
+curve_metadata.csv,curve_uid,Primary key for one extracted curve.
+curve_metadata.csv,catalyst_name,Convenience catalyst/material name for the curve.
+curve_metadata.csv,condition_name,Convenience experimental condition label.
+curve_points_long.csv,x_value,Normalized x coordinate in native axis units.
+curve_points_long.csv,y_value,Normalized y coordinate in native axis units.
+curve_points_long.csv,point_confidence,"Point-level extraction confidence, when available."
+axis_fits.csv,normalized_rmse,Axis-fit RMSE normalized by the relevant plot-axis span.

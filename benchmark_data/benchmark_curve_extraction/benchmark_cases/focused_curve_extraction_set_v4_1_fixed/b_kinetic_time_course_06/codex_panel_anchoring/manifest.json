@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T03:51:03.965695+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "b_kinetic_time_course_06",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-b_kinetic_time_course_06-figure_b_kinetic_time_course_06-panel_b_kinetic_time_course_06-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "b_kinetic_time_course_06",
+        "paper_id": "focused-curve-v4-1-b_kinetic_time_course_06",
+        "paper_title": "Focused curve extraction benchmark v4.1: kinetic_time_course 06",
+        "figure_id": "figure_b_kinetic_time_course_06",
+        "figure_label": "b_kinetic_time_course_06",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\b_kinetic_time_course_06.png",
+        "panel_id": "panel_b_kinetic_time_course_06",
+        "panel_label": "b_kinetic_time_course_06",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel kinetic_time_course benchmark chart, variant 06. Scenario: pH series.",
+        "caption_snippet": "Synthetic single-panel kinetic_time_course benchmark chart, variant 06. Scenario: pH series.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel kinetic time-course benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-b_kinetic_time_course_06",
+        "figure_id": "figure_b_kinetic_time_course_06",
+        "panel_id": "panel_b_kinetic_time_course_06",
+        "target_panel_label": "b_kinetic_time_course_06",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          20,
+          20,
+          1165,
+          930
+        ],
+        "plot_area_box_cropped": [
+          132,
+          7,
+          1112,
+          796
+        ],
+        "panel_border_completeness": "complete rectangular frame visible",
+        "panel_type": "single-panel time-course line plot",
+        "x_axis_tick_labels": [
+          "0",
+          "20",
+          "40",
+          "60",
+          "80",
+          "100",
+          "120",
+          "140",
+          "160",
+          "180"
+        ],
+        "x_axis_label": "Time",
+        "x_axis_units": "min",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0.0",
+          "0.2",
+          "0.4",
+          "0.6",
+          "0.8",
+          "1.0"
+        ],
+        "y_axis_label": "C/C0",
+        "y_axis_units": "",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "yes",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel kinetic time-course chart with three decay series and an in-panel legend at upper right. No explicit panel letter is visible; no shared axes or inset are present.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "0",
+            "pixel_x": 153.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "leftmost x-axis tick at the origin"
+          },
+          {
+            "axis": "x",
+            "tick_value": "60",
+            "pixel_x": 479.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "x-axis tick centered on the 60 min label"
+          },
+          {
+            "axis": "x",
+            "tick_value": "120",
+            "pixel_x": 804.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "x-axis tick centered on the 120 min label"
+          },
+          {
+            "axis": "x",
+            "tick_value": "180",
+            "pixel_x": 1130.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "rightmost x-axis tick at 180 min"
+          },
+          {
+            "axis": "y",
+            "tick_value": "1.0",
+            "pixel_x": 153.5,
+            "pixel_y": 131.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "top labeled y-axis tick at 1.0"
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.6",
+            "pixel_x": 153.5,
+            "pixel_y": 404.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.98,
+            "note": "middle y-axis tick at 0.6"
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.2",
+            "pixel_x": 153.5,
+            "pixel_y": 677.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.98,
+            "note": "lower y-axis tick at 0.2"
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.0",
+            "pixel_x": 153.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "bottom y-axis tick at 0.0 on the baseline"
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Tick labels run 0 to 180 in uniform 20 min steps across evenly spaced tick marks.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validation chose linear with normalized RMSE about 0.0002; zero tick also rules out log10.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Tick labels run 0.0 to 1.0 in uniform 0.2 steps with evenly spaced tick marks.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validation chose linear with normalized RMSE about 0.0002; the visible 0.0 tick rules out log10.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-b_kinetic_time_course_06-figure_b_kinetic_time_course_06-panel_b_kinetic_time_course_06-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "b_kinetic_time_course_06",
+      "paper_id": "focused-curve-v4-1-b_kinetic_time_course_06",
+      "paper_title": "Focused curve extraction benchmark v4.1: kinetic_time_course 06",
+      "figure_id": "figure_b_kinetic_time_course_06",
+      "figure_label": "b_kinetic_time_course_06",
+      "panel_id": "panel_b_kinetic_time_course_06",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\b_kinetic_time_course_06.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        20,
+        20,
+        1165,
+        930
+      ],
+      "plot_area_box_cropped": [
+        132,
+        7,
+        1112,
+        796
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "0",
+          "pixel_x": 153.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "leftmost x-axis tick at the origin"
+        },
+        {
+          "axis": "x",
+          "tick_value": "60",
+          "pixel_x": 479.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "x-axis tick centered on the 60 min label"
+        },
+        {
+          "axis": "x",
+          "tick_value": "120",
+          "pixel_x": 804.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "x-axis tick centered on the 120 min label"
+        },
+        {
+          "axis": "x",
+          "tick_value": "180",
+          "pixel_x": 1130.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "rightmost x-axis tick at 180 min"
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "1.0",
+          "pixel_x": 153.5,
+          "pixel_y": 131.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "top labeled y-axis tick at 1.0"
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.6",
+          "pixel_x": 153.5,
+          "pixel_y": 404.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.98,
+          "note": "middle y-axis tick at 0.6"
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.2",
+          "pixel_x": 153.5,
+          "pixel_y": 677.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.98,
+          "note": "lower y-axis tick at 0.2"
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.0",
+          "pixel_x": 153.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "bottom y-axis tick at 0.0 on the baseline"
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel kinetic_time_course benchmark chart, variant 06. Scenario: pH series.",
+      "special_notes": "Benchmark task seeded as a single-panel kinetic time-course benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_06__panel_b_kinetic_time_course_06\\response.json"
+    }
+  ]
+}

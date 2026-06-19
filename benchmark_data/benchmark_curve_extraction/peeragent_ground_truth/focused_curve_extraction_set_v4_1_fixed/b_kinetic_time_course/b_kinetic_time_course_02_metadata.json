@@ -1,0 +1,11 @@
+{
+  "panel_tag": "b",
+  "curve_family": "kinetic_time_course",
+  "variant_index": 2,
+  "scenario": "product formation",
+  "x_column": "time_min",
+  "y_column": "response",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

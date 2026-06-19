@@ -1,0 +1,7 @@
+metric,count,denominator,percent
+"Same-panel
+$D_R$ range >25 mV",169,371,45.55256064690027
+"Reported iR comp.
+Selected R > 0",203,368,55.16304347826087
+"Reported iR comp.
+$D_R$ ≥10 mV",162,368,44.02173913043478

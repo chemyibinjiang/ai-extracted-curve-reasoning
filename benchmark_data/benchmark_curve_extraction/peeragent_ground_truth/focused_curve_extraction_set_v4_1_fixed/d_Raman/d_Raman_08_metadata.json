@@ -1,0 +1,12 @@
+{
+  "panel_tag": "d",
+  "curve_family": "Raman",
+  "variant_index": 8,
+  "scenario": "overlapping fingerprint peaks",
+  "x_column": "raman_shift_cm-1",
+  "y_column": "intensity_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true,
+  "patch_note": "local: regenerated Raman 08 with a 420 a.u. y-limit to keep the full raw-data peak visible."
+}

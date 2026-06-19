@@ -1,0 +1,11 @@
+{
+  "panel_tag": "b",
+  "curve_family": "kinetic_time_course",
+  "variant_index": 7,
+  "scenario": "induction period",
+  "x_column": "time_min",
+  "y_column": "response",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

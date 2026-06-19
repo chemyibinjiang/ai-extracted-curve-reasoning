@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T04:09:40.012185+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "d_raman_05",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-d_raman_05-figure_d_raman_05-panel_d_raman_05-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "d_raman_05",
+        "paper_id": "focused-curve-v4-1-d_raman_05",
+        "paper_title": "Focused curve extraction benchmark v4.1: Raman 05",
+        "figure_id": "figure_d_raman_05",
+        "figure_label": "d_Raman_05",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\d_raman_05.png",
+        "panel_id": "panel_d_raman_05",
+        "panel_label": "d_Raman_05",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel Raman benchmark chart, variant 05. Scenario: data, fit, baseline.",
+        "caption_snippet": "Synthetic single-panel Raman benchmark chart, variant 05. Scenario: data, fit, baseline.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel Raman spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-d_raman_05",
+        "figure_id": "figure_d_raman_05",
+        "panel_id": "panel_d_raman_05",
+        "target_panel_label": "d_Raman_05",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          19,
+          17,
+          1188,
+          940
+        ],
+        "plot_area_box_cropped": [
+          142,
+          10,
+          1121,
+          799
+        ],
+        "panel_border_completeness": "complete",
+        "panel_type": "line plot",
+        "x_axis_tick_labels": [
+          "500",
+          "750",
+          "1000",
+          "1250",
+          "1500",
+          "1750",
+          "2000",
+          "2250",
+          "2500"
+        ],
+        "x_axis_label": "Raman shift",
+        "x_axis_units": "cm^-1",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "100",
+          "200",
+          "300",
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "y_axis_label": "Intensity",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "yes",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel Raman spectrum with one fully enclosed plotting frame and an in-panel legend at upper right. The visible letters D and G mark spectral peaks, not panel labels. No inset or shared external axis/legend is present.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "500",
+            "pixel_x": 208.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom tick center at left edge of x-axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1000",
+            "pixel_x": 441.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom tick center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1500",
+            "pixel_x": 673.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom tick center near middle of axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2000",
+            "pixel_x": 906.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom tick center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2500",
+            "pixel_x": 1138.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom tick center at right edge of x-axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 161.0,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center at baseline."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 161.0,
+            "pixel_y": 596.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 161.0,
+            "pixel_y": 377.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 161.0,
+            "pixel_y": 159.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "700",
+            "pixel_x": 161.0,
+            "pixel_y": 50.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis top tick center."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Tick labels increase uniformly from 500 to 2500 with evenly spaced tick marks across the bottom axis.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validation chose a linear model; normalized RMSE was approximately 0.0003, far better than log10.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Tick labels run from 0 to 700 in 100-unit steps with evenly spaced tick marks on the left axis.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validation chose a linear model; normalized RMSE was approximately 0.0003, and log10 is incompatible with the visible zero tick.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-d_raman_05-figure_d_raman_05-panel_d_raman_05-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "d_raman_05",
+      "paper_id": "focused-curve-v4-1-d_raman_05",
+      "paper_title": "Focused curve extraction benchmark v4.1: Raman 05",
+      "figure_id": "figure_d_raman_05",
+      "figure_label": "d_Raman_05",
+      "panel_id": "panel_d_raman_05",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\d_raman_05.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        19,
+        17,
+        1188,
+        940
+      ],
+      "plot_area_box_cropped": [
+        142,
+        10,
+        1121,
+        799
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "500",
+          "pixel_x": 208.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom tick center at left edge of x-axis."
+        },
+        {
+          "axis": "x",
+          "tick_value": "1000",
+          "pixel_x": 441.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom tick center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "1500",
+          "pixel_x": 673.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom tick center near middle of axis."
+        },
+        {
+          "axis": "x",
+          "tick_value": "2000",
+          "pixel_x": 906.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom tick center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "2500",
+          "pixel_x": 1138.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom tick center at right edge of x-axis."
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "0",
+          "pixel_x": 161.0,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick center at baseline."
+        },
+        {
+          "axis": "y",
+          "tick_value": "200",
+          "pixel_x": 161.0,
+          "pixel_y": 596.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "400",
+          "pixel_x": 161.0,
+          "pixel_y": 377.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "600",
+          "pixel_x": 161.0,
+          "pixel_y": 159.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "700",
+          "pixel_x": 161.0,
+          "pixel_y": 50.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis top tick center."
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel Raman benchmark chart, variant 05. Scenario: data, fit, baseline.",
+      "special_notes": "Benchmark task seeded as a single-panel Raman spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_panel_anchoring\\panel_runs\\figure_d_raman_05__panel_d_raman_05\\response.json"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "panel_tag": "e",
+  "curve_family": "XRD",
+  "variant_index": 6,
+  "scenario": "phase transformation",
+  "x_column": "two_theta_degree",
+  "y_column": "intensity_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

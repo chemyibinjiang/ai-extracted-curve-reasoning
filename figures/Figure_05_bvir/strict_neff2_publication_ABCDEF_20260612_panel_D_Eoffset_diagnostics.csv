@@ -1,0 +1,4 @@
+metric,count,denominator,percent
+Panel $\Delta E_{off}$ >10 mV,392,497,78.87323943661971
+Mixed zero/nonzero $E_{off}$,179,497,36.016096579476866
+Opposite-sign $E_{off}$,212,497,42.6559356136821

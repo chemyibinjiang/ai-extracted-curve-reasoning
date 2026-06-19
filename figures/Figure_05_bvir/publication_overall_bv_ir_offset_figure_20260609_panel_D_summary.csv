@@ -1,0 +1,7 @@
+metric,count,denominator,percent
+"Same-panel
+E range >10 mV",152,371,40.97035040431267
+"Same-panel
+0 and nonzero E",170,371,45.82210242587601
+"Same-panel
+E >0 and E <0",25,371,6.738544474393531

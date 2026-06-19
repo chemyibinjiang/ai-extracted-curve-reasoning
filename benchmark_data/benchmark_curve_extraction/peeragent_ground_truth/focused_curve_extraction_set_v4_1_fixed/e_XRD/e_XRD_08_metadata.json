@@ -1,0 +1,11 @@
+{
+  "panel_tag": "e",
+  "curve_family": "XRD",
+  "variant_index": 8,
+  "scenario": "small-angle pattern",
+  "x_column": "q_nm-1",
+  "y_column": "intensity_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T04:00:54.070573+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "c_uv_vis_06",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-c_uv_vis_06-figure_c_uv_vis_06-panel_c_uv_vis_06-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "c_uv_vis_06",
+        "paper_id": "focused-curve-v4-1-c_uv_vis_06",
+        "paper_title": "Focused curve extraction benchmark v4.1: UV_Vis 06",
+        "figure_id": "figure_c_uv_vis_06",
+        "figure_label": "c_UV_Vis_06",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\c_uv_vis_06.png",
+        "panel_id": "panel_c_uv_vis_06",
+        "panel_label": "c_UV_Vis_06",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel UV_Vis benchmark chart, variant 06. Scenario: two separated bands.",
+        "caption_snippet": "Synthetic single-panel UV_Vis benchmark chart, variant 06. Scenario: two separated bands.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel UV-Vis spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-c_uv_vis_06",
+        "figure_id": "figure_c_uv_vis_06",
+        "panel_id": "panel_c_uv_vis_06",
+        "target_panel_label": "c_UV_Vis_06",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          29,
+          27,
+          1157,
+          922
+        ],
+        "plot_area_box_cropped": [
+          122,
+          0,
+          1102,
+          790
+        ],
+        "panel_border_completeness": "complete",
+        "panel_type": "UV-Vis absorbance line plot",
+        "x_axis_tick_labels": [
+          "300",
+          "400",
+          "500",
+          "600",
+          "700",
+          "800"
+        ],
+        "x_axis_label": "Wavelength",
+        "x_axis_units": "nm",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0.0",
+          "0.1",
+          "0.2",
+          "0.3",
+          "0.4",
+          "0.5",
+          "0.6",
+          "0.7"
+        ],
+        "y_axis_label": "Absorbance",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "yes",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel UV-Vis absorbance chart with two curves (A solid black, B dashed blue). Full axes, tick labels, and the legend are visible inside the crop. No explicit subfigure label is printed on the image; the whole figure is the target panel.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "300",
+            "pixel_x": 152.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom x-axis leftmost tick overlaps the y-axis spine."
+          },
+          {
+            "axis": "x",
+            "tick_value": "400",
+            "pixel_x": 347.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom x-axis tick center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "500",
+            "pixel_x": 542.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom x-axis tick center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "600",
+            "pixel_x": 738.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom x-axis tick center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "700",
+            "pixel_x": 933.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom x-axis tick center."
+          },
+          {
+            "axis": "x",
+            "tick_value": "800",
+            "pixel_x": 1128.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom x-axis rightmost tick at the plot border."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.0",
+            "pixel_x": 152.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Lowest visible y-axis tick at baseline."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.1",
+            "pixel_x": 152.5,
+            "pixel_y": 709.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left y-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.2",
+            "pixel_x": 152.5,
+            "pixel_y": 604.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left y-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.3",
+            "pixel_x": 152.5,
+            "pixel_y": 499.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left y-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.4",
+            "pixel_x": 152.5,
+            "pixel_y": 395.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left y-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.5",
+            "pixel_x": 152.5,
+            "pixel_y": 290.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left y-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.6",
+            "pixel_x": 152.5,
+            "pixel_y": 185.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left y-axis tick center."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0.7",
+            "pixel_x": 152.5,
+            "pixel_y": 80.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Top visible y-axis tick center."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Evenly spaced bottom-axis ticks labeled 300, 400, 500, 600, 700, 800.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validation selected a linear model with normalized RMSE about 0.0002; the visible 100 nm steps are evenly spaced.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Evenly spaced left-axis ticks labeled 0.0 through 0.7 in 0.1 increments.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validation selected a linear model with normalized RMSE about 0.0003; the presence of a 0.0 tick also rules out log10 scaling.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": [
+          "No explicit subfigure/panel label is printed on the image; this was treated as a single-panel figure."
+        ]
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-c_uv_vis_06-figure_c_uv_vis_06-panel_c_uv_vis_06-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "c_uv_vis_06",
+      "paper_id": "focused-curve-v4-1-c_uv_vis_06",
+      "paper_title": "Focused curve extraction benchmark v4.1: UV_Vis 06",
+      "figure_id": "figure_c_uv_vis_06",
+      "figure_label": "c_UV_Vis_06",
+      "panel_id": "panel_c_uv_vis_06",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\c_uv_vis_06.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        29,
+        27,
+        1157,
+        922
+      ],
+      "plot_area_box_cropped": [
+        122,
+        0,
+        1102,
+        790
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "300",
+          "pixel_x": 152.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom x-axis leftmost tick overlaps the y-axis spine."
+        },
+        {
+          "axis": "x",
+          "tick_value": "400",
+          "pixel_x": 347.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom x-axis tick center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "500",
+          "pixel_x": 542.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom x-axis tick center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "600",
+          "pixel_x": 738.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom x-axis tick center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "700",
+          "pixel_x": 933.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom x-axis tick center."
+        },
+        {
+          "axis": "x",
+          "tick_value": "800",
+          "pixel_x": 1128.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom x-axis rightmost tick at the plot border."
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "0.0",
+          "pixel_x": 152.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Lowest visible y-axis tick at baseline."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.1",
+          "pixel_x": 152.5,
+          "pixel_y": 709.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left y-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.2",
+          "pixel_x": 152.5,
+          "pixel_y": 604.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left y-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.3",
+          "pixel_x": 152.5,
+          "pixel_y": 499.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left y-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.4",
+          "pixel_x": 152.5,
+          "pixel_y": 395.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left y-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.5",
+          "pixel_x": 152.5,
+          "pixel_y": 290.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left y-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.6",
+          "pixel_x": 152.5,
+          "pixel_y": 185.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left y-axis tick center."
+        },
+        {
+          "axis": "y",
+          "tick_value": "0.7",
+          "pixel_x": 152.5,
+          "pixel_y": 80.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Top visible y-axis tick center."
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel UV_Vis benchmark chart, variant 06. Scenario: two separated bands.",
+      "special_notes": "Benchmark task seeded as a single-panel UV-Vis spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_06__panel_c_uv_vis_06\\response.json"
+    }
+  ]
+}

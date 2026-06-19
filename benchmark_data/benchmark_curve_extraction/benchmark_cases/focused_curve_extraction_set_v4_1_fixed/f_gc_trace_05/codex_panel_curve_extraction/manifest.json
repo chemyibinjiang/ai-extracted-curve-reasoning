@@ -1,0 +1,947 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T06:58:09.781130+00:00",
+  "runner": "codex_exec_panel_curve_extraction",
+  "case_id": "f_gc_trace_05",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05",
+  "source_curve_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\curve_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "extracted_curves": 1,
+  "qa_panel_pass_count": 1,
+  "qa_panel_warn_count": 0,
+  "qa_panel_fail_count": 0,
+  "recovery_tasks": 0,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-f_gc_trace_05-figure_f_gc_trace_05-panel_f_gc_trace_05-curve-extraction",
+        "task_type": "curve_extraction",
+        "case_id": "f_gc_trace_05",
+        "paper_id": "focused-curve-v4-1-f_gc_trace_05",
+        "paper_title": "Focused curve extraction benchmark v4.1: GC_trace 05",
+        "figure_id": "figure_f_gc_trace_05",
+        "figure_label": "f_GC_trace_05",
+        "panel_id": "panel_f_gc_trace_05",
+        "panel_label": "not visible",
+        "candidate_catalysts": [],
+        "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\f_gc_trace_05.png",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\panel_annotated.png",
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\tmp\\axis_fit_output.json",
+        "axis_fit_script_used": true,
+        "crop_box_original": [
+          20,
+          20,
+          1188,
+          944
+        ],
+        "plot_area_box_cropped": [
+          160,
+          20,
+          1140,
+          809
+        ],
+        "x_axis_anchors": [
+          {
+            "axis": "x",
+            "tick_value": "0",
+            "pixel_x": 182,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Leftmost x tick at the bottom-axis origin."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2",
+            "pixel_x": 304,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "4",
+            "pixel_x": 426,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "6",
+            "pixel_x": 548,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "8",
+            "pixel_x": 670,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "10",
+            "pixel_x": 792,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "12",
+            "pixel_x": 914,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "14",
+            "pixel_x": 1036,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "16",
+            "pixel_x": 1158,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Rightmost x tick on the bottom axis."
+          }
+        ],
+        "y_axis_anchors": [
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 182,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom y tick at the axis origin."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 182,
+            "pixel_y": 670,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 182,
+            "pixel_y": 512,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 182,
+            "pixel_y": 355,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "800",
+            "pixel_x": 182,
+            "pixel_y": 198,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1000",
+            "pixel_x": 182,
+            "pixel_y": 42,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Top labeled y tick on the left axis."
+          }
+        ],
+        "x_axis_type_guess": "linear",
+        "y_axis_type_guess": "linear",
+        "caption_snippet": "Synthetic single-panel GC_trace benchmark chart, variant 05. Scenario: baseline drift.",
+        "special_notes": "Benchmark task seeded as a single-panel gas-chromatography trace benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+        "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\response.json"
+      },
+      "anchoring_response": {
+        "paper_id": "focused-curve-v4-1-f_gc_trace_05",
+        "figure_id": "figure_f_gc_trace_05",
+        "panel_id": "panel_f_gc_trace_05",
+        "target_panel_label": "f_GC_trace_05",
+        "detected_panel_label": "not visible",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          20,
+          20,
+          1188,
+          944
+        ],
+        "plot_area_box_cropped": [
+          160,
+          20,
+          1140,
+          809
+        ],
+        "panel_border_completeness": "complete",
+        "panel_type": "chromatogram",
+        "x_axis_tick_labels": [
+          "0",
+          "2",
+          "4",
+          "6",
+          "8",
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "x_axis_label": "Retention time",
+        "x_axis_units": "min",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "200",
+          "400",
+          "600",
+          "800",
+          "1000"
+        ],
+        "y_axis_label": "Signal",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "no",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel GC trace / chromatogram with an upward drifting baseline and three positive peaks. No explicit subplot letter is printed; the whole figure is treated as the target panel. Full rectangular plotting frame is visible, with all tick labels and both axis labels inside the crop. No legend or inset is present.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "0",
+            "pixel_x": 182,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Leftmost x tick at the bottom-axis origin."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2",
+            "pixel_x": 304,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "4",
+            "pixel_x": 426,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "6",
+            "pixel_x": 548,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "8",
+            "pixel_x": 670,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "10",
+            "pixel_x": 792,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "12",
+            "pixel_x": 914,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "14",
+            "pixel_x": 1036,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Evenly spaced x tick on the bottom axis."
+          },
+          {
+            "axis": "x",
+            "tick_value": "16",
+            "pixel_x": 1158,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Rightmost x tick on the bottom axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 182,
+            "pixel_y": 828,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom y tick at the axis origin."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 182,
+            "pixel_y": 670,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 182,
+            "pixel_y": 512,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 182,
+            "pixel_y": 355,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "800",
+            "pixel_x": 182,
+            "pixel_y": 198,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Labeled y tick on the left axis."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1000",
+            "pixel_x": 182,
+            "pixel_y": 42,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Top labeled y tick on the left axis."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Bottom-axis ticks are evenly spaced from 0 to 16 in steps of 2.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validator selected a linear model with normalized RMSE 0.0000; log10 is incompatible because the axis includes 0.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Left-axis ticks are evenly spaced from 0 to 1000 in steps of 200.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validator selected a linear model with normalized RMSE 0.0008; log10 is incompatible because the axis includes 0.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-f_gc_trace_05",
+        "figure_id": "figure_f_gc_trace_05",
+        "panel_id": "panel_f_gc_trace_05",
+        "panel_label": "not visible",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\tmp\\panel_crop.png",
+        "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_overlay.png",
+        "plot_area_box_cropped": [
+          160,
+          20,
+          1140,
+          809
+        ],
+        "x_axis_type": "linear",
+        "y_axis_type": "linear",
+        "legend_entries": [],
+        "panel_type": "chromatogram",
+        "overlap_recovery_recommended": false,
+        "overlap_recovery_reason": "Single isolated trace with no inter-curve overlap; no separate recovery pass appears warranted.",
+        "curves": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "GC trace",
+            "condition_label": "",
+            "catalyst_context": "",
+            "stroke_color": "black",
+            "line_style": "solid",
+            "marker_style": "no markers",
+            "point_coordinate_system": "cropped_panel",
+            "sampled_points": [
+              {
+                "pixel_x": 164,
+                "pixel_y": 744,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 192,
+                "pixel_y": 740,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 220,
+                "pixel_y": 735,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 248,
+                "pixel_y": 731,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 276,
+                "pixel_y": 727,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 304,
+                "pixel_y": 722,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 332,
+                "pixel_y": 718,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 360,
+                "pixel_y": 714,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 388,
+                "pixel_y": 709,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 416,
+                "pixel_y": 705,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 444,
+                "pixel_y": 701,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 468,
+                "pixel_y": 697,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 476,
+                "pixel_y": 690,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 482,
+                "pixel_y": 639,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 488,
+                "pixel_y": 481,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 492,
+                "pixel_y": 335,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 494,
+                "pixel_y": 278,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 496,
+                "pixel_y": 220,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 498,
+                "pixel_y": 184,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 500,
+                "pixel_y": 228,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 502,
+                "pixel_y": 314,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 506,
+                "pixel_y": 456,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 508,
+                "pixel_y": 524,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 510,
+                "pixel_y": 581,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 514,
+                "pixel_y": 653,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 520,
+                "pixel_y": 686,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 540,
+                "pixel_y": 686,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 576,
+                "pixel_y": 680,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 612,
+                "pixel_y": 675,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 648,
+                "pixel_y": 669,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 676,
+                "pixel_y": 655,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 684,
+                "pixel_y": 603,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 690,
+                "pixel_y": 523,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 694,
+                "pixel_y": 470,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 698,
+                "pixel_y": 428,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 700,
+                "pixel_y": 431,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 702,
+                "pixel_y": 454,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 706,
+                "pixel_y": 499,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 714,
+                "pixel_y": 604,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 724,
+                "pixel_y": 654,
+                "confidence": 0.98
+              },
+              {
+                "pixel_x": 744,
+                "pixel_y": 655,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 780,
+                "pixel_y": 649,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 816,
+                "pixel_y": 643,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 852,
+                "pixel_y": 638,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 888,
+                "pixel_y": 631,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 900,
+                "pixel_y": 615,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 904,
+                "pixel_y": 604,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 912,
+                "pixel_y": 568,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 918,
+                "pixel_y": 541,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 924,
+                "pixel_y": 526,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 930,
+                "pixel_y": 536,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 938,
+                "pixel_y": 569,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 944,
+                "pixel_y": 594,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 952,
+                "pixel_y": 613,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 958,
+                "pixel_y": 619,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 982,
+                "pixel_y": 618,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 1018,
+                "pixel_y": 612,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 1054,
+                "pixel_y": 607,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 1090,
+                "pixel_y": 601,
+                "confidence": 0.99
+              },
+              {
+                "pixel_x": 1128,
+                "pixel_y": 595,
+                "confidence": 0.99
+              }
+            ],
+            "visible_segment_status": "complete",
+            "overlap_notes": "",
+            "overlap_recovery_candidate": false,
+            "suspected_gap_notes": "",
+            "usable_for_normalization": "yes",
+            "confidence": 0.97
+          }
+        ],
+        "interpretation_notes": "Single black GC/chromatogram trace with an upward drifting baseline and three positive peaks; no legend or inset is present. Draft QA passed with no pairwise overlap issues.",
+        "qc": {
+          "curve_count_estimated_correctly": true,
+          "legend_curve_mapping_complete": "yes",
+          "main_plot_only": "yes",
+          "points_cover_visible_extent": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_overlap_diagnostic.png",
+      "overlap_qa": {
+        "panel_id": "panel_f_gc_trace_05",
+        "figure_id": "figure_f_gc_trace_05",
+        "curve_scores": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "GC trace",
+            "stroke_color": "black",
+            "sampled_point_count": 60,
+            "dense_point_count": 2462,
+            "point_hit_rate": 0.9984,
+            "median_distance_px": 0.0,
+            "p95_distance_px": 0.0,
+            "x_coverage_fraction": 0.9837,
+            "y_coverage_fraction": 0.7098,
+            "dominant_coverage_axis": "x",
+            "dominant_coverage_fraction": 0.9837,
+            "minimum_x_coverage_required": 0.8,
+            "coverage_expectation_met": true,
+            "quality": "pass",
+            "near_left_border_fraction": 0.0167,
+            "near_right_border_fraction": 0.0,
+            "near_top_border_fraction": 0.0,
+            "near_bottom_border_fraction": 0.0,
+            "dominant_border": "left",
+            "dominant_border_fraction": 0.0167,
+            "border_lock_suspected": false,
+            "marker_center_candidate_count": 0,
+            "marker_center_candidate_fraction": 0.0,
+            "marker_center_alignment_rate": null,
+            "marker_center_warn_alignment_rate": null,
+            "marker_center_median_offset_px": null,
+            "marker_center_p95_offset_px": null,
+            "marker_rim_lock_suspected": false
+          }
+        ],
+        "pairwise_overlap_scores": [],
+        "summary": {
+          "pass_count": 1,
+          "warn_count": 0,
+          "fail_count": 0,
+          "pairwise_review_count": 0,
+          "panel_quality": "pass",
+          "manual_review_required": false
+        },
+        "recommended_standard": {
+          "curve_fit_to_visible_stroke": {
+            "pass": {
+              "point_hit_rate_gte": 0.85,
+              "median_distance_px_lte": 2.5,
+              "p95_distance_px_lte": 5.0,
+              "minimum_dominant_coverage_complete_curve_gte": 0.8,
+              "minimum_dominant_coverage_partial_curve_gte": 0.55
+            },
+            "warn": {
+              "point_hit_rate_gte": 0.7,
+              "median_distance_px_lte": 4.0,
+              "p95_distance_px_lte": 8.0
+            },
+            "advisories": {
+              "border_lock_threshold_px": 6,
+              "border_lock_suspected_fraction_gte": 0.45,
+              "marker_center_pass_offset_px_lte": 2.5,
+              "marker_center_warn_offset_px_lte": 4.0,
+              "marker_center_min_candidate_count": 8,
+              "marker_curve_pass_point_hit_rate_gte": 0.75,
+              "marker_curve_pass_p95_distance_px_lte": 8.0,
+              "marker_curve_warn_point_hit_rate_gte": 0.55,
+              "marker_curve_warn_p95_distance_px_lte": 11.0,
+              "note": "For marker-bearing curves, strong near-border fractions can indicate marker-rim or frame-lock tracing even when color overlap is high. Hollow-marker centerline traces use relaxed stroke-overlap thresholds only when marker-center alignment is also good."
+            }
+          },
+          "pairwise_overlap": {
+            "ambiguous_if_vertical_separation_px_lte": 4,
+            "minimum_contiguous_overlap_run_px": 12,
+            "review_if_ambiguous_fraction_gt_same_color": 0.08,
+            "review_if_ambiguous_fraction_gt_different_color": 0.15
+          },
+          "panel_acceptance": {
+            "pass": "all curves pass and no pairwise review flags",
+            "warn": "no curve fails, but at least one curve warns or at least one pair is overlap-flagged",
+            "fail": "at least one curve fails stroke agreement or extent coverage"
+          }
+        }
+      },
+      "overlap_qa_error": "",
+      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views\\contact_sheet.png",
+      "curve_views_manifest": {
+        "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\response.json",
+        "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\panel_crop.png",
+        "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_overlap_score.json",
+        "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views",
+        "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views\\contact_sheet.png",
+        "curves": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "GC trace",
+            "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views\\curve_1_gc_trace.png",
+            "crop_view_path": "",
+            "crop_box": [
+              94,
+              114,
+              1198,
+              814
+            ],
+            "qa": {
+              "curve_id": "curve_1",
+              "curve_label": "GC trace",
+              "stroke_color": "black",
+              "sampled_point_count": 60,
+              "dense_point_count": 2462,
+              "point_hit_rate": 0.9984,
+              "median_distance_px": 0.0,
+              "p95_distance_px": 0.0,
+              "x_coverage_fraction": 0.9837,
+              "y_coverage_fraction": 0.7098,
+              "dominant_coverage_axis": "x",
+              "dominant_coverage_fraction": 0.9837,
+              "minimum_x_coverage_required": 0.8,
+              "coverage_expectation_met": true,
+              "quality": "pass",
+              "near_left_border_fraction": 0.0167,
+              "near_right_border_fraction": 0.0,
+              "near_top_border_fraction": 0.0,
+              "near_bottom_border_fraction": 0.0,
+              "dominant_border": "left",
+              "dominant_border_fraction": 0.0167,
+              "border_lock_suspected": false,
+              "marker_center_candidate_count": 0,
+              "marker_center_candidate_fraction": 0.0,
+              "marker_center_alignment_rate": null,
+              "marker_center_warn_alignment_rate": null,
+              "marker_center_median_offset_px": null,
+              "marker_center_p95_offset_px": null,
+              "marker_rim_lock_suspected": false
+            }
+          }
+        ]
+      },
+      "curve_views_error": "",
+      "revision_metadata": {
+        "revision_attempted": false,
+        "revision_applied": false,
+        "revision_error": ""
+      },
+      "error": "",
+      "overlap_recovery_recommended": false,
+      "overlap_recovery_reason": "Single isolated trace with no inter-curve overlap; no separate recovery pass appears warranted."
+    }
+  ],
+  "recovery_queue": [],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-f_gc_trace_05-figure_f_gc_trace_05-panel_f_gc_trace_05-normalize-panel-curves",
+      "task_type": "normalize_panel_curves",
+      "case_id": "f_gc_trace_05",
+      "paper_id": "focused-curve-v4-1-f_gc_trace_05",
+      "paper_title": "Focused curve extraction benchmark v4.1: GC_trace 05",
+      "figure_id": "figure_f_gc_trace_05",
+      "figure_label": "f_GC_trace_05",
+      "panel_id": "panel_f_gc_trace_05",
+      "panel_label": "not visible",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\panel_crop.png",
+      "curve_extraction_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\response.json",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\tmp\\axis_fit_output.json",
+      "x_axis_label": "Retention time",
+      "x_axis_units": "min",
+      "y_axis_label": "Signal",
+      "y_axis_units": "a.u.",
+      "x_axis_type": "linear",
+      "y_axis_type": "linear",
+      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_overlap_diagnostic.png",
+      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_05__panel_f_gc_trace_05\\curve_views\\contact_sheet.png",
+      "overlap_panel_quality": "pass",
+      "overlap_manual_review_required": false,
+      "overlap_fail_count": 0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-06-18T15:38:48.333194+00:00",
+  "source_canonical_tables": "data/LSV_publication_database/02_canonical_tables",
+  "records": {
+    "source_publication_records": 590,
+    "unique_source_dois": 573,
+    "publication_dataset_bucket": "primary_main_HER",
+    "source_records_with_released_curves": 585,
+    "unique_source_dois_with_released_curves": 568,
+    "publication_included_panels": 1035,
+    "panel_metadata_rows": 1035,
+    "publication_included_curves": 4211,
+    "curve_metadata_rows": 4211,
+    "normalized_completed_curves": 4211,
+    "normalized_curve_points": 132314,
+    "axis_fit_rows": 2070
+  },
+  "doi_mapping": {
+    "cases_with_doi": 590,
+    "cases_without_doi": 0
+  },
+  "normalization_status_counts": {
+    "completed": 4211
+  },
+  "curve_reaction_type_counts": {
+    "HER": 4207,
+    "other": 4
+  },
+  "missing_curve_metadata_records_in_points_jsonl": 0,
+  "excluded_from_release": [
+    "original publication figures and screenshots",
+    "source HTML and publisher asset folders",
+    "figure captions from the original articles",
+    "internal validation records and paper-level inconsistency cards",
+    "local filesystem paths to extraction artifacts"
+  ]
+}

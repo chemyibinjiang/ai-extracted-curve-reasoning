@@ -1,0 +1,11 @@
+{
+  "panel_tag": "f",
+  "curve_family": "GC_trace",
+  "variant_index": 5,
+  "scenario": "baseline drift",
+  "x_column": "retention_time_min",
+  "y_column": "signal_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

@@ -1,0 +1,40 @@
+{
+    "schema_version":  "1.0",
+    "generated_at":  "2026-05-09T03:05:12.6227928+00:00",
+    "runner":  "seed_focused_curve_benchmark_tasks_sanitized",
+    "case_id":  "e_xrd_01",
+    "paper_id":  "focused-curve-v4-1-e_xrd_01",
+    "paper_title":  "Focused curve extraction benchmark v4.1: XRD 01",
+    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\figures.json",
+    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\benchmark.html",
+    "queued_panels":  1,
+    "panel_queue":  [
+                        {
+                            "task_id":  "focused-curve-v4-1-e_xrd_01-figure_e_xrd_01-panel_e_xrd_01-panel-anchoring",
+                            "task_type":  "panel_anchoring",
+                            "case_id":  "e_xrd_01",
+                            "paper_id":  "focused-curve-v4-1-e_xrd_01",
+                            "paper_title":  "Focused curve extraction benchmark v4.1: XRD 01",
+                            "figure_id":  "figure_e_xrd_01",
+                            "figure_label":  "e_XRD_01",
+                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\e_xrd_01.png",
+                            "panel_id":  "panel_e_xrd_01",
+                            "panel_label":  "e_XRD_01",
+                            "priority":  "high",
+                            "figure_caption":  "Synthetic single-panel XRD benchmark chart, variant 01. Scenario: two offset crystalline patterns.",
+                            "caption_snippet":  "Synthetic single-panel XRD benchmark chart, variant 01. Scenario: two offset crystalline patterns.",
+                            "candidate_catalysts":  [
+
+                                                    ],
+                            "reason":  "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+                            "special_notes":  "Benchmark task seeded as a single-panel XRD pattern benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+                        }
+                    ],
+    "benchmark":  {
+                      "curve_family":  "XRD",
+                      "variant_index":  1,
+                      "scenario":  "two offset crystalline patterns",
+                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\e_xrd_01.png"
+                  }
+}
+

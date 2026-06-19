@@ -1,0 +1,4 @@
+metric,count,denominator,percent
+Panel $\Delta D_R$ >25 mV,372,497,74.84909456740442
+Panel $\Delta D_R$ >50 mV,288,497,57.947686116700204
+Reported iR: $D_R$ >=10 mV,431,455,94.72527472527472

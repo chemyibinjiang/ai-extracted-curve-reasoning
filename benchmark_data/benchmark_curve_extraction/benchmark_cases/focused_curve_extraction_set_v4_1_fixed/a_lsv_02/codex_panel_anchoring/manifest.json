@@ -1,0 +1,379 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T03:39:13.010212+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "a_lsv_02",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-a_lsv_02-figure_a_lsv_02-panel_a_lsv_02-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "a_lsv_02",
+        "paper_id": "focused-curve-v4-1-a_lsv_02",
+        "paper_title": "Focused curve extraction benchmark v4.1: LSV 02",
+        "figure_id": "figure_a_lsv_02",
+        "figure_label": "a_LSV_02",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
+        "panel_id": "panel_a_lsv_02",
+        "panel_label": "a_LSV_02",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel LSV benchmark chart, variant 02. Scenario: HER plotted as positive absolute current.",
+        "caption_snippet": "Synthetic single-panel LSV benchmark chart, variant 02. Scenario: HER plotted as positive absolute current.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-a_lsv_02",
+        "figure_id": "figure_a_lsv_02",
+        "panel_id": "panel_a_lsv_02",
+        "target_panel_label": "a_LSV_02",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          20,
+          20,
+          1140,
+          930
+        ],
+        "plot_area_box_cropped": [
+          132,
+          7,
+          1111,
+          796
+        ],
+        "panel_border_completeness": "complete rectangular plot border visible on all four sides",
+        "panel_type": "single-panel Cartesian multi-curve line plot",
+        "x_axis_tick_labels": [
+          "0.0",
+          "0.1",
+          "0.2",
+          "0.3",
+          "0.4",
+          "0.5",
+          "0.6"
+        ],
+        "x_axis_label": "Overpotential η",
+        "x_axis_units": "V",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "20",
+          "40",
+          "60",
+          "80"
+        ],
+        "y_axis_label": "|j|",
+        "y_axis_units": "mA cm^-2",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "yes",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel plot occupying the full figure. The legend is inside the plot at upper left. A gray dashed horizontal reference line is present near |j|=10 but is not an axis tick. No inset is present.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "0.0",
+            "pixel_x": 153.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis origin tick; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.1",
+            "pixel_x": 310.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick labeled 0.1; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.2",
+            "pixel_x": 468.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick labeled 0.2; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.3",
+            "pixel_x": 625.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick labeled 0.3; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.4",
+            "pixel_x": 783.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick labeled 0.4; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.5",
+            "pixel_x": 940.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick labeled 0.5; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "x",
+            "tick_value": "0.6",
+            "pixel_x": 1098.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick labeled 0.6; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 153.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick labeled 0; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "y",
+            "tick_value": "20",
+            "pixel_x": 153.5,
+            "pixel_y": 648.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick labeled 20; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "y",
+            "tick_value": "40",
+            "pixel_x": 153.5,
+            "pixel_y": 483.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick labeled 40; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "y",
+            "tick_value": "60",
+            "pixel_x": 153.5,
+            "pixel_y": 317.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick labeled 60; center of the dark tick-mark cluster."
+          },
+          {
+            "axis": "y",
+            "tick_value": "80",
+            "pixel_x": 153.5,
+            "pixel_y": 152.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick labeled 80; center of the dark tick-mark cluster."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Seven evenly spaced decimal ticks from 0.0 to 0.6 along the bottom axis.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validator selected a linear fit with normalized RMSE about 0.0003; log10 is incompatible because a 0.0 tick is present.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Five evenly spaced ticks from 0 to 80 along the left axis.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validator selected a linear fit with normalized RMSE about 0.0004; log10 is incompatible because a 0 tick is present.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": [
+          "No explicit panel label is printed inside the image; the target was matched to the lone panel in this single-panel figure."
+        ]
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-a_lsv_02-figure_a_lsv_02-panel_a_lsv_02-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "a_lsv_02",
+      "paper_id": "focused-curve-v4-1-a_lsv_02",
+      "paper_title": "Focused curve extraction benchmark v4.1: LSV 02",
+      "figure_id": "figure_a_lsv_02",
+      "figure_label": "a_LSV_02",
+      "panel_id": "panel_a_lsv_02",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        20,
+        20,
+        1140,
+        930
+      ],
+      "plot_area_box_cropped": [
+        132,
+        7,
+        1111,
+        796
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "0.0",
+          "pixel_x": 153.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis origin tick; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.1",
+          "pixel_x": 310.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick labeled 0.1; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.2",
+          "pixel_x": 468.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick labeled 0.2; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.3",
+          "pixel_x": 625.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick labeled 0.3; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.4",
+          "pixel_x": 783.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick labeled 0.4; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.5",
+          "pixel_x": 940.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick labeled 0.5; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "x",
+          "tick_value": "0.6",
+          "pixel_x": 1098.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick labeled 0.6; center of the dark tick-mark cluster."
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "0",
+          "pixel_x": 153.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick labeled 0; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "y",
+          "tick_value": "20",
+          "pixel_x": 153.5,
+          "pixel_y": 648.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick labeled 20; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "y",
+          "tick_value": "40",
+          "pixel_x": 153.5,
+          "pixel_y": 483.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick labeled 40; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "y",
+          "tick_value": "60",
+          "pixel_x": 153.5,
+          "pixel_y": 317.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick labeled 60; center of the dark tick-mark cluster."
+        },
+        {
+          "axis": "y",
+          "tick_value": "80",
+          "pixel_x": 153.5,
+          "pixel_y": 152.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick labeled 80; center of the dark tick-mark cluster."
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel LSV benchmark chart, variant 02. Scenario: HER plotted as positive absolute current.",
+      "special_notes": "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\response.json"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "panel_tag": "d",
+  "curve_family": "Raman",
+  "variant_index": 7,
+  "scenario": "mapping spot series",
+  "x_column": "raman_shift_cm-1",
+  "y_column": "intensity_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}

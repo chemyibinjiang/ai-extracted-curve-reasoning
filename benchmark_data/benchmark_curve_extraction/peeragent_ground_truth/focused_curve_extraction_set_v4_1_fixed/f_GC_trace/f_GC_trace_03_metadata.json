@@ -1,0 +1,12 @@
+{
+  "panel_tag": "f",
+  "curve_family": "GC_trace",
+  "variant_index": 3,
+  "scenario": "co-eluting peaks",
+  "x_column": "retention_time_min",
+  "y_column": "signal_au",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true,
+  "patch_note": "v4.1: removed meaningless numeric peak labels from f_GC_trace_03."
+}

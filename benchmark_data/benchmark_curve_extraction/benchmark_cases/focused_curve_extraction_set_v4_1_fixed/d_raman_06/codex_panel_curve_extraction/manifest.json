@@ -1,0 +1,965 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T06:26:57.902029+00:00",
+  "runner": "codex_exec_panel_curve_extraction",
+  "case_id": "d_raman_06",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06",
+  "source_curve_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\curve_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "extracted_curves": 1,
+  "qa_panel_pass_count": 1,
+  "qa_panel_warn_count": 0,
+  "qa_panel_fail_count": 0,
+  "recovery_tasks": 0,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-d_raman_06-figure_d_raman_06-panel_d_raman_06-curve-extraction",
+        "task_type": "curve_extraction",
+        "case_id": "d_raman_06",
+        "paper_id": "focused-curve-v4-1-d_raman_06",
+        "paper_title": "Focused curve extraction benchmark v4.1: Raman 06",
+        "figure_id": "figure_d_raman_06",
+        "figure_label": "d_Raman_06",
+        "panel_id": "panel_d_raman_06",
+        "panel_label": "",
+        "candidate_catalysts": [],
+        "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\d_raman_06.png",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\panel_annotated.png",
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\tmp\\axis_fit_output.json",
+        "axis_fit_script_used": true,
+        "crop_box_original": [
+          24,
+          27,
+          1182,
+          947
+        ],
+        "plot_area_box_cropped": [
+          137,
+          13,
+          1116,
+          802
+        ],
+        "x_axis_anchors": [
+          {
+            "axis": "x",
+            "tick_value": "500",
+            "pixel_x": 208.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "750",
+            "pixel_x": 324.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1000",
+            "pixel_x": 441.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1250",
+            "pixel_x": 557.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1500",
+            "pixel_x": 673.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1750",
+            "pixel_x": 789.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2000",
+            "pixel_x": 906.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2250",
+            "pixel_x": 1022.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2500",
+            "pixel_x": 1138.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          }
+        ],
+        "y_axis_anchors": [
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 162.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "50",
+            "pixel_x": 162.5,
+            "pixel_y": 670.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "100",
+            "pixel_x": 162.5,
+            "pixel_y": 513.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "150",
+            "pixel_x": 162.5,
+            "pixel_y": 355.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 162.5,
+            "pixel_y": 198.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "250",
+            "pixel_x": 162.5,
+            "pixel_y": 41.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          }
+        ],
+        "x_axis_type_guess": "linear",
+        "y_axis_type_guess": "linear",
+        "caption_snippet": "Synthetic single-panel Raman benchmark chart, variant 06. Scenario: low signal noisy Raman.",
+        "special_notes": "Benchmark task seeded as a single-panel Raman spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+        "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\response.json"
+      },
+      "anchoring_response": {
+        "paper_id": "focused-curve-v4-1-d_raman_06",
+        "figure_id": "figure_d_raman_06",
+        "panel_id": "panel_d_raman_06",
+        "target_panel_label": "d_Raman_06",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          24,
+          27,
+          1182,
+          947
+        ],
+        "plot_area_box_cropped": [
+          137,
+          13,
+          1116,
+          802
+        ],
+        "panel_border_completeness": "complete rectangular frame visible",
+        "panel_type": "Raman spectrum line plot",
+        "x_axis_tick_labels": [
+          "500",
+          "750",
+          "1000",
+          "1250",
+          "1500",
+          "1750",
+          "2000",
+          "2250",
+          "2500"
+        ],
+        "x_axis_label": "Raman shift",
+        "x_axis_units": "cm^-1",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "50",
+          "100",
+          "150",
+          "200",
+          "250"
+        ],
+        "y_axis_label": "Intensity",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "no",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel Raman spectrum with a complete boxed plotting area and no legend or inset. Conservative crop keeps all visible tick labels and both axis labels. Anchor points were taken from the centers of visible tick marks; the x-axis extends left of the first labeled 500 tick, but that unlabeled bound was not used as an anchor.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "500",
+            "pixel_x": 208.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "750",
+            "pixel_x": 324.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1000",
+            "pixel_x": 441.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1250",
+            "pixel_x": 557.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1500",
+            "pixel_x": 673.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "1750",
+            "pixel_x": 789.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2000",
+            "pixel_x": 906.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2250",
+            "pixel_x": 1022.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2500",
+            "pixel_x": 1138.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick center from 4 px vertical tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 162.5,
+            "pixel_y": 827.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "50",
+            "pixel_x": 162.5,
+            "pixel_y": 670.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "100",
+            "pixel_x": 162.5,
+            "pixel_y": 513.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "150",
+            "pixel_x": 162.5,
+            "pixel_y": 355.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 162.5,
+            "pixel_y": 198.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          },
+          {
+            "axis": "y",
+            "tick_value": "250",
+            "pixel_x": 162.5,
+            "pixel_y": 41.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick center from 4 px horizontal tick mark."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Labeled bottom-axis ticks 500 through 2500 are nearly uniformly spaced at about 116 px per 250 units.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit report chose a linear model with normalized RMSE about 0.0003; the log10 candidate was much worse.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Labeled left-axis ticks 0, 50, 100, 150, 200, 250 are uniformly spaced at about 157 px per 50 units, and a zero tick is present.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit report chose a linear model with normalized RMSE about 0.0003; log10 is incompatible with the visible zero tick.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": [
+          "No explicit subpanel label is printed; panel identification relies on the figure being single-panel.",
+          "The x-axis continues left of the first labeled 500 tick; that unlabeled left bound was not used as an anchor."
+        ]
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-d_raman_06",
+        "figure_id": "figure_d_raman_06",
+        "panel_id": "panel_d_raman_06",
+        "panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\tmp\\panel_crop.png",
+        "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_overlay.png",
+        "plot_area_box_cropped": [
+          137,
+          13,
+          1116,
+          802
+        ],
+        "x_axis_type": "linear",
+        "y_axis_type": "linear",
+        "legend_entries": [],
+        "panel_type": "raman_spectrum",
+        "overlap_recovery_recommended": false,
+        "overlap_recovery_reason": "Single unlabeled Raman trace with no overlapping peer curves or hidden segments requiring recovery.",
+        "curves": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "unlabeled black spectrum",
+            "condition_label": "",
+            "catalyst_context": "",
+            "stroke_color": "black",
+            "line_style": "solid",
+            "marker_style": "no markers",
+            "point_coordinate_system": "cropped_panel",
+            "sampled_points": [
+              {
+                "pixel_x": 149,
+                "pixel_y": 545.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 167,
+                "pixel_y": 537,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 185,
+                "pixel_y": 548,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 203,
+                "pixel_y": 551.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 221,
+                "pixel_y": 544.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 239,
+                "pixel_y": 537,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 257,
+                "pixel_y": 538.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 267,
+                "pixel_y": 504.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 277,
+                "pixel_y": 444.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 287,
+                "pixel_y": 344.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 297,
+                "pixel_y": 298.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 307,
+                "pixel_y": 342,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 317,
+                "pixel_y": 464,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 327,
+                "pixel_y": 516,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 347,
+                "pixel_y": 548.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 365,
+                "pixel_y": 550,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 383,
+                "pixel_y": 553.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 401,
+                "pixel_y": 543.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 419,
+                "pixel_y": 547.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 437,
+                "pixel_y": 551,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 455,
+                "pixel_y": 548.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 473,
+                "pixel_y": 547,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 491,
+                "pixel_y": 543.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 497,
+                "pixel_y": 549,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 507,
+                "pixel_y": 527.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 517,
+                "pixel_y": 493,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 527,
+                "pixel_y": 438,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 537,
+                "pixel_y": 358,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 547,
+                "pixel_y": 250,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 557,
+                "pixel_y": 199.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 567,
+                "pixel_y": 158.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 577,
+                "pixel_y": 222.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 587,
+                "pixel_y": 284.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 597,
+                "pixel_y": 370,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 607,
+                "pixel_y": 459.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 617,
+                "pixel_y": 488.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 627,
+                "pixel_y": 532,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 653,
+                "pixel_y": 560.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 671,
+                "pixel_y": 545,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 689,
+                "pixel_y": 545.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 707,
+                "pixel_y": 553.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 725,
+                "pixel_y": 553.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 743,
+                "pixel_y": 548.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 761,
+                "pixel_y": 554.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 779,
+                "pixel_y": 553,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 797,
+                "pixel_y": 554.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 815,
+                "pixel_y": 551.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 833,
+                "pixel_y": 565.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 851,
+                "pixel_y": 552.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 869,
+                "pixel_y": 545.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 887,
+                "pixel_y": 538,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 905,
+                "pixel_y": 558.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 923,
+                "pixel_y": 555,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 941,
+                "pixel_y": 542.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 959,
+                "pixel_y": 527,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 977,
+                "pixel_y": 557.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 995,
+                "pixel_y": 544,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1013,
+                "pixel_y": 538,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1031,
+                "pixel_y": 550.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1049,
+                "pixel_y": 543.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1067,
+                "pixel_y": 545.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1085,
+                "pixel_y": 558.5,
+                "confidence": 0.97
+              },
+              {
+                "pixel_x": 1103,
+                "pixel_y": 546,
+                "confidence": 0.97
+              }
+            ],
+            "visible_segment_status": "complete",
+            "overlap_notes": "",
+            "overlap_recovery_candidate": false,
+            "suspected_gap_notes": "",
+            "usable_for_normalization": "yes",
+            "confidence": 0.97
+          }
+        ],
+        "interpretation_notes": "Single main-plot black Raman spectrum trace extracted conservatively from the plot area only; no legend, inset, or additional curves are present.",
+        "qc": {
+          "curve_count_estimated_correctly": true,
+          "legend_curve_mapping_complete": "yes",
+          "main_plot_only": "yes",
+          "points_cover_visible_extent": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_overlap_diagnostic.png",
+      "overlap_qa": {
+        "panel_id": "panel_d_raman_06",
+        "figure_id": "figure_d_raman_06",
+        "curve_scores": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "unlabeled black spectrum",
+            "stroke_color": "black",
+            "sampled_point_count": 63,
+            "dense_point_count": 2007,
+            "point_hit_rate": 1.0,
+            "median_distance_px": 0.0,
+            "p95_distance_px": 0.0,
+            "x_coverage_fraction": 0.9745,
+            "y_coverage_fraction": 0.5171,
+            "dominant_coverage_axis": "x",
+            "dominant_coverage_fraction": 0.9745,
+            "minimum_x_coverage_required": 0.8,
+            "coverage_expectation_met": true,
+            "quality": "pass",
+            "near_left_border_fraction": 0.0,
+            "near_right_border_fraction": 0.0,
+            "near_top_border_fraction": 0.0,
+            "near_bottom_border_fraction": 0.0,
+            "dominant_border": "left",
+            "dominant_border_fraction": 0.0,
+            "border_lock_suspected": false,
+            "marker_center_candidate_count": 0,
+            "marker_center_candidate_fraction": 0.0,
+            "marker_center_alignment_rate": null,
+            "marker_center_warn_alignment_rate": null,
+            "marker_center_median_offset_px": null,
+            "marker_center_p95_offset_px": null,
+            "marker_rim_lock_suspected": false
+          }
+        ],
+        "pairwise_overlap_scores": [],
+        "summary": {
+          "pass_count": 1,
+          "warn_count": 0,
+          "fail_count": 0,
+          "pairwise_review_count": 0,
+          "panel_quality": "pass",
+          "manual_review_required": false
+        },
+        "recommended_standard": {
+          "curve_fit_to_visible_stroke": {
+            "pass": {
+              "point_hit_rate_gte": 0.85,
+              "median_distance_px_lte": 2.5,
+              "p95_distance_px_lte": 5.0,
+              "minimum_dominant_coverage_complete_curve_gte": 0.8,
+              "minimum_dominant_coverage_partial_curve_gte": 0.55
+            },
+            "warn": {
+              "point_hit_rate_gte": 0.7,
+              "median_distance_px_lte": 4.0,
+              "p95_distance_px_lte": 8.0
+            },
+            "advisories": {
+              "border_lock_threshold_px": 6,
+              "border_lock_suspected_fraction_gte": 0.45,
+              "marker_center_pass_offset_px_lte": 2.5,
+              "marker_center_warn_offset_px_lte": 4.0,
+              "marker_center_min_candidate_count": 8,
+              "marker_curve_pass_point_hit_rate_gte": 0.75,
+              "marker_curve_pass_p95_distance_px_lte": 8.0,
+              "marker_curve_warn_point_hit_rate_gte": 0.55,
+              "marker_curve_warn_p95_distance_px_lte": 11.0,
+              "note": "For marker-bearing curves, strong near-border fractions can indicate marker-rim or frame-lock tracing even when color overlap is high. Hollow-marker centerline traces use relaxed stroke-overlap thresholds only when marker-center alignment is also good."
+            }
+          },
+          "pairwise_overlap": {
+            "ambiguous_if_vertical_separation_px_lte": 4,
+            "minimum_contiguous_overlap_run_px": 12,
+            "review_if_ambiguous_fraction_gt_same_color": 0.08,
+            "review_if_ambiguous_fraction_gt_different_color": 0.15
+          },
+          "panel_acceptance": {
+            "pass": "all curves pass and no pairwise review flags",
+            "warn": "no curve fails, but at least one curve warns or at least one pair is overlap-flagged",
+            "fail": "at least one curve fails stroke agreement or extent coverage"
+          }
+        }
+      },
+      "overlap_qa_error": "",
+      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views\\contact_sheet.png",
+      "curve_views_manifest": {
+        "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\response.json",
+        "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\panel_crop.png",
+        "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_overlap_score.json",
+        "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views",
+        "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views\\contact_sheet.png",
+        "curves": [
+          {
+            "curve_id": "curve_1",
+            "curve_label": "unlabeled black spectrum",
+            "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views\\curve_1_unlabeled_black_spectrum.png",
+            "crop_view_path": "",
+            "crop_box": [
+              79,
+              88,
+              1173,
+              636
+            ],
+            "qa": {
+              "curve_id": "curve_1",
+              "curve_label": "unlabeled black spectrum",
+              "stroke_color": "black",
+              "sampled_point_count": 63,
+              "dense_point_count": 2007,
+              "point_hit_rate": 1.0,
+              "median_distance_px": 0.0,
+              "p95_distance_px": 0.0,
+              "x_coverage_fraction": 0.9745,
+              "y_coverage_fraction": 0.5171,
+              "dominant_coverage_axis": "x",
+              "dominant_coverage_fraction": 0.9745,
+              "minimum_x_coverage_required": 0.8,
+              "coverage_expectation_met": true,
+              "quality": "pass",
+              "near_left_border_fraction": 0.0,
+              "near_right_border_fraction": 0.0,
+              "near_top_border_fraction": 0.0,
+              "near_bottom_border_fraction": 0.0,
+              "dominant_border": "left",
+              "dominant_border_fraction": 0.0,
+              "border_lock_suspected": false,
+              "marker_center_candidate_count": 0,
+              "marker_center_candidate_fraction": 0.0,
+              "marker_center_alignment_rate": null,
+              "marker_center_warn_alignment_rate": null,
+              "marker_center_median_offset_px": null,
+              "marker_center_p95_offset_px": null,
+              "marker_rim_lock_suspected": false
+            }
+          }
+        ]
+      },
+      "curve_views_error": "",
+      "revision_metadata": {
+        "revision_attempted": false,
+        "revision_applied": false,
+        "revision_error": ""
+      },
+      "error": "",
+      "overlap_recovery_recommended": false,
+      "overlap_recovery_reason": "Single unlabeled Raman trace with no overlapping peer curves or hidden segments requiring recovery."
+    }
+  ],
+  "recovery_queue": [],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-d_raman_06-figure_d_raman_06-panel_d_raman_06-normalize-panel-curves",
+      "task_type": "normalize_panel_curves",
+      "case_id": "d_raman_06",
+      "paper_id": "focused-curve-v4-1-d_raman_06",
+      "paper_title": "Focused curve extraction benchmark v4.1: Raman 06",
+      "figure_id": "figure_d_raman_06",
+      "figure_label": "d_Raman_06",
+      "panel_id": "panel_d_raman_06",
+      "panel_label": "",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\panel_crop.png",
+      "curve_extraction_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\response.json",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_anchoring\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\tmp\\axis_fit_output.json",
+      "x_axis_label": "Raman shift",
+      "x_axis_units": "cm^-1",
+      "y_axis_label": "Intensity",
+      "y_axis_units": "a.u.",
+      "x_axis_type": "linear",
+      "y_axis_type": "linear",
+      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_overlap_diagnostic.png",
+      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_panel_curve_extraction\\panel_runs\\figure_d_raman_06__panel_d_raman_06\\curve_views\\contact_sheet.png",
+      "overlap_panel_quality": "pass",
+      "overlap_manual_review_required": false,
+      "overlap_fail_count": 0
+    }
+  ]
+}

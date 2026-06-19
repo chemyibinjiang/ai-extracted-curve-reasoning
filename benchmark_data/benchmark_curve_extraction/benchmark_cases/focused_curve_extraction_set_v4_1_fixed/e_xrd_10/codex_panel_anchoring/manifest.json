@@ -1,0 +1,434 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T04:25:33.034151+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "e_xrd_10",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-e_xrd_10-figure_e_xrd_10-panel_e_xrd_10-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "e_xrd_10",
+        "paper_id": "focused-curve-v4-1-e_xrd_10",
+        "paper_title": "Focused curve extraction benchmark v4.1: XRD 10",
+        "figure_id": "figure_e_xrd_10",
+        "figure_label": "e_XRD_10",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\e_xrd_10.png",
+        "panel_id": "panel_e_xrd_10",
+        "panel_label": "e_XRD_10",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel XRD benchmark chart, variant 10. Scenario: mixed-phase extra peaks.",
+        "caption_snippet": "Synthetic single-panel XRD benchmark chart, variant 10. Scenario: mixed-phase extra peaks.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel XRD pattern benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-e_xrd_10",
+        "figure_id": "figure_e_xrd_10",
+        "panel_id": "panel_e_xrd_10",
+        "target_panel_label": "e_XRD_10",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          24,
+          24,
+          1161,
+          926
+        ],
+        "plot_area_box_cropped": [
+          137,
+          3,
+          1117,
+          793
+        ],
+        "panel_border_completeness": "complete",
+        "panel_type": "xrd_pattern",
+        "x_axis_tick_labels": [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50",
+          "60",
+          "70",
+          "80"
+        ],
+        "x_axis_label": "2θ",
+        "x_axis_units": "degree",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "100",
+          "200",
+          "300",
+          "400",
+          "500",
+          "600"
+        ],
+        "y_axis_label": "Intensity",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "no",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel XRD pattern occupying the full figure. No visible subpanel label, legend, or inset. Short vertical sticks near the baseline are reference markers within the plot, not axis ticks.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "10",
+            "pixel_x": 138.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Left x-axis tick at the y-axis intersection."
+          },
+          {
+            "axis": "x",
+            "tick_value": "20",
+            "pixel_x": 277.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major x tick label 20 is clearly visible."
+          },
+          {
+            "axis": "x",
+            "tick_value": "30",
+            "pixel_x": 417.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major x tick label 30 is clearly visible."
+          },
+          {
+            "axis": "x",
+            "tick_value": "40",
+            "pixel_x": 556.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major x tick label 40 is clearly visible."
+          },
+          {
+            "axis": "x",
+            "tick_value": "50",
+            "pixel_x": 696.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major x tick label 50 is clearly visible."
+          },
+          {
+            "axis": "x",
+            "tick_value": "60",
+            "pixel_x": 835.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major x tick label 60 is clearly visible."
+          },
+          {
+            "axis": "x",
+            "tick_value": "70",
+            "pixel_x": 975.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major x tick label 70 is clearly visible."
+          },
+          {
+            "axis": "x",
+            "tick_value": "80",
+            "pixel_x": 1114.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Right x-axis endpoint tick is clearly visible."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 138.5,
+            "pixel_y": 790.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.99,
+            "note": "Bottom y tick at the axis origin."
+          },
+          {
+            "axis": "y",
+            "tick_value": "100",
+            "pixel_x": 138.5,
+            "pixel_y": 669.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major y tick label 100 is clearly visible."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 138.5,
+            "pixel_y": 548.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major y tick label 200 is clearly visible."
+          },
+          {
+            "axis": "y",
+            "tick_value": "300",
+            "pixel_x": 138.5,
+            "pixel_y": 427.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major y tick label 300 is clearly visible."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 138.5,
+            "pixel_y": 306.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major y tick label 400 is clearly visible."
+          },
+          {
+            "axis": "y",
+            "tick_value": "500",
+            "pixel_x": 138.5,
+            "pixel_y": 185.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Major y tick label 500 is clearly visible."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 138.5,
+            "pixel_y": 65.5,
+            "coordinate_system": "cropped_panel",
+            "confidence": 0.98,
+            "note": "Top major y tick label 600 is clearly visible."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Evenly spaced major ticks labeled 10 through 80 in 10-degree increments.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit report selected a linear model with normalized RMSE about 0.00025; log10 was much worse.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Evenly spaced major ticks labeled 0 through 600 in 100 a.u. increments.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit report selected a linear model with normalized RMSE about 0.00038; log10 is incompatible with the visible zero tick.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": []
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-e_xrd_10-figure_e_xrd_10-panel_e_xrd_10-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "e_xrd_10",
+      "paper_id": "focused-curve-v4-1-e_xrd_10",
+      "paper_title": "Focused curve extraction benchmark v4.1: XRD 10",
+      "figure_id": "figure_e_xrd_10",
+      "figure_label": "e_XRD_10",
+      "panel_id": "panel_e_xrd_10",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\e_xrd_10.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        24,
+        24,
+        1161,
+        926
+      ],
+      "plot_area_box_cropped": [
+        137,
+        3,
+        1117,
+        793
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "10",
+          "pixel_x": 138.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Left x-axis tick at the y-axis intersection."
+        },
+        {
+          "axis": "x",
+          "tick_value": "20",
+          "pixel_x": 277.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major x tick label 20 is clearly visible."
+        },
+        {
+          "axis": "x",
+          "tick_value": "30",
+          "pixel_x": 417.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major x tick label 30 is clearly visible."
+        },
+        {
+          "axis": "x",
+          "tick_value": "40",
+          "pixel_x": 556.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major x tick label 40 is clearly visible."
+        },
+        {
+          "axis": "x",
+          "tick_value": "50",
+          "pixel_x": 696.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major x tick label 50 is clearly visible."
+        },
+        {
+          "axis": "x",
+          "tick_value": "60",
+          "pixel_x": 835.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major x tick label 60 is clearly visible."
+        },
+        {
+          "axis": "x",
+          "tick_value": "70",
+          "pixel_x": 975.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major x tick label 70 is clearly visible."
+        },
+        {
+          "axis": "x",
+          "tick_value": "80",
+          "pixel_x": 1114.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Right x-axis endpoint tick is clearly visible."
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "0",
+          "pixel_x": 138.5,
+          "pixel_y": 790.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.99,
+          "note": "Bottom y tick at the axis origin."
+        },
+        {
+          "axis": "y",
+          "tick_value": "100",
+          "pixel_x": 138.5,
+          "pixel_y": 669.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major y tick label 100 is clearly visible."
+        },
+        {
+          "axis": "y",
+          "tick_value": "200",
+          "pixel_x": 138.5,
+          "pixel_y": 548.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major y tick label 200 is clearly visible."
+        },
+        {
+          "axis": "y",
+          "tick_value": "300",
+          "pixel_x": 138.5,
+          "pixel_y": 427.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major y tick label 300 is clearly visible."
+        },
+        {
+          "axis": "y",
+          "tick_value": "400",
+          "pixel_x": 138.5,
+          "pixel_y": 306.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major y tick label 400 is clearly visible."
+        },
+        {
+          "axis": "y",
+          "tick_value": "500",
+          "pixel_x": 138.5,
+          "pixel_y": 185.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Major y tick label 500 is clearly visible."
+        },
+        {
+          "axis": "y",
+          "tick_value": "600",
+          "pixel_x": 138.5,
+          "pixel_y": 65.5,
+          "coordinate_system": "cropped_panel",
+          "confidence": 0.98,
+          "note": "Top major y tick label 600 is clearly visible."
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel XRD benchmark chart, variant 10. Scenario: mixed-phase extra peaks.",
+      "special_notes": "Benchmark task seeded as a single-panel XRD pattern benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_10__panel_e_xrd_10\\response.json"
+    }
+  ]
+}

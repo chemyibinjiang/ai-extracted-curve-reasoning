@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T04:32:51.708596+00:00",
+  "runner": "codex_exec_panel_anchoring",
+  "case_id": "f_gc_trace_09",
+  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09",
+  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_orchestrator\\panel_tasks.jsonl",
+  "total_panel_tasks_requested": 1,
+  "successful_panel_runs": 1,
+  "curve_tasks": 1,
+  "panels": [
+    {
+      "task": {
+        "task_id": "focused-curve-v4-1-f_gc_trace_09-figure_f_gc_trace_09-panel_f_gc_trace_09-panel-anchoring",
+        "task_type": "panel_anchoring",
+        "case_id": "f_gc_trace_09",
+        "paper_id": "focused-curve-v4-1-f_gc_trace_09",
+        "paper_title": "Focused curve extraction benchmark v4.1: GC_trace 09",
+        "figure_id": "figure_f_gc_trace_09",
+        "figure_label": "f_GC_trace_09",
+        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\f_gc_trace_09.png",
+        "panel_id": "panel_f_gc_trace_09",
+        "panel_label": "f_GC_trace_09",
+        "priority": "high",
+        "figure_caption": "Synthetic single-panel GC_trace benchmark chart, variant 09. Scenario: dominant solvent-like peak.",
+        "caption_snippet": "Synthetic single-panel GC_trace benchmark chart, variant 09. Scenario: dominant solvent-like peak.",
+        "candidate_catalysts": [],
+        "reason": "Synthetic benchmark chart; every panel is intentionally routed for curve anchoring and extraction.",
+        "special_notes": "Benchmark task seeded as a single-panel gas-chromatography trace benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
+      },
+      "status": "completed",
+      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\response.json",
+      "response": {
+        "paper_id": "focused-curve-v4-1-f_gc_trace_09",
+        "figure_id": "figure_f_gc_trace_09",
+        "panel_id": "panel_f_gc_trace_09",
+        "target_panel_label": "f_GC_trace_09",
+        "detected_panel_label": "",
+        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\panel_crop.png",
+        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\panel_annotated.png",
+        "axis_fit_script_used": true,
+        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\tmp\\axis_fit_output.json",
+        "crop_box_original": [
+          10,
+          10,
+          1195,
+          940
+        ],
+        "plot_area_box_cropped": [
+          170,
+          17,
+          1150,
+          806
+        ],
+        "panel_border_completeness": "complete",
+        "panel_type": "chromatogram",
+        "x_axis_tick_labels": [
+          "0",
+          "2",
+          "4",
+          "6",
+          "8",
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "x_axis_label": "Retention time",
+        "x_axis_units": "min",
+        "x_axis_shared_outside_crop": "no",
+        "y_axis_tick_labels": [
+          "0",
+          "200",
+          "400",
+          "600",
+          "800",
+          "1000"
+        ],
+        "y_axis_label": "Signal",
+        "y_axis_units": "a.u.",
+        "y_axis_shared_outside_crop": "no",
+        "legend_present": "no",
+        "inset_present": "no",
+        "interpretation_notes": "Single-panel GC chromatogram with a boxed axes region, one dominant peak near 6 min, and smaller peaks near about 3.5 and 12 min. No legend or inset is present. No explicit printed panel label is visible in the image; panel assignment relies on the single-panel figure context.",
+        "anchor_points": [
+          {
+            "axis": "x",
+            "tick_value": "0",
+            "pixel_x": 181.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 0."
+          },
+          {
+            "axis": "x",
+            "tick_value": "2",
+            "pixel_x": 303.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 2."
+          },
+          {
+            "axis": "x",
+            "tick_value": "4",
+            "pixel_x": 425.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 4."
+          },
+          {
+            "axis": "x",
+            "tick_value": "6",
+            "pixel_x": 547.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 6."
+          },
+          {
+            "axis": "x",
+            "tick_value": "8",
+            "pixel_x": 669.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 8."
+          },
+          {
+            "axis": "x",
+            "tick_value": "10",
+            "pixel_x": 791.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 10."
+          },
+          {
+            "axis": "x",
+            "tick_value": "12",
+            "pixel_x": 914.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 12."
+          },
+          {
+            "axis": "x",
+            "tick_value": "14",
+            "pixel_x": 1036.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 14."
+          },
+          {
+            "axis": "x",
+            "tick_value": "16",
+            "pixel_x": 1158.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Bottom-axis tick mark center aligned with visible label 16."
+          },
+          {
+            "axis": "y",
+            "tick_value": "0",
+            "pixel_x": 181.5,
+            "pixel_y": 814.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick mark center aligned with visible label 0."
+          },
+          {
+            "axis": "y",
+            "tick_value": "200",
+            "pixel_x": 181.5,
+            "pixel_y": 668.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick mark center aligned with visible label 200."
+          },
+          {
+            "axis": "y",
+            "tick_value": "400",
+            "pixel_x": 181.5,
+            "pixel_y": 523.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick mark center aligned with visible label 400."
+          },
+          {
+            "axis": "y",
+            "tick_value": "600",
+            "pixel_x": 181.5,
+            "pixel_y": 378.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick mark center aligned with visible label 600."
+          },
+          {
+            "axis": "y",
+            "tick_value": "800",
+            "pixel_x": 181.5,
+            "pixel_y": 232.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick mark center aligned with visible label 800."
+          },
+          {
+            "axis": "y",
+            "tick_value": "1000",
+            "pixel_x": 181.5,
+            "pixel_y": 87.5,
+            "coordinate_system": "original_figure",
+            "confidence": 0.99,
+            "note": "Left-axis tick mark center aligned with visible label 1000."
+          }
+        ],
+        "axis_mapping": {
+          "x": {
+            "visible_pattern": "Bottom-axis ticks labeled 0 through 16 at even 2-minute intervals are evenly spaced across the boxed plot area.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validator chose a linear model with normalized RMSE about 0.0003; log10 was rejected because a zero tick is present.",
+            "usable_for_downstream": "yes"
+          },
+          "y": {
+            "visible_pattern": "Left-axis ticks labeled 0 through 1000 at even 200-unit intervals are evenly spaced vertically.",
+            "candidate_models": [
+              "linear",
+              "log10"
+            ],
+            "chosen_model": "linear",
+            "justification": "Axis-fit validator chose a linear model with normalized RMSE about 0.0004; log10 was rejected because a zero tick is present.",
+            "usable_for_downstream": "yes"
+          }
+        },
+        "qc": {
+          "correct_panel_identified": true,
+          "crop_complete": "yes",
+          "x_tick_labels_complete": "yes",
+          "y_tick_labels_complete": "yes",
+          "axis_labels_captured_or_marked_shared": "yes",
+          "inset_handled_correctly": "yes",
+          "shared_legend_axis_issues_recorded": "yes",
+          "manual_review_required": false
+        },
+        "unresolved_ambiguities": [
+          "No explicit printed panel label is visible; panel identity is inferred from the single-panel figure context."
+        ]
+      },
+      "error": ""
+    }
+  ],
+  "next_stage_queue": [
+    {
+      "task_id": "focused-curve-v4-1-f_gc_trace_09-figure_f_gc_trace_09-panel_f_gc_trace_09-curve-extraction",
+      "task_type": "curve_extraction",
+      "case_id": "f_gc_trace_09",
+      "paper_id": "focused-curve-v4-1-f_gc_trace_09",
+      "paper_title": "Focused curve extraction benchmark v4.1: GC_trace 09",
+      "figure_id": "figure_f_gc_trace_09",
+      "figure_label": "f_GC_trace_09",
+      "panel_id": "panel_f_gc_trace_09",
+      "panel_label": "",
+      "candidate_catalysts": [],
+      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\f_gc_trace_09.png",
+      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\panel_crop.png",
+      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\panel_annotated.png",
+      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\tmp\\axis_fit_output.json",
+      "axis_fit_script_used": true,
+      "crop_box_original": [
+        10,
+        10,
+        1195,
+        940
+      ],
+      "plot_area_box_cropped": [
+        170,
+        17,
+        1150,
+        806
+      ],
+      "x_axis_anchors": [
+        {
+          "axis": "x",
+          "tick_value": "0",
+          "pixel_x": 181.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 0."
+        },
+        {
+          "axis": "x",
+          "tick_value": "2",
+          "pixel_x": 303.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 2."
+        },
+        {
+          "axis": "x",
+          "tick_value": "4",
+          "pixel_x": 425.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 4."
+        },
+        {
+          "axis": "x",
+          "tick_value": "6",
+          "pixel_x": 547.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 6."
+        },
+        {
+          "axis": "x",
+          "tick_value": "8",
+          "pixel_x": 669.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 8."
+        },
+        {
+          "axis": "x",
+          "tick_value": "10",
+          "pixel_x": 791.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 10."
+        },
+        {
+          "axis": "x",
+          "tick_value": "12",
+          "pixel_x": 914.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 12."
+        },
+        {
+          "axis": "x",
+          "tick_value": "14",
+          "pixel_x": 1036.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 14."
+        },
+        {
+          "axis": "x",
+          "tick_value": "16",
+          "pixel_x": 1158.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Bottom-axis tick mark center aligned with visible label 16."
+        }
+      ],
+      "y_axis_anchors": [
+        {
+          "axis": "y",
+          "tick_value": "0",
+          "pixel_x": 181.5,
+          "pixel_y": 814.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick mark center aligned with visible label 0."
+        },
+        {
+          "axis": "y",
+          "tick_value": "200",
+          "pixel_x": 181.5,
+          "pixel_y": 668.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick mark center aligned with visible label 200."
+        },
+        {
+          "axis": "y",
+          "tick_value": "400",
+          "pixel_x": 181.5,
+          "pixel_y": 523.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick mark center aligned with visible label 400."
+        },
+        {
+          "axis": "y",
+          "tick_value": "600",
+          "pixel_x": 181.5,
+          "pixel_y": 378.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick mark center aligned with visible label 600."
+        },
+        {
+          "axis": "y",
+          "tick_value": "800",
+          "pixel_x": 181.5,
+          "pixel_y": 232.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick mark center aligned with visible label 800."
+        },
+        {
+          "axis": "y",
+          "tick_value": "1000",
+          "pixel_x": 181.5,
+          "pixel_y": 87.5,
+          "coordinate_system": "original_figure",
+          "confidence": 0.99,
+          "note": "Left-axis tick mark center aligned with visible label 1000."
+        }
+      ],
+      "x_axis_type_guess": "linear",
+      "y_axis_type_guess": "linear",
+      "caption_snippet": "Synthetic single-panel GC_trace benchmark chart, variant 09. Scenario: dominant solvent-like peak.",
+      "special_notes": "Benchmark task seeded as a single-panel gas-chromatography trace benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
+      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_09__panel_f_gc_trace_09\\response.json"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "panel_id": "panel_a_lsv_04",
+  "figure_id": "figure_a_lsv_04",
+  "curve_scores": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "FeNi-1",
+      "stroke_color": "black",
+      "sampled_point_count": 55,
+      "dense_point_count": 1112,
+      "point_hit_rate": 1.0,
+      "median_distance_px": 0.0,
+      "p95_distance_px": 0.0,
+      "x_coverage_fraction": 0.9908,
+      "y_coverage_fraction": 0.8456,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.9908,
+      "minimum_x_coverage_required": 0.8,
+      "coverage_expectation_met": true,
+      "quality": "pass",
+      "near_left_border_fraction": 0.0182,
+      "near_right_border_fraction": 0.0182,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.0,
+      "dominant_border": "left",
+      "dominant_border_fraction": 0.0182,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 0,
+      "marker_center_candidate_fraction": 0.0,
+      "marker_center_alignment_rate": null,
+      "marker_center_warn_alignment_rate": null,
+      "marker_center_median_offset_px": null,
+      "marker_center_p95_offset_px": null,
+      "marker_rim_lock_suspected": false
+    },
+    {
+      "curve_id": "curve_2",
+      "curve_label": "FeNi-2",
+      "stroke_color": "blue",
+      "sampled_point_count": 41,
+      "dense_point_count": 862,
+      "point_hit_rate": 0.8991,
+      "median_distance_px": 0.0,
+      "p95_distance_px": 4.0,
+      "x_coverage_fraction": 0.7592,
+      "y_coverage_fraction": 0.6873,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.7592,
+      "minimum_x_coverage_required": 0.55,
+      "coverage_expectation_met": true,
+      "quality": "pass",
+      "near_left_border_fraction": 0.0,
+      "near_right_border_fraction": 0.0,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.0,
+      "dominant_border": "left",
+      "dominant_border_fraction": 0.0,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 0,
+      "marker_center_candidate_fraction": 0.0,
+      "marker_center_alignment_rate": null,
+      "marker_center_warn_alignment_rate": null,
+      "marker_center_median_offset_px": null,
+      "marker_center_p95_offset_px": null,
+      "marker_rim_lock_suspected": false
+    },
+    {
+      "curve_id": "curve_3",
+      "curve_label": "FeNi-3",
+      "stroke_color": "red",
+      "sampled_point_count": 54,
+      "dense_point_count": 1039,
+      "point_hit_rate": 0.8903,
+      "median_distance_px": 0.0,
+      "p95_distance_px": 4.1231,
+      "x_coverage_fraction": 0.9888,
+      "y_coverage_fraction": 0.8937,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.9888,
+      "minimum_x_coverage_required": 0.8,
+      "coverage_expectation_met": true,
+      "quality": "pass",
+      "near_left_border_fraction": 0.0185,
+      "near_right_border_fraction": 0.0,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.0,
+      "dominant_border": "left",
+      "dominant_border_fraction": 0.0185,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 0,
+      "marker_center_candidate_fraction": 0.0,
+      "marker_center_alignment_rate": null,
+      "marker_center_warn_alignment_rate": null,
+      "marker_center_median_offset_px": null,
+      "marker_center_p95_offset_px": null,
+      "marker_rim_lock_suspected": false
+    },
+    {
+      "curve_id": "curve_4",
+      "curve_label": "Ni foam",
+      "stroke_color": "green",
+      "sampled_point_count": 48,
+      "dense_point_count": 973,
+      "point_hit_rate": 0.8027,
+      "median_distance_px": 1.0,
+      "p95_distance_px": 4.1231,
+      "x_coverage_fraction": 0.9908,
+      "y_coverage_fraction": 0.4177,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.9908,
+      "minimum_x_coverage_required": 0.8,
+      "coverage_expectation_met": true,
+      "quality": "warn",
+      "near_left_border_fraction": 0.0208,
+      "near_right_border_fraction": 0.0208,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.1042,
+      "dominant_border": "bottom",
+      "dominant_border_fraction": 0.1042,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 0,
+      "marker_center_candidate_fraction": 0.0,
+      "marker_center_alignment_rate": null,
+      "marker_center_warn_alignment_rate": null,
+      "marker_center_median_offset_px": null,
+      "marker_center_p95_offset_px": null,
+      "marker_rim_lock_suspected": false
+    }
+  ],
+  "pairwise_overlap_scores": [
+    {
+      "curve_a": "FeNi-1",
+      "curve_b": "FeNi-2",
+      "same_color_group": false,
+      "shared_x_count": 745,
+      "median_vertical_separation_px": 111.2778,
+      "p95_vertical_separation_px": 128.4444,
+      "ambiguous_fraction": 0.0,
+      "overlap_x_ranges": [],
+      "review_required": false
+    },
+    {
+      "curve_a": "FeNi-1",
+      "curve_b": "FeNi-3",
+      "same_color_group": false,
+      "shared_x_count": 970,
+      "median_vertical_separation_px": 22.4722,
+      "p95_vertical_separation_px": 109.1111,
+      "ambiguous_fraction": 0.0258,
+      "overlap_x_ranges": [
+        [
+          504,
+          516
+        ],
+        [
+          1017,
+          1028
+        ]
+      ],
+      "review_required": true
+    },
+    {
+      "curve_a": "FeNi-1",
+      "curve_b": "Ni foam",
+      "same_color_group": false,
+      "shared_x_count": 972,
+      "median_vertical_separation_px": 294.1111,
+      "p95_vertical_separation_px": 440.2222,
+      "ambiguous_fraction": 0.0195,
+      "overlap_x_ranges": [
+        [
+          176,
+          194
+        ]
+      ],
+      "review_required": true
+    },
+    {
+      "curve_a": "FeNi-2",
+      "curve_b": "FeNi-3",
+      "same_color_group": false,
+      "shared_x_count": 745,
+      "median_vertical_separation_px": 65.0556,
+      "p95_vertical_separation_px": 151.5556,
+      "ambiguous_fraction": 0.0121,
+      "overlap_x_ranges": [],
+      "review_required": false
+    },
+    {
+      "curve_a": "FeNi-2",
+      "curve_b": "Ni foam",
+      "same_color_group": false,
+      "shared_x_count": 745,
+      "median_vertical_separation_px": 241.1111,
+      "p95_vertical_separation_px": 334.0,
+      "ambiguous_fraction": 0.0,
+      "overlap_x_ranges": [],
+      "review_required": false
+    },
+    {
+      "curve_a": "FeNi-3",
+      "curve_b": "Ni foam",
+      "same_color_group": false,
+      "shared_x_count": 970,
+      "median_vertical_separation_px": 213.75,
+      "p95_vertical_separation_px": 386.3889,
+      "ambiguous_fraction": 0.0,
+      "overlap_x_ranges": [],
+      "review_required": false
+    }
+  ],
+  "summary": {
+    "pass_count": 3,
+    "warn_count": 1,
+    "fail_count": 0,
+    "pairwise_review_count": 2,
+    "panel_quality": "warn",
+    "manual_review_required": true
+  },
+  "recommended_standard": {
+    "curve_fit_to_visible_stroke": {
+      "pass": {
+        "point_hit_rate_gte": 0.85,
+        "median_distance_px_lte": 2.5,
+        "p95_distance_px_lte": 5.0,
+        "minimum_dominant_coverage_complete_curve_gte": 0.8,
+        "minimum_dominant_coverage_partial_curve_gte": 0.55
+      },
+      "warn": {
+        "point_hit_rate_gte": 0.7,
+        "median_distance_px_lte": 4.0,
+        "p95_distance_px_lte": 8.0
+      },
+      "advisories": {
+        "border_lock_threshold_px": 6,
+        "border_lock_suspected_fraction_gte": 0.45,
+        "marker_center_pass_offset_px_lte": 2.5,
+        "marker_center_warn_offset_px_lte": 4.0,
+        "marker_center_min_candidate_count": 8,
+        "marker_curve_pass_point_hit_rate_gte": 0.75,
+        "marker_curve_pass_p95_distance_px_lte": 8.0,
+        "marker_curve_warn_point_hit_rate_gte": 0.55,
+        "marker_curve_warn_p95_distance_px_lte": 11.0,
+        "note": "For marker-bearing curves, strong near-border fractions can indicate marker-rim or frame-lock tracing even when color overlap is high. Hollow-marker centerline traces use relaxed stroke-overlap thresholds only when marker-center alignment is also good."
+      }
+    },
+    "pairwise_overlap": {
+      "ambiguous_if_vertical_separation_px_lte": 4,
+      "minimum_contiguous_overlap_run_px": 12,
+      "review_if_ambiguous_fraction_gt_same_color": 0.08,
+      "review_if_ambiguous_fraction_gt_different_color": 0.15
+    },
+    "panel_acceptance": {
+      "pass": "all curves pass and no pairwise review flags",
+      "warn": "no curve fails, but at least one curve warns or at least one pair is overlap-flagged",
+      "fail": "at least one curve fails stroke agreement or extent coverage"
+    }
+  }
+}

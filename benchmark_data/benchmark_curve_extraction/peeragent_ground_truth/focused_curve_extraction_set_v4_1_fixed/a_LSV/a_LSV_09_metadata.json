@@ -1,0 +1,11 @@
+{
+  "panel_tag": "a",
+  "curve_family": "LSV",
+  "variant_index": 9,
+  "scenario": "noisy experimental HER LSV",
+  "x_column": "potential_V_vs_RHE",
+  "y_column": "current_density_mA_cm-2",
+  "series_column": "series",
+  "font_used": "Liberation Sans",
+  "synthetic": true
+}
