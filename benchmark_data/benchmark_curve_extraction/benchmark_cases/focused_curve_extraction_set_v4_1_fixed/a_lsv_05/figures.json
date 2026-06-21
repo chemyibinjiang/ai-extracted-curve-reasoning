@@ -2,6 +2,6 @@
     "figure_label":  "a_LSV_05",
     "figure_caption":  "Synthetic single-panel LSV benchmark chart, variant 05. Scenario: raw versus iR-corrected LSV.",
     "legend":  "Synthetic single-panel LSV benchmark chart, variant 05. Scenario: raw versus iR-corrected LSV.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\a_lsv_05.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\a_lsv_05.png"
 }
 

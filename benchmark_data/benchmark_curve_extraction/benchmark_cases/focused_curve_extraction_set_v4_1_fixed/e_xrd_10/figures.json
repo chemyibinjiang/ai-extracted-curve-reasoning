@@ -2,6 +2,6 @@
     "figure_label":  "e_XRD_10",
     "figure_caption":  "Synthetic single-panel XRD benchmark chart, variant 10. Scenario: mixed-phase extra peaks.",
     "legend":  "Synthetic single-panel XRD benchmark chart, variant 10. Scenario: mixed-phase extra peaks.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\e_xrd_10.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\e_xrd_10.png"
 }
 

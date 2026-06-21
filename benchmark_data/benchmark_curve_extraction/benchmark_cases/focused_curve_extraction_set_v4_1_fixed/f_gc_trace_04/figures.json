@@ -2,6 +2,6 @@
     "figure_label":  "f_GC_trace_04",
     "figure_caption":  "Synthetic single-panel GC_trace benchmark chart, variant 04. Scenario: calibration standards.",
     "legend":  "Synthetic single-panel GC_trace benchmark chart, variant 04. Scenario: calibration standards.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04\\f_gc_trace_04.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04\\f_gc_trace_04.png"
 }
 

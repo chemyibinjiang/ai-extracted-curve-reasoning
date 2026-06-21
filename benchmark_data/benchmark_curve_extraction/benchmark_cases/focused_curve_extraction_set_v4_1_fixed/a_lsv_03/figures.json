@@ -2,6 +2,6 @@
     "figure_label":  "a_LSV_03",
     "figure_caption":  "Synthetic single-panel LSV benchmark chart, variant 03. Scenario: anodic OER LSV.",
     "legend":  "Synthetic single-panel LSV benchmark chart, variant 03. Scenario: anodic OER LSV.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03\\a_lsv_03.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03\\a_lsv_03.png"
 }
 

@@ -2,6 +2,6 @@
     "figure_label":  "c_UV_Vis_10",
     "figure_caption":  "Synthetic single-panel UV_Vis benchmark chart, variant 10. Scenario: cropped window with shoulder.",
     "legend":  "Synthetic single-panel UV_Vis benchmark chart, variant 10. Scenario: cropped window with shoulder.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\c_uv_vis_10.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\c_uv_vis_10.png"
 }
 

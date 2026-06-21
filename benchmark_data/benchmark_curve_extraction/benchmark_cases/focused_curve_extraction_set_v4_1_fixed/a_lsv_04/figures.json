@@ -2,6 +2,6 @@
     "figure_label":  "a_LSV_04",
     "figure_caption":  "Synthetic single-panel LSV benchmark chart, variant 04. Scenario: multi-catalyst OER with close curves.",
     "legend":  "Synthetic single-panel LSV benchmark chart, variant 04. Scenario: multi-catalyst OER with close curves.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04\\a_lsv_04.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04\\a_lsv_04.png"
 }
 

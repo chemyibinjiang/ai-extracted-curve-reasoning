@@ -5,8 +5,8 @@
     "case_id":  "e_xrd_05",
     "paper_id":  "focused-curve-v4-1-e_xrd_05",
     "paper_title":  "Focused curve extraction benchmark v4.1: XRD 05",
-    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\figures.json",
-    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\benchmark.html",
+    "figures_json_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\figures.json",
+    "html_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\benchmark.html",
     "queued_panels":  1,
     "panel_queue":  [
                         {
@@ -17,7 +17,7 @@
                             "paper_title":  "Focused curve extraction benchmark v4.1: XRD 05",
                             "figure_id":  "figure_e_xrd_05",
                             "figure_label":  "e_XRD_05",
-                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\e_xrd_05.png",
+                            "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\e_xrd_05.png",
                             "panel_id":  "panel_e_xrd_05",
                             "panel_label":  "e_XRD_05",
                             "priority":  "high",
@@ -34,7 +34,7 @@
                       "curve_family":  "XRD",
                       "variant_index":  5,
                       "scenario":  "peak shift comparison",
-                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\e_xrd_05.png"
+                      "png_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\e_xrd_05.png"
                   }
 }
 

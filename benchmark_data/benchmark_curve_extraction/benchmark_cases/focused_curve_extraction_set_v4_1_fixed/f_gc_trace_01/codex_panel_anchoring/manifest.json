@@ -3,8 +3,8 @@
   "generated_at": "2026-05-09T04:22:16.817507+00:00",
   "runner": "codex_exec_panel_anchoring",
   "case_id": "f_gc_trace_01",
-  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01",
-  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_orchestrator\\panel_tasks.jsonl",
+  "case_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01",
+  "source_panel_tasks_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_orchestrator\\panel_tasks.jsonl",
   "total_panel_tasks_requested": 1,
   "successful_panel_runs": 1,
   "curve_tasks": 1,
@@ -18,7 +18,7 @@
         "paper_title": "Focused curve extraction benchmark v4.1: GC_trace 01",
         "figure_id": "figure_f_gc_trace_01",
         "figure_label": "f_GC_trace_01",
-        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\f_gc_trace_01.png",
+        "image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\f_gc_trace_01.png",
         "panel_id": "panel_f_gc_trace_01",
         "panel_label": "f_GC_trace_01",
         "priority": "high",
@@ -29,17 +29,17 @@
         "special_notes": "Benchmark task seeded as a single-panel gas-chromatography trace benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
       },
       "status": "completed",
-      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\response.json",
+      "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\response.json",
       "response": {
         "paper_id": "focused-curve-v4-1-f_gc_trace_01",
         "figure_id": "figure_f_gc_trace_01",
         "panel_id": "panel_f_gc_trace_01",
         "target_panel_label": "f_GC_trace_01",
         "detected_panel_label": "",
-        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_crop.png",
-        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_annotated.png",
+        "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_crop.png",
+        "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_annotated.png",
         "axis_fit_script_used": true,
-        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\tmp\\axis_fit_output.json",
+        "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\tmp\\axis_fit_output.json",
         "crop_box_original": [
           0,
           0,
@@ -191,10 +191,10 @@
       "panel_id": "panel_f_gc_trace_01",
       "panel_label": "",
       "candidate_catalysts": [],
-      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\f_gc_trace_01.png",
-      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_crop.png",
-      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_annotated.png",
-      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\tmp\\axis_fit_output.json",
+      "full_figure_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\f_gc_trace_01.png",
+      "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_crop.png",
+      "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\panel_annotated.png",
+      "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\tmp\\axis_fit_output.json",
       "axis_fit_script_used": true,
       "crop_box_original": [
         0,
@@ -270,7 +270,7 @@
       "y_axis_type_guess": "linear",
       "caption_snippet": "Synthetic single-panel GC_trace benchmark chart, variant 01. Scenario: standard versus reaction mixture.",
       "special_notes": "Benchmark task seeded as a single-panel gas-chromatography trace benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
-      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\response.json"
+      "upstream_response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_01__panel_f_gc_trace_01\\response.json"
     }
   ]
 }

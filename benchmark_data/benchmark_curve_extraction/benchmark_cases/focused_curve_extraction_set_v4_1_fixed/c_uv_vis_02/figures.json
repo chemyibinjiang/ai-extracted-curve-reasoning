@@ -2,6 +2,6 @@
     "figure_label":  "c_UV_Vis_02",
     "figure_caption":  "Synthetic single-panel UV_Vis benchmark chart, variant 02. Scenario: time evolving spectra.",
     "legend":  "Synthetic single-panel UV_Vis benchmark chart, variant 02. Scenario: time evolving spectra.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02\\c_uv_vis_02.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02\\c_uv_vis_02.png"
 }
 

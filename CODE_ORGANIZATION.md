@@ -41,8 +41,10 @@ and SI:
 - `analysis/01_bvir_eoffset_fitting`
 - `analysis/02_same_panel_ptc_relative`
 
-Large exploratory posterior-draw tables, historical draft plots, and raw local
-audit folders should not be included in the public repository draft.
+The folder also includes `analysis/raw_agent_analysis_archive`, a faithful raw
+working archive for process provenance. That archive intentionally contains
+historical drafts, exploratory plots, large posterior/grid-search tables, and
+absolute local paths; it is not the clean reproducibility entry point.
 
 ## Figure Folder Convention
 

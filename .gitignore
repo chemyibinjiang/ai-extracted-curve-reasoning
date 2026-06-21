@@ -40,6 +40,8 @@ env/
 0-to_submit/
 _private_reviewer_materials/
 reviewer_only_not_for_publication/
+agent_conversation_records/0-LSV_agent_analysis_raw_data.zip
+agent_conversation_records/*.local.json
 validation/manual_proof/
 supplementary_information/raw_claim_validation_htmls/
 supplementary_information/backup_*before_deidentifying*/
@@ -54,6 +56,8 @@ data/benchmark_curve_extraction/**/_webgui_logs/
 analysis/**/source_html/
 analysis/**/context/
 analysis/**/eta10_eta50_entity_audit_agents/
+!analysis/raw_agent_analysis_archive/**/eta10_eta50_entity_audit_agents/
+!analysis/raw_agent_analysis_archive/**/eta10_eta50_entity_audit_agents/**
 figures/Figure_06_ptc_relative/deprecated_figure6_working_variants_*/
 deferred_raw_source_archives/
 

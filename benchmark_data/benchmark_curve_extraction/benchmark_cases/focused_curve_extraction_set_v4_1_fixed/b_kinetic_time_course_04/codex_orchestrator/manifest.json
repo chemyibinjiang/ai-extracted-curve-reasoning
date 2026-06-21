@@ -5,8 +5,8 @@
     "case_id":  "b_kinetic_time_course_04",
     "paper_id":  "focused-curve-v4-1-b_kinetic_time_course_04",
     "paper_title":  "Focused curve extraction benchmark v4.1: kinetic_time_course 04",
-    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\figures.json",
-    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\benchmark.html",
+    "figures_json_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\figures.json",
+    "html_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\benchmark.html",
     "queued_panels":  1,
     "panel_queue":  [
                         {
@@ -17,7 +17,7 @@
                             "paper_title":  "Focused curve extraction benchmark v4.1: kinetic_time_course 04",
                             "figure_id":  "figure_b_kinetic_time_course_04",
                             "figure_label":  "b_kinetic_time_course_04",
-                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\b_kinetic_time_course_04.png",
+                            "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\b_kinetic_time_course_04.png",
                             "panel_id":  "panel_b_kinetic_time_course_04",
                             "panel_label":  "b_kinetic_time_course_04",
                             "priority":  "high",
@@ -34,7 +34,7 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  4,
                       "scenario":  "single-step versus biphasic",
-                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\b_kinetic_time_course_04.png"
+                      "png_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\b_kinetic_time_course_04.png"
                   }
 }
 

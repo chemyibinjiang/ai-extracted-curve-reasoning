@@ -5,8 +5,8 @@
     "case_id":  "f_gc_trace_03",
     "paper_id":  "focused-curve-v4-1-f_gc_trace_03",
     "paper_title":  "Focused curve extraction benchmark v4.1: GC_trace 03",
-    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\figures.json",
-    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\benchmark.html",
+    "figures_json_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\figures.json",
+    "html_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\benchmark.html",
     "queued_panels":  1,
     "panel_queue":  [
                         {
@@ -17,7 +17,7 @@
                             "paper_title":  "Focused curve extraction benchmark v4.1: GC_trace 03",
                             "figure_id":  "figure_f_gc_trace_03",
                             "figure_label":  "f_GC_trace_03",
-                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\f_gc_trace_03.png",
+                            "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\f_gc_trace_03.png",
                             "panel_id":  "panel_f_gc_trace_03",
                             "panel_label":  "f_GC_trace_03",
                             "priority":  "high",
@@ -34,7 +34,7 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  3,
                       "scenario":  "co-eluting peaks",
-                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\f_gc_trace_03.png"
+                      "png_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\f_gc_trace_03.png"
                   }
 }
 

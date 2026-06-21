@@ -2,6 +2,6 @@
     "figure_label":  "e_XRD_06",
     "figure_caption":  "Synthetic single-panel XRD benchmark chart, variant 06. Scenario: phase transformation.",
     "legend":  "Synthetic single-panel XRD benchmark chart, variant 06. Scenario: phase transformation.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\e_xrd_06.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\e_xrd_06.png"
 }
 

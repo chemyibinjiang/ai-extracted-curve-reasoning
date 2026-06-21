@@ -3,8 +3,8 @@
   "generated_at": "2026-05-09T03:39:13.010212+00:00",
   "runner": "codex_exec_panel_anchoring",
   "case_id": "a_lsv_02",
-  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02",
-  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_orchestrator\\panel_tasks.jsonl",
+  "case_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02",
+  "source_panel_tasks_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_orchestrator\\panel_tasks.jsonl",
   "total_panel_tasks_requested": 1,
   "successful_panel_runs": 1,
   "curve_tasks": 1,
@@ -18,7 +18,7 @@
         "paper_title": "Focused curve extraction benchmark v4.1: LSV 02",
         "figure_id": "figure_a_lsv_02",
         "figure_label": "a_LSV_02",
-        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
+        "image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
         "panel_id": "panel_a_lsv_02",
         "panel_label": "a_LSV_02",
         "priority": "high",
@@ -29,17 +29,17 @@
         "special_notes": "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
       },
       "status": "completed",
-      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\response.json",
+      "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\response.json",
       "response": {
         "paper_id": "focused-curve-v4-1-a_lsv_02",
         "figure_id": "figure_a_lsv_02",
         "panel_id": "panel_a_lsv_02",
         "target_panel_label": "a_LSV_02",
         "detected_panel_label": "",
-        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_crop.png",
-        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_annotated.png",
+        "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_crop.png",
+        "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_annotated.png",
         "axis_fit_script_used": true,
-        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\tmp\\axis_fit_output.json",
+        "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\tmp\\axis_fit_output.json",
         "crop_box_original": [
           20,
           20,
@@ -240,10 +240,10 @@
       "panel_id": "panel_a_lsv_02",
       "panel_label": "",
       "candidate_catalysts": [],
-      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
-      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_crop.png",
-      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_annotated.png",
-      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\tmp\\axis_fit_output.json",
+      "full_figure_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
+      "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_crop.png",
+      "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\panel_annotated.png",
+      "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\tmp\\axis_fit_output.json",
       "axis_fit_script_used": true,
       "crop_box_original": [
         20,
@@ -373,7 +373,7 @@
       "y_axis_type_guess": "linear",
       "caption_snippet": "Synthetic single-panel LSV benchmark chart, variant 02. Scenario: HER plotted as positive absolute current.",
       "special_notes": "Benchmark task seeded as a single-panel linear sweep voltammetry / polarization curve benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
-      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\response.json"
+      "upstream_response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_02__panel_a_lsv_02\\response.json"
     }
   ]
 }

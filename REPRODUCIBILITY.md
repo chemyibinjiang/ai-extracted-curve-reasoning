@@ -25,11 +25,11 @@ Public package-relative data roots:
 
 Original publication figures, publisher HTML, raw source archives, and DOI-linked proof-card material are not included in this public repository draft.
 
-The public `analysis` folder is a curated audit record for reported Figure 5
-and Figure 6 results, not a complete rerun workspace for every interactive
-analysis session. Some historical working scripts depended on internal
-canonical source tables and private validation/context files that are
-intentionally excluded.
+The public `analysis` folder contains curated audit records for reported Figure
+5 and Figure 6 results. It also contains `raw_agent_analysis_archive`, a
+faithful raw working archive for process provenance. Use the curated modules for
+final-number checks; use the raw archive only when auditing the historical
+interactive analysis process.
 
 ## Recommended Rerun Order
 

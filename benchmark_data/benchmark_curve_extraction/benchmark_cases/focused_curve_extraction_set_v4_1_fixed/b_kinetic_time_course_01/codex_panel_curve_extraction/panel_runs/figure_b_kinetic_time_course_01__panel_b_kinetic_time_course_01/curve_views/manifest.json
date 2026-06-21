@@ -1,14 +1,14 @@
 {
-  "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\response.json",
-  "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\panel_crop.png",
-  "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_overlap_score.json",
-  "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views",
-  "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\contact_sheet.png",
+  "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\response.json",
+  "panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\panel_crop.png",
+  "qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_overlap_score.json",
+  "output_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views",
+  "contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\contact_sheet.png",
   "curves": [
     {
       "curve_id": "curve_1",
       "curve_label": "Blank",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\curve_1_blank.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\curve_1_blank.png",
       "crop_view_path": "",
       "crop_box": [
         70,
@@ -51,7 +51,7 @@
     {
       "curve_id": "curve_2",
       "curve_label": "Catalyst A",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\curve_2_catalyst_a.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\curve_2_catalyst_a.png",
       "crop_view_path": "",
       "crop_box": [
         70,
@@ -94,7 +94,7 @@
     {
       "curve_id": "curve_3",
       "curve_label": "Catalyst B",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\curve_3_catalyst_b.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_panel_curve_extraction\\panel_runs\\figure_b_kinetic_time_course_01__panel_b_kinetic_time_course_01\\curve_views\\curve_3_catalyst_b.png",
       "crop_view_path": "",
       "crop_box": [
         71,

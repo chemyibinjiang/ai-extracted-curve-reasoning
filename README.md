@@ -24,10 +24,12 @@ The manuscript, supporting information, and reviewer-only claim-validation cards
 
 ## Analysis Scope
 
-The public `analysis` folder contains only curated manuscript/SI-facing
-analysis modules for Figure 5 and Figure 6. It is not a full working dump: the
-local exploratory analysis included many draft plots, posterior-draw tables, and
-intermediate files that are intentionally excluded.
+The public `analysis` folder contains curated manuscript/SI-facing analysis
+modules for Figure 5 and Figure 6. It also contains
+`analysis/raw_agent_analysis_archive`, a faithful copy of the raw working
+analysis folder and placeholders for the two interactive agent-session screen
+records. The raw archive is included for process provenance and should not be
+used as the preferred source for final manuscript/SI numbers.
 
 ## Reproducibility
 

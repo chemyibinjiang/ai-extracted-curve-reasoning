@@ -1,14 +1,14 @@
 {
-  "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\response.json",
-  "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\panel_crop.png",
-  "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_overlap_score.json",
-  "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views",
-  "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\contact_sheet.png",
+  "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\response.json",
+  "panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_anchoring\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\panel_crop.png",
+  "qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_overlap_score.json",
+  "output_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views",
+  "contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\contact_sheet.png",
   "curves": [
     {
       "curve_id": "curve_1",
       "curve_label": "raw",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\curve_1_raw.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\curve_1_raw.png",
       "crop_view_path": "",
       "crop_box": [
         92,
@@ -51,7 +51,7 @@
     {
       "curve_id": "curve_2",
       "curve_label": "iR-corrected",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\curve_2_ir_corrected.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\curve_2_ir_corrected.png",
       "crop_view_path": "",
       "crop_box": [
         86,
@@ -94,7 +94,7 @@
     {
       "curve_id": "curve_3",
       "curve_label": "benchmark",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\curve_3_benchmark.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_panel_curve_extraction\\panel_runs\\figure_a_lsv_05__panel_a_lsv_05\\curve_views\\curve_3_benchmark.png",
       "crop_view_path": "",
       "crop_box": [
         96,

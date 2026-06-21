@@ -23,8 +23,9 @@ Use this checklist before creating a submission or public-release tag.
 ## Code And Analysis
 
 - [ ] `code_reference\PEERAGENT_REPO.md` records the frozen framework archive, commit, and checksum.
-- [ ] `analysis\` contains only compact manuscript/SI-facing summary tables, source rows, and lightweight scripts.
+- [ ] Curated analysis subfolders contain compact manuscript/SI-facing summary tables, source rows, and lightweight scripts.
 - [ ] Active public analysis reports do not contain external absolute local paths.
+- [ ] `analysis\raw_agent_analysis_archive\` is clearly labeled as raw process provenance, not the final-number source.
 - [ ] Git LFS is installed before committing large binary files.
 
 ## Public/Private Boundary

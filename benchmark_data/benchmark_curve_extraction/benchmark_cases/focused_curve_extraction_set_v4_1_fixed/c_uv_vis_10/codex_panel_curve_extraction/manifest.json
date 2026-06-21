@@ -3,8 +3,8 @@
   "generated_at": "2026-05-09T06:17:25.765138+00:00",
   "runner": "codex_exec_panel_curve_extraction",
   "case_id": "c_uv_vis_10",
-  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10",
-  "source_curve_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\curve_tasks.jsonl",
+  "case_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10",
+  "source_curve_tasks_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\curve_tasks.jsonl",
   "total_panel_tasks_requested": 1,
   "successful_panel_runs": 1,
   "extracted_curves": 2,
@@ -25,10 +25,10 @@
         "panel_id": "panel_c_uv_vis_10",
         "panel_label": "",
         "candidate_catalysts": [],
-        "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\c_uv_vis_10.png",
-        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
-        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_annotated.png",
-        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\axis_fit_output.json",
+        "full_figure_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\c_uv_vis_10.png",
+        "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
+        "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_annotated.png",
+        "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\axis_fit_output.json",
         "axis_fit_script_used": true,
         "crop_box_original": [
           20,
@@ -158,7 +158,7 @@
         "y_axis_type_guess": "linear",
         "caption_snippet": "Synthetic single-panel UV_Vis benchmark chart, variant 10. Scenario: cropped window with shoulder.",
         "special_notes": "Benchmark task seeded as a single-panel UV-Vis spectrum benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
-        "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json"
+        "upstream_response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json"
       },
       "anchoring_response": {
         "paper_id": "focused-curve-v4-1-c_uv_vis_10",
@@ -166,10 +166,10 @@
         "panel_id": "panel_c_uv_vis_10",
         "target_panel_label": "c_UV_Vis_10",
         "detected_panel_label": "",
-        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
-        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_annotated.png",
+        "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
+        "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_annotated.png",
         "axis_fit_script_used": true,
-        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\axis_fit_output.json",
+        "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\axis_fit_output.json",
         "crop_box_original": [
           20,
           20,
@@ -354,14 +354,14 @@
         "unresolved_ambiguities": []
       },
       "status": "completed",
-      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json",
+      "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json",
       "response": {
         "paper_id": "focused-curve-v4-1-c_uv_vis_10",
         "figure_id": "figure_c_uv_vis_10",
         "panel_id": "panel_c_uv_vis_10",
         "panel_label": "",
-        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\panel_crop.png",
-        "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlay.png",
+        "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\panel_crop.png",
+        "saved_curve_overlay_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlay.png",
         "plot_area_box_cropped": [
           132,
           21,
@@ -959,8 +959,8 @@
           "The dashed shoulder is represented by a continuous centerline through visible dash segments, so overlap QA remains warn rather than fail."
         ]
       },
-      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_score.json",
-      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_diagnostic.png",
+      "overlap_qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_diagnostic.png",
       "overlap_qa": {
         "panel_id": "panel_c_uv_vis_10",
         "figure_id": "figure_c_uv_vis_10",
@@ -1095,19 +1095,19 @@
         }
       },
       "overlap_qa_error": "",
-      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\manifest.json",
-      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\contact_sheet.png",
+      "curve_views_manifest_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\contact_sheet.png",
       "curve_views_manifest": {
-        "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json",
-        "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
-        "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_score.json",
-        "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views",
-        "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\contact_sheet.png",
+        "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json",
+        "panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
+        "qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_score.json",
+        "output_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views",
+        "contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\contact_sheet.png",
         "curves": [
           {
             "curve_id": "curve_1",
             "curve_label": "zoomed peak",
-            "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\curve_1_zoomed_peak.png",
+            "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\curve_1_zoomed_peak.png",
             "crop_view_path": "",
             "crop_box": [
               71,
@@ -1150,7 +1150,7 @@
           {
             "curve_id": "curve_2",
             "curve_label": "shoulder",
-            "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\curve_2_shoulder.png",
+            "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\curve_2_shoulder.png",
             "crop_view_path": "",
             "crop_box": [
               70,
@@ -1215,19 +1215,19 @@
       "figure_label": "c_UV_Vis_10",
       "panel_id": "panel_c_uv_vis_10",
       "panel_label": "",
-      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
-      "curve_extraction_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json",
-      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\axis_fit_output.json",
+      "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\panel_crop.png",
+      "curve_extraction_response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\response.json",
+      "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_anchoring\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\tmp\\axis_fit_output.json",
       "x_axis_label": "Wavelength",
       "x_axis_units": "nm",
       "y_axis_label": "Absorbance",
       "y_axis_units": "a.u.",
       "x_axis_type": "linear",
       "y_axis_type": "linear",
-      "overlap_qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_score.json",
-      "overlap_qa_overlay_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_diagnostic.png",
-      "curve_views_manifest_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\manifest.json",
-      "curve_views_contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\contact_sheet.png",
+      "overlap_qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_score.json",
+      "overlap_qa_overlay_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_overlap_diagnostic.png",
+      "curve_views_manifest_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\manifest.json",
+      "curve_views_contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_panel_curve_extraction\\panel_runs\\figure_c_uv_vis_10__panel_c_uv_vis_10\\curve_views\\contact_sheet.png",
       "overlap_panel_quality": "warn",
       "overlap_manual_review_required": true,
       "overlap_fail_count": 0

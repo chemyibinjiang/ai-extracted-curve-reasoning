@@ -2,6 +2,6 @@
     "figure_label":  "e_XRD_01",
     "figure_caption":  "Synthetic single-panel XRD benchmark chart, variant 01. Scenario: two offset crystalline patterns.",
     "legend":  "Synthetic single-panel XRD benchmark chart, variant 01. Scenario: two offset crystalline patterns.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\e_xrd_01.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\e_xrd_01.png"
 }
 

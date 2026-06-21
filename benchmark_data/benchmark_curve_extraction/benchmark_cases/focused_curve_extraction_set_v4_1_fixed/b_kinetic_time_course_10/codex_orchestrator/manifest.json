@@ -5,8 +5,8 @@
     "case_id":  "b_kinetic_time_course_10",
     "paper_id":  "focused-curve-v4-1-b_kinetic_time_course_10",
     "paper_title":  "Focused curve extraction benchmark v4.1: kinetic_time_course 10",
-    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\figures.json",
-    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\benchmark.html",
+    "figures_json_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\figures.json",
+    "html_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\benchmark.html",
     "queued_panels":  1,
     "panel_queue":  [
                         {
@@ -17,7 +17,7 @@
                             "paper_title":  "Focused curve extraction benchmark v4.1: kinetic_time_course 10",
                             "figure_id":  "figure_b_kinetic_time_course_10",
                             "figure_label":  "b_kinetic_time_course_10",
-                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
+                            "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
                             "panel_id":  "panel_b_kinetic_time_course_10",
                             "panel_label":  "b_kinetic_time_course_10",
                             "priority":  "high",
@@ -34,7 +34,7 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  10,
                       "scenario":  "four-rate comparison",
-                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png"
+                      "png_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png"
                   }
 }
 

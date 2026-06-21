@@ -37,9 +37,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  1,
                       "scenario":  "standard cathodic HER LSV",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_01",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_01\\a_lsv_01.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_01\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_01",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_01\\a_lsv_01.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_01\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_02",
@@ -47,9 +47,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  2,
                       "scenario":  "HER plotted as positive absolute current",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\a_lsv_02.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_02\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_03",
@@ -57,9 +57,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  3,
                       "scenario":  "anodic OER LSV",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03\\a_lsv_03.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03\\a_lsv_03.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_03\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_04",
@@ -67,9 +67,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  4,
                       "scenario":  "multi-catalyst OER with close curves",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04\\a_lsv_04.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04\\a_lsv_04.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_04\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_05",
@@ -77,9 +77,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  5,
                       "scenario":  "raw versus iR-corrected LSV",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\a_lsv_05.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\a_lsv_05.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_05\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_06",
@@ -87,9 +87,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  6,
                       "scenario":  "sparse marker HER LSV",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_06",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_06\\a_lsv_06.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_06\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_06",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_06\\a_lsv_06.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_06\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_07",
@@ -97,9 +97,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  7,
                       "scenario":  "cathodic LSV with diffusion-limited plateau",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\a_lsv_07.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\a_lsv_07.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_07\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_08",
@@ -107,9 +107,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  8,
                       "scenario":  "semi-log polarization representation",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_08",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_08\\a_lsv_08.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_08\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_08",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_08\\a_lsv_08.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_08\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_09",
@@ -117,9 +117,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  9,
                       "scenario":  "noisy experimental HER LSV",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_09",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_09\\a_lsv_09.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_09\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_09",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_09\\a_lsv_09.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_09\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "a_lsv_10",
@@ -127,9 +127,9 @@
                       "curve_family":  "LSV",
                       "variant_index":  10,
                       "scenario":  "zoomed HER benchmark-current region",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_10",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_10\\a_lsv_10.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_10\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_10",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_10\\a_lsv_10.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\a_lsv_10\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_01",
@@ -137,9 +137,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  1,
                       "scenario":  "classic decay",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\b_kinetic_time_course_01.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\b_kinetic_time_course_01.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_01\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_02",
@@ -147,9 +147,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  2,
                       "scenario":  "product formation",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_02",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_02\\b_kinetic_time_course_02.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_02\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_02",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_02\\b_kinetic_time_course_02.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_02\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_03",
@@ -157,9 +157,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  3,
                       "scenario":  "pseudo-first-order linearization",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_03",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_03\\b_kinetic_time_course_03.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_03\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_03",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_03\\b_kinetic_time_course_03.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_03\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_04",
@@ -167,9 +167,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  4,
                       "scenario":  "single-step versus biphasic",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\b_kinetic_time_course_04.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\b_kinetic_time_course_04.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_04\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_05",
@@ -177,9 +177,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  5,
                       "scenario":  "temperature series",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_05",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_05\\b_kinetic_time_course_05.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_05\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_05",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_05\\b_kinetic_time_course_05.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_05\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_06",
@@ -187,9 +187,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  6,
                       "scenario":  "pH series",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\b_kinetic_time_course_06.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\b_kinetic_time_course_06.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_06\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_07",
@@ -197,9 +197,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  7,
                       "scenario":  "induction period",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_07",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_07\\b_kinetic_time_course_07.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_07\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_07",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_07\\b_kinetic_time_course_07.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_07\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_08",
@@ -207,9 +207,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  8,
                       "scenario":  "replicates",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_08",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_08\\b_kinetic_time_course_08.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_08\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_08",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_08\\b_kinetic_time_course_08.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_08\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_09",
@@ -217,9 +217,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  9,
                       "scenario":  "incomplete plateau",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_09",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_09\\b_kinetic_time_course_09.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_09\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_09",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_09\\b_kinetic_time_course_09.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_09\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "b_kinetic_time_course_10",
@@ -227,9 +227,9 @@
                       "curve_family":  "kinetic_time_course",
                       "variant_index":  10,
                       "scenario":  "four-rate comparison",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_01",
@@ -237,9 +237,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  1,
                       "scenario":  "three overlapping spectra",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_01",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_01\\c_uv_vis_01.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_01\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_01",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_01\\c_uv_vis_01.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_01\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_02",
@@ -247,9 +247,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  2,
                       "scenario":  "time evolving spectra",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02\\c_uv_vis_02.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02\\c_uv_vis_02.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_02\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_03",
@@ -257,9 +257,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  3,
                       "scenario":  "red shift",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_03",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_03\\c_uv_vis_03.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_03\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_03",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_03\\c_uv_vis_03.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_03\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_04",
@@ -267,9 +267,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  4,
                       "scenario":  "pH-dependent spectra",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\c_uv_vis_04.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\c_uv_vis_04.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_05",
@@ -277,9 +277,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  5,
                       "scenario":  "baseline drift correction",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_05",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_05\\c_uv_vis_05.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_05\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_05",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_05\\c_uv_vis_05.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_05\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_06",
@@ -287,9 +287,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  6,
                       "scenario":  "two separated bands",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\c_uv_vis_06.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\c_uv_vis_06.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_06\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_07",
@@ -297,9 +297,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  7,
                       "scenario":  "concentration series",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_07",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_07\\c_uv_vis_07.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_07\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_07",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_07\\c_uv_vis_07.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_07\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_08",
@@ -307,9 +307,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  8,
                       "scenario":  "difference spectrum",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_08",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_08\\c_uv_vis_08.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_08\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_08",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_08\\c_uv_vis_08.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_08\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_09",
@@ -317,9 +317,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  9,
                       "scenario":  "normalized spectra",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_09",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_09\\c_uv_vis_09.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_09\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_09",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_09\\c_uv_vis_09.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_09\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "c_uv_vis_10",
@@ -327,9 +327,9 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  10,
                       "scenario":  "cropped window with shoulder",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\c_uv_vis_10.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\c_uv_vis_10.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_10\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_01",
@@ -337,9 +337,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  1,
                       "scenario":  "two offset D/G spectra",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_01",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_01\\d_raman_01.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_01\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_01",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_01\\d_raman_01.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_01\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_02",
@@ -347,9 +347,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  2,
                       "scenario":  "stacked composition series",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_02",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_02\\d_raman_02.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_02\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_02",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_02\\d_raman_02.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_02\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_03",
@@ -357,9 +357,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  3,
                       "scenario":  "fluorescence baseline",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_03",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_03\\d_raman_03.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_03\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_03",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_03\\d_raman_03.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_03\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_04",
@@ -367,9 +367,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  4,
                       "scenario":  "two excitation wavelengths",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04\\d_raman_04.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04\\d_raman_04.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_05",
@@ -377,9 +377,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  5,
                       "scenario":  "data, fit, baseline",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\d_raman_05.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\d_raman_05.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_05\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_06",
@@ -387,9 +387,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  6,
                       "scenario":  "low signal noisy Raman",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\d_raman_06.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\d_raman_06.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_06\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_07",
@@ -397,9 +397,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  7,
                       "scenario":  "mapping spot series",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_07",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_07\\d_raman_07.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_07\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_07",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_07\\d_raman_07.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_07\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_08",
@@ -407,9 +407,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  8,
                       "scenario":  "overlapping fingerprint peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_08",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_08\\d_raman_08.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_08\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_08",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_08\\d_raman_08.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_08\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_09",
@@ -417,9 +417,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  9,
                       "scenario":  "before/after annealing",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\d_raman_09.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\d_raman_09.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "d_raman_10",
@@ -427,9 +427,9 @@
                       "curve_family":  "Raman",
                       "variant_index":  10,
                       "scenario":  "cropped D/G region",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_10",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_10\\d_raman_10.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_10\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_10",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_10\\d_raman_10.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_10\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_01",
@@ -437,9 +437,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  1,
                       "scenario":  "two offset crystalline patterns",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\e_xrd_01.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\e_xrd_01.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_01\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_02",
@@ -447,9 +447,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  2,
                       "scenario":  "temperature series",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_02",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_02\\e_xrd_02.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_02\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_02",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_02\\e_xrd_02.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_02\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_03",
@@ -457,9 +457,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  3,
                       "scenario":  "broad low-crystallinity peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_03",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_03\\e_xrd_03.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_03\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_03",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_03\\e_xrd_03.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_03\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_04",
@@ -467,9 +467,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  4,
                       "scenario":  "sharp high-crystallinity peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_04",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_04\\e_xrd_04.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_04\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_04",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_04\\e_xrd_04.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_04\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_05",
@@ -477,9 +477,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  5,
                       "scenario":  "peak shift comparison",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\e_xrd_05.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\e_xrd_05.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_05\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_06",
@@ -487,9 +487,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  6,
                       "scenario":  "phase transformation",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\e_xrd_06.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\e_xrd_06.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_06\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_07",
@@ -497,9 +497,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  7,
                       "scenario":  "reference-stick pattern",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\e_xrd_07.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\e_xrd_07.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_07\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_08",
@@ -507,9 +507,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  8,
                       "scenario":  "small-angle pattern",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_08",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_08\\e_xrd_08.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_08\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_08",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_08\\e_xrd_08.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_08\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_09",
@@ -517,9 +517,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  9,
                       "scenario":  "noisy low-intensity pattern",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\e_xrd_09.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\e_xrd_09.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "e_xrd_10",
@@ -527,9 +527,9 @@
                       "curve_family":  "XRD",
                       "variant_index":  10,
                       "scenario":  "mixed-phase extra peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\e_xrd_10.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\e_xrd_10.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_10\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_01",
@@ -537,9 +537,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  1,
                       "scenario":  "standard versus reaction mixture",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\f_gc_trace_01.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\f_gc_trace_01.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_01\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_02",
@@ -547,9 +547,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  2,
                       "scenario":  "many peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\f_gc_trace_02.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\f_gc_trace_02.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_03",
@@ -557,9 +557,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  3,
                       "scenario":  "co-eluting peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\f_gc_trace_03.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\f_gc_trace_03.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_03\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_04",
@@ -567,9 +567,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  4,
                       "scenario":  "calibration standards",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04\\f_gc_trace_04.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04\\f_gc_trace_04.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_04\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_05",
@@ -577,9 +577,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  5,
                       "scenario":  "baseline drift",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\f_gc_trace_05.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\f_gc_trace_05.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_06",
@@ -587,9 +587,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  6,
                       "scenario":  "low concentration noisy peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_06",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_06\\f_gc_trace_06.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_06\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_06",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_06\\f_gc_trace_06.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_06\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_07",
@@ -597,9 +597,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  7,
                       "scenario":  "cropped RT window",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_07",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_07\\f_gc_trace_07.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_07\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_07",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_07\\f_gc_trace_07.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_07\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_08",
@@ -607,9 +607,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  8,
                       "scenario":  "before/after offset chromatograms",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_08",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_08\\f_gc_trace_08.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_08\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_08",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_08\\f_gc_trace_08.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_08\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_09",
@@ -617,9 +617,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  9,
                       "scenario":  "dominant solvent-like peak",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\f_gc_trace_09.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\f_gc_trace_09.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\codex_orchestrator\\panel_tasks.jsonl"
                   },
                   {
                       "case_id":  "f_gc_trace_10",
@@ -627,9 +627,9 @@
                       "curve_family":  "GC_trace",
                       "variant_index":  10,
                       "scenario":  "broad and sharp mixed peaks",
-                      "case_dir":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_10",
-                      "figure_png":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_10\\f_gc_trace_10.png",
-                      "panel_tasks_jsonl":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_10\\codex_orchestrator\\panel_tasks.jsonl"
+                      "case_dir":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_10",
+                      "figure_png":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_10\\f_gc_trace_10.png",
+                      "panel_tasks_jsonl":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_10\\codex_orchestrator\\panel_tasks.jsonl"
                   }
               ]
 }

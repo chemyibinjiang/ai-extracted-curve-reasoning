@@ -1,14 +1,14 @@
 {
-  "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\response.json",
-  "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\panel_crop.png",
-  "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_overlap_score.json",
-  "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_views",
-  "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_views\\contact_sheet.png",
+  "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\response.json",
+  "panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_anchoring\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\panel_crop.png",
+  "qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_overlap_score.json",
+  "output_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_views",
+  "contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_views\\contact_sheet.png",
   "curves": [
     {
       "curve_id": "curve_1",
       "curve_label": "unlabeled blue trace",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_views\\curve_1_unlabeled_blue_trace.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_02\\codex_panel_curve_extraction\\panel_runs\\figure_f_gc_trace_02__panel_f_gc_trace_02\\curve_views\\curve_1_unlabeled_blue_trace.png",
       "crop_view_path": "",
       "crop_box": [
         76,

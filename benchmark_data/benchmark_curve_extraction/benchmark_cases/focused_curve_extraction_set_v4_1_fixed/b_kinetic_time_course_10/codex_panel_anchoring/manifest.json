@@ -3,8 +3,8 @@
   "generated_at": "2026-05-09T03:54:58.015467+00:00",
   "runner": "codex_exec_panel_anchoring",
   "case_id": "b_kinetic_time_course_10",
-  "case_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10",
-  "source_panel_tasks_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_orchestrator\\panel_tasks.jsonl",
+  "case_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10",
+  "source_panel_tasks_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_orchestrator\\panel_tasks.jsonl",
   "total_panel_tasks_requested": 1,
   "successful_panel_runs": 1,
   "curve_tasks": 1,
@@ -18,7 +18,7 @@
         "paper_title": "Focused curve extraction benchmark v4.1: kinetic_time_course 10",
         "figure_id": "figure_b_kinetic_time_course_10",
         "figure_label": "b_kinetic_time_course_10",
-        "image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
+        "image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
         "panel_id": "panel_b_kinetic_time_course_10",
         "panel_label": "b_kinetic_time_course_10",
         "priority": "high",
@@ -29,17 +29,17 @@
         "special_notes": "Benchmark task seeded as a single-panel kinetic time-course benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files."
       },
       "status": "completed",
-      "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\response.json",
+      "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\response.json",
       "response": {
         "paper_id": "focused-curve-v4-1-b_kinetic_time_course_10",
         "figure_id": "figure_b_kinetic_time_course_10",
         "panel_id": "panel_b_kinetic_time_course_10",
         "target_panel_label": "b_kinetic_time_course_10",
         "detected_panel_label": "single panel (no printed label)",
-        "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_crop.png",
-        "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_annotated.png",
+        "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_crop.png",
+        "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_annotated.png",
         "axis_fit_script_used": true,
-        "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\tmp\\axis_fit_output.json",
+        "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\tmp\\axis_fit_output.json",
         "crop_box_original": [
           20,
           17,
@@ -278,10 +278,10 @@
       "panel_id": "panel_b_kinetic_time_course_10",
       "panel_label": "single panel (no printed label)",
       "candidate_catalysts": [],
-      "full_figure_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
-      "saved_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_crop.png",
-      "saved_annotated_panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_annotated.png",
-      "axis_fit_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\tmp\\axis_fit_output.json",
+      "full_figure_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\b_kinetic_time_course_10.png",
+      "saved_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_crop.png",
+      "saved_annotated_panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\panel_annotated.png",
+      "axis_fit_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\tmp\\axis_fit_output.json",
       "axis_fit_script_used": true,
       "crop_box_original": [
         20,
@@ -447,7 +447,7 @@
       "y_axis_type_guess": "linear",
       "caption_snippet": "Synthetic single-panel kinetic_time_course benchmark chart, variant 10. Scenario: four-rate comparison.",
       "special_notes": "Benchmark task seeded as a single-panel kinetic time-course benchmark panel; route it through anchoring and curve extraction even if it is not LSV. Inspect the image only and do not use external source files.",
-      "upstream_response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\response.json"
+      "upstream_response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\b_kinetic_time_course_10\\codex_panel_anchoring\\panel_runs\\figure_b_kinetic_time_course_10__panel_b_kinetic_time_course_10\\response.json"
     }
   ]
 }

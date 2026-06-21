@@ -2,6 +2,6 @@
     "figure_label":  "f_GC_trace_09",
     "figure_caption":  "Synthetic single-panel GC_trace benchmark chart, variant 09. Scenario: dominant solvent-like peak.",
     "legend":  "Synthetic single-panel GC_trace benchmark chart, variant 09. Scenario: dominant solvent-like peak.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\f_gc_trace_09.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_09\\f_gc_trace_09.png"
 }
 

@@ -2,6 +2,6 @@
     "figure_label":  "d_Raman_04",
     "figure_caption":  "Synthetic single-panel Raman benchmark chart, variant 04. Scenario: two excitation wavelengths.",
     "legend":  "Synthetic single-panel Raman benchmark chart, variant 04. Scenario: two excitation wavelengths.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04\\d_raman_04.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_04\\d_raman_04.png"
 }
 

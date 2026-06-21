@@ -2,6 +2,6 @@
     "figure_label":  "f_GC_trace_05",
     "figure_caption":  "Synthetic single-panel GC_trace benchmark chart, variant 05. Scenario: baseline drift.",
     "legend":  "Synthetic single-panel GC_trace benchmark chart, variant 05. Scenario: baseline drift.",
-    "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\f_gc_trace_05.png"
+    "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\f_gc_trace_05\\f_gc_trace_05.png"
 }
 

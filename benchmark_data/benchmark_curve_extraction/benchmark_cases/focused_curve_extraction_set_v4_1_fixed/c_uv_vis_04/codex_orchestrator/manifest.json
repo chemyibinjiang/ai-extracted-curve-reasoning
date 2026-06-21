@@ -5,8 +5,8 @@
     "case_id":  "c_uv_vis_04",
     "paper_id":  "focused-curve-v4-1-c_uv_vis_04",
     "paper_title":  "Focused curve extraction benchmark v4.1: UV_Vis 04",
-    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\figures.json",
-    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\benchmark.html",
+    "figures_json_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\figures.json",
+    "html_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\benchmark.html",
     "queued_panels":  1,
     "panel_queue":  [
                         {
@@ -17,7 +17,7 @@
                             "paper_title":  "Focused curve extraction benchmark v4.1: UV_Vis 04",
                             "figure_id":  "figure_c_uv_vis_04",
                             "figure_label":  "c_UV_Vis_04",
-                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\c_uv_vis_04.png",
+                            "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\c_uv_vis_04.png",
                             "panel_id":  "panel_c_uv_vis_04",
                             "panel_label":  "c_UV_Vis_04",
                             "priority":  "high",
@@ -34,7 +34,7 @@
                       "curve_family":  "UV_Vis",
                       "variant_index":  4,
                       "scenario":  "pH-dependent spectra",
-                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\c_uv_vis_04.png"
+                      "png_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\c_uv_vis_04\\c_uv_vis_04.png"
                   }
 }
 

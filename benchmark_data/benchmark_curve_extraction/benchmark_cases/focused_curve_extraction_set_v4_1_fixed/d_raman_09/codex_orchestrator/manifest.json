@@ -5,8 +5,8 @@
     "case_id":  "d_raman_09",
     "paper_id":  "focused-curve-v4-1-d_raman_09",
     "paper_title":  "Focused curve extraction benchmark v4.1: Raman 09",
-    "figures_json_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\figures.json",
-    "html_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\benchmark.html",
+    "figures_json_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\figures.json",
+    "html_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\benchmark.html",
     "queued_panels":  1,
     "panel_queue":  [
                         {
@@ -17,7 +17,7 @@
                             "paper_title":  "Focused curve extraction benchmark v4.1: Raman 09",
                             "figure_id":  "figure_d_raman_09",
                             "figure_label":  "d_Raman_09",
-                            "image_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\d_raman_09.png",
+                            "image_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\d_raman_09.png",
                             "panel_id":  "panel_d_raman_09",
                             "panel_label":  "d_Raman_09",
                             "priority":  "high",
@@ -34,7 +34,7 @@
                       "curve_family":  "Raman",
                       "variant_index":  9,
                       "scenario":  "before/after annealing",
-                      "png_path":  "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\d_raman_09.png"
+                      "png_path":  "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\d_raman_09\\d_raman_09.png"
                   }
 }
 

@@ -1,14 +1,14 @@
 {
-  "response_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\response.json",
-  "panel_image_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\panel_crop.png",
-  "qa_report_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_overlap_score.json",
-  "output_dir": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_views",
-  "contact_sheet_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_views\\contact_sheet.png",
+  "response_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\response.json",
+  "panel_image_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_anchoring\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\panel_crop.png",
+  "qa_report_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_overlap_score.json",
+  "output_dir": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_views",
+  "contact_sheet_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_views\\contact_sheet.png",
   "curves": [
     {
       "curve_id": "curve_1",
       "curve_label": "XRD trace",
-      "focus_view_path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\peeragent\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_views\\curve_1_xrd_trace.png",
+      "focus_view_path": "benchmark_data\\benchmark_curve_extraction\\benchmark_cases\\focused_curve_extraction_set_v4_1_fixed\\e_xrd_09\\codex_panel_curve_extraction\\panel_runs\\figure_e_xrd_09__panel_e_xrd_09\\curve_views\\curve_1_xrd_trace.png",
       "crop_view_path": "",
       "crop_box": [
         75,

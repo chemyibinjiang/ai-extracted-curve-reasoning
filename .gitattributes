@@ -31,3 +31,11 @@
 
 # Publication figure SVGs are generated assets and can be large.
 figures/**/*.svg filter=lfs diff=lfs merge=lfs -text
+
+# Raw agent-analysis archive: keep large faithful working outputs in LFS.
+analysis/raw_agent_analysis_archive/**/*.csv filter=lfs diff=lfs merge=lfs -text
+analysis/raw_agent_analysis_archive/**/*.npz filter=lfs diff=lfs merge=lfs -text
+analysis/raw_agent_analysis_archive/**/*.jsonl filter=lfs diff=lfs merge=lfs -text
+analysis/raw_agent_analysis_archive/**/*.html filter=lfs diff=lfs merge=lfs -text
+analysis/raw_agent_analysis_archive/**/*.svg filter=lfs diff=lfs merge=lfs -text
+analysis/raw_agent_analysis_archive/**/*.log filter=lfs diff=lfs merge=lfs -text
