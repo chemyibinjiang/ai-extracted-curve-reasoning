@@ -1,4 +1,4 @@
-# Augmenting Scientific Reasoning with AI-Extracted Curves from Figures
+# From Figure Pixels to Quantitative Evidence: AI-Extracted Curves for Scientific Reasoning
 
 This is the GitHub-repository draft for the paper companion package.
 
