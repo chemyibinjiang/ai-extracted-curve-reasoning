@@ -1,4 +1,4 @@
-# From Figure Pixels to Quantitative Evidence: AI-Extracted Curves for Scientific Reasoning
+# Multi-Agent AI Converts Published Figures into Auditable Curve Evidence for Claim Validation and Scientific Analysis
 
 This is the GitHub-repository draft for the paper companion package.
 

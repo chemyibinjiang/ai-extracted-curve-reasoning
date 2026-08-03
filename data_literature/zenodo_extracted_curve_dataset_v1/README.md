@@ -1,8 +1,9 @@
 # Extracted HER Polarization Curve Dataset
 
 This Zenodo-ready package contains the primary hydrogen evolution reaction
-(HER) polarization-curve dataset used in the manuscript "From Figure Pixels to
-Quantitative Evidence: AI-Extracted Curves for Scientific Reasoning".
+(HER) polarization-curve dataset used in the manuscript "Multi-Agent AI Converts
+Published Figures into Auditable Curve Evidence for Claim Validation and
+Scientific Analysis".
 
 The package is designed to publish the extracted numeric curve evidence while
 excluding copyrighted source figures. Each curve can be traced back to its
