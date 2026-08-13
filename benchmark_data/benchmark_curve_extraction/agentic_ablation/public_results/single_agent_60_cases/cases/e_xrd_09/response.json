@@ -1,0 +1,1168 @@
+{
+  "paper_id": "focused-curve-v4-1-e_xrd_09",
+  "figure_id": "figure_e_xrd_09",
+  "panel_id": "panel_e_xrd_09",
+  "panel_label": "e_XRD_09",
+  "saved_panel_image_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\e_xrd_09\\monolithic_anchor_extract\\panel_image.png",
+  "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\e_xrd_09\\monolithic_anchor_extract\\curve_overlay.png",
+  "crop_box_original": [
+    0,
+    0,
+    1188,
+    951
+  ],
+  "plot_area_box_cropped": [
+    161,
+    27,
+    1140,
+    816
+  ],
+  "panel_type": "xrd",
+  "x_axis": {
+    "label": "2theta (degree)",
+    "units": "degree",
+    "tick_labels": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "10",
+        "pixel_x": 162.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "20",
+        "pixel_x": 301.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "30",
+        "pixel_x": 441.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "40",
+        "pixel_x": 580.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "50",
+        "pixel_x": 720.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "60",
+        "pixel_x": 859.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "70",
+        "pixel_x": 999.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      },
+      {
+        "tick_value": "80",
+        "pixel_x": 1138.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick mark center."
+      }
+    ],
+    "fit_notes": "Best linear fit has normalized RMSE 0.0002."
+  },
+  "y_axis": {
+    "label": "Intensity (a.u.)",
+    "units": "a.u.",
+    "tick_labels": [
+      "0",
+      "50",
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 162.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left tick mark center."
+      },
+      {
+        "tick_value": "50",
+        "pixel_x": 162.5,
+        "pixel_y": 673.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left tick mark center."
+      },
+      {
+        "tick_value": "100",
+        "pixel_x": 162.5,
+        "pixel_y": 533.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left tick mark center."
+      },
+      {
+        "tick_value": "150",
+        "pixel_x": 162.5,
+        "pixel_y": 393.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left tick mark center."
+      },
+      {
+        "tick_value": "200",
+        "pixel_x": 162.5,
+        "pixel_y": 253.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left tick mark center."
+      },
+      {
+        "tick_value": "250",
+        "pixel_x": 162.5,
+        "pixel_y": 112.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left tick mark center."
+      }
+    ],
+    "fit_notes": "Best linear fit has normalized RMSE 0.0004."
+  },
+  "legend_entries": [],
+  "curves": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "unlabeled XRD pattern",
+      "condition_label": "unlabeled",
+      "catalyst_context": "",
+      "stroke_color": "black",
+      "line_style": "solid",
+      "marker_style": "none",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 168.0,
+          "pixel_y": 600.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 173.0,
+          "pixel_y": 575.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 178.0,
+          "pixel_y": 603.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 183.0,
+          "pixel_y": 585.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 188.0,
+          "pixel_y": 583.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 193.0,
+          "pixel_y": 598.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 198.0,
+          "pixel_y": 613.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 203.0,
+          "pixel_y": 592.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 208.0,
+          "pixel_y": 627.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 213.0,
+          "pixel_y": 603.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 218.0,
+          "pixel_y": 577.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 223.0,
+          "pixel_y": 589.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 228.0,
+          "pixel_y": 588.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 233.0,
+          "pixel_y": 590.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 238.0,
+          "pixel_y": 601.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 243.0,
+          "pixel_y": 591.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 248.0,
+          "pixel_y": 573.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 253.0,
+          "pixel_y": 580.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 258.0,
+          "pixel_y": 615.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 263.0,
+          "pixel_y": 608.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 268.0,
+          "pixel_y": 597.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 273.0,
+          "pixel_y": 596.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 278.0,
+          "pixel_y": 604.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 283.0,
+          "pixel_y": 604.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 288.0,
+          "pixel_y": 601.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 293.0,
+          "pixel_y": 598.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 298.0,
+          "pixel_y": 612.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 303.0,
+          "pixel_y": 612.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 308.0,
+          "pixel_y": 600.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 313.0,
+          "pixel_y": 603.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 318.0,
+          "pixel_y": 620.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 323.0,
+          "pixel_y": 613.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 328.0,
+          "pixel_y": 610.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 333.0,
+          "pixel_y": 607.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 338.0,
+          "pixel_y": 624.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 343.0,
+          "pixel_y": 621.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 348.0,
+          "pixel_y": 596.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 353.0,
+          "pixel_y": 627.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 358.0,
+          "pixel_y": 593.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 363.0,
+          "pixel_y": 595.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 368.0,
+          "pixel_y": 611.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 373.0,
+          "pixel_y": 611.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 378.0,
+          "pixel_y": 616.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 383.0,
+          "pixel_y": 605.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 388.0,
+          "pixel_y": 617.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 393.0,
+          "pixel_y": 611.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 398.0,
+          "pixel_y": 601.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 403.0,
+          "pixel_y": 525.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 408.0,
+          "pixel_y": 411.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 413.0,
+          "pixel_y": 269.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 418.0,
+          "pixel_y": 190.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 423.0,
+          "pixel_y": 210.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 428.0,
+          "pixel_y": 317.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 433.0,
+          "pixel_y": 436.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 438.0,
+          "pixel_y": 540.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 443.0,
+          "pixel_y": 588.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 448.0,
+          "pixel_y": 579.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 453.0,
+          "pixel_y": 586.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 458.0,
+          "pixel_y": 609.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 463.0,
+          "pixel_y": 624.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 468.0,
+          "pixel_y": 600.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 473.0,
+          "pixel_y": 627.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 478.0,
+          "pixel_y": 617.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 483.0,
+          "pixel_y": 619.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 488.0,
+          "pixel_y": 601.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 493.0,
+          "pixel_y": 628.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 498.0,
+          "pixel_y": 602.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 503.0,
+          "pixel_y": 613.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 508.0,
+          "pixel_y": 610.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 513.0,
+          "pixel_y": 614.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 518.0,
+          "pixel_y": 612.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 523.0,
+          "pixel_y": 590.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 528.0,
+          "pixel_y": 515.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 533.0,
+          "pixel_y": 448.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 538.0,
+          "pixel_y": 386.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 543.0,
+          "pixel_y": 362.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 548.0,
+          "pixel_y": 410.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 553.0,
+          "pixel_y": 475.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 558.0,
+          "pixel_y": 562.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 563.0,
+          "pixel_y": 590.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 568.0,
+          "pixel_y": 616.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 573.0,
+          "pixel_y": 622.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 578.0,
+          "pixel_y": 617.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 583.0,
+          "pixel_y": 630.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 588.0,
+          "pixel_y": 631.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 593.0,
+          "pixel_y": 644.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 598.0,
+          "pixel_y": 629.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 603.0,
+          "pixel_y": 637.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 608.0,
+          "pixel_y": 644.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 613.0,
+          "pixel_y": 630.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 618.0,
+          "pixel_y": 630.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 623.0,
+          "pixel_y": 615.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 628.0,
+          "pixel_y": 630.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 633.0,
+          "pixel_y": 640.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 638.0,
+          "pixel_y": 621.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 643.0,
+          "pixel_y": 614.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 648.0,
+          "pixel_y": 613.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 653.0,
+          "pixel_y": 648.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 658.0,
+          "pixel_y": 650.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 663.0,
+          "pixel_y": 619.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 668.0,
+          "pixel_y": 655.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 673.0,
+          "pixel_y": 653.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 678.0,
+          "pixel_y": 635.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 683.0,
+          "pixel_y": 603.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 688.0,
+          "pixel_y": 638.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 693.0,
+          "pixel_y": 627.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 698.0,
+          "pixel_y": 638.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 703.0,
+          "pixel_y": 596.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 708.0,
+          "pixel_y": 607.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 713.0,
+          "pixel_y": 547.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 718.0,
+          "pixel_y": 545.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 723.0,
+          "pixel_y": 470.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 728.0,
+          "pixel_y": 433.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 733.0,
+          "pixel_y": 414.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 738.0,
+          "pixel_y": 438.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 743.0,
+          "pixel_y": 513.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 748.0,
+          "pixel_y": 584.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 753.0,
+          "pixel_y": 631.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 758.0,
+          "pixel_y": 622.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 763.0,
+          "pixel_y": 624.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 768.0,
+          "pixel_y": 617.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 773.0,
+          "pixel_y": 614.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 778.0,
+          "pixel_y": 653.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 783.0,
+          "pixel_y": 649.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 788.0,
+          "pixel_y": 617.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 793.0,
+          "pixel_y": 630.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 798.0,
+          "pixel_y": 651.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 803.0,
+          "pixel_y": 634.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 808.0,
+          "pixel_y": 641.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 813.0,
+          "pixel_y": 630.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 818.0,
+          "pixel_y": 629.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 823.0,
+          "pixel_y": 628.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 828.0,
+          "pixel_y": 637.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 833.0,
+          "pixel_y": 625.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 838.0,
+          "pixel_y": 626.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 843.0,
+          "pixel_y": 611.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 848.0,
+          "pixel_y": 646.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 853.0,
+          "pixel_y": 632.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 858.0,
+          "pixel_y": 650.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 863.0,
+          "pixel_y": 625.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 868.0,
+          "pixel_y": 629.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 873.0,
+          "pixel_y": 630.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 878.0,
+          "pixel_y": 627.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 883.0,
+          "pixel_y": 637.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 888.0,
+          "pixel_y": 641.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 893.0,
+          "pixel_y": 648.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 898.0,
+          "pixel_y": 638.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 903.0,
+          "pixel_y": 661.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 908.0,
+          "pixel_y": 676.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 913.0,
+          "pixel_y": 637.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 918.0,
+          "pixel_y": 633.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 923.0,
+          "pixel_y": 630.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 928.0,
+          "pixel_y": 621.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 933.0,
+          "pixel_y": 641.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 938.0,
+          "pixel_y": 635.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 943.0,
+          "pixel_y": 640.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 948.0,
+          "pixel_y": 648.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 953.0,
+          "pixel_y": 663.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 958.0,
+          "pixel_y": 634.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 963.0,
+          "pixel_y": 646.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 968.0,
+          "pixel_y": 645.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 973.0,
+          "pixel_y": 626.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 978.0,
+          "pixel_y": 651.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 983.0,
+          "pixel_y": 624.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 988.0,
+          "pixel_y": 641.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 993.0,
+          "pixel_y": 645.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 998.0,
+          "pixel_y": 646.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1003.0,
+          "pixel_y": 620.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1008.0,
+          "pixel_y": 627.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1013.0,
+          "pixel_y": 622.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1018.0,
+          "pixel_y": 627.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1023.0,
+          "pixel_y": 634.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1028.0,
+          "pixel_y": 655.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1033.0,
+          "pixel_y": 637.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1038.0,
+          "pixel_y": 660.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1043.0,
+          "pixel_y": 645.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1048.0,
+          "pixel_y": 632.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1053.0,
+          "pixel_y": 629.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1058.0,
+          "pixel_y": 670.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1063.0,
+          "pixel_y": 655.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1068.0,
+          "pixel_y": 636.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1073.0,
+          "pixel_y": 632.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1078.0,
+          "pixel_y": 630.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1083.0,
+          "pixel_y": 643.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1088.0,
+          "pixel_y": 638.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1093.0,
+          "pixel_y": 627.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1098.0,
+          "pixel_y": 646.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1103.0,
+          "pixel_y": 654.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1108.0,
+          "pixel_y": 622.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1113.0,
+          "pixel_y": 646.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1118.0,
+          "pixel_y": 639.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1123.0,
+          "pixel_y": 626.0,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1128.0,
+          "pixel_y": 650.5,
+          "confidence": 0.88
+        },
+        {
+          "pixel_x": 1133.0,
+          "pixel_y": 635.5,
+          "confidence": 0.88
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Overlap QA pass: point_hit_rate 1.00, median_distance_px 0.0, p95_distance_px 0.0.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.99
+    }
+  ],
+  "interpretation_notes": "Single unlabeled black XRD intensity trace with three dominant peaks near 29, 37, and 51 degrees; no legend is present.",
+  "qc": {
+    "axis_fit_script_used": true,
+    "overlap_qa_used": true,
+    "curve_count_estimated_correctly": true,
+    "legend_curve_mapping_complete": "yes",
+    "points_cover_visible_extent": "yes",
+    "manual_review_required": false
+  },
+  "unresolved_ambiguities": []
+}

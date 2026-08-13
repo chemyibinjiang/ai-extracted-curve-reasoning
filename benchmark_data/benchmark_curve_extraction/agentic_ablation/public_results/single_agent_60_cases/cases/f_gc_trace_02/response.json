@@ -1,0 +1,747 @@
+{
+  "paper_id": "focused-curve-v4-1-f_gc_trace_02",
+  "figure_id": "figure_f_gc_trace_02",
+  "panel_id": "panel_f_gc_trace_02",
+  "panel_label": "f_GC_trace_02",
+  "saved_panel_image_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\f_gc_trace_02\\monolithic_anchor_extract\\panel_image.png",
+  "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\f_gc_trace_02\\monolithic_anchor_extract\\curve_overlay.png",
+  "crop_box_original": [
+    0,
+    0,
+    1188,
+    951
+  ],
+  "plot_area_box_cropped": [
+    165,
+    31,
+    1136,
+    812
+  ],
+  "panel_type": "gc_trace",
+  "x_axis": {
+    "label": "Retention time",
+    "units": "min",
+    "tick_labels": [
+      "0",
+      "2",
+      "4",
+      "6",
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 162.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "x-axis origin tick at left spine."
+      },
+      {
+        "tick_value": "2",
+        "pixel_x": 284.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 2."
+      },
+      {
+        "tick_value": "4",
+        "pixel_x": 406.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 4."
+      },
+      {
+        "tick_value": "6",
+        "pixel_x": 528.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 6."
+      },
+      {
+        "tick_value": "8",
+        "pixel_x": 650.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 8."
+      },
+      {
+        "tick_value": "10",
+        "pixel_x": 772.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 10."
+      },
+      {
+        "tick_value": "12",
+        "pixel_x": 894.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 12."
+      },
+      {
+        "tick_value": "14",
+        "pixel_x": 1016.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 14."
+      },
+      {
+        "tick_value": "16",
+        "pixel_x": 1138.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Visible bottom tick label 16 at right spine."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear model with slope 61.0 px per min and intercept 162.5; normalized RMSE 0.0000."
+  },
+  "y_axis": {
+    "label": "Signal",
+    "units": "a.u.",
+    "tick_labels": [
+      "0",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 162.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 0 at bottom spine."
+      },
+      {
+        "tick_value": "100",
+        "pixel_x": 162.5,
+        "pixel_y": 719.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 100."
+      },
+      {
+        "tick_value": "200",
+        "pixel_x": 162.5,
+        "pixel_y": 624.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 200."
+      },
+      {
+        "tick_value": "300",
+        "pixel_x": 162.5,
+        "pixel_y": 529.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 300."
+      },
+      {
+        "tick_value": "400",
+        "pixel_x": 162.5,
+        "pixel_y": 434.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 400."
+      },
+      {
+        "tick_value": "500",
+        "pixel_x": 162.5,
+        "pixel_y": 339.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 500."
+      },
+      {
+        "tick_value": "600",
+        "pixel_x": 162.5,
+        "pixel_y": 244.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 600."
+      },
+      {
+        "tick_value": "700",
+        "pixel_x": 162.5,
+        "pixel_y": 149.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 700."
+      },
+      {
+        "tick_value": "800",
+        "pixel_x": 162.5,
+        "pixel_y": 55.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Visible left-axis tick label 800 near the top spine."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear model with slope -0.9493 px per unit and intercept 814.344; normalized RMSE 0.0003."
+  },
+  "legend_entries": [],
+  "curves": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "unlabeled blue trace",
+      "condition_label": "",
+      "catalyst_context": "",
+      "stroke_color": "blue",
+      "line_style": "solid",
+      "marker_style": "none",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 167,
+          "pixel_y": 753.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 185,
+          "pixel_y": 753.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 203,
+          "pixel_y": 754.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 221,
+          "pixel_y": 754.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 239,
+          "pixel_y": 754.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 257,
+          "pixel_y": 755.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 275,
+          "pixel_y": 755.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 276,
+          "pixel_y": 754.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 281,
+          "pixel_y": 745.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 285,
+          "pixel_y": 715,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 288,
+          "pixel_y": 686.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 290,
+          "pixel_y": 679.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 292,
+          "pixel_y": 686.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 295,
+          "pixel_y": 715.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 299,
+          "pixel_y": 745.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 304,
+          "pixel_y": 755.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 311,
+          "pixel_y": 756.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 329,
+          "pixel_y": 756.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 347,
+          "pixel_y": 756.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 365,
+          "pixel_y": 756.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 380,
+          "pixel_y": 746.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 383,
+          "pixel_y": 721.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 385,
+          "pixel_y": 689.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 389,
+          "pixel_y": 590.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 392,
+          "pixel_y": 523.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 394,
+          "pixel_y": 508.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 396,
+          "pixel_y": 524,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 399,
+          "pixel_y": 590.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 403,
+          "pixel_y": 689.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 408,
+          "pixel_y": 746.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 419,
+          "pixel_y": 757.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 437,
+          "pixel_y": 757.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 455,
+          "pixel_y": 757.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 473,
+          "pixel_y": 758.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 491,
+          "pixel_y": 758.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 509,
+          "pixel_y": 758.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 522,
+          "pixel_y": 749.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 527,
+          "pixel_y": 687.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 528,
+          "pixel_y": 659.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 532,
+          "pixel_y": 466.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 535,
+          "pixel_y": 264.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 538,
+          "pixel_y": 102.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 540,
+          "pixel_y": 66.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 542,
+          "pixel_y": 102.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 548,
+          "pixel_y": 466.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 552,
+          "pixel_y": 659.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 558,
+          "pixel_y": 749.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 563,
+          "pixel_y": 758.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 581,
+          "pixel_y": 758.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 599,
+          "pixel_y": 758.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 617,
+          "pixel_y": 758.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 635,
+          "pixel_y": 759,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 653,
+          "pixel_y": 756.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 659,
+          "pixel_y": 731.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 664,
+          "pixel_y": 652.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 668,
+          "pixel_y": 540,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 672,
+          "pixel_y": 432.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 675,
+          "pixel_y": 401.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 678,
+          "pixel_y": 432.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 682,
+          "pixel_y": 540.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 686,
+          "pixel_y": 652.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 689,
+          "pixel_y": 708.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 691,
+          "pixel_y": 731.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 707,
+          "pixel_y": 759,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 725,
+          "pixel_y": 759,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 743,
+          "pixel_y": 758.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 761,
+          "pixel_y": 758.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 779,
+          "pixel_y": 758.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 797,
+          "pixel_y": 758.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 811,
+          "pixel_y": 737.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 815,
+          "pixel_y": 700.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 816,
+          "pixel_y": 687.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 820,
+          "pixel_y": 624.8,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 824,
+          "pixel_y": 568.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 827,
+          "pixel_y": 552.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 830,
+          "pixel_y": 568.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 834,
+          "pixel_y": 624.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 838,
+          "pixel_y": 687.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 843,
+          "pixel_y": 736.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 851,
+          "pixel_y": 757.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 869,
+          "pixel_y": 758.2,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 887,
+          "pixel_y": 758.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 905,
+          "pixel_y": 757.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 923,
+          "pixel_y": 757.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 941,
+          "pixel_y": 757.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 959,
+          "pixel_y": 757.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 977,
+          "pixel_y": 757.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 995,
+          "pixel_y": 756.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1009,
+          "pixel_y": 742.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1013,
+          "pixel_y": 722.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1015,
+          "pixel_y": 708.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1020,
+          "pixel_y": 661.6,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1024,
+          "pixel_y": 624.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1029,
+          "pixel_y": 603.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1034,
+          "pixel_y": 624.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1038,
+          "pixel_y": 661.3,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1043,
+          "pixel_y": 707.9,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1049,
+          "pixel_y": 741.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1067,
+          "pixel_y": 755.7,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1085,
+          "pixel_y": 755.4,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1103,
+          "pixel_y": 755.1,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1121,
+          "pixel_y": 754.8,
+          "confidence": 0.97
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Single visible trace sampled across the full baseline with targeted extra points around six peaks; tallest peak apex was constrained to the visible top rather than the pre-QA overshoot.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.97
+    }
+  ],
+  "interpretation_notes": "Single blue gas-chromatography trace with six visible peaks and no legend; the trace was sampled across the full baseline with extra points around the narrow peaks. Axis-fit was successful, and overlap QA on the closely related draft showed excellent stroke agreement but a marker-center advisory likely caused by sharp peak geometry.",
+  "qc": {
+    "axis_fit_script_used": true,
+    "overlap_qa_used": true,
+    "curve_count_estimated_correctly": true,
+    "legend_curve_mapping_complete": "yes",
+    "points_cover_visible_extent": "yes",
+    "manual_review_required": true
+  },
+  "unresolved_ambiguities": [
+    "No legend is present, so the single curve label is descriptive rather than source-provided.",
+    "Overlap QA on the preceding draft returned a marker-center advisory despite no visible markers; the final points keep the same x sampling but constrain peak apex heights to the visible stroke."
+  ]
+}

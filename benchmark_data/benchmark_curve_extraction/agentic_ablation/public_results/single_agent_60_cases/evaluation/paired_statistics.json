@@ -1,0 +1,11 @@
+{
+  "paired_cases": 0,
+  "median_staged_minus_monolithic": null,
+  "bootstrap_confidence": 0.95,
+  "bootstrap_ci_lower": null,
+  "bootstrap_ci_upper": null,
+  "staged_better_cases": 0,
+  "monolithic_better_cases": 0,
+  "ties": 0,
+  "exact_sign_test_two_sided_p": 1.0
+}

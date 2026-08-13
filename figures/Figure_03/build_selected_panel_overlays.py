@@ -9,8 +9,21 @@ from PIL import Image, ImageDraw, ImageFont
 
 BASE = Path(__file__).resolve().parent
 REPO = BASE.parent.parent
-BENCHMARK_DIR = REPO / "data" / "benchmark_curve_extraction" / "benchmark_cases" / "focused_curve_extraction_set_v4_1_fixed"
 OVERLAY_DIR = BASE / "anchored_overlays_labeled_offset_axes"
+
+
+def locate_benchmark_dir() -> Path:
+    candidates = (
+        REPO / "benchmark_data" / "benchmark_curve_extraction" / "benchmark_cases" / "focused_curve_extraction_set_v4_1_fixed",
+        REPO / "data" / "benchmark_curve_extraction" / "benchmark_cases" / "focused_curve_extraction_set_v4_1_fixed",
+    )
+    for path in candidates:
+        if path.exists():
+            return path
+    raise FileNotFoundError("Could not locate the focused benchmark case directory")
+
+
+BENCHMARK_DIR = locate_benchmark_dir()
 
 GREEN = (22, 190, 125)
 DARK_GREEN = (0, 108, 78)

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import csv
 from io import BytesIO
 from pathlib import Path
 
@@ -17,6 +18,7 @@ from build_selected_panel_overlays import build_selected_overlays
 BASE = Path(__file__).resolve().parent
 OVERLAY_DIR = BASE / "anchored_overlays_labeled_offset_axes"
 OUT_BASE = BASE / "Figure_3_synthetic_benchmark"
+REPO_ROOT = BASE.parents[1]
 
 PAGE_W = 6000
 MARGIN = 130
@@ -72,6 +74,37 @@ def render_matplotlib(fig: Figure) -> Image.Image:
     rgba = np.frombuffer(canvas.buffer_rgba(), dtype=np.uint8).reshape((h, w, 4))
     plt.close(fig)
     return Image.fromarray(rgba, "RGBA").convert("RGB")
+
+
+def load_v2_curve_metrics() -> tuple[np.ndarray, np.ndarray]:
+    candidates = (
+        REPO_ROOT
+        / "benchmark_data"
+        / "benchmark_curve_extraction"
+        / "agentic_ablation"
+        / "archived_staged_v2_evaluation"
+        / "curve_answer_eval_pixel_distance_v2.csv",
+        REPO_ROOT
+        / "data"
+        / "benchmark_curve_extraction"
+        / "peeragent_ground_truth"
+        / "focused_curve_extraction_set_v4_1_fixed"
+        / "_private_eval"
+        / "curve_answer_eval_pixel_distance_v2.csv",
+    )
+    for path in candidates:
+        if not path.exists():
+            continue
+        with path.open("r", encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        median_distances = np.asarray(
+            [float(row["median_dist_px"]) for row in rows], dtype=float
+        )
+        p95_distances = np.asarray(
+            [float(row["p95_dist_px"]) for row in rows], dtype=float
+        )
+        return median_distances, p95_distances
+    raise FileNotFoundError("Could not locate archived staged v2 curve metrics")
 
 
 def make_b_chart(width: int, height: int) -> Image.Image:
@@ -145,8 +178,11 @@ def make_b_chart(width: int, height: int) -> Image.Image:
 
 
 def make_c_chart(width: int, height: int) -> Image.Image:
-    counts = np.array([8, 34, 18, 8, 7, 5, 4, 4, 2, 2, 1, 1, 0, 0])
-    edges = np.linspace(0, 2.0, len(counts) + 1)
+    median_distances, p95_distances = load_v2_curve_metrics()
+    counts, edges = np.histogram(median_distances, bins=np.linspace(0, 2.0, 15))
+    median_value = float(np.median(median_distances))
+    p90_value = float(np.quantile(median_distances, 0.90))
+    median_p95_value = float(np.median(p95_distances))
 
     img = Image.new("RGB", (width, height), "white")
     draw = ImageDraw.Draw(img)
@@ -183,12 +219,12 @@ def make_c_chart(width: int, height: int) -> Image.Image:
         if bar_h > 0:
             rounded(draw, (x0, axis_y - bar_h, x1, axis_y), 3, bar_fill, None)
 
-    median_x = xmap(0.36)
-    p90_x = xmap(1.13)
+    median_x = xmap(median_value)
+    p90_x = xmap(p90_value)
     draw.line((median_x, chart_top - 5, median_x, axis_y), fill=(18, 67, 126), width=10)
     draw.line((p90_x, chart_top - 5, p90_x, axis_y), fill=(230, 82, 18), width=10)
-    draw.text((median_x + 28, chart_top + 55), "median 0.36 px", font=font(62, True), fill=(18, 67, 126))
-    draw.text((p90_x + 28, chart_top + 180), "p90 1.13 px", font=font(62, True), fill=(230, 82, 18))
+    draw.text((median_x + 28, chart_top + 55), f"median {median_value:.2f} px", font=font(62, True), fill=(18, 67, 126))
+    draw.text((p90_x + 28, chart_top + 180), f"p90 {p90_value:.2f} px", font=font(62, True), fill=(230, 82, 18))
 
     x_label = "Per-curve median point-to-answer distance (pixels)"
     x_label_font = font(50, True)
@@ -196,9 +232,9 @@ def make_c_chart(width: int, height: int) -> Image.Image:
     draw.text(((width - tw) // 2, axis_y + 106), x_label, font=x_label_font, fill=MUTED)
 
     metrics = [
-        ("Curves", "137"),
-        ("Median", "0.36 px"),
-        ("Median p95", "1.44 px"),
+        ("Curves", str(len(median_distances))),
+        ("Median", f"{median_value:.2f} px"),
+        ("Median p95", f"{median_p95_value:.2f} px"),
     ]
     chip_gap = 24
     chip_x0 = 112

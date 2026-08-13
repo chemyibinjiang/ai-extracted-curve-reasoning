@@ -1,0 +1,128 @@
+{
+  "panel_id": "panel_f_gc_trace_01",
+  "figure_id": "figure_f_gc_trace_01",
+  "curve_scores": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "Standard",
+      "stroke_color": "black",
+      "sampled_point_count": 65,
+      "dense_point_count": 1764,
+      "point_hit_rate": 0.9796,
+      "median_distance_px": 0.0,
+      "p95_distance_px": 1.0,
+      "x_coverage_fraction": 0.9878,
+      "y_coverage_fraction": 0.237,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.9878,
+      "minimum_x_coverage_required": 0.55,
+      "coverage_expectation_met": true,
+      "quality": "warn",
+      "near_left_border_fraction": 0.0154,
+      "near_right_border_fraction": 0.0154,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.0,
+      "dominant_border": "left",
+      "dominant_border_fraction": 0.0154,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 37,
+      "marker_center_candidate_fraction": 0.5692,
+      "marker_center_alignment_rate": 0.6486,
+      "marker_center_warn_alignment_rate": 0.7297,
+      "marker_center_median_offset_px": 0.7455,
+      "marker_center_p95_offset_px": 4.9301,
+      "marker_rim_lock_suspected": false
+    },
+    {
+      "curve_id": "curve_2",
+      "curve_label": "Reaction mixture",
+      "stroke_color": "blue",
+      "sampled_point_count": 77,
+      "dense_point_count": 2172,
+      "point_hit_rate": 1.0,
+      "median_distance_px": 0.0,
+      "p95_distance_px": 0.0,
+      "x_coverage_fraction": 0.9745,
+      "y_coverage_fraction": 0.4081,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.9745,
+      "minimum_x_coverage_required": 0.8,
+      "coverage_expectation_met": true,
+      "quality": "pass",
+      "near_left_border_fraction": 0.0,
+      "near_right_border_fraction": 0.0,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.0,
+      "dominant_border": "left",
+      "dominant_border_fraction": 0.0,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 30,
+      "marker_center_candidate_fraction": 0.3896,
+      "marker_center_alignment_rate": 0.7333,
+      "marker_center_warn_alignment_rate": 0.8333,
+      "marker_center_median_offset_px": 0.6867,
+      "marker_center_p95_offset_px": 4.9145,
+      "marker_rim_lock_suspected": false
+    }
+  ],
+  "pairwise_overlap_scores": [
+    {
+      "curve_a": "Standard",
+      "curve_b": "Reaction mixture",
+      "same_color_group": false,
+      "shared_x_count": 956,
+      "median_vertical_separation_px": 379.2917,
+      "p95_vertical_separation_px": 389.1786,
+      "ambiguous_fraction": 0.0,
+      "overlap_x_ranges": [],
+      "review_required": false
+    }
+  ],
+  "summary": {
+    "pass_count": 1,
+    "warn_count": 1,
+    "fail_count": 0,
+    "pairwise_review_count": 0,
+    "panel_quality": "warn",
+    "manual_review_required": true
+  },
+  "recommended_standard": {
+    "curve_fit_to_visible_stroke": {
+      "pass": {
+        "point_hit_rate_gte": 0.85,
+        "median_distance_px_lte": 2.5,
+        "p95_distance_px_lte": 5.0,
+        "minimum_dominant_coverage_complete_curve_gte": 0.8,
+        "minimum_dominant_coverage_partial_curve_gte": 0.55
+      },
+      "warn": {
+        "point_hit_rate_gte": 0.7,
+        "median_distance_px_lte": 4.0,
+        "p95_distance_px_lte": 8.0
+      },
+      "advisories": {
+        "border_lock_threshold_px": 6,
+        "border_lock_suspected_fraction_gte": 0.45,
+        "marker_center_pass_offset_px_lte": 2.5,
+        "marker_center_warn_offset_px_lte": 4.0,
+        "marker_center_min_candidate_count": 8,
+        "marker_curve_pass_point_hit_rate_gte": 0.75,
+        "marker_curve_pass_p95_distance_px_lte": 8.0,
+        "marker_curve_warn_point_hit_rate_gte": 0.55,
+        "marker_curve_warn_p95_distance_px_lte": 11.0,
+        "note": "For marker-bearing curves, strong near-border fractions can indicate marker-rim or frame-lock tracing even when color overlap is high. Hollow-marker centerline traces use relaxed stroke-overlap thresholds only when marker-center alignment is also good."
+      }
+    },
+    "pairwise_overlap": {
+      "ambiguous_if_vertical_separation_px_lte": 4,
+      "minimum_contiguous_overlap_run_px": 12,
+      "review_if_ambiguous_fraction_gt_same_color": 0.08,
+      "review_if_ambiguous_fraction_gt_different_color": 0.15
+    },
+    "panel_acceptance": {
+      "pass": "all curves pass and no pairwise review flags",
+      "warn": "no curve fails, but at least one curve warns or at least one pair is overlap-flagged",
+      "fail": "at least one curve fails stroke agreement or extent coverage"
+    }
+  }
+}

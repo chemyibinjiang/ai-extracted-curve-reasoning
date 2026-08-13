@@ -1,0 +1,2 @@
+condition,cases,valid_axis_fit_cases,curve_count_correct_cases,geometry_complete_pass_cases,complete_pass_cases,median_case_scaled_distance,mean_case_scaled_distance,median_elapsed_seconds,total_model_calls
+monolithic,60,60,60,53,36,0.0006234064311016922,0.005871021591309143,688.6302750110626,60

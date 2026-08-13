@@ -1,0 +1,80 @@
+{
+  "panel_id": "panel_b_kinetic_time_course_10",
+  "fit_usable": true,
+  "manual_review_recommended": false,
+  "overall_plot_type": "linear-linear",
+  "x": {
+    "axis": "x",
+    "raw_anchor_count": 3,
+    "parsed_anchor_count": 3,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": 5.426712328767123,
+        "intercept": 153.71917808219177,
+        "rmse": 0.1911273930269959,
+        "normalized_rmse": 0.0001956268096489211,
+        "parsed_anchor_count": 3,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": false,
+        "slope": null,
+        "intercept": null,
+        "rmse": null,
+        "normalized_rmse": null,
+        "parsed_anchor_count": 2,
+        "reason": "Log10 axis is incompatible with zero or negative tick values."
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 0.9944,
+    "justification": "Best linear fit has normalized RMSE 0.0002.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": 5.426712328767123,
+      "intercept": 153.71917808219177
+    }
+  },
+  "y": {
+    "axis": "y",
+    "raw_anchor_count": 3,
+    "parsed_anchor_count": 3,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": -682.8571428571429,
+        "intercept": 814.3095238095237,
+        "rmse": 0.17817416127495972,
+        "normalized_rmse": 0.0002608699286602631,
+        "parsed_anchor_count": 3,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": false,
+        "slope": null,
+        "intercept": null,
+        "rmse": null,
+        "normalized_rmse": null,
+        "parsed_anchor_count": 2,
+        "reason": "Log10 axis is incompatible with zero or negative tick values."
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 0.9925,
+    "justification": "Best linear fit has normalized RMSE 0.0003.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": -682.8571428571429,
+      "intercept": 814.3095238095237
+    }
+  }
+}

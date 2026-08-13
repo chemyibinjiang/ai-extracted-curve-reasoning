@@ -1,0 +1,85 @@
+{
+  "panel_id": "panel_e_xrd_04",
+  "figure_id": "figure_e_xrd_04",
+  "curve_scores": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "XRD pattern",
+      "stroke_color": "black",
+      "sampled_point_count": 91,
+      "dense_point_count": 4649,
+      "point_hit_rate": 1.0,
+      "median_distance_px": 0.0,
+      "p95_distance_px": 0.0,
+      "x_coverage_fraction": 0.9918,
+      "y_coverage_fraction": 0.8479,
+      "dominant_coverage_axis": "x",
+      "dominant_coverage_fraction": 0.9918,
+      "minimum_x_coverage_required": 0.8,
+      "coverage_expectation_met": true,
+      "quality": "warn",
+      "near_left_border_fraction": 0.022,
+      "near_right_border_fraction": 0.022,
+      "near_top_border_fraction": 0.0,
+      "near_bottom_border_fraction": 0.0,
+      "dominant_border": "left",
+      "dominant_border_fraction": 0.022,
+      "border_lock_suspected": false,
+      "marker_center_candidate_count": 91,
+      "marker_center_candidate_fraction": 1.0,
+      "marker_center_alignment_rate": 0.6044,
+      "marker_center_warn_alignment_rate": 0.7582,
+      "marker_center_median_offset_px": 1.644,
+      "marker_center_p95_offset_px": 4.9706,
+      "marker_rim_lock_suspected": false
+    }
+  ],
+  "pairwise_overlap_scores": [],
+  "summary": {
+    "pass_count": 0,
+    "warn_count": 1,
+    "fail_count": 0,
+    "pairwise_review_count": 0,
+    "panel_quality": "warn",
+    "manual_review_required": true
+  },
+  "recommended_standard": {
+    "curve_fit_to_visible_stroke": {
+      "pass": {
+        "point_hit_rate_gte": 0.85,
+        "median_distance_px_lte": 2.5,
+        "p95_distance_px_lte": 5.0,
+        "minimum_dominant_coverage_complete_curve_gte": 0.8,
+        "minimum_dominant_coverage_partial_curve_gte": 0.55
+      },
+      "warn": {
+        "point_hit_rate_gte": 0.7,
+        "median_distance_px_lte": 4.0,
+        "p95_distance_px_lte": 8.0
+      },
+      "advisories": {
+        "border_lock_threshold_px": 6,
+        "border_lock_suspected_fraction_gte": 0.45,
+        "marker_center_pass_offset_px_lte": 2.5,
+        "marker_center_warn_offset_px_lte": 4.0,
+        "marker_center_min_candidate_count": 8,
+        "marker_curve_pass_point_hit_rate_gte": 0.75,
+        "marker_curve_pass_p95_distance_px_lte": 8.0,
+        "marker_curve_warn_point_hit_rate_gte": 0.55,
+        "marker_curve_warn_p95_distance_px_lte": 11.0,
+        "note": "For marker-bearing curves, strong near-border fractions can indicate marker-rim or frame-lock tracing even when color overlap is high. Hollow-marker centerline traces use relaxed stroke-overlap thresholds only when marker-center alignment is also good."
+      }
+    },
+    "pairwise_overlap": {
+      "ambiguous_if_vertical_separation_px_lte": 4,
+      "minimum_contiguous_overlap_run_px": 12,
+      "review_if_ambiguous_fraction_gt_same_color": 0.08,
+      "review_if_ambiguous_fraction_gt_different_color": 0.15
+    },
+    "panel_acceptance": {
+      "pass": "all curves pass and no pairwise review flags",
+      "warn": "no curve fails, but at least one curve warns or at least one pair is overlap-flagged",
+      "fail": "at least one curve fails stroke agreement or extent coverage"
+    }
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "paper_id": {
+      "type": "string"
+    },
+    "figure_id": {
+      "type": "string"
+    },
+    "panel_id": {
+      "type": "string"
+    },
+    "panel_label": {
+      "type": "string"
+    },
+    "saved_panel_image_path": {
+      "type": "string"
+    },
+    "saved_curve_overlay_path": {
+      "type": "string"
+    },
+    "crop_box_original": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "plot_area_box_cropped": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "panel_type": {
+      "type": "string"
+    },
+    "x_axis": {
+      "$ref": "#/$defs/axis"
+    },
+    "y_axis": {
+      "$ref": "#/$defs/axis"
+    },
+    "legend_entries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "curves": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/curve"
+      }
+    },
+    "interpretation_notes": {
+      "type": "string"
+    },
+    "qc": {
+      "type": "object",
+      "properties": {
+        "axis_fit_script_used": {
+          "type": "boolean"
+        },
+        "overlap_qa_used": {
+          "type": "boolean"
+        },
+        "curve_count_estimated_correctly": {
+          "type": "boolean"
+        },
+        "legend_curve_mapping_complete": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "ambiguous"
+          ]
+        },
+        "points_cover_visible_extent": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "ambiguous"
+          ]
+        },
+        "manual_review_required": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "axis_fit_script_used",
+        "overlap_qa_used",
+        "curve_count_estimated_correctly",
+        "legend_curve_mapping_complete",
+        "points_cover_visible_extent",
+        "manual_review_required"
+      ],
+      "additionalProperties": false
+    },
+    "unresolved_ambiguities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "paper_id",
+    "figure_id",
+    "panel_id",
+    "panel_label",
+    "saved_panel_image_path",
+    "saved_curve_overlay_path",
+    "crop_box_original",
+    "plot_area_box_cropped",
+    "panel_type",
+    "x_axis",
+    "y_axis",
+    "legend_entries",
+    "curves",
+    "interpretation_notes",
+    "qc",
+    "unresolved_ambiguities"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "axis": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string"
+        },
+        "tick_labels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "chosen_model": {
+          "type": "string",
+          "enum": [
+            "linear",
+            "log10",
+            "unknown"
+          ]
+        },
+        "usable_for_downstream": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "ambiguous"
+          ]
+        },
+        "anchors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/anchor"
+          }
+        },
+        "fit_notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "units",
+        "tick_labels",
+        "chosen_model",
+        "usable_for_downstream",
+        "anchors",
+        "fit_notes"
+      ],
+      "additionalProperties": false
+    },
+    "anchor": {
+      "type": "object",
+      "properties": {
+        "tick_value": {
+          "type": "string"
+        },
+        "pixel_x": {
+          "type": "number"
+        },
+        "pixel_y": {
+          "type": "number"
+        },
+        "coordinate_system": {
+          "type": "string",
+          "enum": [
+            "cropped_panel"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tick_value",
+        "pixel_x",
+        "pixel_y",
+        "coordinate_system",
+        "confidence",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "point": {
+      "type": "object",
+      "properties": {
+        "pixel_x": {
+          "type": "number"
+        },
+        "pixel_y": {
+          "type": "number"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "pixel_x",
+        "pixel_y",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "curve": {
+      "type": "object",
+      "properties": {
+        "curve_id": {
+          "type": "string"
+        },
+        "curve_label": {
+          "type": "string"
+        },
+        "condition_label": {
+          "type": "string"
+        },
+        "catalyst_context": {
+          "type": "string"
+        },
+        "stroke_color": {
+          "type": "string"
+        },
+        "line_style": {
+          "type": "string"
+        },
+        "marker_style": {
+          "type": "string"
+        },
+        "point_coordinate_system": {
+          "type": "string",
+          "enum": [
+            "cropped_panel"
+          ]
+        },
+        "sampled_points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/point"
+          }
+        },
+        "visible_segment_status": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "partial",
+            "ambiguous"
+          ]
+        },
+        "overlap_notes": {
+          "type": "string"
+        },
+        "usable_for_normalization": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "ambiguous"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "curve_id",
+        "curve_label",
+        "condition_label",
+        "catalyst_context",
+        "stroke_color",
+        "line_style",
+        "marker_style",
+        "point_coordinate_system",
+        "sampled_points",
+        "visible_segment_status",
+        "overlap_notes",
+        "usable_for_normalization",
+        "confidence"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

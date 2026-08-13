@@ -1,0 +1,2 @@
+condition,truth_curves,predicted_curves,matched_curves,geometry_pass_curves,identity_exact_curves,median_curve_scaled_distance
+monolithic,137,137,137,127,108,0.0005690618306672788

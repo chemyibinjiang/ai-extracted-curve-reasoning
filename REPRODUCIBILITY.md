@@ -21,7 +21,7 @@ Public package-relative data roots:
 | Data root | Purpose |
 |---|---|
 | `data_literature/zenodo_extracted_curve_dataset_v1` | Publishable extracted HER polarization-curve dataset with DOI/panel/catalyst provenance. |
-| `benchmark_data/benchmark_curve_extraction` | Synthetic benchmark cases and ground-truth data for curve-extraction evaluation. |
+| `benchmark_data/benchmark_curve_extraction` | Synthetic benchmark cases, ground-truth curves, the completed 60-panel single-agent records, retrospective staged comparison, and ablation harness. |
 
 Original publication figures, publisher HTML, raw source archives, and DOI-linked proof-card material are not included in this public repository draft.
 

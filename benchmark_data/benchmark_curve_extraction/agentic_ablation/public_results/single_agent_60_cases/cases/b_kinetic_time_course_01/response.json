@@ -1,0 +1,948 @@
+{
+  "paper_id": "focused-curve-v4-1-b_kinetic_time_course_01",
+  "figure_id": "figure_b_kinetic_time_course_01",
+  "panel_id": "panel_b_kinetic_time_course_01",
+  "panel_label": "b_kinetic_time_course_01",
+  "saved_panel_image_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\b_kinetic_time_course_01\\monolithic_anchor_extract\\panel_image.png",
+  "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\b_kinetic_time_course_01\\monolithic_anchor_extract\\curve_overlay.png",
+  "crop_box_original": [
+    0,
+    0,
+    1190,
+    951
+  ],
+  "plot_area_box_cropped": [
+    156,
+    31,
+    1129,
+    813
+  ],
+  "panel_type": "kinetic_time_course",
+  "x_axis": {
+    "label": "Time",
+    "units": "min",
+    "tick_labels": [
+      "0",
+      "20",
+      "40",
+      "60",
+      "80",
+      "100",
+      "120"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 153.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom x-axis tick at 0 min on the left spine."
+      },
+      {
+        "tick_value": "20",
+        "pixel_x": 316.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom x-axis tick label 20."
+      },
+      {
+        "tick_value": "40",
+        "pixel_x": 479.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom x-axis tick label 40."
+      },
+      {
+        "tick_value": "60",
+        "pixel_x": 642.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom x-axis tick label 60."
+      },
+      {
+        "tick_value": "80",
+        "pixel_x": 804.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom x-axis tick label 80."
+      },
+      {
+        "tick_value": "100",
+        "pixel_x": 967.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom x-axis tick label 100."
+      },
+      {
+        "tick_value": "120",
+        "pixel_x": 1130.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Rightmost x-axis tick label 120 at the right spine."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear x mapping (slope 8.1393, intercept 153.7143, normalized RMSE 0.0003)."
+  },
+  "y_axis": {
+    "label": "C/C_0",
+    "units": "",
+    "tick_labels": [
+      "0.0",
+      "0.2",
+      "0.4",
+      "0.6",
+      "0.8",
+      "1.0"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0.0",
+        "pixel_x": 153.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left y-axis bottom tick label 0.0."
+      },
+      {
+        "tick_value": "0.2",
+        "pixel_x": 153.5,
+        "pixel_y": 677.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left y-axis tick label 0.2."
+      },
+      {
+        "tick_value": "0.4",
+        "pixel_x": 153.5,
+        "pixel_y": 540.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left y-axis tick label 0.4."
+      },
+      {
+        "tick_value": "0.6",
+        "pixel_x": 153.5,
+        "pixel_y": 404.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left y-axis tick label 0.6."
+      },
+      {
+        "tick_value": "0.8",
+        "pixel_x": 153.5,
+        "pixel_y": 267.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left y-axis tick label 0.8."
+      },
+      {
+        "tick_value": "1.0",
+        "pixel_x": 153.5,
+        "pixel_y": 131.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Highest visible y-axis tick label 1.0; the plot retains unlabeled headroom above it."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear y mapping (slope -683.0000, intercept 814.1667, normalized RMSE 0.0004); the visible top labeled tick is 1.0 with extra unlabeled headroom above it."
+  },
+  "legend_entries": [
+    "Blank",
+    "Catalyst A",
+    "Catalyst B"
+  ],
+  "curves": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "Blank",
+      "condition_label": "Blank",
+      "catalyst_context": "",
+      "stroke_color": "black",
+      "line_style": "solid",
+      "marker_style": "open circle",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 166.0,
+          "pixel_y": 141.88,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 182.0,
+          "pixel_y": 155.17,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 198.0,
+          "pixel_y": 168.46,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 215.0,
+          "pixel_y": 182.58,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 247.0,
+          "pixel_y": 208.19,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 263.0,
+          "pixel_y": 220.21,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 280.0,
+          "pixel_y": 232.97,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 296.0,
+          "pixel_y": 244.98,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 329.0,
+          "pixel_y": 268.88,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 345.0,
+          "pixel_y": 279.78,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 361.0,
+          "pixel_y": 290.68,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 377.0,
+          "pixel_y": 301.58,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 410.0,
+          "pixel_y": 323.2,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 426.0,
+          "pixel_y": 332.98,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 443.0,
+          "pixel_y": 343.38,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 459.0,
+          "pixel_y": 353.16,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 491.0,
+          "pixel_y": 372.07,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 508.0,
+          "pixel_y": 381.52,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 524.0,
+          "pixel_y": 390.42,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 540.0,
+          "pixel_y": 399.32,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 573.0,
+          "pixel_y": 416.84,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 589.0,
+          "pixel_y": 424.67,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 605.0,
+          "pixel_y": 432.49,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 622.0,
+          "pixel_y": 440.81,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 654.0,
+          "pixel_y": 456.02,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 670.0,
+          "pixel_y": 463.24,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 687.0,
+          "pixel_y": 470.92,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 703.0,
+          "pixel_y": 478.14,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 736.0,
+          "pixel_y": 492.38,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 752.0,
+          "pixel_y": 498.77,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 768.0,
+          "pixel_y": 505.15,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 784.0,
+          "pixel_y": 511.54,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 817.0,
+          "pixel_y": 524.28,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 833.0,
+          "pixel_y": 530.11,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 850.0,
+          "pixel_y": 536.31,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 866.0,
+          "pixel_y": 542.14,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 898.0,
+          "pixel_y": 553.32,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 915.0,
+          "pixel_y": 558.82,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 931.0,
+          "pixel_y": 564.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 947.0,
+          "pixel_y": 569.17,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 980.0,
+          "pixel_y": 579.48,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 996.0,
+          "pixel_y": 584.18,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1012.0,
+          "pixel_y": 588.89,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1029.0,
+          "pixel_y": 593.88,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1061.0,
+          "pixel_y": 602.89,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1078.0,
+          "pixel_y": 607.32,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1094.0,
+          "pixel_y": 611.49,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1110.0,
+          "pixel_y": 615.66,
+          "confidence": 0.92
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Origin marker overlaps the colored series; rightmost marker touches the frame, so points stay slightly inside the border.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.97
+    },
+    {
+      "curve_id": "curve_2",
+      "curve_label": "Catalyst A",
+      "condition_label": "Catalyst A",
+      "catalyst_context": "",
+      "stroke_color": "blue",
+      "line_style": "dashed",
+      "marker_style": "square",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 166.0,
+          "pixel_y": 152.54,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 182.0,
+          "pixel_y": 179.48,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 198.0,
+          "pixel_y": 206.41,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 215.0,
+          "pixel_y": 235.03,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 247.0,
+          "pixel_y": 284.94,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 263.0,
+          "pixel_y": 306.64,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 280.0,
+          "pixel_y": 329.69,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 296.0,
+          "pixel_y": 351.39,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 329.0,
+          "pixel_y": 392.78,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 345.0,
+          "pixel_y": 410.23,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 361.0,
+          "pixel_y": 427.68,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 377.0,
+          "pixel_y": 445.13,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 410.0,
+          "pixel_y": 478.42,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 426.0,
+          "pixel_y": 492.34,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 443.0,
+          "pixel_y": 507.14,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 459.0,
+          "pixel_y": 521.06,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 491.0,
+          "pixel_y": 546.73,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 507.0,
+          "pixel_y": 557.71,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 524.0,
+          "pixel_y": 569.38,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 540.0,
+          "pixel_y": 580.36,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 573.0,
+          "pixel_y": 601.33,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 589.0,
+          "pixel_y": 610.14,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 605.0,
+          "pixel_y": 618.95,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 622.0,
+          "pixel_y": 628.31,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 654.0,
+          "pixel_y": 644.49,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 670.0,
+          "pixel_y": 651.38,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 687.0,
+          "pixel_y": 658.7,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 703.0,
+          "pixel_y": 665.6,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 736.0,
+          "pixel_y": 678.88,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 752.0,
+          "pixel_y": 684.59,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 768.0,
+          "pixel_y": 690.3,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 784.0,
+          "pixel_y": 696.01,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 817.0,
+          "pixel_y": 706.73,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 835.0,
+          "pixel_y": 711.59,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 850.0,
+          "pixel_y": 715.64,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 866.0,
+          "pixel_y": 719.97,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 898.0,
+          "pixel_y": 728.04,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 914.0,
+          "pixel_y": 731.59,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 931.0,
+          "pixel_y": 735.35,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 944.0,
+          "pixel_y": 738.23,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 980.0,
+          "pixel_y": 745.6,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 996.0,
+          "pixel_y": 748.35,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1012.0,
+          "pixel_y": 751.11,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1029.0,
+          "pixel_y": 754.04,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1061.0,
+          "pixel_y": 759.21,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1078.0,
+          "pixel_y": 761.66,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1090.0,
+          "pixel_y": 763.38,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1110.0,
+          "pixel_y": 766.25,
+          "confidence": 0.92
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Dashed line with square markers; points are snapped to visible dashes or marker centers and avoid the legend glyph in the upper right.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.97
+    },
+    {
+      "curve_id": "curve_3",
+      "curve_label": "Catalyst B",
+      "condition_label": "Catalyst B",
+      "catalyst_context": "",
+      "stroke_color": "red",
+      "line_style": "dash-dot",
+      "marker_style": "triangle",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 166.0,
+          "pixel_y": 162.55,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 182.0,
+          "pixel_y": 202.29,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 198.0,
+          "pixel_y": 242.04,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 215.0,
+          "pixel_y": 284.27,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 247.0,
+          "pixel_y": 355.24,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 263.0,
+          "pixel_y": 383.7,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 280.0,
+          "pixel_y": 413.94,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 296.0,
+          "pixel_y": 442.41,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 329.0,
+          "pixel_y": 494.26,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 345.0,
+          "pixel_y": 514.06,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 361.0,
+          "pixel_y": 533.86,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 377.0,
+          "pixel_y": 553.66,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 410.0,
+          "pixel_y": 590.06,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 426.0,
+          "pixel_y": 604.06,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 443.0,
+          "pixel_y": 618.94,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 459.0,
+          "pixel_y": 632.94,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 491.0,
+          "pixel_y": 658.04,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 508.0,
+          "pixel_y": 668.74,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 524.0,
+          "pixel_y": 678.82,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 540.0,
+          "pixel_y": 688.89,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 573.0,
+          "pixel_y": 706.93,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 589.0,
+          "pixel_y": 713.48,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 605.0,
+          "pixel_y": 720.03,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 622.0,
+          "pixel_y": 726.98,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 654.0,
+          "pixel_y": 738.83,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 670.0,
+          "pixel_y": 743.71,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 687.0,
+          "pixel_y": 748.89,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 703.0,
+          "pixel_y": 753.77,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 736.0,
+          "pixel_y": 762.55,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 752.0,
+          "pixel_y": 765.8,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 770.0,
+          "pixel_y": 769.45,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 785.0,
+          "pixel_y": 772.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 817.0,
+          "pixel_y": 778.32,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 833.0,
+          "pixel_y": 780.69,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 850.0,
+          "pixel_y": 783.2,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 866.0,
+          "pixel_y": 785.57,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 898.0,
+          "pixel_y": 789.77,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 915.0,
+          "pixel_y": 791.51,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 931.0,
+          "pixel_y": 793.16,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 948.0,
+          "pixel_y": 794.9,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 980.0,
+          "pixel_y": 797.62,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 996.0,
+          "pixel_y": 798.53,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1012.0,
+          "pixel_y": 799.44,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1029.0,
+          "pixel_y": 800.4,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1061.0,
+          "pixel_y": 801.95,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1081.0,
+          "pixel_y": 802.65,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1094.0,
+          "pixel_y": 803.1,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1110.0,
+          "pixel_y": 803.66,
+          "confidence": 0.92
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Dash-dot line with filled triangle markers; the start point overlaps the other two series at the origin.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.97
+    }
+  ],
+  "interpretation_notes": "The panel shows a classic kinetic decay time course: the Blank trace decays slowest, Catalyst A decays faster, and Catalyst B decays fastest over 0 to 120 min.",
+  "qc": {
+    "axis_fit_script_used": true,
+    "overlap_qa_used": true,
+    "curve_count_estimated_correctly": true,
+    "legend_curve_mapping_complete": "yes",
+    "points_cover_visible_extent": "yes",
+    "manual_review_required": false
+  },
+  "unresolved_ambiguities": [
+    "All three series coincide at the shared origin near (0 min, 1.0), so the first visible segment is traced from slightly inside the left border rather than from the exact overlapping marker center.",
+    "The top of the y-axis has unlabeled headroom above the 1.0 tick, so anchoring uses only the visible labeled ticks."
+  ]
+}

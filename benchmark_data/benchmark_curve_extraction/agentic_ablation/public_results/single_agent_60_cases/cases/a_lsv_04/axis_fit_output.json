@@ -1,0 +1,80 @@
+{
+  "panel_id": "panel_a_lsv_04",
+  "fit_usable": true,
+  "manual_review_recommended": false,
+  "overall_plot_type": "linear-linear",
+  "x": {
+    "axis": "x",
+    "raw_anchor_count": 5,
+    "parsed_anchor_count": 5,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": 1952.0,
+        "intercept": -2266.7,
+        "rmse": 0.2828427124746833,
+        "normalized_rmse": 0.0003621545614272513,
+        "parsed_anchor_count": 5,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": true,
+        "slope": 6697.527910881296,
+        "intercept": -505.0497732418944,
+        "rmse": 10.698957737327138,
+        "normalized_rmse": 0.013699049599650626,
+        "parsed_anchor_count": 5,
+        "reason": "ok"
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 0.9897,
+    "justification": "Best linear fit has normalized RMSE 0.0004.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": 1952.0,
+      "intercept": -2266.7
+    }
+  },
+  "y": {
+    "axis": "y",
+    "raw_anchor_count": 6,
+    "parsed_anchor_count": 6,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": -7.142857142857143,
+        "intercept": 814.3095238095239,
+        "rmse": 0.2817180849095071,
+        "normalized_rmse": 0.00039456314413096233,
+        "parsed_anchor_count": 6,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": false,
+        "slope": null,
+        "intercept": null,
+        "rmse": null,
+        "normalized_rmse": null,
+        "parsed_anchor_count": 5,
+        "reason": "Log10 axis is incompatible with zero or negative tick values."
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 0.9887,
+    "justification": "Best linear fit has normalized RMSE 0.0004.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": -7.142857142857143,
+      "intercept": 814.3095238095239
+    }
+  }
+}

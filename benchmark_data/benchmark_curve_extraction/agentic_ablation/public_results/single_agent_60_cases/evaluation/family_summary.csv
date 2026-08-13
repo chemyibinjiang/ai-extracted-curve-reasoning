@@ -1,0 +1,7 @@
+condition,family,cases,geometry_complete_pass_cases,complete_pass_cases,curve_count_correct_cases,median_case_scaled_distance
+monolithic,GC_trace,10,9,3,10,0.0002833567531575562
+monolithic,LSV,10,10,10,10,0.000455980394818271
+monolithic,Raman,10,8,6,10,0.0005714033513391436
+monolithic,UV_Vis,10,7,5,10,0.0005876897059887823
+monolithic,XRD,10,9,3,10,0.0020449705272320828
+monolithic,kinetic_time_course,10,10,9,10,0.0006975143098069147

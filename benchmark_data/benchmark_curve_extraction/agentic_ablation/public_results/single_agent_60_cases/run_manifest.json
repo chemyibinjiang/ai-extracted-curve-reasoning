@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-11T12:22:31.822927+00:00",
+  "condition": "monolithic",
+  "model": "gpt-5.4",
+  "reasoning_effort": "xhigh",
+  "codex_bypass_sandbox": true,
+  "input_image_attached": true,
+  "codex_cli_version": "codex-cli 0.146.1",
+  "max_workers": 60,
+  "completed": 60,
+  "failed": 0,
+  "skipped": 0,
+  "provider": {
+    "id": "blackaicoding",
+    "name": "Black AI Coding",
+    "base_url": "https://blackaicoding.com/v1",
+    "env_key": "BLACKAI_API_KEY",
+    "wire_api": "responses",
+    "requires_openai_auth": false,
+    "isolated_codex_home": true,
+    "local_openai_credentials_inherited": false,
+    "config_sha256": "9eaba7de7b4283f9bff8a2016c267dcd45223abd2f30a62d1c3c81366da5e219",
+    "model_preflight": {
+      "models_url": "https://blackaicoding.com/v1/models",
+      "authenticated": true,
+      "model_count": 23,
+      "requested_model": "gpt-5.4",
+      "requested_model_available": true
+    }
+  }
+}

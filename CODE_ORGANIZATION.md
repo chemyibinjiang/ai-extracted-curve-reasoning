@@ -54,6 +54,19 @@ For Figure 6 manuscript graphics, use:
 
 `figures/Figure_06_ptc_relative/main_text_figure6_package_20260619_panelF_bv_interval`
 
+## Benchmark Ablation Convention
+
+The single-agent versus staged anchoring-and-extraction protocol and code are
+stored under:
+
+`benchmark_data/benchmark_curve_extraction/agentic_ablation`
+
+Generated workspaces and model outputs belong under its ignored `runs/`
+directory. The curated, path-sanitized single-agent records and retrospective
+common-evaluator comparison are published under `public_results/`. Temporary
+provider state, caches, duplicated frozen code, and exploratory debug files
+remain excluded.
+
 ## Code Archive Policy
 
 The frozen framework code is stored under:

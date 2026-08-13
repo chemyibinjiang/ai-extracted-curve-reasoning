@@ -1,0 +1,829 @@
+{
+  "paper_id": "focused-curve-v4-1-a_lsv_01",
+  "figure_id": "figure_a_lsv_01",
+  "panel_id": "panel_a_lsv_01",
+  "panel_label": "a_LSV_01",
+  "saved_panel_image_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\a_lsv_01\\monolithic_anchor_extract\\panel_image.png",
+  "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\a_lsv_01\\monolithic_anchor_extract\\curve_overlay.png",
+  "crop_box_original": [
+    0,
+    0,
+    1216,
+    964
+  ],
+  "plot_area_box_cropped": [
+    183,
+    40,
+    1163,
+    829
+  ],
+  "panel_type": "lsv",
+  "x_axis": {
+    "label": "Potential",
+    "units": "V vs. RHE",
+    "tick_labels": [
+      "-0.6",
+      "-0.4",
+      "-0.2",
+      "0.0",
+      "0.2"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "-0.6",
+        "pixel_x": 184.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "-0.4",
+        "pixel_x": 429.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "-0.2",
+        "pixel_x": 673.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "0.0",
+        "pixel_x": 917.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "0.2",
+        "pixel_x": 1161.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center read from visible tick marks."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear mapping with normalized RMSE 0.0003; visible ticks run from -0.6 to 0.2 V."
+  },
+  "y_axis": {
+    "label": "Current density",
+    "units": "mA cm^-2",
+    "tick_labels": [
+      "-100",
+      "-80",
+      "-60",
+      "-40",
+      "-20",
+      "0",
+      "20"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "-100",
+        "pixel_x": 184.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "-80",
+        "pixel_x": 184.5,
+        "pixel_y": 696.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "-60",
+        "pixel_x": 184.5,
+        "pixel_y": 565.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "-40",
+        "pixel_x": 184.5,
+        "pixel_y": 434.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "-20",
+        "pixel_x": 184.5,
+        "pixel_y": 303.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "0",
+        "pixel_x": 184.5,
+        "pixel_y": 172.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      },
+      {
+        "tick_value": "20",
+        "pixel_x": 184.5,
+        "pixel_y": 41.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center read from visible tick marks."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear mapping with normalized RMSE 0.0000; visible ticks run from -100 to 20 mA cm^-2."
+  },
+  "legend_entries": [
+    "Pt/C",
+    "NiFe LDH",
+    "NiFe LDH/NF"
+  ],
+  "curves": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "Pt/C",
+      "condition_label": "Pt/C",
+      "catalyst_context": "HER LSV",
+      "stroke_color": "#000000",
+      "line_style": "solid",
+      "marker_style": "none",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 187.0,
+          "pixel_y": 694.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 205.0,
+          "pixel_y": 687.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 223.0,
+          "pixel_y": 680.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 241.0,
+          "pixel_y": 672.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 259.0,
+          "pixel_y": 664.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 277.0,
+          "pixel_y": 655.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 295.0,
+          "pixel_y": 646.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 313.0,
+          "pixel_y": 637.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 331.0,
+          "pixel_y": 627.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 349.0,
+          "pixel_y": 616.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 367.0,
+          "pixel_y": 605.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 385.0,
+          "pixel_y": 594.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 403.0,
+          "pixel_y": 582.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 421.0,
+          "pixel_y": 570.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 439.0,
+          "pixel_y": 557.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 457.0,
+          "pixel_y": 545.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 475.0,
+          "pixel_y": 531.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 493.0,
+          "pixel_y": 518.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 511.0,
+          "pixel_y": 504.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 529.0,
+          "pixel_y": 490.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 547.0,
+          "pixel_y": 477.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 565.0,
+          "pixel_y": 463.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 583.0,
+          "pixel_y": 449.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 601.0,
+          "pixel_y": 435.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 619.0,
+          "pixel_y": 422.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 637.0,
+          "pixel_y": 408.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 655.0,
+          "pixel_y": 395.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 673.0,
+          "pixel_y": 382.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 691.0,
+          "pixel_y": 370.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 709.0,
+          "pixel_y": 358.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 727.0,
+          "pixel_y": 346.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 745.0,
+          "pixel_y": 335.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 763.0,
+          "pixel_y": 324.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 781.0,
+          "pixel_y": 314.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 799.0,
+          "pixel_y": 304.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 817.0,
+          "pixel_y": 295.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 835.0,
+          "pixel_y": 286.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 853.0,
+          "pixel_y": 278.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 871.0,
+          "pixel_y": 270.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 889.0,
+          "pixel_y": 263.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 907.0,
+          "pixel_y": 256.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 925.0,
+          "pixel_y": 250.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 943.0,
+          "pixel_y": 244.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 961.0,
+          "pixel_y": 238.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 979.0,
+          "pixel_y": 233.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 997.0,
+          "pixel_y": 228.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1015.0,
+          "pixel_y": 224.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1033.0,
+          "pixel_y": 219.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1051.0,
+          "pixel_y": 216.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1069.0,
+          "pixel_y": 212.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1087.0,
+          "pixel_y": 209.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1105.0,
+          "pixel_y": 206.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1123.0,
+          "pixel_y": 203.0,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1141.0,
+          "pixel_y": 200.5,
+          "confidence": 0.98
+        },
+        {
+          "pixel_x": 1159.0,
+          "pixel_y": 198.0,
+          "confidence": 0.98
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Solid black trace separated from legend by keeping the lowest dark stroke in each sampled column.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.92
+    },
+    {
+      "curve_id": "curve_2",
+      "curve_label": "NiFe LDH",
+      "condition_label": "NiFe LDH",
+      "catalyst_context": "HER LSV",
+      "stroke_color": "#1f77b4",
+      "line_style": "dashed",
+      "marker_style": "none",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 196.0,
+          "pixel_y": 450.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 222.0,
+          "pixel_y": 439.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 251.0,
+          "pixel_y": 426.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 276.0,
+          "pixel_y": 414.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 303.0,
+          "pixel_y": 401.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 330.0,
+          "pixel_y": 388.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 356.0,
+          "pixel_y": 374.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 382.0,
+          "pixel_y": 361.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 410.0,
+          "pixel_y": 347.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 436.0,
+          "pixel_y": 333.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 462.0,
+          "pixel_y": 320.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 490.0,
+          "pixel_y": 307.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 516.0,
+          "pixel_y": 295.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 544.0,
+          "pixel_y": 282.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 571.0,
+          "pixel_y": 271.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 599.0,
+          "pixel_y": 260.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 627.0,
+          "pixel_y": 250.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 656.0,
+          "pixel_y": 241.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 684.0,
+          "pixel_y": 233.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 713.0,
+          "pixel_y": 225.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 742.0,
+          "pixel_y": 218.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 771.0,
+          "pixel_y": 212.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 800.0,
+          "pixel_y": 207.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 830.0,
+          "pixel_y": 202.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 859.0,
+          "pixel_y": 198.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 889.0,
+          "pixel_y": 194.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 919.0,
+          "pixel_y": 191.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 948.0,
+          "pixel_y": 189.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 978.0,
+          "pixel_y": 186.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1008.0,
+          "pixel_y": 184.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1038.0,
+          "pixel_y": 182.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1067.0,
+          "pixel_y": 181.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1097.0,
+          "pixel_y": 180.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1127.0,
+          "pixel_y": 179.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1153.0,
+          "pixel_y": 178.5,
+          "confidence": 0.97
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Dashed blue trace sampled at dash centers only; legend dashes excluded by keeping the lowest blue segment per column.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.96
+    },
+    {
+      "curve_id": "curve_3",
+      "curve_label": "NiFe LDH/NF",
+      "condition_label": "NiFe LDH/NF",
+      "catalyst_context": "HER LSV",
+      "stroke_color": "#d62728",
+      "line_style": "dash-dot",
+      "marker_style": "none",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 209.0,
+          "pixel_y": 288.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 253.0,
+          "pixel_y": 272.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 306.0,
+          "pixel_y": 255.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 324.0,
+          "pixel_y": 249.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 363.0,
+          "pixel_y": 237.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 381.0,
+          "pixel_y": 232.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 421.0,
+          "pixel_y": 222.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 438.0,
+          "pixel_y": 218.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 479.0,
+          "pixel_y": 209.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 496.0,
+          "pixel_y": 206.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 538.0,
+          "pixel_y": 199.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 555.0,
+          "pixel_y": 197.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 597.0,
+          "pixel_y": 191.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 614.0,
+          "pixel_y": 190.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 657.0,
+          "pixel_y": 186.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 674.0,
+          "pixel_y": 184.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 716.0,
+          "pixel_y": 182.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 733.0,
+          "pixel_y": 181.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 776.0,
+          "pixel_y": 179.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 793.0,
+          "pixel_y": 178.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 835.0,
+          "pixel_y": 177.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 853.0,
+          "pixel_y": 176.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 895.0,
+          "pixel_y": 175.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 912.0,
+          "pixel_y": 175.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 955.0,
+          "pixel_y": 174.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 972.0,
+          "pixel_y": 174.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1014.0,
+          "pixel_y": 174.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1031.0,
+          "pixel_y": 174.0,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1074.0,
+          "pixel_y": 173.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1091.0,
+          "pixel_y": 173.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1133.0,
+          "pixel_y": 173.5,
+          "confidence": 0.97
+        },
+        {
+          "pixel_x": 1151.0,
+          "pixel_y": 173.0,
+          "confidence": 0.97
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Dash-dot red trace sampled on the longer visible dash elements only; short dot-like micro-runs were skipped to avoid marker-rim locking while preserving full left-to-right extent.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.89
+    }
+  ],
+  "interpretation_notes": "Three monotonic HER-style LSV traces are visible. Pt/C is the lowest black solid curve, NiFe LDH is the intermediate blue dashed curve, and NiFe LDH/NF is the upper red dash-dot curve that approaches 0 current earliest. The overlap scorer accepted the linear axes and the colored traces, while black-stroke and dash-dot heuristics still requested manual review.",
+  "qc": {
+    "axis_fit_script_used": true,
+    "overlap_qa_used": true,
+    "curve_count_estimated_correctly": true,
+    "legend_curve_mapping_complete": "yes",
+    "points_cover_visible_extent": "yes",
+    "manual_review_required": true
+  },
+  "unresolved_ambiguities": [
+    "Overlap QA reported zero black-stroke hits for Pt/C even though the sampled points land on visible black pixels in the panel; this appears to be a scorer heuristic issue for the black solid curve.",
+    "Overlap QA continued to flag the red dash-dot trace as marker-rim-like because the short dash-dot dots resemble markers; the final trace keeps points on the longer visible dash elements only."
+  ]
+}

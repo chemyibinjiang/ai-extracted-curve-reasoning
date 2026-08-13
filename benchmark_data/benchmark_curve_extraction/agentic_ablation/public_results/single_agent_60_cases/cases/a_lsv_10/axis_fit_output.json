@@ -1,0 +1,80 @@
+{
+  "panel_id": "panel_a_lsv_10",
+  "fit_usable": true,
+  "manual_review_recommended": false,
+  "overall_plot_type": "linear-linear",
+  "x": {
+    "axis": "x",
+    "raw_anchor_count": 4,
+    "parsed_anchor_count": 4,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": 2440.0,
+        "intercept": 1019.5,
+        "rmse": 0.0,
+        "normalized_rmse": 0.0,
+        "parsed_anchor_count": 4,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": false,
+        "slope": null,
+        "intercept": null,
+        "rmse": null,
+        "normalized_rmse": null,
+        "parsed_anchor_count": 0,
+        "reason": "Log10 axis is incompatible with zero or negative tick values."
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 1.0,
+    "justification": "Best linear fit has normalized RMSE 0.0000.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": 2440.0,
+      "intercept": 1019.5
+    }
+  },
+  "y": {
+    "axis": "y",
+    "raw_anchor_count": 5,
+    "parsed_anchor_count": 5,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": -15.7,
+        "intercept": 107.5,
+        "rmse": 0.0,
+        "normalized_rmse": 0.0,
+        "parsed_anchor_count": 5,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": false,
+        "slope": null,
+        "intercept": null,
+        "rmse": null,
+        "normalized_rmse": null,
+        "parsed_anchor_count": 0,
+        "reason": "Log10 axis is incompatible with zero or negative tick values."
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 1.0,
+    "justification": "Best linear fit has normalized RMSE 0.0000.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": -15.7,
+      "intercept": 107.5
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "panel_id": "panel_a_lsv_08",
+  "fit_usable": true,
+  "manual_review_recommended": false,
+  "overall_plot_type": "semilog-y",
+  "x": {
+    "axis": "x",
+    "raw_anchor_count": 6,
+    "parsed_anchor_count": 6,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": 1627.7142857142858,
+        "intercept": 149.96666666666658,
+        "rmse": 0.26427498905734964,
+        "normalized_rmse": 0.00032466214871910276,
+        "parsed_anchor_count": 6,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": true,
+        "slope": 1024.0457975455768,
+        "intercept": 1256.0392416854347,
+        "rmse": 70.00880555730592,
+        "normalized_rmse": 0.08600590363305395,
+        "parsed_anchor_count": 6,
+        "reason": "ok"
+      }
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "confidence": 0.9907,
+    "justification": "Best linear fit has normalized RMSE 0.0003.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": 1627.7142857142858,
+      "intercept": 149.96666666666658
+    }
+  },
+  "y": {
+    "axis": "y",
+    "raw_anchor_count": 4,
+    "parsed_anchor_count": 4,
+    "parse_failures": [],
+    "candidate_fits": [
+      {
+        "model": "linear",
+        "valid": true,
+        "slope": -5.1187509421496085,
+        "intercept": 537.6733074182054,
+        "rmse": 147.22793598979058,
+        "normalized_rmse": 0.21092827505700656,
+        "parsed_anchor_count": 4,
+        "reason": "ok"
+      },
+      {
+        "model": "log10",
+        "valid": true,
+        "slope": -232.6,
+        "intercept": 511.8,
+        "rmse": 0.2236067977499726,
+        "normalized_rmse": 0.0003203535784383562,
+        "parsed_anchor_count": 4,
+        "reason": "ok"
+      }
+    ],
+    "chosen_model": "log10",
+    "usable_for_downstream": "yes",
+    "confidence": 0.9908,
+    "justification": "Best log10 fit has normalized RMSE 0.0003.",
+    "manual_review_recommended": false,
+    "fit_parameters": {
+      "slope": -232.6,
+      "intercept": 511.8
+    }
+  }
+}

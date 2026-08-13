@@ -1,0 +1,962 @@
+{
+  "paper_id": "focused-curve-v4-1-b_kinetic_time_course_05",
+  "figure_id": "figure_b_kinetic_time_course_05",
+  "panel_id": "panel_b_kinetic_time_course_05",
+  "panel_label": "b_kinetic_time_course_05",
+  "saved_panel_image_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\b_kinetic_time_course_05\\monolithic_anchor_extract\\panel_image.png",
+  "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\b_kinetic_time_course_05\\monolithic_anchor_extract\\curve_overlay.png",
+  "crop_box_original": [
+    0,
+    0,
+    1188,
+    951
+  ],
+  "plot_area_box_cropped": [
+    163,
+    29,
+    1140,
+    815
+  ],
+  "panel_type": "kinetic_time_course",
+  "x_axis": {
+    "label": "Time",
+    "units": "min",
+    "tick_labels": [
+      "0",
+      "10",
+      "20",
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 162.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center."
+      },
+      {
+        "tick_value": "10",
+        "pixel_x": 324.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center."
+      },
+      {
+        "tick_value": "20",
+        "pixel_x": 487.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center."
+      },
+      {
+        "tick_value": "30",
+        "pixel_x": 650.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center."
+      },
+      {
+        "tick_value": "40",
+        "pixel_x": 813.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center."
+      },
+      {
+        "tick_value": "50",
+        "pixel_x": 975.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center."
+      },
+      {
+        "tick_value": "60",
+        "pixel_x": 1138.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom-axis tick center at the right frame edge."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear model with slope 16.2714, intercept 162.2143, and normalized RMSE 0.0003."
+  },
+  "y_axis": {
+    "label": "Conversion",
+    "units": "%",
+    "tick_labels": [
+      "0",
+      "20",
+      "40",
+      "60",
+      "80",
+      "100"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 162.5,
+        "pixel_y": 814.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center at the bottom frame edge."
+      },
+      {
+        "tick_value": "20",
+        "pixel_x": 162.5,
+        "pixel_y": 664.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center."
+      },
+      {
+        "tick_value": "40",
+        "pixel_x": 162.5,
+        "pixel_y": 514.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center."
+      },
+      {
+        "tick_value": "60",
+        "pixel_x": 162.5,
+        "pixel_y": 365.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center."
+      },
+      {
+        "tick_value": "80",
+        "pixel_x": 162.5,
+        "pixel_y": 215.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center."
+      },
+      {
+        "tick_value": "100",
+        "pixel_x": 162.5,
+        "pixel_y": 66.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Left-axis tick center near the top frame edge."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear model with slope -7.4800, intercept 814.1667, and normalized RMSE 0.0004."
+  },
+  "legend_entries": [
+    "25 \u000b0C",
+    "40 \u000b0C",
+    "60 \u000b0C"
+  ],
+  "curves": [
+    {
+      "curve_id": "curve_25C",
+      "curve_label": "25 \u000b0C",
+      "condition_label": "25 \u000b0C",
+      "catalyst_context": "",
+      "stroke_color": "black",
+      "line_style": "solid",
+      "marker_style": "open circle",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 174,
+          "pixel_y": 804.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 194,
+          "pixel_y": 785.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 214,
+          "pixel_y": 767.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 234,
+          "pixel_y": 745.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 254,
+          "pixel_y": 741.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 274,
+          "pixel_y": 715.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 294,
+          "pixel_y": 699.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 314,
+          "pixel_y": 682.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 334,
+          "pixel_y": 671.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 354,
+          "pixel_y": 652.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 374,
+          "pixel_y": 637.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 394,
+          "pixel_y": 622.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 414,
+          "pixel_y": 613.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 434,
+          "pixel_y": 594.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 454,
+          "pixel_y": 581.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 474,
+          "pixel_y": 568.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 494,
+          "pixel_y": 554.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 514,
+          "pixel_y": 543.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 534,
+          "pixel_y": 531.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 554,
+          "pixel_y": 519.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 574,
+          "pixel_y": 504.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 594,
+          "pixel_y": 496.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 614,
+          "pixel_y": 486.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 634,
+          "pixel_y": 475.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 654,
+          "pixel_y": 459.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 674,
+          "pixel_y": 454.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 694,
+          "pixel_y": 445.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 714,
+          "pixel_y": 435.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 734,
+          "pixel_y": 418.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 754,
+          "pixel_y": 417.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 774,
+          "pixel_y": 408.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 794,
+          "pixel_y": 399.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 814,
+          "pixel_y": 383.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 834,
+          "pixel_y": 382.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 854,
+          "pixel_y": 374.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 874,
+          "pixel_y": 367.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 894,
+          "pixel_y": 350.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 914,
+          "pixel_y": 352.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 934,
+          "pixel_y": 344.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 954,
+          "pixel_y": 337.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 974,
+          "pixel_y": 321.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 994,
+          "pixel_y": 324.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1014,
+          "pixel_y": 317.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1034,
+          "pixel_y": 311.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1054,
+          "pixel_y": 296.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1074,
+          "pixel_y": 299.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1094,
+          "pixel_y": 293.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1114,
+          "pixel_y": 287.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1134,
+          "pixel_y": 274.0,
+          "confidence": 0.94
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Distinct after shared origin region.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.95
+    },
+    {
+      "curve_id": "curve_40C",
+      "curve_label": "40 \u000b0C",
+      "condition_label": "40 \u000b0C",
+      "catalyst_context": "",
+      "stroke_color": "blue",
+      "line_style": "dashed",
+      "marker_style": "filled square",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 170,
+          "pixel_y": 808.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 190,
+          "pixel_y": 775.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 210,
+          "pixel_y": 750.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 230,
+          "pixel_y": 714.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 250,
+          "pixel_y": 699.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 270,
+          "pixel_y": 667.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 290,
+          "pixel_y": 643.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 310,
+          "pixel_y": 619.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 330,
+          "pixel_y": 601.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 350,
+          "pixel_y": 576.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 370,
+          "pixel_y": 556.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 390,
+          "pixel_y": 536.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 410,
+          "pixel_y": 519.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 431,
+          "pixel_y": 495.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 449,
+          "pixel_y": 486.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 470,
+          "pixel_y": 466.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 490,
+          "pixel_y": 450.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 510,
+          "pixel_y": 434.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 530,
+          "pixel_y": 419.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 550,
+          "pixel_y": 404.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 570,
+          "pixel_y": 391.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 590,
+          "pixel_y": 378.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 610,
+          "pixel_y": 365.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 630,
+          "pixel_y": 353.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 650,
+          "pixel_y": 341.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 669,
+          "pixel_y": 334.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 690,
+          "pixel_y": 320.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 710,
+          "pixel_y": 310.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 730,
+          "pixel_y": 298.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 748,
+          "pixel_y": 293.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 770,
+          "pixel_y": 282.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 790,
+          "pixel_y": 273.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 810,
+          "pixel_y": 263.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 830,
+          "pixel_y": 258.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 850,
+          "pixel_y": 249.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 870,
+          "pixel_y": 242.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 890,
+          "pixel_y": 232.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 910,
+          "pixel_y": 228.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 930,
+          "pixel_y": 221.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 952,
+          "pixel_y": 213.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 970,
+          "pixel_y": 207.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 990,
+          "pixel_y": 203.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1010,
+          "pixel_y": 198.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1029,
+          "pixel_y": 194.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1050,
+          "pixel_y": 185.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1070,
+          "pixel_y": 182.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1087,
+          "pixel_y": 181.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1110,
+          "pixel_y": 173.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1130,
+          "pixel_y": 167.5,
+          "confidence": 0.94
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Minimal overlap except shared origin region.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.95
+    },
+    {
+      "curve_id": "curve_60C",
+      "curve_label": "60 \u000b0C",
+      "condition_label": "60 \u000b0C",
+      "catalyst_context": "",
+      "stroke_color": "red",
+      "line_style": "dash-dot",
+      "marker_style": "filled triangle",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 170,
+          "pixel_y": 796.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 190,
+          "pixel_y": 751.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 210,
+          "pixel_y": 702.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 230,
+          "pixel_y": 661.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 250,
+          "pixel_y": 638.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 270,
+          "pixel_y": 587.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 290,
+          "pixel_y": 557.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 310,
+          "pixel_y": 520.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 330,
+          "pixel_y": 495.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 351,
+          "pixel_y": 458.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 370,
+          "pixel_y": 437.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 390,
+          "pixel_y": 411.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 410,
+          "pixel_y": 393.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 430,
+          "pixel_y": 367.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 450,
+          "pixel_y": 348.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 470,
+          "pixel_y": 326.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 490,
+          "pixel_y": 314.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 510,
+          "pixel_y": 297.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 530,
+          "pixel_y": 280.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 550,
+          "pixel_y": 266.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 570,
+          "pixel_y": 253.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 590,
+          "pixel_y": 240.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 610,
+          "pixel_y": 231.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 630,
+          "pixel_y": 216.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 650,
+          "pixel_y": 207.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 671,
+          "pixel_y": 197.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 690,
+          "pixel_y": 190.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 710,
+          "pixel_y": 182.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 730,
+          "pixel_y": 174.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 750,
+          "pixel_y": 167.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 770,
+          "pixel_y": 160.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 788,
+          "pixel_y": 157.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 810,
+          "pixel_y": 150.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 830,
+          "pixel_y": 143.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 854,
+          "pixel_y": 136.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 870,
+          "pixel_y": 133.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 890,
+          "pixel_y": 131.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 912,
+          "pixel_y": 123.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 930,
+          "pixel_y": 121.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 947,
+          "pixel_y": 118.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 970,
+          "pixel_y": 117.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 990,
+          "pixel_y": 110.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1006,
+          "pixel_y": 109.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1030,
+          "pixel_y": 105.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1050,
+          "pixel_y": 106.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1069,
+          "pixel_y": 112.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1090,
+          "pixel_y": 98.0,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1110,
+          "pixel_y": 95.5,
+          "confidence": 0.94
+        },
+        {
+          "pixel_x": 1130,
+          "pixel_y": 100.0,
+          "confidence": 0.94
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Minimal overlap except shared origin region.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.95
+    }
+  ],
+  "interpretation_notes": "Three temperature-series conversion curves increase monotonically with time; the 60 \u000b0C trace stays highest, 40 \u000b0C remains intermediate, and 25 \u000b0C stays lowest across the visible range.",
+  "qc": {
+    "axis_fit_script_used": true,
+    "overlap_qa_used": true,
+    "curve_count_estimated_correctly": true,
+    "legend_curve_mapping_complete": "yes",
+    "points_cover_visible_extent": "yes",
+    "manual_review_required": false
+  },
+  "unresolved_ambiguities": [
+    "All three curves coincide at the origin, so sampling begins just inside the left/bottom frame rather than placing three fully separable points on the exact corner."
+  ]
+}

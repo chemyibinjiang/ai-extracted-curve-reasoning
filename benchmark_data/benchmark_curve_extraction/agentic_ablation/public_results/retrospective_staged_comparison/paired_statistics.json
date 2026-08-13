@@ -1,0 +1,11 @@
+{
+  "paired_cases": 60,
+  "median_staged_minus_monolithic": 1.831979367706172e-05,
+  "bootstrap_confidence": 0.95,
+  "bootstrap_ci_lower": -5.2614026759307994e-05,
+  "bootstrap_ci_upper": 0.00013218992939017593,
+  "staged_better_cases": 27,
+  "monolithic_better_cases": 32,
+  "ties": 1,
+  "exact_sign_test_two_sided_p": 0.6029232012571503
+}

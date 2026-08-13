@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "benchmark_case_set": "focused_curve_extraction_set_v4_1_fixed",
+  "conditions": [
+    "monolithic",
+    "staged"
+  ],
+  "model": "gpt-5.4",
+  "reasoning_effort": "xhigh",
+  "provider": {
+    "id": "blackaicoding",
+    "name": "Black AI Coding",
+    "base_url": "https://blackaicoding.com/v1",
+    "env_key": "BLACKAI_API_KEY",
+    "wire_api": "responses",
+    "requires_openai_auth": false
+  },
+  "codex_bypass_sandbox": true,
+  "attach_input_image": true,
+  "replicate": 1,
+  "max_workers": 60,
+  "normalization_mode": "strict",
+  "primary_endpoint": "case_median_symmetric_scaled_distance",
+  "statistical_analysis": {
+    "paired_test": "two-sided exact sign test",
+    "effect_estimate": "median staged-minus-monolithic paired difference",
+    "bootstrap_confidence_interval": 0.95,
+    "bootstrap_replicates": 10000,
+    "random_seed": 20260723
+  },
+  "secondary_thresholds": {
+    "curve_median_scaled_distance_max": 0.02,
+    "curve_p95_scaled_distance_max": 0.05,
+    "x_coverage_min": 0.8
+  },
+  "invalid_record_distance_penalty": 2.0,
+  "truth_display_axis_models": {
+    "default": {
+      "x": "linear",
+      "y": "linear"
+    },
+    "overrides": {
+      "a_lsv_08": {
+        "x": "linear",
+        "y": "log10"
+      }
+    }
+  },
+  "notes": [
+    "Panel routing is outside the benchmark scope.",
+    "Both conditions are rerun from scratch with the same model, reasoning effort, image attachment, Python access, deterministic utilities, and Codex permission profile.",
+    "Both conditions use the same isolated custom provider; local OpenAI credentials and user-level Codex configuration are not inherited.",
+    "The archived publication-workflow outputs are provenance records only and are not used as the staged arm of this comparison.",
+    "Ground truth is unavailable to workers and loaded only by the evaluator."
+  ]
+}

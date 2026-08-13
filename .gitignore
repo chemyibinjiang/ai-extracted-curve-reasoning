@@ -66,3 +66,6 @@ incoming/
 tmp/
 temp/
 scratch/
+
+# Generated outputs for the single-agent versus staged benchmark.
+benchmark_data/benchmark_curve_extraction/agentic_ablation/runs/

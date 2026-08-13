@@ -8,7 +8,7 @@ The repository contains curated data tables, benchmark curve-extraction data, fi
 
 | Component | Location |
 |---|---|
-| Benchmark curve-extraction dataset | `benchmark_data/benchmark_curve_extraction` |
+| Benchmark curve-extraction dataset and single-agent ablation | `benchmark_data/benchmark_curve_extraction` |
 | Zenodo-ready literature extracted-curve dataset | `data_literature/zenodo_extracted_curve_dataset_v1.zip` |
 | Curated manuscript/SI analysis summaries | `analysis` |
 | Final/publishable figure packages | `figures` |
@@ -37,6 +37,9 @@ Start with:
 
 - `REPRODUCIBILITY.md` for the practical rerun order.
 - `CODE_ORGANIZATION.md` for the folder map.
+- `benchmark_data/benchmark_curve_extraction/agentic_ablation/public_results/README.md`
+  for the completed 60-panel single-agent benchmark and retrospective staged
+  comparison.
 - `analysis/README.md` for the curated Figure 5/Figure 6 analysis layer.
 - `data_literature/zenodo_extracted_curve_dataset_v1/README.md` for the extracted-curve release.
 - `figures/Figure_06_ptc_relative/main_text_figure6_package_20260619_panelF_bv_interval/README.md` for the current Figure 6 package.

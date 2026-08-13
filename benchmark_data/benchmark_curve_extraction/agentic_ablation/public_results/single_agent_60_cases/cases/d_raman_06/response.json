@@ -1,0 +1,502 @@
+{
+  "paper_id": "focused-curve-v4-1-d_raman_06",
+  "figure_id": "figure_d_raman_06",
+  "panel_id": "panel_d_raman_06",
+  "panel_label": "d_Raman_06",
+  "saved_panel_image_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\d_raman_06\\monolithic_anchor_extract\\panel_image.png",
+  "saved_curve_overlay_path": "C:\\Users\\yibinjiang\\Desktop\\LSV_paper_raw_data_code\\0-to_submit\\public_submission\\ai-extracted-curve-reasoning\\benchmark_data\\benchmark_curve_extraction\\agentic_ablation\\runs\\full_single_agent_20260811\\monolithic\\replicate_01\\d_raman_06\\monolithic_anchor_extract\\curve_overlay.png",
+  "crop_box_original": [
+    0,
+    0,
+    1208,
+    976
+  ],
+  "plot_area_box_cropped": [
+    161,
+    40,
+    1140,
+    829
+  ],
+  "panel_type": "raman_spectrum",
+  "x_axis": {
+    "label": "Raman shift",
+    "units": "cm^-1",
+    "tick_labels": [
+      "500",
+      "750",
+      "1000",
+      "1250",
+      "1500",
+      "1750",
+      "2000",
+      "2250",
+      "2500"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "500",
+        "pixel_x": 208.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 500 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "750",
+        "pixel_x": 324.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 750 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "1000",
+        "pixel_x": 441.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 1000 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "1250",
+        "pixel_x": 557.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 1250 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "1500",
+        "pixel_x": 673.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 1500 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "1750",
+        "pixel_x": 789.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 1750 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "2000",
+        "pixel_x": 906.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 2000 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "2250",
+        "pixel_x": 1022.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Bottom tick at 2250 cm^-1 centered on the visible tick mark."
+      },
+      {
+        "tick_value": "2500",
+        "pixel_x": 1138.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Rightmost visible bottom tick at 2500 cm^-1, coincident with the right frame edge."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear x mapping with normalized RMSE 0.0003; visible labeled ticks span 500 to 2500 cm^-1."
+  },
+  "y_axis": {
+    "label": "Intensity",
+    "units": "a.u.",
+    "tick_labels": [
+      "0",
+      "50",
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "chosen_model": "linear",
+    "usable_for_downstream": "yes",
+    "anchors": [
+      {
+        "tick_value": "0",
+        "pixel_x": 162.5,
+        "pixel_y": 827.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Bottom y tick at 0 a.u. centered on the left-axis tick/spine intersection."
+      },
+      {
+        "tick_value": "50",
+        "pixel_x": 162.5,
+        "pixel_y": 670.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Y tick at 50 a.u. centered on the left-axis tick/spine intersection."
+      },
+      {
+        "tick_value": "100",
+        "pixel_x": 162.5,
+        "pixel_y": 513.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Y tick at 100 a.u. centered on the left-axis tick/spine intersection."
+      },
+      {
+        "tick_value": "150",
+        "pixel_x": 162.5,
+        "pixel_y": 355.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Y tick at 150 a.u. centered on the left-axis tick/spine intersection."
+      },
+      {
+        "tick_value": "200",
+        "pixel_x": 162.5,
+        "pixel_y": 198.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.99,
+        "note": "Y tick at 200 a.u. centered on the left-axis tick/spine intersection."
+      },
+      {
+        "tick_value": "250",
+        "pixel_x": 162.5,
+        "pixel_y": 41.5,
+        "coordinate_system": "cropped_panel",
+        "confidence": 0.98,
+        "note": "Top y tick at 250 a.u. centered on the visible topmost left-axis tick mark."
+      }
+    ],
+    "fit_notes": "Axis-fit utility accepted a linear y mapping with normalized RMSE 0.0003; visible labeled ticks span 0 to 250 a.u."
+  },
+  "legend_entries": [],
+  "curves": [
+    {
+      "curve_id": "curve_1",
+      "curve_label": "unlabeled spectrum",
+      "condition_label": "",
+      "catalyst_context": "",
+      "stroke_color": "black",
+      "line_style": "solid",
+      "marker_style": "none",
+      "point_coordinate_system": "cropped_panel",
+      "sampled_points": [
+        {
+          "pixel_x": 167.0,
+          "pixel_y": 580.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 191.0,
+          "pixel_y": 565.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 215.0,
+          "pixel_y": 582.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 239.0,
+          "pixel_y": 575.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 263.0,
+          "pixel_y": 563.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 280.0,
+          "pixel_y": 571.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 287.0,
+          "pixel_y": 554.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 296.0,
+          "pixel_y": 504.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 304.0,
+          "pixel_y": 428.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 311.0,
+          "pixel_y": 372.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 320.0,
+          "pixel_y": 324.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 328.0,
+          "pixel_y": 328.0,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 335.0,
+          "pixel_y": 417.0,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 344.0,
+          "pixel_y": 494.0,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 352.0,
+          "pixel_y": 546.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 359.0,
+          "pixel_y": 563.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 383.0,
+          "pixel_y": 576.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 407.0,
+          "pixel_y": 580.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 431.0,
+          "pixel_y": 577.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 455.0,
+          "pixel_y": 584.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 479.0,
+          "pixel_y": 575.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 503.0,
+          "pixel_y": 569.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 520.0,
+          "pixel_y": 575.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 527.0,
+          "pixel_y": 560.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 536.0,
+          "pixel_y": 527.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 544.0,
+          "pixel_y": 488.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 551.0,
+          "pixel_y": 464.5,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 560.0,
+          "pixel_y": 386.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 568.0,
+          "pixel_y": 308.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 575.0,
+          "pixel_y": 259.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 584.0,
+          "pixel_y": 203.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 592.0,
+          "pixel_y": 191.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 599.0,
+          "pixel_y": 224.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 608.0,
+          "pixel_y": 280.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 616.0,
+          "pixel_y": 347.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 623.0,
+          "pixel_y": 414.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 632.0,
+          "pixel_y": 486.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 640.0,
+          "pixel_y": 511.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 647.0,
+          "pixel_y": 544.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 671.0,
+          "pixel_y": 574.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 695.0,
+          "pixel_y": 571.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 719.0,
+          "pixel_y": 577.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 743.0,
+          "pixel_y": 586.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 767.0,
+          "pixel_y": 575.5,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 791.0,
+          "pixel_y": 570.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 815.0,
+          "pixel_y": 573.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 839.0,
+          "pixel_y": 563.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 863.0,
+          "pixel_y": 576.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 887.0,
+          "pixel_y": 581.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 911.0,
+          "pixel_y": 564.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 935.0,
+          "pixel_y": 575.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 959.0,
+          "pixel_y": 566.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 983.0,
+          "pixel_y": 554.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1007.0,
+          "pixel_y": 567.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1031.0,
+          "pixel_y": 578.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1055.0,
+          "pixel_y": 578.0,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1079.0,
+          "pixel_y": 546.0,
+          "confidence": 0.92
+        },
+        {
+          "pixel_x": 1103.0,
+          "pixel_y": 565.5,
+          "confidence": 0.96
+        },
+        {
+          "pixel_x": 1127.0,
+          "pixel_y": 572.5,
+          "confidence": 0.96
+        }
+      ],
+      "visible_segment_status": "complete",
+      "overlap_notes": "Single noisy black spectrum traced across the full visible extent using column-wise stroke centers.",
+      "usable_for_normalization": "yes",
+      "confidence": 0.96
+    }
+  ],
+  "interpretation_notes": "Single unlabeled black Raman spectrum with a noisy baseline near 80 a.u., a narrower peak near 740 cm^-1, and a broader higher peak near 1320 cm^-1. No legend or additional target curves are visible.",
+  "qc": {
+    "axis_fit_script_used": true,
+    "overlap_qa_used": true,
+    "curve_count_estimated_correctly": true,
+    "legend_curve_mapping_complete": "yes",
+    "points_cover_visible_extent": "yes",
+    "manual_review_required": false
+  },
+  "unresolved_ambiguities": []
+}
