@@ -8,6 +8,13 @@
 *.css text eol=lf
 *.json text eol=lf
 *.csv text=auto
+# Preserve checksum-authoritative numerical snapshots across checkout platforms.
+analysis/figure6/expected/*.csv -text
+analysis/figure5/inputs/*.csv -text
+analysis/figure4/inputs/*.csv -text
+analysis/figure4/reference/*.csv -text
+analysis/figure6/inputs/**/*.csv -text
+analysis/figure6/reference/**/*.csv -text
 *.tsv text=auto
 *.txt text=auto
 

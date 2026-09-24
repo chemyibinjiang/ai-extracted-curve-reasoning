@@ -1,0 +1,77 @@
+{
+  "source": "tmp\\R_evidence_expansion_20260910\\kinetics_external_20260911\\nimo_extraction\\FIGURE5_SOURCE.png",
+  "source_sha256": "55ce26b87e8e9f4a564c1e44fcf9d7d3211660b246e1d27549f08be92eafefbd",
+  "panel": "Figure 5a; pH 0.35",
+  "theta_1": "Digitized solid teal kT>0 model-coverage trace; not experimental coverage",
+  "theta_2": "Calculated as 1-theta_1 under the parameter-permutation symmetry on printed p207; not a second extracted trace",
+  "distinction": "These are complementary parameter-set solutions, NOT the source kT>0 versus kT=0 pair and NOT labels for pure VH versus pure VT pathways.",
+  "roi": {
+    "x_first": 134,
+    "x_last": 265,
+    "y_first": 105,
+    "y_last": 328
+  },
+  "rule": "Bottommost connected teal vertical run per native pixel column; median row, blue-red>10, green-red>5, green<235",
+  "calibration": {
+    "x_pixels": [
+      83.5,
+      144.0,
+      204.5,
+      265.0,
+      325.5
+    ],
+    "eta_mV": [
+      200,
+      150,
+      100,
+      50,
+      0
+    ],
+    "theta_pixels": [
+      69.0,
+      121.5,
+      174.0,
+      226.5,
+      279.0,
+      331.5
+    ],
+    "theta_values": [
+      1.0,
+      0.8,
+      0.6,
+      0.4,
+      0.2,
+      0.0
+    ],
+    "eta_from_x": [
+      -0.8264462809917359,
+      269.00826446280996
+    ],
+    "theta_from_y": [
+      -0.0038095238095238095,
+      1.2628571428571425
+    ]
+  },
+  "n": 132,
+  "actual_eta_range": [
+    49.99999999999994,
+    158.26446280991735
+  ],
+  "theta_at_150mV": 0.5999999999999996,
+  "color_threshold_sensitivity": [
+    {
+      "blue_minus_red": 8,
+      "green_minus_red": 4,
+      "shared_columns": 132,
+      "max_abs_theta_change": 0.0
+    },
+    {
+      "blue_minus_red": 12,
+      "green_minus_red": 6,
+      "shared_columns": 132,
+      "max_abs_theta_change": 0.0019047619047618536
+    }
+  ],
+  "interpolation": "Straight connections between adjacent native columns; no extrapolation or kinetic refit",
+  "theoretical_equivalence": "Same predicted polarization and Faradaic EIS under the source-model symmetry; not a new numerical simulation of the elementary rates or EIS"
+}

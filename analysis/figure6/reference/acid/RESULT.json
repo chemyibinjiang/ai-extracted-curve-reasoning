@@ -1,0 +1,21 @@
+{
+  "condition": "acid",
+  "eta_window_mV": [
+    0,
+    200
+  ],
+  "n_cohort": 81,
+  "n_eligible": 78,
+  "n_insufficient": 3,
+  "n_points": 1686,
+  "n_linear": 5,
+  "n_affine_linear_diagnostic": 37,
+  "n_nonlinear": 73,
+  "chosen_K": 4,
+  "nonlinear_covered": 59,
+  "total_covered": 64,
+  "total_R2_and_RMSE3": 49,
+  "all_candidate_covered": 72,
+  "all_counts_certified": true,
+  "source_sha256": "4a4572a823f77889605c6320e33c90bbb8ffb97409f1e16e67e8343740070c2d"
+}

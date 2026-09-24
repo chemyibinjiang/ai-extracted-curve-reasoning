@@ -1,0 +1,205 @@
+{
+  "source_doi": "10.1002/celc.202001436",
+  "source_file": "analysis/figure5/inputs/C_PRIMARY_DATA.csv",
+  "source_sha256": "567247e90ad7d9669b6a3e92a5352facca2e844d3757ec2c998157a14d2cd805",
+  "selected_source": "figure4_experiment",
+  "sample": "223 nm electrodeposited NiMo; 0.5 M H2SO4; source-paper iR-corrected LSV",
+  "n": 40,
+  "current_range_mA_cm2": [
+    2.0189003436426067,
+    23.926116838487978
+  ],
+  "voltage_range_mV": [
+    67.54989801864815,
+    149.27895385304677
+  ],
+  "objective": "Unweighted voltage-space least squares on identical digitized experimental points",
+  "BV_convention": "n_eff=2; effective alpha fitted; not an elementary-step transfer coefficient",
+  "VHT_convention": "One-electron V/H steps; alphaV=alphaH=0.5; detailed balance; no resistance or offset",
+  "empirical_fits": {
+    "BV": {
+      "ok": true,
+      "error": "",
+      "log_j0": -1.3055463730209942,
+      "j0_mA": 0.2710244141567299,
+      "alpha": 0.40346530642730644,
+      "r_mV_per_mA": 0.0,
+      "e_offset_mV": 0.0,
+      "sse_mV2": 230.96194839929893,
+      "rmse_mV": 2.402925032118662,
+      "r2": 0.9893859790759938,
+      "nfev": 9,
+      "b_tafel_mV_dec": 73.32725859608874,
+      "at_alpha_low": false,
+      "at_alpha_high": false,
+      "at_r_upper_bound": false,
+      "at_e_upper_bound": false,
+      "at_e_lower_bound": false
+    },
+    "BV+jR": {
+      "ok": true,
+      "error": "",
+      "log_j0": -2.3200211114278875,
+      "j0_mA": 0.09827151093054554,
+      "alpha": 0.5939590664707932,
+      "r_mV_per_mA": 1.249886204982537,
+      "e_offset_mV": 0.0,
+      "sse_mV2": 7.303868240811945,
+      "rmse_mV": 0.4273133581112327,
+      "r2": 0.999664345530199,
+      "nfev": 12,
+      "b_tafel_mV_dec": 49.80983796532395,
+      "at_alpha_low": false,
+      "at_alpha_high": false,
+      "at_r_upper_bound": false,
+      "at_e_upper_bound": false,
+      "at_e_lower_bound": false
+    }
+  },
+  "metrics": [
+    {
+      "model": "BV",
+      "n": 40,
+      "free_parameters": 2,
+      "RMSE_mV": 2.402925032118662,
+      "R2": 0.9893859790759938,
+      "max_abs_error_mV": 6.619322734192792,
+      "SSE_mV2": 230.96194839929893
+    },
+    {
+      "model": "BV+jR",
+      "n": 40,
+      "free_parameters": 3,
+      "RMSE_mV": 0.4273133581112328,
+      "R2": 0.999664345530199,
+      "max_abs_error_mV": 0.9458007421511212,
+      "SSE_mV2": 7.303868240811945
+    },
+    {
+      "model": "VHT",
+      "n": 40,
+      "free_parameters": 4,
+      "RMSE_mV": 0.6607281417080861,
+      "R2": 0.9991974998809956,
+      "max_abs_error_mV": 1.336479511056126,
+      "SSE_mV2": 17.462467089800835
+    }
+  ],
+  "VHT_best": {
+    "start": 20,
+    "parameters": [
+      4.9999963785001915,
+      -3.099223405881747,
+      1.4106975464296132,
+      -0.15032859106038984
+    ],
+    "success": true,
+    "status": 2,
+    "nfev": 213,
+    "optimality": 0.00024833054411204964,
+    "bound_parameters": [
+      "log10_h"
+    ],
+    "RMSE_mV": 0.6607281416603926,
+    "R2": 0.9991974998811115,
+    "max_abs_error_mV": 1.3364795111028513,
+    "SSE_mV2": 17.462467087279833
+  },
+  "representative_parameters": [
+    -4.9999963785001915,
+    -5.277824691522712,
+    -1.4106975464296132,
+    4.8496677874398015
+  ],
+  "mirrored_parameters": [
+    4.9999963785001915,
+    -3.099223405881747,
+    1.4106975464296132,
+    -0.15032859106038998
+  ],
+  "parameter_order": [
+    "log10_h",
+    "log10_t",
+    "log10_K",
+    "log10_c_mA_cm2"
+  ],
+  "theta_source": "Calculated from independently fitted VHT parameters",
+  "near_optimum_rule": "Converged starts within 1% of best SSE; increasing branch; not a confidence interval",
+  "near_optimum_starts": 42,
+  "maximum_near_optimum_theta_spread": 0.00761590261602596,
+  "maximum_relative_balance_error": 2.961643614602104e-11,
+  "diagnostics": {
+    "VH_limit": {
+      "start": 3,
+      "parameters": [
+        -1.423435404153767,
+        -99.0,
+        2.831118677489862,
+        1.30194581297942
+      ],
+      "success": true,
+      "status": 3,
+      "nfev": 20,
+      "optimality": 0.04862751756553878,
+      "bound_parameters": [],
+      "RMSE_mV": 0.668630634981822,
+      "R2": 0.9991781888332227,
+      "max_abs_error_mV": 1.5871059787652655,
+      "SSE_mV2": 17.882677041447778
+    },
+    "wider_bounds": {
+      "best": {
+        "start": 0,
+        "parameters": [
+          6.925036627792405,
+          -3.099220509233649,
+          1.4106931001041763,
+          -0.15033311406918856
+        ],
+        "success": true,
+        "status": 3,
+        "nfev": 23,
+        "optimality": 0.004486048085553428,
+        "bound_parameters": [],
+        "RMSE_mV": 0.6607279693034841,
+        "R2": 0.9991975002997903,
+        "max_abs_error_mV": 1.3364751743605439,
+        "SSE_mV2": 17.462457976796234
+      },
+      "bounds": [
+        [
+          -7.0,
+          -7.0,
+          -4.0,
+          -8.0
+        ],
+        [
+          7.0,
+          7.0,
+          4.0,
+          8.0
+        ]
+      ],
+      "max_prediction_change_mV": 4.336695582196626e-06
+    },
+    "interleaved_5fold_RMSE_mV": {
+      "BV": 2.4532703753871012,
+      "BV+jR": 0.4426682589558866,
+      "VHT": 0.6974465847478936
+    }
+  },
+  "versions": {
+    "python": "3.13.12",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "pandas": "3.0.1"
+  },
+  "limitations": [
+    "These are digitized points from one published curve, not independent replicate measurements.",
+    "Cross-validation tests interpolation within this curve, not external validation or unique mechanism identification.",
+    "A good kinetics-only fit demonstrates compatibility; it does not exclude residual physical resistance.",
+    "The exact V/H parameter symmetry produces the same polarization with complementary coverage.",
+    "A rate ratio at its bound indicates a kinetic limit, not a measured microscopic rate constant.",
+    "Fit and coverage are new calculations, not reproduction of the source authors' fitted parameters."
+  ]
+}

@@ -31,6 +31,7 @@ env/
 .env.*
 
 # Render/checking scratch output
+/build/
 **/render_check*/
 **/render_QA*/
 **/edge_profile*/
@@ -42,6 +43,8 @@ _private_reviewer_materials/
 reviewer_only_not_for_publication/
 agent_conversation_records/0-LSV_agent_analysis_raw_data.zip
 agent_conversation_records/*.local.json
+exploration/agent_conversation_records/0-LSV_agent_analysis_raw_data.zip
+exploration/agent_conversation_records/*.local.json
 validation/manual_proof/
 supplementary_information/raw_claim_validation_htmls/
 supplementary_information/backup_*before_deidentifying*/

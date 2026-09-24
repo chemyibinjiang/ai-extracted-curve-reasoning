@@ -1,0 +1,3 @@
+curve_uid,native_index,layers,j_mA_cm2,eta_mV,per_layer_j,source_x,source_y,canonical_native_indices,reason
+batch1/case4/figure_4__panel_c/curve_3,0,12,2.3574879227052983,68.93939393939394,0.19645732689210818,328.0,31.0,[25],12-layer identity not reliably resolved in overlapping source traces; user-approved exclusion
+batch1/case4/figure_4__panel_c/curve_3,1,12,5.256038647342979,84.0909090909091,0.43800322061191493,318.0,34.0,[24],12-layer identity not reliably resolved in overlapping source traces; user-approved exclusion

@@ -1,0 +1,19 @@
+{
+  "curves": 3033,
+  "model_fits": 6066,
+  "models": {
+    "bv": {
+      "successful_fits": 3033,
+      "R2_ge_099": 806,
+      "pass_assignment_changes": 0,
+      "max_abs_rmse_difference_mV": 7.602807272633072e-11
+    },
+    "bvir": {
+      "successful_fits": 3033,
+      "R2_ge_099": 2351,
+      "pass_assignment_changes": 0,
+      "max_abs_rmse_difference_mV": 5.433875571725366e-12
+    }
+  },
+  "reference_objectives_reproduced": true
+}

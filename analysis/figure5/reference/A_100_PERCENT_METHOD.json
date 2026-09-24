@@ -1,0 +1,15 @@
+{
+  "published_fraction": 0.85,
+  "removed_R_at_85_ohm_cm2": 0.034005452876715206,
+  "nominal_full_compensation_R_ohm_cm2": 0.04000641514907671,
+  "extra_R_to_remove_ohm_cm2": 0.006000962272361508,
+  "Rapp_85_ohm_cm2": 0.1213123191563028,
+  "Rapp_100_estimated_ohm_cm2": 0.1153113568839413,
+  "nominal_residual_of_the_compensated_ohmic_term_at_100": 0.0,
+  "starting_trace": "Published 85% compensated trace; not an independent 100% measurement",
+  "method": "Rapp100 = Rapp85 - (1-f)/f * DeltaR_gap; same current grid and free-intercept Tafel+jR model",
+  "assumption": "Same constant compensation resistance, same electrode area and conditions; linear voltage subtraction",
+  "interpretation": "Remaining apparent fit coefficient, not a measured residual solution resistance or a uniquely kinetic resistance",
+  "raw_based_alternative_ohm_cm2": 0.11514598882984045,
+  "OLS_identity_check_rmse_mV": 0.5448354326930315
+}

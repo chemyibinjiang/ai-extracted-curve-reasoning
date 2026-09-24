@@ -1,0 +1,7 @@
+status,points,curves
+edge_support,24206,3033
+eligible,50176,2840
+ill_conditioned_support,8,7
+one_sided_support,9,6
+too_narrow_in_logcurrent,57,4
+too_wide_in_logcurrent,5943,1765

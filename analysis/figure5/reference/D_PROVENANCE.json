@@ -1,0 +1,38 @@
+{
+  "sources": {
+    "nifep": "10.1002/adma.201908201",
+    "kscn": "10.1021/jacs.6b09351"
+  },
+  "checks": [
+    {
+      "label": "NiFeP_12_independent",
+      "rmse_mV": 1.0748286331103083,
+      "n": 24
+    },
+    {
+      "label": "NiFeP_18_independent",
+      "rmse_mV": 0.5934252328022301,
+      "n": 20
+    },
+    {
+      "label": "NiFeP_24_independent",
+      "rmse_mV": 0.9548113490251874,
+      "n": 17
+    },
+    {
+      "label": "NiFeP_shared",
+      "rmse_mV": 5.134063481786293,
+      "n": 61
+    },
+    {
+      "label": "KSCN_control_kinetics",
+      "rmse_mV": 2.646770811347511,
+      "n": 25
+    },
+    {
+      "label": "KSCN_held_out",
+      "rmse_mV": 5.675302306183381,
+      "n": 22
+    }
+  ]
+}

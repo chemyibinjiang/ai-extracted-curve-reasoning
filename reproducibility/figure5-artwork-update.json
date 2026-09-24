@@ -1,0 +1,40 @@
+{
+  "baseline_sha256": "c2ade220bce73215a5bb13ea9324f1aba0480c0a98a9d8832fcaf3ee197e8e42",
+  "svg_sha256": "ec4d0cfc5ac02d13ea0b221b6ecaa5cb82822f3876d56d9ccc51c7087a393f4c",
+  "png_sha256": "fa56c147bc0a96c6c1e60a2adbe1148cf785fdcd26497c71543bab1495e814a1",
+  "numerical_report_sha256": "34614481be34a9175bfdefe8a53dd9382598e260a2c932ad7bd49c35cdf73d33",
+  "changed_pixel_bounds": null,
+  "unchanged_A_B_D_and_C_schematic": true,
+  "source_doi": "10.1002/celc.202001436",
+  "selected_source": "figure4_experiment",
+  "n": 40,
+  "metrics": [
+    {
+      "model": "BV",
+      "n": 40,
+      "free_parameters": 2,
+      "RMSE_mV": 2.402925032118662,
+      "R2": 0.9893859790759938,
+      "max_abs_error_mV": 6.619322734192792,
+      "SSE_mV2": 230.96194839929893
+    },
+    {
+      "model": "BV+jR",
+      "n": 40,
+      "free_parameters": 3,
+      "RMSE_mV": 0.4273133581112328,
+      "R2": 0.999664345530199,
+      "max_abs_error_mV": 0.9458007421511212,
+      "SSE_mV2": 7.303868240811945
+    },
+    {
+      "model": "VHT",
+      "n": 40,
+      "free_parameters": 4,
+      "RMSE_mV": 0.6607281417080861,
+      "R2": 0.9991974998809956,
+      "max_abs_error_mV": 1.336479511056126,
+      "SSE_mV2": 17.462467089800835
+    }
+  ]
+}

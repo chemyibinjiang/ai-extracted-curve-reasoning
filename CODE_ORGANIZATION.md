@@ -1,90 +1,32 @@
-# Code And Package Organization
+# Repository Structure
 
-This repository is organized as a paper-specific companion package for reproducing the public analyses and data products behind the manuscript.
+| Location | Contents |
+| --- | --- |
+| `figures/manuscript/` | Figures 1-6, as editable SVGs and PNG previews |
+| `analysis/figure4/` | Cohort preparation and inclusion/exclusion record, prepared curves, BV/BV+jR refitting, local slopes and fit statistics |
+| `analysis/figure5/` | Compensation, bubble/EIS, surface-kinetic, and current-rescaling case studies |
+| `analysis/figure6/` | Pt/C template discovery, VHT reconstruction, and rate control |
+| `analysis/common/` | Shared BV numerical functions |
+| `analysis/SOURCE_MANIFEST.json` | Input/code provenance and integrity hashes |
+| `benchmark_data/benchmark_curve_extraction/` | Synthetic benchmark inputs, extraction results, and evaluation code |
+| `data_literature/` | Complete dataset of 4,211 extracted curves (132,314 points) and source metadata |
+| `code_reference/` | Extraction-framework source |
+| `exploration/` | Catalyst-performance and BV+jR investigations, with shared session records and assets |
+| `scripts/` | Figure validation and artwork export |
+| `tests/` | Numerical, integrity, and isolated-package tests |
+| `reproducibility/` | Figure manifest and validation documentation |
+| `build/` | Generated results; excluded from Git |
 
-## Public Release Boundary
+Within an analysis directory, `inputs/` contains observations and metadata,
+`reference/` contains fit parameters and comparison results, and `run.py` is the
+entry point. Figure 6 additionally keeps the exact plotted numerical tables in
+`expected/`. Recomputed results are written to `build/`, never over the inputs.
 
-Public-facing material:
+`exploration/agent_conversation_records/` preserves the overlapping investigation
+transcripts, manifests, and linked images. It is not a runtime dependency of the
+figure analyses. Topic links and their relationship to the figures are listed
+in [exploration/README.md](exploration/README.md).
 
-- `figures`
-- `benchmark_data/benchmark_curve_extraction`
-- `data_literature`
-- `analysis`
-- `code_reference`
-- package-level README, reproducibility notes, and release checklist
-
-Excluded material:
-
-- Original publication figures and publisher source HTML/assets.
-- DOI-linked manual-proof records.
-- Raw claim-validation HTML/card pages.
-- Long session screenshots/transcripts.
-- Massive raw source archives.
-- Temporary render-QA outputs.
-- Manuscript and supporting-information Word files, which are kept in the
-  submission package rather than inside this repository.
-
-## Data Release Convention
-
-`data_literature` contains the publication-ready extracted-curve package intended for a separate Zenodo record:
-
-`data_literature/zenodo_extracted_curve_dataset_v1.zip`
-
-The package includes normalized curve points and DOI/panel/catalyst provenance. It excludes original publication figures, publisher HTML, screenshots, original captions, internal validation material, and DOI-linked claim-validation cards.
-
-## Analysis Folder Convention
-
-The public `analysis/` folder contains only curated reported-results tables,
-source rows, and lightweight scripts that correspond directly to the manuscript
-and SI:
-
-- `analysis/01_bvir_eoffset_fitting`
-- `analysis/02_same_panel_ptc_relative`
-
-The folder also includes `analysis/raw_agent_analysis_archive`, a faithful raw
-working archive for process provenance. That archive intentionally contains
-historical drafts, exploratory plots, large posterior/grid-search tables, and
-absolute local paths; it is not the clean reproducibility entry point.
-
-## Figure Folder Convention
-
-Figure folders keep final manuscript-facing graphics, source scripts, and summary tables where practical.
-
-For Figure 6 manuscript graphics, use:
-
-`figures/Figure_06_ptc_relative/main_text_figure6_package_20260619_panelF_bv_interval`
-
-## Benchmark Ablation Convention
-
-The single-agent versus staged anchoring-and-extraction protocol and code are
-stored under:
-
-`benchmark_data/benchmark_curve_extraction/agentic_ablation`
-
-Generated workspaces and model outputs belong under its ignored `runs/`
-directory. The curated, path-sanitized single-agent records and retrospective
-common-evaluator comparison are published under `public_results/`. Temporary
-provider state, caches, duplicated frozen code, and exploratory debug files
-remain excluded.
-
-## Code Archive Policy
-
-The frozen framework code is stored under:
-
-`code_reference/peeragent_code_dc6189f6bc0a.zip`
-
-The archive contains tracked source files only and intentionally excludes `.git`, virtual environments, caches, and untracked temporary outputs. See `code_reference/PEERAGENT_REPO.md` for commit and checksum provenance.
-
-## Git/LFS Policy
-
-Use normal Git for source, Markdown, scripts, CSV/JSON tables, and small text files.
-
-Use Git LFS for large or binary publication artifacts:
-
-- Word files
-- PowerPoint/Excel files
-- PDFs
-- PNG/JPEG/TIFF images
-- ZIP archives
-
-The `.gitattributes` file defines these patterns.
+The manuscript figures and the numerical analyses are separate artifacts.
+Exporting an SVG reproduces its final layout; running an analysis reproduces
+numerical results. Use [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for both workflows.

@@ -1,0 +1,671 @@
+{
+  "scope": "Numerical dependencies for Figures 4, 5 and 6",
+  "files": [
+    {
+      "path": "analysis/figure4/inputs/POINTS.csv",
+      "bytes": 8293542,
+      "sha256": "ee00a18dfa54c4bd232bce59e996055662debc2e1aa13f01936adef7609a4a65",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/NATIVE_POINTS_3033.csv",
+      "source_sha256": "ff207e4b37f5c1e26fa4ec03560ec136e5ff2030ae4398a3bbc6e78ad80efdd9",
+      "transformation": {
+        "retained_columns": [
+          "curve_uid",
+          "paper_key",
+          "native_index",
+          "j",
+          "eta_mV"
+        ],
+        "rows": 80399
+      }
+    },
+    {
+      "path": "analysis/figure4/inputs/CURVES.csv",
+      "bytes": 1079237,
+      "sha256": "48f69dd3ee009503d78fc25bb2dfcbfe116a5845f459871068211e894c73e376",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/COHORT_3033_ARCHIVED_FITS.csv",
+      "source_sha256": "2125009eb63d461cbb2ec185ee2ab30e4e8b55c2b6cde851e1795efd17132342",
+      "transformation": {
+        "retained_columns": [
+          "curve_uid",
+          "paper_key",
+          "paper_title",
+          "figure_id",
+          "panel_id",
+          "curve_label",
+          "condition_label",
+          "regime_class",
+          "current_density_basis",
+          "eta_rule",
+          "selected_current_sign",
+          "canonical_fit_eligible",
+          "fit_point_count",
+          "j_min_mA",
+          "j_max_mA",
+          "y_min_mV",
+          "y_max_mV"
+        ],
+        "rows": 3033
+      }
+    },
+    {
+      "path": "analysis/figure4/reference/FIT_PARAMETERS.csv",
+      "bytes": 1159376,
+      "sha256": "87bde08da26973ac3843cb61cb0ec3a506f9314c5788a23ea503747d7ca768dd",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/COHORT_3033_ARCHIVED_FITS.csv",
+      "source_sha256": "2125009eb63d461cbb2ec185ee2ab30e4e8b55c2b6cde851e1795efd17132342",
+      "transformation": {
+        "retained_columns": [
+          "curve_uid",
+          "bv_fit_ok",
+          "bv_log_j0",
+          "bv_j0_mA",
+          "bv_alpha",
+          "bv_b_tafel_mV_dec",
+          "bv_r_mV_per_mA",
+          "bv_e_offset_mV",
+          "bv_sse_mV2",
+          "bv_rmse_mV",
+          "bv_r2",
+          "bv_at_alpha_low",
+          "bv_at_alpha_high",
+          "bv_at_r_upper_bound",
+          "bvir_fit_ok",
+          "bvir_log_j0",
+          "bvir_j0_mA",
+          "bvir_alpha",
+          "bvir_b_tafel_mV_dec",
+          "bvir_r_mV_per_mA",
+          "bvir_e_offset_mV",
+          "bvir_sse_mV2",
+          "bvir_rmse_mV",
+          "bvir_r2",
+          "bvir_at_alpha_low",
+          "bvir_at_alpha_high",
+          "bvir_at_r_upper_bound"
+        ],
+        "rows": 3033
+      }
+    },
+    {
+      "path": "analysis/figure4/reference/WINDOW_SUMMARY.csv",
+      "bytes": 1467,
+      "sha256": "598b85a86eb5770898a3cf7c21bdffeb2ecfe4e63aef5cc79be325bd6f6a24bf",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/WINDOW_SUMMARY.csv",
+      "source_sha256": "598b85a86eb5770898a3cf7c21bdffeb2ecfe4e63aef5cc79be325bd6f6a24bf",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure4/reference/HISTOGRAMS.csv",
+      "bytes": 89753,
+      "sha256": "d404aaa3213e484942b8b1d96ae621ee51bfea8fcb4b2abb116c0678343d3305",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/HISTOGRAMS.csv",
+      "source_sha256": "d404aaa3213e484942b8b1d96ae621ee51bfea8fcb4b2abb116c0678343d3305",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure4/reference/DERIVATIVE_SUPPORT_FLOW.csv",
+      "bytes": 185,
+      "sha256": "b3531169baaa1e4abb520aba3766fd0d6f986d59120f8607d82ef99f4334d5df",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/DERIVATIVE_SUPPORT_FLOW.csv",
+      "source_sha256": "b3531169baaa1e4abb520aba3766fd0d6f986d59120f8607d82ef99f4334d5df",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure4/reference/CORPUS_FIT_METRIC_SUMMARY.csv",
+      "bytes": 589,
+      "sha256": "e12ebe00d35ff983e1333c3a75062505120d378810db39ea9ae1801d336ca04e",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure4/data_v2/CORPUS_FIT_METRIC_SUMMARY.csv",
+      "source_sha256": "e12ebe00d35ff983e1333c3a75062505120d378810db39ea9ae1801d336ca04e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure4/reference/PARAMETER_SUMMARY.csv",
+      "bytes": 511,
+      "sha256": "41285914be1318efd5707685e71a28efeb2190064e9d61c815b5dd90de747114",
+      "source": "figures/publication_visual_QA_20260921/figure4_fit_distributions/SUMMARY.csv",
+      "source_sha256": "41285914be1318efd5707685e71a28efeb2190064e9d61c815b5dd90de747114",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure4/reference/PARAMETER_HISTOGRAM_BINS.csv",
+      "bytes": 7927,
+      "sha256": "f978688a829242168fec6133e2b1d27f70c0b5ea61e59368abe83f5c46b2fca5",
+      "source": "figures/publication_visual_QA_20260921/figure4_fit_distributions/HISTOGRAM_BINS.csv",
+      "source_sha256": "f978688a829242168fec6133e2b1d27f70c0b5ea61e59368abe83f5c46b2fca5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure4/local_slopes.py",
+      "bytes": 2639,
+      "sha256": "9d434fdbf50da832b03ec3a0dc2bd5cca3144278140ead943f87a767c5f72670",
+      "source": "tmp/local_tafel_derivatives_20260913/local_slopes.py",
+      "source_sha256": "b3928f0e565845a9212f8003ad63bedb507f84e99481b561bf861a141ae97ca4",
+      "transformation": {
+        "verbatim_functions": [
+          "polynomial_operator",
+          "curve_derivatives"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure4/weights.py",
+      "bytes": 595,
+      "sha256": "af016f10bd3cb6c17547dc86219ee6247d8910c3387f289f024cd56981fb6288",
+      "source": "tmp/figure4_claim_audit_20260913/audit.py",
+      "source_sha256": "085f9799ebc90e157ac57144c83391044e65a52e28368019ae479ca3ce69bcec",
+      "transformation": {
+        "verbatim_functions": [
+          "pw",
+          "quant"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure4/axis_preparation.py",
+      "bytes": 5229,
+      "sha256": "75412f9a9e62f2a63acb695750e8f2d17b1c937f42e430abe49a1128ba93c4ed",
+      "source": "analysis/LSV_agent_analysis/02_bv_ir_fitting_agent/bv_ir_fitting_analysis.py",
+      "source_sha256": "9a47ac4501d4e8bb07ab136e918fcebb81f983b01a8eafe56dff2408e623ddef",
+      "transformation": {
+        "verbatim_functions": [
+          "norm_text",
+          "potential_reference_basis",
+          "is_current_density_like",
+          "is_potential_like",
+          "resolve_axes",
+          "is_linear_axis",
+          "current_to_ma",
+          "classify_regime",
+          "parse_bool",
+          "clean_series"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure4/branch_preparation.py",
+      "bytes": 9065,
+      "sha256": "3c8b4a86cc6851fb9300600258442d9e2c7b2ad98d92a18481e0c244d4b80412",
+      "source": "analysis/LSV_agent_analysis/02_bv_ir_fitting_agent/consistent_branch_eta_current_sign_bvir_offset_rerun_20260608.py",
+      "source_sha256": "54d4ec286c2c3c64d1c1708a5b9c4dc4cfad5f5152e295dc81bb9d2d46ab29d1",
+      "transformation": {
+        "verbatim_functions": [
+          "canonical_clean_eta_series",
+          "select_current_sign_branch",
+          "transform_to_branch_eta",
+          "signed_potential_to_mv",
+          "prepare_curve"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/common/strict_bv.py",
+      "bytes": 7271,
+      "sha256": "3bbf798bbe5805d0a596a3023381a183330f6be76e329ba9d2f5f91f4edde538",
+      "source": "0-to_submit/public_submission/ai-extracted-curve-reasoning/figures/Figure_05_bvir/strict_neff2_bvir_offset_whole_dataset_20260611.py",
+      "source_sha256": "ea37160e2a31bdbc1e1aa8888ee08c34b038dcc863442f70b0526b494c6c222b",
+      "transformation": {
+        "verbatim_functions": [
+          "strict_bv_x",
+          "r2_from_sse",
+          "predict_variant",
+          "start_vectors",
+          "fit_variant"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/common/strict_predict.py",
+      "bytes": 300,
+      "sha256": "9819361d2827a3d8815fc49a99129f3f52caf90f7c678700fa11a82ffb408794",
+      "source": "tmp/r_term_study_20260908/strict_windows/strict_fit.py",
+      "source_sha256": "34f5e63fc1d17b9bcf896d98203ace1a9a9c6440f171227453ff056a87af73dd",
+      "transformation": {
+        "verbatim_functions": [
+          "predict"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure5/layer_fit.py",
+      "bytes": 2625,
+      "sha256": "aaa8313bd62c9d03e69b1b1b8f9b7d1f8f65d71bbc2fba8c5fe57ff09ac56526",
+      "source": "tmp/R_evidence_expansion_20260910/electrical/p0265_shared_bv.py",
+      "source_sha256": "4b18833c9751219f26589b9537a8d73897672206b180d42570933afd3efe3607",
+      "transformation": {
+        "verbatim_functions": [
+          "predict",
+          "fit_zero_offset",
+          "stats"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure5/kscn_model.py",
+      "bytes": 8500,
+      "sha256": "bdda4cb47dbc7a7f25c7c22c0a2f3eddf8e4a7a526bf94d0c49ba6b5e17cb206",
+      "source": "tmp/R_evidence_expansion_20260910/kscn_kinetics/vt_prediction/model.py",
+      "source_sha256": "bdda4cb47dbc7a7f25c7c22c0a2f3eddf8e4a7a526bf94d0c49ba6b5e17cb206",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/ABC_PROVENANCE.json",
+      "bytes": 133,
+      "sha256": "6c53d221c8933ca77527c9dffdf404d1299df6b52472ade7db5a472f88e452ef",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/PROVENANCE.json",
+      "source_sha256": "7cee409fd77c80ea7ef31aba3887c6d152a26ef8c101546c93cb0e39e1a10aaf",
+      "transformation": "Keep DOI provenance for the three plotted cases only"
+    },
+    {
+      "path": "analysis/figure5/reference/D_PROVENANCE.json",
+      "bytes": 716,
+      "sha256": "658a2c6e41c60030c9eea7cfd3a33910917185f48003ae9493697226b217b1bb",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/PROVENANCE.json",
+      "source_sha256": "3108a160d49327328033fa18d8b80e4e05927be37fe0ddff77cd6788fe66026e",
+      "transformation": "Keep plotted NiFeP/KSCN DOI provenance and numerical checks; exclude Zn and unrelated artwork inventory"
+    },
+    {
+      "path": "analysis/figure5/inputs/A_SOURCE_ENDPOINTS.csv",
+      "bytes": 32131,
+      "sha256": "8b117842dba933e673214cc557b7ccf769e492a6975729df288671d311189236",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/A_SOURCE_ENDPOINTS.csv",
+      "source_sha256": "8b117842dba933e673214cc557b7ccf769e492a6975729df288671d311189236",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure5/inputs/B_EIS_NATIVE_DATA.csv",
+      "bytes": 8462,
+      "sha256": "f00ebcc3d912058edcfacd694293018d8c649e106ede448990787d5ec710de30",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/B_EIS_NATIVE_DATA.csv",
+      "source_sha256": "f00ebcc3d912058edcfacd694293018d8c649e106ede448990787d5ec710de30",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure5/inputs/C_PRIMARY_DATA.csv",
+      "bytes": 6921,
+      "sha256": "567247e90ad7d9669b6a3e92a5352facca2e844d3757ec2c998157a14d2cd805",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/C_PRIMARY_DATA.csv",
+      "source_sha256": "567247e90ad7d9669b6a3e92a5352facca2e844d3757ec2c998157a14d2cd805",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure5/inputs/B_POLARIZATION.csv",
+      "bytes": 8034,
+      "sha256": "ccd01755e5ee34282d6bace37106e6e0425cb70b2fbf2cb585b13027f000f87b",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/B_NATIVE_FIT_DATA.csv",
+      "source_sha256": "a0d21098e8018fcf32d063ff1f98e8df22c2f6ea874122cc5bc9824f11ebd1e6",
+      "transformation": {
+        "retained_columns": [
+          "cycle",
+          "native_index",
+          "px",
+          "py",
+          "eta_mV",
+          "j_mA_cm2"
+        ],
+        "rows": 149
+      }
+    },
+    {
+      "path": "analysis/figure5/inputs/C_COVERAGE_COORDINATES.csv",
+      "bytes": 6312,
+      "sha256": "1552f8b1615c4c44fb9efaea81af8e2727a4eafe3a7d2c454ab9b31d8ab66bcd",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/C_MODEL_COVERAGE.csv",
+      "source_sha256": "7fdd0f261d6df9ed2f4ac702c44e7f268d1818f6d8e54617f01db7f2b9f81f9f",
+      "transformation": {
+        "retained_columns": [
+          "x_pixel",
+          "y_pixel",
+          "eta_mV",
+          "theta_1"
+        ],
+        "rows": 132
+      }
+    },
+    {
+      "path": "analysis/figure5/inputs/NiFeP_ORIGINAL_DATA.csv",
+      "bytes": 6385,
+      "sha256": "7d4972f06655aecdd6db133fa09d472abc2eb15924e1e26096891a6ba14e4bfe",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/NiFeP_ORIGINAL_DATA.csv",
+      "source_sha256": "7d4972f06655aecdd6db133fa09d472abc2eb15924e1e26096891a6ba14e4bfe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure5/inputs/NiFeP_EXCLUDED_DATA.csv",
+      "bytes": 531,
+      "sha256": "e66075d4f6c6ba01ed8d7dc27549447f861f82a2972833cf2edcbcbce97e4e90",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/NiFeP_EXCLUDED_DATA.csv",
+      "source_sha256": "e66075d4f6c6ba01ed8d7dc27549447f861f82a2972833cf2edcbcbce97e4e90",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure5/inputs/KSCN_DATA.csv",
+      "bytes": 6087,
+      "sha256": "ab64494a01d35c5bf80d542055fcec474d993de07158e1081e27321aa7ce5564",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/KSCN_DATA.csv",
+      "source_sha256": "ab64494a01d35c5bf80d542055fcec474d993de07158e1081e27321aa7ce5564",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure5/reference/A_FROZEN_ACCOUNTING.json",
+      "bytes": 5713,
+      "sha256": "0f8257e30865bd1abf8664b8ad1f0e1be95e5ec68a123a3c0034078031041c9a",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/A_FROZEN_ACCOUNTING.json",
+      "source_sha256": "687586690614e7e33a4b4a846f267c44c616920a2edead94c80400edb8beacc3",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/B_FROZEN_MODELS.json",
+      "bytes": 13370,
+      "sha256": "4e9291291f947ec3b2e256f77994e493713d759f13bda85931a2a940e7e0051f",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/B_FROZEN_MODELS.json",
+      "source_sha256": "a368fa6c9a810a70ba0f32ea4c3f45b84dea3f62e1719bb4d8f740ee61205017",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/C_FROZEN_MODELS.json",
+      "bytes": 2346,
+      "sha256": "58da69f42aea03b3f5a9f58d64dd2f5dd0c7d73ff15f28db4226e3b869fbb273",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/C_FROZEN_MODELS.json",
+      "source_sha256": "5bb85b4c4be7a02341756cf4be1a8dbcd5c0b34d3d08fd2d21e8104945066f5e",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/A_100_PERCENT_METHOD.json",
+      "bytes": 921,
+      "sha256": "8661b20c0690183dbbf653b35b89bb38c67a0dff5d1efa16e5541fadbec4e8f7",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/A_100_PERCENT_METHOD.json",
+      "source_sha256": "e81b02e2147ab6f18569000466058b878bf738d2bd595c11a5c4503aa9e3cefb",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/B_RESISTANCE_TREND.json",
+      "bytes": 516,
+      "sha256": "e3a8fd7435d899a8e6152c30adbc2b4c084b5443d0ee59e41ae2898990dcc320",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/B_RESISTANCE_TREND.json",
+      "source_sha256": "80f1f65ea2430252c245c9a50bf3be083c35d875397bb351d830e7b42675c6e8",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/C_COVERAGE_METHOD.json",
+      "bytes": 2107,
+      "sha256": "4e2326b05805ea1e4c24e09b1f425cc74b116e56262860af9a2c6bfb05d2a66b",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/C_COVERAGE_METHOD.json",
+      "source_sha256": "100b37f41d5e2ebed645b2d0b1b9025076a95b96488c6ce4ca6f20e147c2addc",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/NiFeP_REFIT.json",
+      "bytes": 27521,
+      "sha256": "0c6364a2a7c62a5c25b237d763d3af43d504dcd210ab93bc1eeca11aa7140c24",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/NiFeP_REFIT.json",
+      "source_sha256": "d13eac0164a988069575c275471a0192c868800218207319dcdc6de4fb0505bd",
+      "transformation": "Keep selection, data, bounds and fits; omit workstation paths and unrelated comparison metadata"
+    },
+    {
+      "path": "analysis/figure5/reference/NiFeP_R_SCALING.json",
+      "bytes": 1097,
+      "sha256": "9bb574f08c13182c48be82445c93f36c279ffb45afd7e2a66790b2c7fac621cd",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/NiFeP_R_SCALING.json",
+      "source_sha256": "039b00d28b0c4377c823384e8b2d120440fc135ad332d98ac2818744b3d35d78",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure5/reference/KSCN_MODEL.json",
+      "bytes": 1499,
+      "sha256": "aba4e71b2129d10edc1c8fd2d28843e50ed29e1337a5fd2e323a1978366c455b",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/FROZEN_MODELS.json",
+      "source_sha256": "14d047b88424d8563c7f82e8ad11315e01e927d14d3eaf8fa6f1eccafaeeaab2",
+      "transformation": "Keep only the plotted KSCN case; exclude the unrelated Zn study"
+    },
+    {
+      "path": "analysis/figure6/vendor/empirical/model.py",
+      "bytes": 3430,
+      "sha256": "d48cf1ccf9cc4f2a850fa62d4db69472f27b33a9310ac985e550fd932802ef63",
+      "source": "output/analysis/ptc_main_verified_20260920/vendor/v3/acidic/historical_search_engine/model.py",
+      "source_sha256": "d48cf1ccf9cc4f2a850fa62d4db69472f27b33a9310ac985e550fd932802ef63",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure6/vendor/empirical/coverage_solver.py",
+      "bytes": 4067,
+      "sha256": "168b747e6d2d48f3ff82b47060c344f80b1baf84208d4656045f9a1670b9b292",
+      "source": "output/analysis/ptc_main_verified_20260920/vendor/v3/acidic/historical_search_engine/coverage_solver.py",
+      "source_sha256": "168b747e6d2d48f3ff82b47060c344f80b1baf84208d4656045f9a1670b9b292",
+      "transformation": "copy with LF line endings; no content changes"
+    },
+    {
+      "path": "analysis/figure6/vendor/vht/independent_model.py",
+      "bytes": 2359,
+      "sha256": "bbd0fc69c1d36af0d46189520bbc93dfb639075c5f44441e64638cf2d4da9938",
+      "source": "output/analysis/ptc_main_verified_20260920/vendor/vht/independent_model.py",
+      "source_sha256": "4b4d4581d8b0018345b629f04bfc1b65e110b9977aa39846b6f6662f829166f3",
+      "transformation": {
+        "verbatim_functions": [
+          "state",
+          "response",
+          "bv_response",
+          "metrics"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure6/vendor/vht/numerics.py",
+      "bytes": 2984,
+      "sha256": "16139899e015860cb791cf6d7af55b56bf68823fc2fc2c27032f950478cf6bc0",
+      "source": "output/analysis/ptc_main_verified_20260920/vendor/vht/numerics.py",
+      "source_sha256": "0a327c28d6763d7704cbb472d07bd1b617c8f512e25052b5781631de7587fa84",
+      "transformation": {
+        "verbatim_functions": [
+          "kinetic_and_jacobian",
+          "optimize_scale"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    },
+    {
+      "path": "analysis/figure6/inputs/acidic/cohort_all_points.csv",
+      "bytes": 163479,
+      "sha256": "4a4572a823f77889605c6320e33c90bbb8ffb97409f1e16e67e8343740070c2d",
+      "source": "output/analysis/ptc_main_verified_20260920/inputs/v3/acidic/cohort_all_points.csv",
+      "source_sha256": "4a4572a823f77889605c6320e33c90bbb8ffb97409f1e16e67e8343740070c2d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/inputs/acidic/cohort_metadata.csv",
+      "bytes": 9343,
+      "sha256": "549b92c847837778e1e9fbe28cccd0bf4c13c8a8054ce1be54a1a1f859bdc9bb",
+      "source": "output/analysis/ptc_main_verified_20260920/inputs/v3/acidic/cohort_curve_metadata.csv",
+      "source_sha256": "b6ec817f236ba60a173d95f3cab2c1b16f63cd4092302dae43546fd3a3c79a81",
+      "transformation": {
+        "retained_columns": [
+          "curve_uid",
+          "paper_key",
+          "electrolyte_key",
+          "doi_url"
+        ],
+        "rows": 81
+      }
+    },
+    {
+      "path": "analysis/figure6/inputs/alkaline/cohort_all_points.csv",
+      "bytes": 623594,
+      "sha256": "7ec00bde53a15fbff82617c273385faffb3314f0574cb26f1e83ebb99f452bca",
+      "source": "output/analysis/ptc_main_verified_20260920/inputs/v3/alkaline/cohort_all_points.csv",
+      "source_sha256": "7ec00bde53a15fbff82617c273385faffb3314f0574cb26f1e83ebb99f452bca",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/inputs/alkaline/cohort_metadata.csv",
+      "bytes": 29834,
+      "sha256": "7c996ce88f2a5d6528ae32d7be1a34dbed8fa595d1795129cca043c20c1c7da2",
+      "source": "output/analysis/ptc_main_verified_20260920/inputs/v3/alkaline/cohort_curve_metadata.csv",
+      "source_sha256": "d700b12701930c6b25f4222caca992379766577faad924fa0d2918814bf03f22",
+      "transformation": {
+        "retained_columns": [
+          "curve_uid",
+          "paper_key",
+          "electrolyte_key",
+          "doi_url"
+        ],
+        "rows": 267
+      }
+    },
+    {
+      "path": "analysis/figure6/reference/acid/TEMPLATES.csv",
+      "bytes": 773,
+      "sha256": "17e9cf6756b2e84773eda11cf480ad978e8bfbf6c2f206e2c9ce94521270bad7",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/acid/TEMPLATES.csv",
+      "source_sha256": "17e9cf6756b2e84773eda11cf480ad978e8bfbf6c2f206e2c9ce94521270bad7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/reference/acid/ASSIGNMENTS.csv",
+      "bytes": 16262,
+      "sha256": "75c9679433f477bc9f074a13009e66373ecde069642e7843050eda522a0a6a5d",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/acid/ASSIGNMENTS.csv",
+      "source_sha256": "75c9679433f477bc9f074a13009e66373ecde069642e7843050eda522a0a6a5d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/reference/acid/COVERAGE_SCAN.csv",
+      "bytes": 1211,
+      "sha256": "10194df72feb0d8aa0003874d42d0926100d5d26b161c2d16251dfb103331639",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/acid/COVERAGE_SCAN.csv",
+      "source_sha256": "10194df72feb0d8aa0003874d42d0926100d5d26b161c2d16251dfb103331639",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/reference/acid/RESULT.json",
+      "bytes": 467,
+      "sha256": "8a3f897155596872cd6469b21cdba6b49e1981e0fb942cfab2061251555bbb60",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/acid/RESULT.json",
+      "source_sha256": "35df61a890b639f30f696ae19bc52dc6459f7448a16c12955869be2514dd8111",
+      "transformation": "Reference cohort/count checks; workstation paths and solver logs omitted"
+    },
+    {
+      "path": "analysis/figure6/reference/KOH/TEMPLATES.csv",
+      "bytes": 923,
+      "sha256": "39c426065e9b193209e343e34490670918c4631fbe0fd603fc5530560858d24f",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/KOH/TEMPLATES.csv",
+      "source_sha256": "39c426065e9b193209e343e34490670918c4631fbe0fd603fc5530560858d24f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/reference/KOH/ASSIGNMENTS.csv",
+      "bytes": 54003,
+      "sha256": "8d4abb47d9f188123398c570f5f7fd3fa767e24855ee33a244c2a27efd1be9ab",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/KOH/ASSIGNMENTS.csv",
+      "source_sha256": "8d4abb47d9f188123398c570f5f7fd3fa767e24855ee33a244c2a27efd1be9ab",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/reference/KOH/COVERAGE_SCAN.csv",
+      "bytes": 1239,
+      "sha256": "907ae95fcba963b76d9b1b6de4401d9fea923f6d442ab50e25ea952349aea859",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/KOH/COVERAGE_SCAN.csv",
+      "source_sha256": "907ae95fcba963b76d9b1b6de4401d9fea923f6d442ab50e25ea952349aea859",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis/figure6/reference/KOH/RESULT.json",
+      "bytes": 474,
+      "sha256": "bd4efe4e983df81cb66b6c6c7410113fd457b259bc99d30a56e39ccb42252fa4",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/KOH/RESULT.json",
+      "source_sha256": "5d587e802bb9620e4aff74960759f5dfa6acf706b70d8f94ee58aec27e5e0db0",
+      "transformation": "Reference cohort/count checks; workstation paths and solver logs omitted"
+    },
+    {
+      "path": "analysis/figure6/reference/VHT_SELECTED.json",
+      "bytes": 3167,
+      "sha256": "ad178e769f9af334e0801f1a97eb683da8f22332a0ef7d2e8010434bdace953a",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/VHT_SELECTED.json",
+      "source_sha256": "c33c26ac6ddd32c953190149a927f4b95c589f67d32c591f52e42ab6f1860922",
+      "transformation": "Keep acid published model and KOH baseline used by the published dimension search; exclude residual-R alternatives"
+    },
+    {
+      "path": "analysis/figure6/reference/KOH_SELECTED.json",
+      "bytes": 1895,
+      "sha256": "994a176db94bc1e28207cd2c4b924b5e6b7e47abd81fdcb782381ca61089fcca",
+      "source": "output/analysis/ptc_KOH300_no_loss_kinetic_dimensions_20260921/SELECTED_MODELS.json",
+      "source_sha256": "6404f7b695ff81c0ca8bfe758c09ff1cc64e79f7a87769e810ae2118e6ede784",
+      "transformation": "Keep only the KOH model used in final Figure 6"
+    },
+    {
+      "path": "analysis/figure6/empirical.py",
+      "bytes": 11870,
+      "sha256": "197ce83d9202e22e5bd9c386cfabe2f3caf708efbff4108337cfcadb37de08d4",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/empirical.py",
+      "source_sha256": "3c5f7154526897ee7a0f0633c1fcdbee067acd353f35552219ae37db693a051e",
+      "transformation": {
+        "path_adaptations": [
+          [
+            "HERE = Path(__file__).resolve().parent\nROOT = HERE.parents[2]\nBUNDLE = ROOT / \"output/analysis/ptc_main_verified_20260920\"\nVENDOR = BUNDLE / \"vendor/v3/acidic/historical_search_engine\"",
+            "from paths import PACKAGE, EMPIRICAL_OUT, INPUTS\nHERE = EMPIRICAL_OUT\nVENDOR = PACKAGE / \"vendor/empirical\""
+          ],
+          [
+            "source = BUNDLE/\"inputs/v3\"/folder/\"cohort_all_points.csv\"",
+            "source = INPUTS/folder/\"cohort_all_points.csv\""
+          ]
+        ],
+        "numerical_algorithm_changes": false
+      }
+    },
+    {
+      "path": "analysis/figure6/kinetic.py",
+      "bytes": 17722,
+      "sha256": "4880ed8d6000a48d508acb49ceab3d224113580c064b283eb23dc74f617f504a",
+      "source": "output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921/kinetic.py",
+      "source_sha256": "bc6cc0998a43257bedc3f3bbf95306ba8e68f0c5d15413181b70153c3aef8d64",
+      "transformation": {
+        "path_adaptations": [
+          [
+            "HERE = Path(__file__).resolve().parent\nROOT = HERE.parents[2]\nVENDOR = ROOT/\"output/analysis/ptc_main_verified_20260920/vendor/vht\"",
+            "from paths import PACKAGE, EMPIRICAL_OUT\nHERE = EMPIRICAL_OUT\nVENDOR = PACKAGE / \"vendor/vht\""
+          ]
+        ],
+        "numerical_algorithm_changes": false
+      }
+    },
+    {
+      "path": "analysis/figure6/koh_kinetic.py",
+      "bytes": 16775,
+      "sha256": "690c42e5b9cc4aafb99f0c60cde6dfa338712b47c35d06a0da0293fdfb3ec7b6",
+      "source": "output/analysis/ptc_KOH300_no_loss_kinetic_dimensions_20260921/analyze.py",
+      "source_sha256": "3354b888f3c40e603b266698729f625a4f38a0503d707bcc1a28ce2bd3bec19d",
+      "transformation": {
+        "path_adaptations": [
+          [
+            "HERE=Path(__file__).resolve().parent\nROOT=HERE.parents[2]\nSOURCE=ROOT/\"output/analysis/ptc_acid200_KOH300_linear_BV_VHT_20260921\"\nVENDOR=ROOT/\"output/analysis/ptc_main_verified_20260920/vendor/vht\"",
+            "from paths import PACKAGE, EMPIRICAL_OUT, KOH_OUT\nHERE=KOH_OUT\nSOURCE=EMPIRICAL_OUT\nVENDOR=PACKAGE / \"vendor/vht\""
+          ]
+        ],
+        "numerical_algorithm_changes": false
+      }
+    },
+    {
+      "path": "analysis/figure6/control_core.py",
+      "bytes": 2285,
+      "sha256": "9c50caa93468a288603d40365107393392138f73032492aced35eca5b5384846",
+      "source": "figures/Figure_06_ptc_relative/windowed_families_kinetics_20260921/build_kinetic_descriptors.py",
+      "source_sha256": "9cd0be259425910949510eba3023c8bb88df232de83c07d83478c638dd329bc5",
+      "transformation": {
+        "verbatim_functions": [
+          "coordinates",
+          "state",
+          "elementary_rates",
+          "rate_control",
+          "independent_state"
+        ],
+        "changes": "portable module imports and constants only"
+      }
+    }
+  ]
+}

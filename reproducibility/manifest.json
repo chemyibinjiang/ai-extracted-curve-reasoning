@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "snapshot": "2026-09-23",
+  "scope": "Manuscript artwork and Figure 6 expected numerical tables",
+  "submission_manifest_sha256": "96682a080d2d83e7bfb1abc7c5e67705a3cc754ed074e1899496fad84acfcc06",
+  "assets": [
+    {
+      "path": "figures/manuscript/Figure1.svg",
+      "sha256": "f696dc0b4b94e7aec9ee386b947eff65de784a0989b33eda05a9a69f5d68327c",
+      "bytes": 3736245,
+      "kind": "svg",
+      "figure": "Figure1"
+    },
+    {
+      "path": "figures/manuscript/Figure1.png",
+      "sha256": "e60020b9430cb4cd488b298add78ca72137a8e5aa704eb1b3928c8d81a08f5a0",
+      "bytes": 1149730,
+      "kind": "png",
+      "figure": "Figure1",
+      "dimensions": [
+        3000,
+        2947
+      ]
+    },
+    {
+      "path": "figures/manuscript/Figure2.svg",
+      "sha256": "526acc3bb0d1435b325077b45a160d1ee685acbe52c6c3719b640ce6dab36312",
+      "bytes": 1358093,
+      "kind": "svg",
+      "figure": "Figure2"
+    },
+    {
+      "path": "figures/manuscript/Figure2.png",
+      "sha256": "517a2012da3b14583db5b5abf7dd021f7b07bcd1e9be15144847b7f75b745893",
+      "bytes": 1863485,
+      "kind": "png",
+      "figure": "Figure2",
+      "dimensions": [
+        3000,
+        2933
+      ]
+    },
+    {
+      "path": "figures/manuscript/Figure3.svg",
+      "sha256": "68ed2085c06507884730f8dcc222523be7e7996bfb7a5a6cffeaf58e167194cd",
+      "bytes": 378292,
+      "kind": "svg",
+      "figure": "Figure3"
+    },
+    {
+      "path": "figures/manuscript/Figure3.png",
+      "sha256": "e127b07aba5cef1a78107b104f60863cd23ba3f133d3121adbd4da678d3f84b8",
+      "bytes": 980733,
+      "kind": "png",
+      "figure": "Figure3",
+      "dimensions": [
+        3000,
+        2340
+      ]
+    },
+    {
+      "path": "figures/manuscript/Figure4.svg",
+      "sha256": "144035010c516b3116d75c70c54bd3d63b5c7acbc7e206c5896e040f4327029e",
+      "bytes": 339446,
+      "kind": "svg",
+      "figure": "Figure4"
+    },
+    {
+      "path": "figures/manuscript/Figure4.png",
+      "sha256": "08c12c6a3448dbda52b5a1b19478ead3e71e27864a43122b0649a8997d92dc59",
+      "bytes": 658143,
+      "kind": "png",
+      "figure": "Figure4",
+      "dimensions": [
+        3000,
+        2825
+      ]
+    },
+    {
+      "path": "figures/manuscript/Figure5.svg",
+      "sha256": "ec4d0cfc5ac02d13ea0b221b6ecaa5cb82822f3876d56d9ccc51c7087a393f4c",
+      "bytes": 468217,
+      "kind": "svg",
+      "figure": "Figure5"
+    },
+    {
+      "path": "figures/manuscript/Figure5.png",
+      "sha256": "fa56c147bc0a96c6c1e60a2adbe1148cf785fdcd26497c71543bab1495e814a1",
+      "bytes": 976564,
+      "kind": "png",
+      "figure": "Figure5",
+      "dimensions": [
+        3000,
+        2910
+      ]
+    },
+    {
+      "path": "figures/manuscript/Figure6.svg",
+      "sha256": "37a7fb73a719232236d9cf83c85e0b11542f4d273342ccd763c2564eee2a8240",
+      "bytes": 3127212,
+      "kind": "svg",
+      "figure": "Figure6"
+    },
+    {
+      "path": "figures/manuscript/Figure6.png",
+      "sha256": "3c9826dcdb2eec39b1395eb3da77be278f17fc9e01978b243334936638dca158",
+      "bytes": 1217361,
+      "kind": "png",
+      "figure": "Figure6",
+      "dimensions": [
+        3000,
+        2911
+      ]
+    },
+    {
+      "path": "analysis/figure6/expected/COVERAGE_BARS.csv",
+      "sha256": "c9e5ede7cbcfffacd0ce86cea96d8d0036226f33decd85f1943fd626e790ccaa",
+      "bytes": 753,
+      "kind": "csv"
+    },
+    {
+      "path": "analysis/figure6/expected/PARAMETER_COORDINATES.csv",
+      "sha256": "f3fe46fa2670a3b6d23b86a2ee2ffde7e0db91e88bac2289ad5a4f05be1a1de6",
+      "bytes": 1167,
+      "kind": "csv"
+    },
+    {
+      "path": "analysis/figure6/expected/RATE_CONTROL_MEAN_SD.csv",
+      "sha256": "d15f4c93eb821848e7f67f585dbe69d6fad4e2fdc83b94ba2f82f06d4d235968",
+      "bytes": 168788,
+      "kind": "csv"
+    },
+    {
+      "path": "analysis/figure6/expected/MEAN_CONTROL_CROSSINGS.csv",
+      "sha256": "510fb85dec1b52dc32c6bc0931c07712105e5e35de6fc2b19e21dbf211497e0f",
+      "bytes": 218,
+      "kind": "csv"
+    },
+    {
+      "path": "analysis/figure6/expected/CONTROL_CROSSINGS.csv",
+      "sha256": "76027d0fd4631e9fbe9238a85222584e82af2ab26e3cbd00665cb30ffeba6e84",
+      "bytes": 859,
+      "kind": "csv"
+    },
+    {
+      "path": "analysis/figure6/expected/RATE_CONTROL_FAMILY_GRID.csv",
+      "sha256": "8837d06b3f760329927530f1414901d82eb06c386687f0e28cea1683768f1c66",
+      "bytes": 600332,
+      "kind": "csv"
+    }
+  ]
+}

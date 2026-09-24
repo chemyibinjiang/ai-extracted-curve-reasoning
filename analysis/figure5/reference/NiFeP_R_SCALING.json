@@ -1,0 +1,28 @@
+{
+  "method": "Origin-constrained least squares of three independently fitted geometric R values versus 1/N",
+  "equation": "R_app = slope / N",
+  "free_intercept": false,
+  "n_resistances": 3,
+  "weights": "Equal weight per derived resistance; not weighted by LSV sample count",
+  "slope_ohm_cm2_layer": 17.795369930190716,
+  "intercept_ohm_cm2": 0.0,
+  "rmse_ohm_cm2": 0.04237951332601195,
+  "inverse_layers": [
+    0.08333333333333333,
+    0.05555555555555555,
+    0.041666666666666664
+  ],
+  "data_R": [
+    1.486396441157096,
+    1.0292439730577432,
+    0.6804261061163811
+  ],
+  "predicted_R": [
+    1.4829474941825596,
+    0.9886316627883731,
+    0.7414737470912798
+  ],
+  "origin_constraint": "User-requested zero intercept; (0,0) is not an additional observation",
+  "limits": "Proportionality is imposed by this fit; only three derived values, not independent validation of a shared kinetic response. Extension to the origin visualizes the constraint, not measured infinite-layer behavior",
+  "shared_layer_fit": "Separate 61-data joint BV+jR fit, not calibrated from this regression"
+}

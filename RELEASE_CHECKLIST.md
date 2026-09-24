@@ -1,45 +1,16 @@
-﻿# Release Checklist
+# Release Checklist
 
-Use this checklist before creating a submission or public-release tag.
+- [ ] Confirm one-to-one agreement between figure panels, input datasets, analysis outputs, and manuscript numbers.
+- [ ] Complete the Figure 3 benchmark/corpus/claim-result reproduction entry point.
+- [x] Rebuild Figure 4 from all 4,211 extracted curves and validate all 6,066 BV/BV+jR refits.
+- [x] Validate Figure 6 VHT multistart optimization and KOH parameter-sharing search in the pinned environment.
+- [ ] Run documented commands in a clean checkout with the pinned dependencies.
+- [ ] Verify all six figure hashes and export layouts with the required fonts.
+- [ ] Review third-party material and recorded sessions for privacy and redistribution permissions.
+- [ ] Confirm software licensing, data reuse terms, authorship, and citation metadata.
+- [ ] Reconcile manuscript and supporting-information methods, counts, captions, and repository links.
+- [ ] Review the exact release file set, then create a versioned commit and tag.
+- [ ] Record a verified archive identifier when available.
 
-## Manuscript And SI
-
-- [ ] Current manuscript and public SI are kept in the submission package outside this repository folder.
-- [ ] Repository README does not list manuscript or SI Word files as repository contents.
-- [ ] Track changes/comments are accepted or intentionally retained for the target recipient.
-- [ ] Page numbers, captions, references, and table/figure numbering are visually checked in Word.
-- [ ] Public SI does not contain DOI-traceable claim-validation cards or raw proof paths.
-
-## Data And Figures
-
-- [ ] Figure 4 QC numbers match the manuscript/SI wording.
-- [ ] Figure 5 strict-BV/BV+iR/BV+Eoffset/BV+iR+Eoffset numbers match the current analysis tables.
-- [ ] Figure 6 n values and branch counts match the current analysis tables. The current manuscript package is `figures\Figure_06_ptc_relative\main_text_figure6_package_20260619_panelF_bv_interval`.
-- [ ] Final figure files are present in `figures`.
-- [ ] Benchmark data are present under `benchmark_data`.
-- [ ] Separate Zenodo extracted-curve package is regenerated at `data_literature\zenodo_extracted_curve_dataset_v1.zip`.
-- [ ] Zenodo extracted-curve package contains DOI/panel/catalyst provenance and no original publication figures, source HTML, screenshots, original captions, or raw proof material.
-
-## Code And Analysis
-
-- [ ] `code_reference\PEERAGENT_REPO.md` records the frozen framework archive, commit, and checksum.
-- [ ] Curated analysis subfolders contain compact manuscript/SI-facing summary tables, source rows, and lightweight scripts.
-- [ ] Active public analysis reports do not contain external absolute local paths.
-- [ ] `analysis\raw_agent_analysis_archive\` is clearly labeled as raw process provenance, not the final-number source.
-- [ ] Git LFS is installed before committing large binary files.
-
-## Public/Private Boundary
-
-- [ ] Private validation/proof folders are not staged for a public repo.
-- [ ] Raw claim-validation HTML/card folders are not staged for a public repo.
-- [ ] Session screenshots/transcripts are not staged for a public repo.
-- [ ] Massive raw Z-drive archives are not staged for a public repo.
-- [ ] Reviewer-only evidence is packaged separately if needed.
-
-## Final Snapshot
-
-- [ ] Optional: generate a fresh file inventory/checksum list for internal archiving if needed.
-- [ ] Record the Zenodo dataset DOI in the manuscript/SI and README after the Zenodo record is reserved or published.
-- [ ] Run `git status --short` and inspect staged/untracked files.
-- [ ] Create a release tag, for example `v1.0-submission`, only after the above checks pass.
-
+Do not treat artwork export or parameter reconstruction as evidence that every
+upstream extraction, optimization, or adjudication step has been repeated.
