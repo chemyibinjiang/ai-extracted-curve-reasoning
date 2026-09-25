@@ -17,3 +17,8 @@ Use [the analysis guide](../analysis/README.md) for numerical results and
 
 [Figure 5 caption and interpretation](Figure5_caption.md) describes the direct
 NiMo BV/BV+jR/VHT comparison and the calculated, nonunique coverage solutions.
+
+Other directories retain source panels and exploratory calculations. Their
+directory numbers are not the manuscript figure numbers; use the table above
+for the six manuscript figures and `analysis/figure4/` through `analysis/figure6/`
+for their numerical analyses.

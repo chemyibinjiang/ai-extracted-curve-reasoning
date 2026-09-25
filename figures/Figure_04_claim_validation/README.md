@@ -1,9 +1,14 @@
-# Figure 4 Claim-Validation Source
+# Reported Performance Validation
 
-Figure 4 was assembled from the public-deidentified claim-validation figure
-package in this folder.
+This folder contains source panels comparing reported performance claims with
+reconstructed curves. It supports the validation examples in manuscript Figure 3;
+the folder name is not the manuscript figure number.
 
-Current public files:
+Use [Figure 3](../manuscript/Figure3.svg) for the assembled artwork and
+[the Figure 4 analysis](../../analysis/figure4/README.md) for the population
+BV/BV+jR fits.
+
+Source panels:
 
 - `figure_4_claim_validation_public_deidentified_v9.svg`
 - `figure_4_claim_validation_public_deidentified_v9.png`

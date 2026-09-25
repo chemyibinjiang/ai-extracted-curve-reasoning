@@ -1,9 +1,11 @@
-# Figure 6 Active Package
+# Pt/C Relative Performance Exploration
 
-This folder keeps the active Figure 6 manuscript package.
+This folder contains the relative-performance and interval-decomposition
+exploration, with its compact source tables. It is not manuscript Figure 6.
 
-- `main_text_figure6_package_20260619_panelF_bv_interval/`: current manuscript Figure 6 package. It is derived from the June 17 package, with panel F bottom-right changed to the exact strict-BV interval contribution.
+The [exploration package](main_text_figure6_package_20260619_panelF_bv_interval/README.md)
+includes the exact BV interval contribution and the associated comparisons.
 
-The compact source rows and summaries needed by the active figure are kept
-inside the active Figure 6 package folder. The duplicate June 17 visual-package
-copy is not retained in this `figures` folder.
+For the manuscript's Pt/C response families, kinetic reconstruction, and rate
+control, use [the Figure 6 analysis](../../analysis/figure6/README.md) and
+[Figure 6 artwork](../manuscript/Figure6.svg).

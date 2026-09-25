@@ -25,8 +25,10 @@ class Images(HTMLParser):
 class RepositoryLayoutTests(unittest.TestCase):
     def test_exploration_documentation_links(self):
         self.assertFalse((ROOT / "agent_conversation_records").exists())
-        for path in [ROOT / name for name in ("README.md", "CODE_ORGANIZATION.md", "REPRODUCIBILITY.md",
-                     "exploration/README.md", "exploration/agent_conversation_records/README.md")]:
+        paths = [ROOT / name for name in ("README.md", "CODE_ORGANIZATION.md", "REPRODUCIBILITY.md",
+                 "exploration/README.md", "exploration/agent_conversation_records/README.md")]
+        paths.extend((ROOT / "figures").rglob("README*.md"))
+        for path in paths:
             for link in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
                 parts = urlsplit(link)
                 if parts.scheme or not parts.path:

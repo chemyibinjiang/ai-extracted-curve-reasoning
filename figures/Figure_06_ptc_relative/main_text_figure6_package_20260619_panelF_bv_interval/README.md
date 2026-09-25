@@ -1,14 +1,12 @@
-# Figure 6 Manuscript Package, 2026-06-19
+# Pt/C Performance and Interval Decomposition
 
-This package is derived from synchronized Figure 6 source rows. Compact copies
-of the source rows and panel summaries are kept directly in this folder.
+This exploratory package compares relative Pt/C performance and decomposes
+overpotential intervals. Compact source rows and summaries are included here.
+For manuscript Figure 6, use [the response-family analysis](../../../analysis/figure6/README.md)
+and [assembled artwork](../../manuscript/Figure6.svg).
 
-The only intended scientific change is in panel F:
-
-- original June 17 panel F bottom-right: same-panel `b_BV` contrast
-- current June 19 panel F bottom-right: exact strict-BV interval contribution
-
-This active manuscript package keeps the frozen June 17 source tables copied into this folder:
+Panel F uses the exact BV contribution over the current interval, rather than
+the difference between fitted BV slope parameters. Source tables:
 
 - `source_AB_current_same_panel_eta10_eta50_rows.csv`
 - `source_CD_current_strict_bvir_offset_rows.csv`
