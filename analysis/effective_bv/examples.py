@@ -63,21 +63,46 @@ def layers(out):
     data = data.loc[[tuple(v) not in bad for v in data[keys].to_numpy()]].copy()
     assert len(data) == 61
     q, y = data.j_mA_cm2.to_numpy()/data.layers.to_numpy(), data.eta_mV.to_numpy()
-    shared = bv.fit_pair(q, y)["BV+jR"]
-    fits, predictions = [], []
+    shared_pair = bv.fit_pair(q, y)
+    shared = shared_pair["BV+jR"]
+    fits, predictions, comparisons = [], [], []
+
+    def comparison(scope, n, model, fit):
+        # Fits use j/N; convert both amplitude parameters back to geometric j.
+        return dict(scope=scope, layers=n, model=model, n=fit["n"], k=fit["k"],
+                    rmse_mV=fit["rmse"], r2=fit["r2"], sse_mV2=fit["sse"],
+                    alpha_a=fit["alpha_a"], alpha_c=fit["alpha_c"],
+                    coefficient_sum=fit["coefficient_sum"],
+                    j0_per_layer_mA_cm2=fit["j0"], R_per_layer_ohm_cm2=fit["R"],
+                    j0_geometric_mA_cm2=fit["j0"]*n if n else None,
+                    Rapp_geometric_ohm_cm2=fit["R"]/n if n else None,
+                    equivalent_converged=fit["equivalent_converged"])
+
     for n, g in data.groupby("layers", sort=True):
         q = g.j_mA_cm2.to_numpy()/n
         fit = bv.fit(q, g.eta_mV.to_numpy(), True, [bv.seed(shared)])
         assert fit["equivalent_converged"]
+        baseline = bv.fit(q, g.eta_mV.to_numpy())
+        assert baseline["equivalent_converged"]
+        assert fit["sse"] <= baseline["sse"] * (1 + 1e-8) + 1e-7
+        for model, item in [("BV", baseline), ("BV+jR", fit)]:
+            comparisons.append(comparison("independent", int(n), model, item))
         fits.append(dict(layers=int(n), independent_R=fit["R"]/n, predicted_R=shared["R"]/n, **fit))
-        predictions.append(g.assign(shared_eta_mV=bv.predict(q, shared), independent_eta_mV=bv.predict(q, fit)))
+        predictions.append(g.assign(shared_eta_mV=bv.predict(q, shared),
+                                    independent_eta_mV=bv.predict(q, fit),
+                                    shared_BV_eta_mV=bv.predict(q, shared_pair["BV"]),
+                                    independent_BV_eta_mV=bv.predict(q, baseline)))
+    for model, item in shared_pair.items():
+        comparisons.append(comparison("shared", None, model, item))
     table = pd.DataFrame(fits)
     x, y = 1/table.layers.to_numpy(), table.independent_R.to_numpy()
     slope = float(x@y/(x@x))
     table.to_csv(out / "D_NIFEP_FITS.csv", index=False)
     pd.concat(predictions).to_csv(out / "D_NIFEP_PREDICTIONS.csv", index=False)
+    pd.DataFrame(comparisons).to_csv(out / "D_NIFEP_MODEL_COMPARISON.csv", index=False)
     return dict(shared=shared, independent_fits=fits, inverse_layer_slope=slope,
-                inverse_layer_rmse=float(np.sqrt(np.mean((y-slope*x)**2))), retained_points=61)
+                inverse_layer_rmse=float(np.sqrt(np.mean((y-slope*x)**2))), retained_points=61,
+                model_comparison=comparisons)
 
 
 def kscn(out):

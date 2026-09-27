@@ -57,7 +57,9 @@ independently rebuild this same cohort from all 4,211 extracted curves.
   recompute coverage, exact complementary symmetry, five-fold predictions,
   window checks, VH limit, and enlarged VHT bounds.
 - NiFeP: refit the shared layer-normalized response and all independent layer
-  curves; recalculate inverse-layer resistance scaling.
+  curves with both BV and BV+jR; recalculate inverse-layer resistance scaling.
+  [Comparison tables and point predictions](../figure5/README.md#nifep-layer-number)
+  are also supplied as checked outputs, with explicit geometric-current units.
 - KSCN: retain its independent kinetic model; recalculate scale calibration
   and held-out predictions. This model does not contain the BV coefficient sum.
 

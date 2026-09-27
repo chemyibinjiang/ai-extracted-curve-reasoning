@@ -20,6 +20,8 @@ the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20
 | 5 | Apparent resistance and current rescaling | [Figure 5 analysis](analysis/effective_bv/README.md#figure-5) |
 | 6 | Pt/C response families and kinetic reconstruction | [Figure 6 analysis](analysis/effective_bv/README.md#figure-6) |
 
+For the multilayer NiFeP example, see the [model comparison and complete point tables](analysis/figure5/README.md#nifep-layer-number), including both BV and BV+jR fits.
+
 ## Run the Analyses
 
 Start with Git, Git LFS, and Python 3.13 installed. Clone the repository rather

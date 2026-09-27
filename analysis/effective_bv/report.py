@@ -167,6 +167,10 @@ def run(output):
     pop = read(output/"figure4/MODEL_SUMMARY.csv")
     kin = read(output/"figure6/KINETIC_SUMMARY.csv")
     nimo = read(output/"figure5/nimo/C_NIMO_METRICS.csv")
+    nifep = read(output/"figure5/D_NIFEP_MODEL_COMPARISON.csv")
+    nifep_display = nifep[['scope','layers','model','n','rmse_mV','r2','Rapp_geometric_ohm_cm2']].rename(
+        columns={'scope':'Fit', 'layers':'Layers', 'model':'Model', 'n':'Points',
+                 'rmse_mV':'RMSE (mV)', 'r2':'R2', 'Rapp_geometric_ohm_cm2':'Rapp (ohm cm2)'})
     empirical = json.loads((output/"figure6/EMPIRICAL_SUMMARY.json").read_text())
     mainkin = kin[(kin.condition.eq("acid")&kin.model.eq("DeltaG_only"))|
                   (kin.condition.eq("KOH")&kin.model.eq("DeltaG_T"))]
@@ -222,7 +226,7 @@ j0 [1e-12, 1e8] mA cm^-2, R [0, 100] ohm cm^2. No voltage offset is fitted.
 """
     (output/"SUMMARY.md").write_text(md,encoding="utf-8")
     def table(frame):
-        return '<div class="scroll">'+frame.to_html(index=False,border=0,float_format=lambda x:f"{x:.4g}")+"</div>"
+        return '<div class="scroll">'+frame.to_html(index=False,border=0,na_rep="",float_format=lambda x:f"{x:.4g}")+"</div>"
     markup = f"""<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Effective BV | Figures 4-6 reanalysis</title><style>
 body{{font:16px/1.5 Arial,sans-serif;color:#161616;margin:0;background:#fff}}main{{max-width:1180px;margin:auto;padding:26px 22px}}
@@ -244,6 +248,13 @@ td,th{{padding:7px 13px;border-bottom:1px solid #ddd;text-align:left}}th{{font-w
 <p>NiMo BV now also exceeds R<sup>2</sup> = 0.99. Adding jR reduces voltage RMSE from 2.10 to 0.43 mV;
 held-out RMSE is 2.14 versus 0.44 mV. The comparison is an error reduction, not a pass/fail distinction.</p>
 <img src="assets/example_trends.png" alt="Cycle resistance and NiFeP current scaling">
+<h3>NiFeP layer-number comparison</h3>
+{table(nifep_display)}
+<p>Both models use the same 61 retained points. Shared fits use current divided by layer number;
+their single parameter set describes all three curves. Geometric R<sub>app</sub> equals the
+layer-normalized resistance coefficient divided by N, so no single geometric value is listed for the shared fit.</p>
+<p><a href="figure5/D_NIFEP_MODEL_COMPARISON.csv">NiFeP model metrics and parameters</a> &middot;
+<a href="figure5/D_NIFEP_PREDICTIONS.csv">NiFeP observed and predicted points</a></p>
 <p>The cycle-dependent resistance trend has R<sup>2</sup> = {trends['B']['trend_r2']:.4f}.
 The NiFeP inverse-layer coefficient is {trends['D_NiFeP']['inverse_layer_slope']:.3f} &Omega; cm<sup>2</sup> layer.
 Compensation accounting and KSCN predictions were recalculated without changing their models.</p>

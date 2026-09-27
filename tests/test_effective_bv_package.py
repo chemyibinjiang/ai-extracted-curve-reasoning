@@ -43,6 +43,10 @@ class EffectivePackageTests(unittest.TestCase):
             self.assertLess(metrics["BV+jR"]["RMSE_mV"],.43)
             self.assertLess(metrics["VHT"]["RMSE_mV"],.67)
             self.assertGreater(examples["B"]["trend_r2"],.97)
+            nifep = pd.read_csv(output/"figure5/D_NIFEP_MODEL_COMPARISON.csv")
+            self.assertEqual(len(nifep), 8)
+            self.assertTrue(nifep.equivalent_converged.all())
+            self.assertIn("NiFeP layer-number comparison", (output/"index.html").read_text(encoding="utf-8"))
             cohort = json.loads((output/"figure6/EMPIRICAL_SUMMARY.json").read_text())
             self.assertEqual([(r["nonlinear"],r["families"],r["covered"]) for r in cohort],
                              [(73,4,59),(234,4,188)])
