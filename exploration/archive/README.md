@@ -11,6 +11,10 @@ This is a historical snapshot, not a manuscript reproduction entry point.
 Archive paths retain their repository-relative names. Inspect or unpack them
 in a separate directory; do not unpack over the current checkout.
 
+`pre_relaxation_validation/` preserves two earlier validation summaries found
+outside the archive during the follow-up audit. Their counts and metrics are
+superseded; current summaries remain under `reproducibility/`.
+
 The current workflow is [analysis/effective_bv/](../../analysis/effective_bv/).
 It requires neither this archive nor the investigation transcripts. Shared
 numerical functions that it still uses remain in `analysis/` and are tested

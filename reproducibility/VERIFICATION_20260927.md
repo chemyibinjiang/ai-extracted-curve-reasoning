@@ -67,3 +67,24 @@ preserves their bytes across platforms.
 The updated complete suite passed all 45 tests in 196.084 seconds, including
 the isolated all-stage run. Dataset validation and the 18-asset figure audit
 also passed. The manuscript document remained unchanged.
+
+## Active Record Audit
+
+The follow-up audit found two superseded summaries still outside the archive:
+`figure4-validation.json` contained the fixed-coefficient acceptance counts,
+and `figure5-artwork-update.json` contained the earlier NiMo BV metrics and
+artwork hashes. Their original records are now in
+`exploration/archive/pre_relaxation_validation/`; active records match the
+effective-BV fits and current manuscript artwork. The Figure 4 summary was
+compared with all 6,066 recalculated fit records and `MODEL_SUMMARY.csv`.
+
+The unused `C_COVERAGE_COORDINATES.csv` illustration was removed from the active
+inputs and source manifest after verifying its identical copy in the existing
+analysis archive. Current NiMo coverage continues to come from fitted VHT
+parameters. Two regression checks now enforce consistency of the active
+validation reports and keep the historical coverage file out of active inputs.
+
+All 23 focused tests passed: reader reproduction (4), core analysis and cohort
+preparation (9), figure tables (7), and NiMo kinetics including its isolated
+refit (3). No fitting code, fitted values, artwork or Word documents changed
+in this archival correction.

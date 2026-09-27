@@ -311,22 +311,6 @@
       }
     },
     {
-      "path": "analysis/figure5/inputs/C_COVERAGE_COORDINATES.csv",
-      "bytes": 6312,
-      "sha256": "1552f8b1615c4c44fb9efaea81af8e2727a4eafe3a7d2c454ab9b31d8ab66bcd",
-      "source": "0-to_submit/public_submission_major_revision/figures/Figure5/data/C_MODEL_COVERAGE.csv",
-      "source_sha256": "7fdd0f261d6df9ed2f4ac702c44e7f268d1818f6d8e54617f01db7f2b9f81f9f",
-      "transformation": {
-        "retained_columns": [
-          "x_pixel",
-          "y_pixel",
-          "eta_mV",
-          "theta_1"
-        ],
-        "rows": 132
-      }
-    },
-    {
       "path": "analysis/figure5/inputs/C_PRIMARY_DATA.csv",
       "bytes": 6921,
       "sha256": "567247e90ad7d9669b6a3e92a5352facca2e844d3757ec2c998157a14d2cd805",
