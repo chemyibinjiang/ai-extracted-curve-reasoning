@@ -18,31 +18,23 @@ sys.path.insert(0, str(HERE.parent / "common"))
 import numpy as np
 import pandas as pd
 import scipy
-import strict_bv as bv
+import effective_bv as bv
 import nimo_vht as vht
 
 
 def empirical(current, voltage):
-    fits = {}
-    for name, include_ir in [("BV", False), ("BV+jR", True)]:
-        fit = bv.fit_variant(current, voltage, include_ir=include_ir, include_offset=False, current={})
-        if not fit["ok"] or fit["error"]:
-            raise RuntimeError(f"{name}: {fit}")
-        fits[name] = fit
-    return fits
+    return bv.fit_pair(current, voltage)
 
 
 def predict(current, fit):
-    return bv.predict_variant(np.asarray(current),
-        np.array([fit["log_j0"], fit["alpha"], fit["r_mV_per_mA"]]),
-        include_ir=True, include_offset=False)
+    return bv.predict(np.asarray(current), fit)
 
 
 def dump(path, value):
     path.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
 
 
-def run(output, starts=64, checks=True, plot=True):
+def run(output, starts=64, checks=True, plot=True, empirical_backend=None):
     output = Path(output).resolve()
     protected = [HERE.parent.resolve(), (REPO / "figures").resolve()]
     if any(output == p or p in output.parents for p in protected):
@@ -53,7 +45,9 @@ def run(output, starts=64, checks=True, plot=True):
     data = data[data.source.eq("figure4_experiment")].sort_values("J_mA_cm2").reset_index(drop=True)
     assert len(data) == 40 and data.J_mA_cm2.between(2, 24).all()
     current, voltage = data.J_mA_cm2.to_numpy(), data.U_mV.to_numpy()
-    empirical_fits = empirical(current, voltage)
+    fit_empirical = empirical if empirical_backend is None else empirical_backend.fit_pair
+    predict_empirical = predict if empirical_backend is None else empirical_backend.predict
+    empirical_fits = fit_empirical(current, voltage)
     kinetic = vht.fit(current, voltage, starts=starts)
     best = kinetic["best"]
     p = vht.increasing_branch(best["parameters"], voltage)
@@ -79,9 +73,10 @@ def run(output, starts=64, checks=True, plot=True):
     coverage.to_csv(output / "C_NIMO_PREDICTED_COVERAGE.csv", index=False)
 
     predictions, metrics = {}, []
-    for name, count in [("BV", 2), ("BV+jR", 3), ("VHT", 4)]:
+    parameter_counts = [("BV", 3), ("BV+jR", 4)]
+    for name, count in parameter_counts + [("VHT", 4)]:
         predictions[name] = (vht.inverse(current, p) if name == "VHT"
-                             else predict(current, empirical_fits[name]))
+                             else predict_empirical(current, empirical_fits[name]))
         metrics.append(dict(model=name, n=len(current), free_parameters=count,
                             **vht.metrics(voltage, predictions[name])))
         data[name + "_eta_mV"] = predictions[name]
@@ -90,7 +85,7 @@ def run(output, starts=64, checks=True, plot=True):
     grid = np.geomspace(current.min(), current.max(), 301)
     lines = pd.DataFrame(dict(j_mA_cm2=grid))
     for name in predictions:
-        lines[name + "_eta_mV"] = vht.inverse(grid, p) if name == "VHT" else predict(grid, empirical_fits[name])
+        lines[name + "_eta_mV"] = vht.inverse(grid, p) if name == "VHT" else predict_empirical(grid, empirical_fits[name])
     lines.to_csv(output / "C_NIMO_FIT_LINES.csv", index=False)
     dump(output / "C_NIMO_MULTISTART.json", kinetic)
     print("Full-data RMSE (mV): " + ", ".join(f"{r['model']}={r['RMSE_mV']:.6f}" for r in metrics), flush=True)
@@ -109,12 +104,12 @@ def run(output, starts=64, checks=True, plot=True):
         cv_rows, window_rows = [], []
         for fold in range(5):
             test = np.arange(len(current)) % 5 == fold
-            ef = empirical(current[~test], voltage[~test])
+            ef = fit_empirical(current[~test], voltage[~test])
             # No full-data fitted parameters enter a held-out fit.
             vf = vht.fit(current[~test], voltage[~test], starts=substarts, seed=20260924 + fold)
             for name in predictions:
                 pred = (vht.inverse(current[test], vf["best"]["parameters"]) if name == "VHT"
-                        else predict(current[test], ef[name]))
+                        else predict_empirical(current[test], ef[name]))
                 for idx, value in zip(np.flatnonzero(test), pred):
                     cv_rows.append(dict(fold=fold, index=int(idx), model=name,
                         observed_eta_mV=float(voltage[idx]), predicted_eta_mV=float(value)))
@@ -124,11 +119,11 @@ def run(output, starts=64, checks=True, plot=True):
             (group.predicted_eta_mV - group.observed_eta_mV)**2))) for name, group in cv.groupby("model")}
         for lower, upper in [(3., 24.), (5., 24.), (2., 15.)]:
             use = (current >= lower) & (current <= upper)
-            ef = empirical(current[use], voltage[use])
+            ef = fit_empirical(current[use], voltage[use])
             vf = vht.fit(current[use], voltage[use], starts=substarts, seed=20260930)
             for name in predictions:
                 pred = (vht.inverse(current[use], vf["best"]["parameters"]) if name == "VHT"
-                        else predict(current[use], ef[name]))
+                        else predict_empirical(current[use], ef[name]))
                 window_rows.append(dict(requested_j_min=lower, requested_j_max=upper,
                     actual_j_min=float(current[use].min()), actual_j_max=float(current[use].max()),
                     model=name, n=int(use.sum()), **vht.metrics(voltage[use], pred)))
@@ -141,7 +136,7 @@ def run(output, starts=64, checks=True, plot=True):
         n=40, current_range_mA_cm2=[float(current.min()), float(current.max())],
         voltage_range_mV=[float(voltage.min()), float(voltage.max())],
         objective="Unweighted voltage-space least squares on identical digitized experimental points",
-        BV_convention="n_eff=2; effective alpha fitted; not an elementary-step transfer coefficient",
+        BV_convention="Effective alpha_a and alpha_c fitted; 0.001 <= sum <= 2; no fixed coefficient sum",
         VHT_convention="One-electron V/H steps; alphaV=alphaH=0.5; detailed balance; no resistance or offset",
         empirical_fits=empirical_fits, metrics=metrics, VHT_best=best,
         representative_parameters=p.tolist(), mirrored_parameters=symmetry_p.tolist(),

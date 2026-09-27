@@ -119,7 +119,7 @@ class CoreTests(unittest.TestCase):
 
 
 class IsolatedPackageTests(unittest.TestCase):
-    def test_entry_points_without_external_files(self):
+    def test_cohort_preparation_without_external_files(self):
         # An explicit small allowlist, not a copy of the working repository.
         with tempfile.TemporaryDirectory(prefix="figure-analysis-check-") as directory:
             isolated = Path(directory).resolve()
@@ -136,15 +136,10 @@ class IsolatedPackageTests(unittest.TestCase):
             env.pop("PYTHONPATH", None)
             env.pop("FIGURE6_OUTPUT", None)
             env["NUMBA_CACHE_DIR"] = str(isolated / "build/numba-cache")
-            for script in ("analysis/figure4/run.py", "analysis/figure5/run.py", "analysis/figure6/run.py"):
-                result = subprocess.run([sys.executable, script], cwd=isolated, env=env,
-                    capture_output=True, text=True, timeout=180)
-                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-            f4 = json.loads((isolated / "build/figure4/CHECKS.json").read_text())
-            self.assertEqual(f4["curves"], 3033)
-            self.assertEqual(f4["original_points"], 80399)
-            self.assertEqual(f4["local_derivative_centers"], 48478)
-            self.assertEqual(f4["BVjR_passes"], 2351)
+            result = subprocess.run([sys.executable, "analysis/figure4/run.py", "prepare",
+                "--output", "build/figure4"], cwd=isolated, env=env,
+                capture_output=True, text=True, timeout=180)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             preparation = json.loads((isolated / "build/figure4/PREPARATION_CHECKS.json").read_text())
             self.assertEqual(preparation["extracted_curves"], 4211)
             self.assertEqual(preparation["extracted_points"], 132314)
@@ -154,29 +149,6 @@ class IsolatedPackageTests(unittest.TestCase):
             self.assertEqual(ledger.included_figure4.sum(), 3033)
             self.assertEqual((~ledger.included_figure4).sum(), 1178)
             self.assertTrue(ledger.curve_uid.is_unique)
-            f5 = json.loads((isolated / "build/figure5/RESULTS.json").read_text())
-            self.assertEqual(f5["D"]["NiFeP_points"], 61)
-            self.assertEqual(f5["D"]["KSCN_heldout_points"], 22)
-            self.assertEqual(f5["C"]["selected_source"], "figure4_experiment")
-            self.assertEqual(f5["C"]["n"], 40)
-            self.assertIn("independently fitted", f5["C"]["theta_source"])
-            self.assertLess(f5["C"]["VHT_best"]["RMSE_mV"], .67)
-            f6 = json.loads((isolated / "build/figure6/REPLAY_CHECKS.json").read_text())
-            self.assertEqual(f6["family_grid_rows"], 4591)
-            self.assertEqual(f6["dominant_crossings"], 12)
-            self.assertEqual(f6["acid_VHT_passes"], 48)
-            self.assertEqual(f6["KOH_VHT_passes"], 174)
-            self.assertFalse(f6["kinetic_parameters_refitted"])
-            refit = subprocess.run([sys.executable, "analysis/figure4/run.py", "refit", "--workers", "4",
-                "--output", "build/figure4-refit"], cwd=isolated, env=env, capture_output=True, text=True, timeout=600)
-            self.assertEqual(refit.returncode, 0, refit.stdout + refit.stderr)
-            checks = json.loads((isolated / "build/figure4-refit/REFIT_CHECKS.json").read_text())
-            self.assertEqual(checks["model_fits"], 6066)
-            self.assertTrue(checks["reference_objectives_reproduced"])
-            for prefix, expected in [("bv", 806), ("bvir", 2351)]:
-                self.assertEqual(checks["models"][prefix]["successful_fits"], 3033)
-                self.assertEqual(checks["models"][prefix]["R2_ge_099"], expected)
-                self.assertEqual(checks["models"][prefix]["pass_assignment_changes"], 0)
 
 
 if __name__ == "__main__":

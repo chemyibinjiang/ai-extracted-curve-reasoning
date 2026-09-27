@@ -19,13 +19,12 @@ figure-analysis commands requires those records or their archives.
 | Command | Operation |
 | --- | --- |
 | `python analysis/figure4/run.py prepare --output build/figure4-preparation` | Read all 4,211 extracted curves, rebuild the 3,033-curve cohort, and record every selection decision |
-| `python analysis/figure4/run.py` | Rebuild the cohort; verify supplied fits on all 80,399 fitting points; recompute slopes, fit metrics, distributions, and examples |
-| `python analysis/figure5/run.py --refit-kscn` | Refit case-study models, calculate compensation/EIS trends and current scaling, and refit KSCN control |
-| `python analysis/figure5/refit_nimo.py` | Fit identical experimental NiMo points with BV, BV+jR and resistance-free VHT; calculate coverage and diagnostics; export the C comparison separately |
-| `python analysis/figure6/run.py` | Reprofile empirical current scales, reconstruct supplied VHT solutions, recalibrate amplitudes, and recompute rate controls |
-| `python analysis/figure6/run.py discover --output build/figure6-discovery` | Rerun empirical template discovery and coverage optimization for K=1..10 |
-| `python analysis/figure4/run.py refit --workers 4 --output build/figure4-refit` | Rebuild the cohort, refit all 6,066 BV/BV+jR models, and validate objectives and pass assignments |
-| `python analysis/figure6/run.py refit --workers 4 --output build/figure6-refit` | Rerun VHT multistart optimization and the KOH parameter-sharing search |
+| `python analysis/effective_bv/run.py population --workers 6` | Refit all 6,066 variable-coefficient BV/BV+jR models; recompute metrics, distributions, examples and local slopes |
+| `python analysis/effective_bv/run.py examples` | Refit cycle/EIS, NiMo and NiFeP examples; calculate compensation, current scaling, VHT coverage and predictive checks |
+| `python analysis/effective_bv/run.py families --workers 6 --starts 12` | Reprofile the selected templates, refit VHT sharing models, replay member curves and recompute rate controls |
+| `python analysis/effective_bv/search.py` | Profile the complete 276,551-template grid and repeat maximum-coverage selection for K=1..10 |
+| `python analysis/effective_bv/run.py report` | Generate updated numerical review plots and an HTML summary |
+| `python analysis/effective_bv/run.py all --workers 6 --starts 12` | Run all four stages in order |
 
 See the [analysis guide](analysis/README.md) for inputs, outputs, fixed assumptions,
 and interpretation. Reconstructing a supplied fit is not the same as estimating
@@ -48,16 +47,41 @@ and dominant-control crossings. Isolated-copy tests check that the figure-analys
 entry points and the complete Figure 4 refit do not depend on files outside the
 included package. No network connection is used by these analyses.
 
-Verified calculations include the Figure 4 cohort preparation, full refit, reference-fit reconstruction and
-derived statistics, Figure 5 case-study fits/scaling, Figure 6 empirical discovery,
-Figure 6 reconstruction, and the full VHT multistart/parameter-sharing search.
-The VHT refit recovered the supplied acid/KOH parameters and per-family errors
-in the pinned environment. All 6,066 Figure 4 model fits succeeded; the 806 BV
-and 2,351 BV+jR passing curves were unchanged. The refit command writes
-`REFIT_CHECKS.json` with objective differences and pass-assignment checks.
-An executed-run summary is in [reproducibility/figure4-validation.json](reproducibility/figure4-validation.json).
+The effective-BV revision refits all 6,066 population models and independently
+checks their voltage objectives. Accepted counts are 1,588 for BV and 2,361 for
+BV+jR. Affected Figure 5 fits and the VHT sharing search on the new Figure 6
+templates have also been rerun. Selected variable-coefficient templates and
+the completed finite-grid coverage search are supplied as checked reference
+data; the `families` stage does not repeat that search. Current amplitudes and
+VHT models are reoptimized. See the [current analysis protocol](analysis/effective_bv/README.md)
+for numerical bounds, checkpoints and the distinction between a retained
+optimized seed and a newly converged fit.
+
+Figure-specific `analysis/figure4/run.py`, `analysis/figure5/run.py`, and
+`analysis/figure6/run.py` call the same current fitting stages. Earlier workflows
+are archived separately; they cannot be selected by a default analysis command.
+After archiving, all 6,066 population fits and the 12-start VHT sharing search
+were rerun on September 27, 2026. The principal kinetic parameters matched the
+Figure 6/SI tables exactly. An isolated-copy test also runs without exploration
+files or archived analyses.
 
 ## Artwork
+
+The manuscript SVG/PNG files include the effective-BV numerical revision.
+Figure 1A-C and Figures 2-3 are unchanged. Figures 1D and 4-6 retain their manually edited plot types,
+frames, fonts and overall layout, with updated data artists and numeric labels.
+The four alkaline family plots occupy the same four-column grid as the acid row.
+
+After the numerical analysis, regenerate the data updates into a review folder:
+
+```text
+python analysis/effective_bv/artwork.py --data build/effective-bv-20260927 --output build/manuscript-figures --inkscape /path/to/inkscape
+```
+
+This command uses the included compressed SVG templates and does not overwrite
+the published figures. Its output includes the six figures, an HTML gallery,
+Figure 6 audit tables and `ARTWORK_CHECKS.json`. To validate or export the
+published figures directly:
 
 ```text
 git lfs pull --include="figures/manuscript/**" --exclude=""

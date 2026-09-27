@@ -7,15 +7,18 @@ checking reported claims, and analyzing hydrogen-evolution polarization curves.
 
 The manuscript artwork is in [figures/manuscript/](figures/manuscript/).
 Each figure has an editable SVG and a PNG preview.
+The current numerical revision uses the effective-BV analysis below. The
+manually edited artwork has been synchronized to these fits without changing
+the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20260927.md).
 
 | Figure | Subject | Data and computation |
 | --- | --- | --- |
-| 1 | Overview: extraction, verification, response shapes, and kinetic interpretation | Conceptual scheme |
+| 1 | Overview: extraction, verification, response shapes, and kinetic interpretation | Scheme; panel D uses the [Figure 6 alkaline families](figures/DATA_UPDATE_20260927.md#figure-1) |
 | 2 | Worked example of axis calibration, curve extraction, and verification | Extraction workflow |
 | 3 | Extraction benchmark, literature validation, and claim comparisons | [Benchmark data and evaluation](benchmark_data/benchmark_curve_extraction/README.md) |
-| 4 | Local slopes, BV/BV+jR fit quality, and effective parameters | [Figure 4 analysis](analysis/figure4/README.md) |
-| 5 | Apparent resistance and current rescaling | [Figure 5 analysis](analysis/figure5/README.md) |
-| 6 | Pt/C response families and kinetic reconstruction | [Figure 6 analysis](analysis/figure6/README.md) |
+| 4 | Local slopes, effective BV/BV+jR fit quality, and effective parameters | [Figure 4 analysis](analysis/effective_bv/README.md#figure-4) |
+| 5 | Apparent resistance and current rescaling | [Figure 5 analysis](analysis/effective_bv/README.md#figure-5) |
+| 6 | Pt/C response families and kinetic reconstruction | [Figure 6 analysis](analysis/effective_bv/README.md#figure-6) |
 
 ## Run the Analyses
 
@@ -23,19 +26,18 @@ Use Python 3.13. Run these commands from the repository root:
 
 ```text
 python -m pip install -r requirements-analysis.txt
-python analysis/figure4/run.py
-python analysis/figure5/run.py --refit-kscn
-python analysis/figure6/run.py
+python analysis/effective_bv/run.py all --workers 6 --starts 12
 python -m unittest discover -s tests -v
 ```
 
 Results are written to `build/`. The commands use the included numerical inputs
 without a network connection, source-paper downloads, or workstation-specific
-paths. Figure 4 rebuilds its cohort from all extracted curves, verifies the
-supplied BV/BV+jR fits, and recalculates local slopes;
-Figure 5 reruns case-study fits and scaling; Figure 6 reconstructs responses and
-rate controls from the supplied kinetic parameters. Separate optimization
-commands are documented in [Reproducibility](REPRODUCIBILITY.md).
+paths. Figure 4 refits both models on all 3,033 selected curves and recalculates
+their distributions, examples and local slopes. Figure 5 reruns affected
+case-study fits and scaling. Figure 6 reprofiles the selected response families,
+refits VHT reconstructions and recomputes rate controls. Both effective
+coefficients vary; their sum is not fixed. Stage-specific commands are in
+[Reproducibility](REPRODUCIBILITY.md).
 
 ## Complete Curve Dataset
 
@@ -54,12 +56,13 @@ or refit both models on the full fitting cohort with:
 
 ```text
 python analysis/figure4/run.py prepare --output build/figure4-preparation
-python analysis/figure4/run.py refit --workers 4 --output build/figure4-refit
+python analysis/effective_bv/run.py population --workers 6
 ```
 
-Both commands start from the complete coordinate dataset. The refit uses
-multistart optimization without seeding from the reference fit parameters and
-checks the resulting objectives and pass assignments against Figure 4.
+The preparation command starts from the complete coordinate dataset. The refit
+uses the verified prepared coordinates, multistart optimization, and supplied
+variable-coefficient fits as additional feasible seeds. It independently checks
+every resulting objective and the nesting of BV within BV+jR.
 
 ## Data and Files
 
@@ -71,6 +74,8 @@ checks the resulting objectives and pass assignments against Figure 4.
 - `code_reference/`: extraction-framework source and provenance.
 - [Exploration](exploration/README.md): catalyst-performance and BV+jR
   investigation records, separate from the figure-reproduction workflow.
+- [Analysis archive](exploration/archive/README.md): recoverable snapshots of
+  superseded workflows; not used by the current analysis commands.
 
 Large binary assets use Git LFS; the curve CSV files use ordinary Git.
 Retrieve the manuscript figures with:

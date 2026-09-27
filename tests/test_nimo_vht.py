@@ -62,7 +62,7 @@ class NiMoKineticsTests(unittest.TestCase):
     def test_isolated_fit_and_diagnostics(self):
         with tempfile.TemporaryDirectory(prefix="nimo-vht-check-") as temporary:
             root = Path(temporary)
-            for relative in ("analysis/common/strict_bv.py", "analysis/figure5/nimo_vht.py",
+            for relative in ("analysis/common/effective_bv.py", "analysis/figure5/nimo_vht.py",
                 "analysis/figure5/refit_nimo.py", "analysis/figure5/inputs/C_PRIMARY_DATA.csv",
                 "analysis/figure6/vendor/vht/independent_model.py"):
                 target = root / relative
@@ -81,7 +81,7 @@ class NiMoKineticsTests(unittest.TestCase):
             self.assertIn("no resistance or offset", report["VHT_convention"])
             errors = {r["model"]: r["RMSE_mV"] for r in report["metrics"]}
             np.testing.assert_allclose([errors[n] for n in ["BV", "BV+jR", "VHT"]],
-                                       [2.402925, .427313, .660728], atol=2e-4, rtol=0)
+                                       [2.095907, .427313, .660728], atol=2e-4, rtol=0)
             self.assertLess(report["maximum_relative_balance_error"], 1e-7)
             self.assertLess(report["diagnostics"]["wider_bounds"]["max_prediction_change_mV"], .002)
             self.assertLess(report["diagnostics"]["VH_limit"]["RMSE_mV"], .68)

@@ -1,6 +1,6 @@
 # Exploratory Analyses
 
-This folder preserves the records of two dataset-driven investigations. The
+This folder preserves exploratory controls and earlier investigations. The
 manuscript's reproducible calculations are organized separately by figure in
 [analysis/](../analysis/README.md).
 
@@ -20,5 +20,11 @@ Figure 3's extraction/claim validation and Figure 6's Pt/C response-family and
 kinetic analysis are distinct from catalyst-performance rankings. Reproducing
 Figures 4-6 does not require this folder or its archives.
 
-The full working-analysis ZIP, when present locally, remains excluded from Git.
-No additional exploratory scripts or datasets are unpacked into the release.
+The [analysis archive](archive/README.md) preserves superseded fitting workflows,
+parameterization comparisons, inputs, and tests. Current reproduction commands
+do not load it. The [acidic Pt control](acid_nernst_control/README.md) separately
+examines the Nernstian response discussed by Prats and Chan; it is not an
+alternative default fitting workflow.
+
+The larger original working-analysis ZIP, when present locally, remains excluded
+from Git. The curated analysis archive above is versioned with Git LFS.

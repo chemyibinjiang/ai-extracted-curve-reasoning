@@ -1,0 +1,21 @@
+{
+  "condition": "KOH",
+  "model": "free",
+  "K": 4,
+  "denominator": 234,
+  "shape_parameters": 12,
+  "selected": [
+    222891,
+    275853,
+    15213,
+    260442
+  ],
+  "covered": 188,
+  "coverage": 0.8034188034188035,
+  "upper_count": 188,
+  "certified_count": true,
+  "status": 0,
+  "mip_gap": 0.0,
+  "n_candidates": 1910,
+  "seconds": 6.56499171257019
+}

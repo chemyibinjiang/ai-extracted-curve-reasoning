@@ -19,7 +19,7 @@ class FigureTableTests(unittest.TestCase):
 
     def test_frozen_science(self):
         result = validate_science(self.tables)
-        self.assertEqual(result["dominant_crossings"], 12)
+        self.assertEqual(result["dominant_crossings"], 11)
         self.assertEqual(result["mean_crossings"], 2)
 
     def test_figure5_direct_kinetic_fit_artwork(self):

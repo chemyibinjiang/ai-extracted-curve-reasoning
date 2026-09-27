@@ -1,0 +1,21 @@
+{
+  "condition": "acid",
+  "model": "free",
+  "K": 4,
+  "denominator": 73,
+  "shape_parameters": 12,
+  "selected": [
+    15379,
+    256087,
+    15372,
+    15366
+  ],
+  "covered": 59,
+  "coverage": 0.8082191780821918,
+  "upper_count": 59,
+  "certified_count": true,
+  "status": 0,
+  "mip_gap": 0.0,
+  "n_candidates": 78,
+  "seconds": 0.006875276565551758
+}

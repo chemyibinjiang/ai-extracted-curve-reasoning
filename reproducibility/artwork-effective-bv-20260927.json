@@ -1,0 +1,338 @@
+{
+  "template_archive_sha256": "296c5c12efcc43ce76e9599e15a4a552db5eb3db42cc8e4e80f978c267260299",
+  "data_directory": "build/effective-bv-20260927",
+  "plot_types_unchanged": true,
+  "preserved_elements": {
+    "1": [
+      "svg1",
+      "D-frame",
+      "D-panel-title",
+      "D-raw-title",
+      "D-scaled-title",
+      "D-kinetic-title",
+      "D-raw-axes",
+      "D-scaled-axes",
+      "D-kinetic-axes",
+      "D-amplitude-shape-equation",
+      "D-stage-connectors"
+    ],
+    "4": [
+      "frame_A",
+      "svg84",
+      "frame_B",
+      "B-bottom-titles-compact"
+    ],
+    "5": [
+      "svg171",
+      "svg261",
+      "B_experiment_axes_2",
+      "D_measured_axes_1",
+      "D_measured_axes_2",
+      "D_consequences_axes_2"
+    ],
+    "6": [
+      "frame-A",
+      "frame-B",
+      "frame-C",
+      "frame-D",
+      "frame-E",
+      "frame-F",
+      "heading-A",
+      "heading-B",
+      "heading-C",
+      "heading-D",
+      "heading-E",
+      "heading-F"
+    ]
+  },
+  "figures": {
+    "1": {
+      "condition": "KOH",
+      "families": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "members": {
+        "B1": 37,
+        "B2": 79,
+        "B3": 25,
+        "B4": 47
+      },
+      "curves": 188,
+      "points": 4986,
+      "normalization": "j / (beta * amplitude_multiplier), identical to Figure 6B",
+      "shape_lines": "VHT reconstruction, identical to Figure 6B",
+      "parameters": [
+        {
+          "family": "B1",
+          "DeltaG_eff_meV": 69.19644802846304,
+          "kT_over_kV": 5.459649320040709
+        },
+        {
+          "family": "B2",
+          "DeltaG_eff_meV": 25.353523289330422,
+          "kT_over_kV": 4.354267934133455
+        },
+        {
+          "family": "B3",
+          "DeltaG_eff_meV": 72.21591522356084,
+          "kT_over_kV": 15.12028339866524
+        },
+        {
+          "family": "B4",
+          "DeltaG_eff_meV": 50.596379424621354,
+          "kT_over_kV": 9.490838653526529
+        }
+      ],
+      "unchanged_panels": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "4": {
+      "BV": {
+        "accepted": 1588,
+        "percent": 52.35740191229805
+      },
+      "BV+jR": {
+        "accepted": 2361,
+        "percent": 77.84371909000988
+      },
+      "b_mV_dec": {
+        "median": 77.59053510857802,
+        "histogram_count": 2212,
+        "denominator": 2361
+      },
+      "R": {
+        "median": 0.4276798553569175,
+        "histogram_count": 2325,
+        "denominator": 2361
+      },
+      "j0": {
+        "median": 1.866265693897881,
+        "histogram_count": 2361,
+        "denominator": 2361
+      }
+    },
+    "5": {
+      "nimo_metrics": [
+        {
+          "model": "BV",
+          "n": 40,
+          "free_parameters": 3,
+          "RMSE_mV": 2.0959067454713405,
+          "R2": 0.9919249837129637,
+          "max_abs_error_mV": 5.8008346269026845,
+          "SSE_mV2": 175.71300342849062
+        },
+        {
+          "model": "BV+jR",
+          "n": 40,
+          "free_parameters": 4,
+          "RMSE_mV": 0.42731335811130483,
+          "R2": 0.9996643455301989,
+          "max_abs_error_mV": 0.9458007496012613,
+          "SSE_mV2": 7.303868240814409
+        },
+        {
+          "model": "VHT",
+          "n": 40,
+          "free_parameters": 4,
+          "RMSE_mV": 0.6607281417080861,
+          "R2": 0.9991974998809956,
+          "max_abs_error_mV": 1.336479511056126,
+          "SSE_mV2": 17.462467089800835
+        }
+      ],
+      "cycle_trend_r2": 0.9856982353293544,
+      "NiFeP_inverse_layer_slope": 17.771624223294566
+    },
+    "6": {
+      "families": {
+        "acid": 4,
+        "KOH": 4
+      },
+      "members": {
+        "acid": 59,
+        "KOH": 188
+      },
+      "crossings": [
+        {
+          "condition": "KOH",
+          "family": "mean",
+          "pair": "X_T=X_V",
+          "eta_mV": 31.03432155894655,
+          "control": 0.49691586506513463,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "mean",
+          "pair": "X_T=X_V",
+          "eta_mV": 154.75832357705244,
+          "control": 0.4908682699282097,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "acid",
+          "family": "A4",
+          "pair": "X_T=X_V",
+          "eta_mV": 34.377752278560855,
+          "control": 0.4826936361198725,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "acid",
+          "family": "A4",
+          "pair": "X_T=X_V",
+          "eta_mV": 89.54969734291898,
+          "control": 0.4727449227080802,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B1",
+          "pair": "X_T=X_V",
+          "eta_mV": 70.2587119363381,
+          "control": 0.4956291793276928,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B1",
+          "pair": "X_T=X_V",
+          "eta_mV": 130.36219696630397,
+          "control": 0.49223452869892464,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B2",
+          "pair": "X_T=X_V",
+          "eta_mV": 130.91849423410744,
+          "control": 0.4908770680850542,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B3",
+          "pair": "X_T=X_V",
+          "eta_mV": 40.56898531785429,
+          "control": 0.4979842590248639,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B3",
+          "pair": "X_T=X_V",
+          "eta_mV": 190.8319738782284,
+          "control": 0.4916084406306456,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B4",
+          "pair": "X_T=X_V",
+          "eta_mV": 14.102372239618123,
+          "control": 0.49777385811319796,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        },
+        {
+          "condition": "KOH",
+          "family": "B4",
+          "pair": "X_T=X_V",
+          "eta_mV": 167.43915343329465,
+          "control": 0.4915161937548141,
+          "within_fitted_support": true,
+          "dominant_control_crossing": true
+        }
+      ],
+      "acid_TV_reference": 2.2584675346368877
+    }
+  },
+  "inputs": {
+    "figure4/EXAMPLE_CURVES.csv": "4cbbc259bd6366109727ba0e95508dcd582238dcf2cb41e489c229215a6fbe8b",
+    "figure4/EXAMPLE_METRICS.csv": "13aa80635b2e0b26d82ff7d09da37530ccbe888bc59d6962ccff66d851eef334",
+    "figure4/FITS.csv": "ac05aeac85159b031df59aa841b935654ac4957abaff6444577a701ead281317",
+    "figure4/LOCAL_SLOPES.csv": "c91656dec28d8504694aea3954a58bc1ca2424a38ffc525efe21704d25ed7a5f",
+    "figure4/MODEL_SUMMARY.csv": "91668efcfbb0a12693ec9ce8677ac035b765b7726105ae47ac72e234ad1233b0",
+    "figure4/PARAMETER_HISTOGRAMS.csv": "194cee6d6e8b3d2d2b39993e91d2f6a58d189470ddf41ad88198d1ca8e4c336a",
+    "figure4/PARAMETER_SUMMARY.csv": "46f195e7e3123ebce5a0bd25057a140f1231532a8d57a4d412269fca29842b58",
+    "figure5/A_MATCHED_GRID.csv": "993592b918102464e883191be9b6ee84dc8543de254eb65772121bf6c60ad9a8",
+    "figure5/B_CYCLE_R.csv": "bb4a90ba7a6a1a2dab8d07ce77da7dc65d96030e49cfabcd48f31df5b810e9ed",
+    "figure5/B_FITS.csv": "35c45aa2eb1e1cced4730e01fcce30db96bbdba92bd9cdfa4efbb19d4cb9fcf6",
+    "figure5/B_PREDICTIONS.csv": "711e40be0cd48a921962ef19795111c30910feb9c9770eb24922f408950e95e9",
+    "figure5/D_KSCN_HELDOUT.csv": "9678a4c4b20a457c5710a59684c27369ebd0aa4418044c1c56e7eebdc1e7cd4e",
+    "figure5/D_NIFEP_FITS.csv": "54d929e67637948e5857280ff26c61e4b4059270052ed85589bd4b4b9fdb7035",
+    "figure5/D_NIFEP_PREDICTIONS.csv": "6973748b8fba177e68648d917e72814390049d71892df42ceaff8e310bf189b3",
+    "figure5/nimo/C_NIMO_CROSS_VALIDATION.csv": "82a9922de0b868a24a621a5bf889bd43d514c643f1a420ddc360a97bc373ab25",
+    "figure5/nimo/C_NIMO_FIT_LINES.csv": "4afb14d7f52ce1ff16e4fc09a05eb41217635f3815a19e1d2af188b5a254747e",
+    "figure5/nimo/C_NIMO_FIT_POINTS.csv": "6bd74c28897e79d73bbd6c858541a7ebdbf26eed5375651768083d91741fdc2f",
+    "figure5/nimo/C_NIMO_METRICS.csv": "efaf02d33001c5723759570ef36d51ef12782994309bae89492ea887541a8057",
+    "figure5/nimo/C_NIMO_PREDICTED_COVERAGE.csv": "23d5e96f619fa5138eabd1e353796ba35a3091a531bd92a5c566ddb0d6447572",
+    "figure5/nimo/C_NIMO_WINDOW_CHECKS.csv": "e0679077498a170f0f3c82f6481108789f18413e0a897f50dafdda5cc8d9667a",
+    "figure6/acid/ASSIGNMENTS.csv": "2a89c5769d125fe73b20cf2c682ff3917246824edbfc9978f71baacdc87f78a6",
+    "figure6/acid/COHORT_FLOW.csv": "8b11e8247bc69791965a1bdacca1df48c59729336ae6c5fd6e9b4add8d12e10c",
+    "figure6/acid/COVERAGE_SCAN.csv": "923a6d9ed434cd14cace9c6fc6df0bfc6ba6269f033d459c017bd1a26dd05b1a",
+    "figure6/acid/PAPER_CV.csv": "581f8b0d5397a381a87d4b4adb93a25a2e23cb50381f37feafff1cca414dd6df",
+    "figure6/acid/POINT_PREDICTIONS.csv": "ff327b83dce16937fe42af76615636b20872c9ed74506e3cdb092c24bcd477e6",
+    "figure6/acid/TEMPLATES.csv": "ced15d2b926a121a4a44f43311e79f5bf4d9ea0f125dc8002ecba1ed2d50717e",
+    "figure6/KINETIC_PARAMETERS.csv": "b39f92b0b35d672de46c8831fcbff6733591549a893f54f79354676e9a17cf33",
+    "figure6/KINETIC_SUMMARY.csv": "c11b70b0f5ea52f7d0282d3bb3adc4f2300b5166d01b2a412eafc1368892b8e8",
+    "figure6/KOH/ASSIGNMENTS.csv": "423af8a130ab04a6658924653e02143355513f2864670a7befc770a16148e1f0",
+    "figure6/KOH/COHORT_FLOW.csv": "136dfcce522e22754582eebd6e8237c6d8be575f695cebf0cf72c3cd7ad8e91f",
+    "figure6/KOH/COVERAGE_SCAN.csv": "28154180e4f8476f61623b76735f7307c44921a2a1e72740086604aef4afa3a4",
+    "figure6/KOH/PAPER_CV.csv": "83b8487d19c4f4aa9c422f8bf00c3dbc7a0460fd48ad46183003544ff328c734",
+    "figure6/KOH/POINT_PREDICTIONS.csv": "a7f65100e042b76f606050cc1bb072ecfaa523a34636a7cbf72ad0704a3ef13c",
+    "figure6/KOH/TEMPLATES.csv": "cc14d38a3f08132cd4b039c5e71eb20f4067795092a204dd2e0e919bff047aad",
+    "figure6/RATE_CONTROL.csv": "03649b0064283769f292b10295b986653c523deff4134c011745418953960f18",
+    "figure6/RATE_CONTROL_MEAN_SD.csv": "c25343b357b1641c704bf36bb9ea5bd8b27de1208bd912305c24db96249a6f65",
+    "figure6/RAW_VHT_REPLAY.csv": "87c42b98c9c8234933c660f20027044c83d15889d60ac9bf9e7eee131a6bc848",
+    "figure6/TEMPLATE_RECONSTRUCTION.csv": "b6c8268f2d9318f564e4d258f6c51218ec078b67d10bbda8d92e53538ea8c2da"
+  },
+  "outputs": {
+    "Figure1.svg": "980e135fba1b31a7511da6eb34d2375eaec599a5d1056ccf1893d60031676621",
+    "Figure1.png": "39aae93aff715f282bb8d8f6e0c7e7c65b5cd3549449597098676d5297653b88",
+    "Figure2.svg": "526acc3bb0d1435b325077b45a160d1ee685acbe52c6c3719b640ce6dab36312",
+    "Figure2.png": "517a2012da3b14583db5b5abf7dd021f7b07bcd1e9be15144847b7f75b745893",
+    "Figure3.svg": "68ed2085c06507884730f8dcc222523be7e7996bfb7a5a6cffeaf58e167194cd",
+    "Figure3.png": "e127b07aba5cef1a78107b104f60863cd23ba3f133d3121adbd4da678d3f84b8",
+    "Figure4.svg": "6373c3f29752aa61d981b6c688345a2ee4756098a65eb8a22b848430b793b806",
+    "Figure4.png": "be14f95a5050fc9f3608e3d010d8f9b180c37a35de8a05be73336f54f8e42aa0",
+    "Figure5.svg": "d729814bea5e0cdc484fa5e215f446c24b11da63303989a61fb6bf43222a6fe0",
+    "Figure5.png": "8e9222c88dffff876b5e5b3045eaecf0afd025e29cd51075a64ed9d59a977440",
+    "Figure6.svg": "c927d81cdd19fe3d07abf32b7bc0117089b8f49b1697d6d8924776cf91908a5e",
+    "Figure6.png": "b5608c1ef22ae75f3133bad73300e82b4c93b0814936b674696b11c23c3f2180"
+  },
+  "standalone_outputs": {
+    "panels/Figure1D.svg": "c8d2e376027f39fa0ab3ecc7ecfa9aab3cf82fceb600de0ed0ffe556baddf7cd",
+    "panels/Figure1D.png": "ab0bc232daf3fb0cd2d53f282093dabb6188581ed6f3f9112d617513c8b5dde0"
+  },
+  "table_validation": {
+    "parameter_coordinates": 8,
+    "family_grid_rows": 3992,
+    "mean_sd_rows": 998,
+    "dominant_crossings": 11,
+    "mean_crossings": 2
+  },
+  "unchanged_pixel_regions": [
+    "Figure 1A-C",
+    "Figure 4A",
+    "Figure 5A",
+    "Figure 5 concept column"
+  ],
+  "published_utc": "2026-09-27T05:14:50.362190+00:00"
+}

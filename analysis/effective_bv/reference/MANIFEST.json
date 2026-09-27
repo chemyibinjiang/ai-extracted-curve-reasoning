@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "analysis/figure4/inputs/POINTS.csv": "ee00a18dfa54c4bd232bce59e996055662debc2e1aa13f01936adef7609a4a65",
+    "analysis/figure6/inputs/acidic/cohort_all_points.csv": "4a4572a823f77889605c6320e33c90bbb8ffb97409f1e16e67e8343740070c2d",
+    "analysis/figure6/inputs/alkaline/cohort_all_points.csv": "7ec00bde53a15fbff82617c273385faffb3314f0574cb26f1e83ebb99f452bca"
+  },
+  "seeds": {
+    "acid/ASSIGNMENTS.csv": "2de29cb161786db5b2a2b108048d0a18836c56b0b7526729fe013bce6365135a",
+    "acid/COVERAGE_SCAN.csv": "923a6d9ed434cd14cace9c6fc6df0bfc6ba6269f033d459c017bd1a26dd05b1a",
+    "acid/PAPER_CV.csv": "581f8b0d5397a381a87d4b4adb93a25a2e23cb50381f37feafff1cca414dd6df",
+    "acid/SELECTED.json": "0d65dda3eba742fad2e0d35fbd9c2181f74d296e645d85c0c18da47e625490d9",
+    "acid/TEMPLATES.csv": "6dc9bbb4e3ad96cb7b9ffe7227a994c347a2afe1112a300811995dd2a30aa887",
+    "KOH/ASSIGNMENTS.csv": "174539d64cdd87236a97d45266acf1da98c07acad92e154837c1ba197ba52c86",
+    "KOH/COVERAGE_SCAN.csv": "28154180e4f8476f61623b76735f7307c44921a2a1e72740086604aef4afa3a4",
+    "KOH/PAPER_CV.csv": "83b8487d19c4f4aa9c422f8bf00c3dbc7a0460fd48ad46183003544ff328c734",
+    "KOH/SELECTED.json": "2d78c62ed27c000498ecd5ce9f6bd34515b7f9036be595e217a57c15e5e70bae",
+    "KOH/TEMPLATES.csv": "1aecd66a7081574ce55bead9f85469210434e012f8af960fe647a71cfa4563d7",
+    "POPULATION_SEEDS.csv": "13557379cf25989018e670e49c2344b5b0f74b82507c2c6bcc06e72a543f22d3",
+    "VHT_SEEDS.json": "72151b7ced7460a9effd671c7a49f1b0db7935265140e19bfffd3a2a8bc37664"
+  },
+  "use": "Variable-coefficient solutions initialize new optimizations; no fixed-sum models are included."
+}

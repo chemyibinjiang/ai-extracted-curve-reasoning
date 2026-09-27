@@ -30,14 +30,15 @@ partition apparent resistance into physical contributions.
   Figure 4, spanning 2.019-23.926 mA/cm2 and 67.55-149.28 mV. The objective is
   unweighted voltage-space least squares. No fitting to another model's output
   is used in this comparison.
-- Voltage RMSE: BV, 2.403 mV; BV+jR, 0.427 mV; VHT, 0.661 mV.
+- Voltage RMSE: BV, 2.096 mV; BV+jR, 0.427 mV; VHT, 0.661 mV.
   The empirical BV+jR fit gives Rapp=1.250 ohm cm2. VHT gives R2=0.99920.
   These residuals describe digitized-curve agreement, not experimental error bars.
 - VHT enforces steady-state coverage and detailed balance at 298.15 K, with
   alphaV=alphaH=0.5. Four base-10 quantities are fitted: kH/kV, kT/kV,
-  equilibrium adsorption ratio K, and a current scale. The BV fits retain the
-  repository's n_eff=2 convention; their effective alpha is not an elementary
-  V/H transfer coefficient.
+  equilibrium adsorption ratio K, and a current scale. The effective BV fits
+  optimize alpha_a and alpha_c independently, with their sum bounded by 2.
+  BV has three fitted parameters and BV+jR has four; these effective
+  coefficients are not elementary V/H transfer coefficients.
 - Fit 1 uses the increasing-coverage representative, theta=0.350-0.928 over
   the plotted voltage range. Fit 2 is the parameter-symmetry counterpart,
   theta'=1-theta, evaluated from its transformed rate parameters. Both give
@@ -47,7 +48,7 @@ partition apparent resistance into physical contributions.
   predicted voltages by less than 0.00001 mV. A no-Tafel VH limit gives an
   almost identical RMSE of 0.669 mV. Thus the example does not establish that
   a nonzero Tafel pathway is required.
-- Interleaved five-fold held-out voltage RMSE is 2.453, 0.443 and 0.697 mV
+- Interleaved five-fold held-out voltage RMSE is 2.141, 0.443 and 0.697 mV
   for BV, BV+jR and VHT. This checks within-curve prediction, not validation
   against independent experiments. Fits over three restricted current
   windows also retain lower error for BV+jR and VHT than for BV.
@@ -66,5 +67,8 @@ or quantitative kinetic fraction of the fitted resistance.
 - D, NiFeP: [doi:10.1002/adma.201908201](https://doi.org/10.1002/adma.201908201).
 - D, KSCN: [doi:10.1021/jacs.6b09351](https://doi.org/10.1021/jacs.6b09351).
 
-The Figure 5 analysis guide supplies point-selection rules and reproducible
-commands. Rows A, B and D were not changed by the direct NiMo-fit update.
+The effective-BV analysis guide supplies the fitting commands. The September 27
+update recomputes the fits in B, C and D while retaining the finalized artwork,
+experimental data, compensation accounting and KSCN current ratio. For NiMo,
+BV already exceeds R2=0.99; the added jR term reduces the voltage error by
+approximately fivefold, including in held-out prediction.

@@ -1,3 +1,3 @@
 condition,family,pair,eta_mV,control,within_fitted_support,dominant_control_crossing
-KOH,mean,X_T=X_V,27.94598406152738,0.49601216122066794,True,True
-KOH,mean,X_T=X_V,147.0378968711137,0.48926923070796785,True,True
+KOH,mean,X_T=X_V,31.03432155894655,0.49691586506513463,True,True
+KOH,mean,X_T=X_V,154.75832357705244,0.4908682699282097,True,True

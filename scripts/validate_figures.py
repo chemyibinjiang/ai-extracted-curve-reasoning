@@ -23,7 +23,7 @@ TABLE_NAMES = (
     "MEAN_CONTROL_CROSSINGS", "CONTROL_CROSSINGS", "RATE_CONTROL_FAMILY_GRID",
 )
 FAMILIES = {"acid": {f"A{i}" for i in range(1, 5)},
-            "KOH": {f"B{i}" for i in range(1, 6)}}
+            "KOH": {f"B{i}" for i in range(1, 5)}}
 STEPS = ("V", "H", "T")
 # The finalized Figure 1 contains two identical Inkscape mesh-rendering polyfills.
 MESH_POLYFILL_SHA256 = "3e30e1359b419c41df1992d3a86174a8c744d4a4a64333d76856a197f413b6ad"
@@ -48,6 +48,7 @@ def boolean(value):
 def publication_family(condition, source):
     mapping = {(c, f if c == "acid" else f.replace("B", "K")): f
                for c, families in FAMILIES.items() for f in families}
+    mapping.update({("KOH", f): f for f in FAMILIES["KOH"]})
     require((condition, source) in mapping, "Unknown source family")
     return mapping[(condition, source)]
 
@@ -144,10 +145,12 @@ def compare_crossings(saved, calculated):
 
 
 def validate_science(tables):
+    require(len(tables["PARAMETER_COORDINATES"]) == 8, "Expected four families per electrolyte")
+    families = FAMILIES
     coverage = tables["COVERAGE_BARS"]
     require(len(coverage) == 20, "Expected 20 template coverage bars")
     for condition, (denominator, budget, covered) in {
-            "acid": (73, 4, 59), "KOH": (234, 5, 195)}.items():
+            "acid": (73, 4, 59), "KOH": (234, 4, 188)}.items():
         rows = sorted((r for r in coverage if r["condition"] == condition), key=lambda r: int(r["K"]))
         require([int(r["K"]) for r in rows] == list(range(1, 11)), "Incomplete coverage budgets")
         for row in rows:
@@ -164,23 +167,23 @@ def validate_science(tables):
               "Selected coverage changed")
 
     parameters = tables["PARAMETER_COORDINATES"]
-    require(len(parameters) == 9, "Expected nine representative parameter coordinates")
+    require(len(parameters) == sum(map(len,families.values())), "Unexpected representative parameter count")
     identities = {(r["condition"], r["family"]) for r in parameters}
-    expected_identities = {(c, f) for c, families in FAMILIES.items() for f in families}
+    expected_identities = {(c, f) for c, own in families.items() for f in own}
     require(identities == expected_identities, "Parameter family identities changed")
     for row in parameters:
         require(publication_family(row["condition"], row["source_family"]) == row["family"],
                 "Publication/source family mapping changed")
         ratio, reference = float(row["kT_over_kV"]), float(row["acid_reference_kT_over_kV"])
         require(ratio > 0 and reference > 0, "Invalid rate ratio")
-        close(reference, 2.2595462971415303, "Acid reference changed")
+        close(reference, 2.2584675346368877, "Acid reference changed")
         close(float(row["log10_relative_TV"]), math.log10(ratio / reference), "Rate transform changed")
         if row["condition"] == "acid":
             close(ratio, reference, "Shared acid rate-ratio constraint changed")
 
     grid = tables["RATE_CONTROL_FAMILY_GRID"]
     means = tables["RATE_CONTROL_MEAN_SD"]
-    require(len(grid) == 4591 and len(means) == 998, "Unexpected rate-control grid sizes")
+    require(len(grid) == 3992 and len(means) == 998, "Unexpected rate-control grid sizes")
     by_point, by_family, by_condition = defaultdict(list), defaultdict(list), defaultdict(list)
     for source in grid:
         row = dict(source, family=publication_family(source["condition"], source["family"]))
@@ -198,16 +201,16 @@ def validate_science(tables):
         key = (condition, eta)
         require(key not in seen, "Duplicate mean-grid point")
         seen.add(key)
-        families = by_point[key]
-        n = len(FAMILIES[condition])
-        require(len(families) == n and {r["family"] for r in families} == FAMILIES[condition],
+        own = by_point[key]
+        n = len(families[condition])
+        require(len(own) == n and {r["family"] for r in own} == families[condition],
                 "Missing or duplicate family at grid point")
         require(int(row["n_families"]) == n, "Wrong family denominator")
-        inside = sum(boolean(r["inside_fitted_support"]) for r in families)
+        inside = sum(boolean(r["inside_fitted_support"]) for r in own)
         require(int(row["n_families_supported"]) == inside, "Support count changed")
         require(boolean(row["all_families_supported"]) == (inside == n), "Common-support mask changed")
         for step in STEPS:
-            values = [float(r[f"X_{step}"]) for r in families]
+            values = [float(r[f"X_{step}"]) for r in own]
             close(float(row[f"X_{step}_mean"]), statistics.mean(values), "Family mean mismatch")
             close(float(row[f"X_{step}_sd"]), statistics.stdev(values), "Sample SD mismatch")
         by_condition[condition].append(row)
