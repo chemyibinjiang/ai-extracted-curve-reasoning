@@ -1,5 +1,8 @@
 # Reproducing the Figures
 
+See the [27 September verification record](reproducibility/VERIFICATION_20260927.md)
+for the clean-checkout checks and their scope.
+
 ## Environment
 
 Follow the [fresh-clone setup](README.md#run-the-analyses), including Git LFS and

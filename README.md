@@ -23,10 +23,11 @@ the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20
 ## Run the Analyses
 
 Start with Git, Git LFS, and Python 3.13 installed. Clone the repository rather
-than downloading individual files. In a terminal:
+than downloading individual files. The first command defers large binary
+downloads so the next command can retrieve only the assets needed here:
 
 ```text
-git clone https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
+git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
 cd ai-extracted-curve-reasoning
 git lfs install
 git lfs pull --include="figures/manuscript/**,analysis/effective_bv/artwork_templates.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""

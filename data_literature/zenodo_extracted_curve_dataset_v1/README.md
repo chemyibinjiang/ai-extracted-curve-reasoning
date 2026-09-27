@@ -36,7 +36,7 @@ records represent 573 unique DOIs; 585 records (568 DOIs) contribute released
 curves. The larger internal extraction inventory in SI Table S8 also includes
 secondary and non-target panels that are not part of this release. Selection
 uses the curated `publication_analysis_bucket=primary_main_HER`; four records
-retain `enrich_reaction_type=other` from an earlier enrichment pass. The latter
+also have `enrich_reaction_type=other` in the enrichment metadata. The latter
 field is not an additional inclusion filter. Prepared HER fitting cohorts
 apply the explicit rules in SI Section 5.1.
 
