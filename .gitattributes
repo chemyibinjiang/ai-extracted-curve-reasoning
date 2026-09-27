@@ -19,6 +19,8 @@ analysis/effective_bv/reference/**/*.csv -text
 analysis/effective_bv/reference/*.csv -text
 *.tsv text=auto
 *.txt text=auto
+# Preserve exact bytes covered by the dataset checksum manifest.
+data_literature/zenodo_extracted_curve_dataset_v1/* -text
 
 # SVGs outside publication figure folders stay diffable by default.
 *.svg text eol=lf

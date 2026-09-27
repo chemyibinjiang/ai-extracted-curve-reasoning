@@ -1,0 +1,20 @@
+{
+  "provenance": "Recorded literature review outcomes reported in SI Tables S8 and S10-S14; not measurements recomputed from the released coordinates.",
+  "axis_calibration": {"within_tolerance": 927, "total": 1035, "tolerance_fraction_of_axis_span": 0.05},
+  "curve_geometry": {"within_tolerance": 4117, "total": 4211, "tolerance_fraction_of_plot_height": 0.05},
+  "claims": {
+    "candidate_records": 106,
+    "confirmed_records": 54,
+    "confirmed_unique_papers": 53,
+    "reviewed_records": 590,
+    "reviewed_unique_papers": 573,
+    "primary_error_types": {
+      "Reported value or current density": 22,
+      "Tafel slope or interpretation": 11,
+      "Conditions or metric definition": 9,
+      "Curve identity or ranking": 8,
+      "Relative performance": 4
+    }
+  },
+  "scope": "Source-specific claim evidence remains confidential for editorial/peer review. This table permits checking counts and percentages, not independent adjudication. Publisher figures and reviewed geometry traces are not distributed."
+}

@@ -4,6 +4,7 @@
 | --- | --- |
 | `figures/manuscript/` | Figures 1-6, as editable SVGs and PNG previews |
 | `analysis/effective_bv/` | Current Figures 4-6 refit pipeline: independent effective coefficients, case studies, VHT reconstruction and review report |
+| `analysis/figure3/` | Synthetic benchmark replay and recorded literature-review counts |
 | `analysis/figure4/` | Cohort preparation and inclusion/exclusion record, prepared curves, BV/BV+jR refitting, local slopes and fit statistics |
 | `analysis/figure5/` | Compensation, bubble/EIS, surface-kinetic, and current-rescaling case studies |
 | `analysis/figure6/` | Pt/C template discovery, VHT reconstruction, and rate control |
@@ -14,9 +15,9 @@
 | `code_reference/` | Extraction-framework source |
 | `exploration/` | Catalyst-performance and BV+jR investigations, with shared session records and assets |
 | `exploration/archive/` | Checksum-verified snapshot of superseded analysis workflows; not used by current analyses |
-| `scripts/` | Figure validation and artwork export |
+| `scripts/` | Dataset/figure validation and artwork export |
 | `tests/` | Numerical, integrity, and isolated-package tests |
-| `reproducibility/` | Figure manifest and validation documentation |
+| `reproducibility/` | Figure manifest, validation documentation, and figure/SI result map |
 | `build/` | Generated results; excluded from Git |
 
 The current default entry point is `analysis/effective_bv/run.py`; its

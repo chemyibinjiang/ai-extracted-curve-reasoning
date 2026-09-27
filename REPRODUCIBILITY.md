@@ -2,7 +2,8 @@
 
 ## Environment
 
-Use Python 3.13 and the pinned numerical dependencies:
+Follow the [fresh-clone setup](README.md#run-the-analyses), including Git LFS and
+a virtual environment. Use Python 3.13 and the pinned numerical dependencies:
 
 ```text
 python -m pip install -r requirements-analysis.txt
@@ -18,6 +19,8 @@ figure-analysis commands requires those records or their archives.
 
 | Command | Operation |
 | --- | --- |
+| `python scripts/validate_dataset.py` | Verify released file hashes, 4,211 curves/132,314 points, and source-panel-curve joins |
+| `python analysis/figure3/run.py` | Replay all 137 synthetic benchmark curves and tabulate recorded literature-review counts |
 | `python analysis/figure4/run.py prepare --output build/figure4-preparation` | Read all 4,211 extracted curves, rebuild the 3,033-curve cohort, and record every selection decision |
 | `python analysis/effective_bv/run.py population --workers 6` | Refit all 6,066 variable-coefficient BV/BV+jR models; recompute metrics, distributions, examples and local slopes |
 | `python analysis/effective_bv/run.py examples` | Refit cycle/EIS, NiMo and NiFeP examples; calculate compensation, current scaling, VHT coverage and predictive checks |
@@ -31,7 +34,7 @@ and interpretation. Reconstructing a supplied fit is not the same as estimating
 its parameters again. Refit outputs are kept separate from figure references.
 
 The Figure 3 synthetic benchmark and evaluation commands are documented in
-[the benchmark guide](benchmark_data/benchmark_curve_extraction/README.md).
+[the Figure 3 guide](analysis/figure3/README.md).
 Figures 1 and 2 explain the conceptual and worked extraction workflows; they
 are not additional population-fitting analyses.
 
@@ -84,7 +87,7 @@ Figure 6 audit tables and `ARTWORK_CHECKS.json`. To validate or export the
 published figures directly:
 
 ```text
-git lfs pull --include="figures/manuscript/**" --exclude=""
+git lfs pull --include="figures/manuscript/**,analysis/effective_bv/artwork_templates.zip" --exclude=""
 python scripts/validate_figures.py
 python scripts/render_final_figures.py --inkscape /path/to/inkscape --output build/figures
 ```
@@ -102,7 +105,24 @@ Artwork export does not rerun numerical analyses.
 
 Numerical reproduction starts from the provided digitized coordinates and
 documented selection rules. It does not redigitize publisher figures or repeat manual
-claim adjudication. The Figure 3 benchmark, corpus summaries, and claim examples
-must remain distinct evaluations; their integration into a single figure-level
-reproduction command is not yet complete. A complete-paper reproduction claim
-requires that check and a clean-checkout run.
+claim adjudication. Figure 3 benchmark distances are replayed from coordinates.
+Literature quality/claim percentages are recomputed from recorded review counts,
+not independently re-reviewed. Publisher images and confidential case evidence
+are not distributed; see the [Figure 3 scope](analysis/figure3/README.md).
+
+## Reading the Outputs
+
+The [result map](reproducibility/RESULT_MAP.md) links figure panels and SI tables
+to input and output files. `report` must follow all three numerical stages in
+the same output directory. Lower `--workers` to reduce CPU demand; retain
+`--starts 12` for the stated VHT protocol. Changed code or inputs invalidate
+checkpoints: choose a new `--output` directory rather than reusing them.
+
+Use tolerances rather than byte equality for optimizer outputs. Curves, cohort
+counts, acceptance thresholds, and certified coverage counts must agree.
+Multiple template sets can attain the same maximum coverage. The supplied
+selected set fixes the A/B family labels for the published artwork; a fresh
+search is not automatically substituted into that artwork. The finite grid
+does not certify a global optimum over all continuous shapes. Optimization
+seeds are additional feasible starts, not held-out observations or independent
+measurements. `selected_stage` distinguishes a retained seed from a new optimum.

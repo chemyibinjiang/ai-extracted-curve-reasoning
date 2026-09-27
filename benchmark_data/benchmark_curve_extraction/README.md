@@ -4,6 +4,10 @@ This folder contains the synthetic benchmark data used for the curve-extraction 
 
 ## Contents
 
+For the current Figure 3 numerical results, run `python analysis/figure3/run.py`
+from the repository root. The [Figure 3 guide](../../analysis/figure3/README.md)
+separates synthetic distance replay from recorded literature-review outcomes.
+
 | Path | Contents |
 |---|---|
 | `peeragent_ground_truth/` | Ground-truth benchmark plots, raw curve data, metadata, contact sheets, and truth index. |

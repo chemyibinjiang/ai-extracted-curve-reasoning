@@ -2,6 +2,7 @@
 
 | Figure | Calculation | Guide |
 | --- | --- | --- |
+| 3 | Synthetic benchmark replay and recorded literature-review counts | [Figure 3](figure3/README.md) |
 | 4 | Local slopes, effective BV/BV+jR fit metrics, parameter distributions, and examples | [Figure 4](effective_bv/README.md#figure-4) |
 | 5 | Compensation, bubble/EIS trend, surface kinetics, and current rescaling | [Figure 5](effective_bv/README.md#figure-5) |
 | 6 | Pt/C response families, VHT reconstruction, and rate control | [Figure 6](effective_bv/README.md#figure-6) |

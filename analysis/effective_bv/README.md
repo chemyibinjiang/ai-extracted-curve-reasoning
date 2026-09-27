@@ -93,5 +93,5 @@ needed to use them. Population and VHT checkpoints reject code/input changes.
 
 The generated report is a numerical review set. Manually edited publication
 SVGs, the figure checksum manifest, and Word documents are not overwritten.
-The committed artwork and SI V25 use these results. Earlier analysis workflows
+The committed artwork and supporting information use these results. Earlier analysis workflows
 are preserved in `exploration/archive/` and are not runtime dependencies.

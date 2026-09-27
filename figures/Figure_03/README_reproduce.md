@@ -1,6 +1,9 @@
 # Figure 3 reproduction package
 
-This folder contains the final Figure 3 exports and the minimal files needed to regenerate them.
+This folder contains the synthetic-benchmark source composition, not the whole
+current manuscript Figure 3. Use `figures/manuscript/Figure3.svg` for the final
+assembled figure and [the current evaluation guide](../../analysis/figure3/README.md)
+to reproduce its numerical benchmark results.
 
 ## Contents
 
@@ -12,7 +15,8 @@ This folder contains the final Figure 3 exports and the minimal files needed to 
 - `Figure_3_synthetic_benchmark.pdf`: PDF export.
 - `Figure_3_synthetic_benchmark.svg`: SVG wrapper export.
 
-The full benchmark ground-truth dataset and corresponding agent benchmark-case outputs are packaged separately at `data\benchmark_curve_extraction`.
+The full benchmark ground-truth dataset and corresponding agent outputs are at
+`benchmark_data/benchmark_curve_extraction/` relative to the repository root.
 
 ## Regenerate
 
@@ -22,7 +26,9 @@ Run from this folder:
 python .\build_figure3_compact.py
 ```
 
-The script writes the four `Figure_3_synthetic_benchmark` exports into this folder.
+This optional source-composition script writes the four
+`Figure_3_synthetic_benchmark` exports into this folder and uses Windows Arial
+font paths. It is not required by the platform-independent numerical replay.
 
 ## Notes
 

@@ -1,9 +1,7 @@
 # Extracted HER Polarization Curve Dataset
 
-This Zenodo-ready package contains the primary hydrogen evolution reaction
-(HER) polarization-curve dataset used in the manuscript "Multi-Agent AI Converts
-Published Figures into Auditable Curve Evidence for Claim Validation and
-Scientific Analysis".
+This package contains the primary hydrogen evolution reaction (HER)
+polarization-curve dataset used in the manuscript.
 
 The package is designed to publish the extracted numeric curve evidence while
 excluding copyrighted source figures. Each curve can be traced back to its
@@ -32,6 +30,21 @@ figure captions are intentionally not included.
 - `SHA256SUMS.txt`: checksums for files in this package.
 
 ## Source Attribution
+
+The release has 4,211 curves, 132,314 points and 1,035 panels. The 590 source
+records represent 573 unique DOIs; 585 records (568 DOIs) contribute released
+curves. The larger internal extraction inventory in SI Table S8 also includes
+secondary and non-target panels that are not part of this release. Selection
+uses the curated `publication_analysis_bucket=primary_main_HER`; four records
+retain `enrich_reaction_type=other` from an earlier enrichment pass. The latter
+field is not an additional inclusion filter. Prepared HER fitting cohorts
+apply the explicit rules in SI Section 5.1.
+
+Validate the package from the repository root with
+`python scripts/validate_dataset.py`. Coordinates remain in their stated axis
+units; they are not uniformly overpotential/current-density magnitudes until
+the analysis preparation step. JSONL records and source article passages are
+not included in this public package.
 
 The fields `source_doi` and `source_doi_url` identify the original publication.
 The fields `figure_id`, `panel_id`, `curve_id`, `catalyst_name`, and
