@@ -1,5 +1,9 @@
 # Curve Extraction and Electrochemical Analysis
 
+**30 September 2026:** Figure 6 and its Figure 1D overview now use one fixed-alpha,
+equal-template pooled-error fit. [Protocol and SI comparisons](analysis/effective_bv/README.md#figure-6).
+
+
 Data, code, and figures for extracting numerical evidence from scientific plots,
 checking reported claims, and analyzing hydrogen-evolution polarization curves.
 
@@ -9,11 +13,11 @@ The manuscript artwork is in [figures/manuscript/](figures/manuscript/).
 Each figure has an editable SVG and a PNG preview.
 The current numerical revision uses the effective-BV analysis below. The
 manually edited artwork has been synchronized to these fits without changing
-the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20260927.md).
+the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20260930.md).
 
 | Figure | Subject | Data and computation |
 | --- | --- | --- |
-| 1 | Overview: extraction, verification, response shapes, and kinetic interpretation | Scheme; panel D uses the [Figure 6 alkaline families](figures/DATA_UPDATE_20260927.md#figure-1) |
+| 1 | Overview: extraction, verification, response shapes, and kinetic interpretation | Scheme; panel D uses the [Figure 6 alkaline families](figures/DATA_UPDATE_20260930.md#figure-1) |
 | 2 | Worked example of axis calibration, curve extraction, and verification | Extraction workflow |
 | 3 | Extraction benchmark, literature validation, and claim comparisons | [Figure 3 evaluation](analysis/figure3/README.md) |
 | 4 | Local slopes, effective BV/BV+jR fit quality, and effective parameters | [Figure 4 analysis](analysis/effective_bv/README.md#figure-4) |

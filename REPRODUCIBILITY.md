@@ -1,6 +1,6 @@
 # Reproducing the Figures
 
-See the [27 September verification record](reproducibility/VERIFICATION_20260927.md)
+See the [30 September unified-fitting record](reproducibility/VERIFICATION_20260930.md)
 for the clean-checkout checks and their scope.
 
 ## Environment
@@ -81,7 +81,7 @@ The four alkaline family plots occupy the same four-column grid as the acid row.
 After the numerical analysis, regenerate the data updates into a review folder:
 
 ```text
-python analysis/effective_bv/artwork.py --data build/effective-bv-20260927 --output build/manuscript-figures --inkscape /path/to/inkscape
+python analysis/effective_bv/artwork.py --data build/effective-bv-20260930 --output build/manuscript-figures --inkscape /path/to/inkscape
 ```
 
 This command uses the included compressed SVG templates and does not overwrite

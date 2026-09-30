@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-30",
+  "objective": "Equal-template pooled voltage MSE; alphaV=alphaH=0.5",
+  "files": [
+    {
+      "path": "ALL_MODEL_RATE_CONTROL.csv",
+      "bytes": 1398827,
+      "sha256": "7b7f1280844a22f54fb437473aa4ef7ae35d0385e25eeb64c316da6c8ba41247"
+    },
+    {
+      "path": "comparison/FigureS14_alkaline_sharing_controls.pdf",
+      "bytes": 30588,
+      "sha256": "05d075c8c392981a839a7f610621f0215edc9c8747046559abfec0bd26366c88"
+    },
+    {
+      "path": "comparison/FigureS14_alkaline_sharing_controls.png",
+      "bytes": 337118,
+      "sha256": "19acfb5747b701b711bc5abbe3e3fc2aeaaf616c15c6e270013760a226cbc42f"
+    },
+    {
+      "path": "comparison/FigureS14_alkaline_sharing_controls.svg",
+      "bytes": 77350,
+      "sha256": "0cf76c993ee6c894d5dd132e273c63405467823085997acc10234b83024284b7"
+    },
+    {
+      "path": "comparison/FigureS15_B3_complementary_controls.pdf",
+      "bytes": 21555,
+      "sha256": "0b31dcb5301b329b8337a39ccc1425c0d9658b77f9f16c630b3be07e0ad41944"
+    },
+    {
+      "path": "comparison/FigureS15_B3_complementary_controls.png",
+      "bytes": 178810,
+      "sha256": "058ef214f6055566303e29cac7f68ca6dc7f62ecdddca5d993e4e1cbef4248f2"
+    },
+    {
+      "path": "comparison/FigureS15_B3_complementary_controls.svg",
+      "bytes": 30019,
+      "sha256": "cd816b04a685b8e73ab7da2f7587ea472c2a8622dfe2f0f6258ab9dfc90d4701"
+    },
+    {
+      "path": "GHT_DUAL_PARAMETERS.csv",
+      "bytes": 1482,
+      "sha256": "419270cdd9615e69543b92685858705d02f9d9541b177f37189092d93dfbbf61"
+    },
+    {
+      "path": "GHT_DUAL_RATE_CONTROL.csv",
+      "bytes": 370474,
+      "sha256": "9b24b6405ee1616b1408a171be4fe9cef16da8925bc1c1e24a3692f9778e4ce4"
+    },
+    {
+      "path": "KINETIC_COMPARISON_CHECKS.json",
+      "bytes": 1032,
+      "sha256": "116bbea28476ae66da2f2acd500c1691e50e2329000c18cadda994731366d68a"
+    },
+    {
+      "path": "KINETIC_PARAMETERS.csv",
+      "bytes": 5308,
+      "sha256": "53592f2e63db4b1f1e89d2230d976dc0d88b9af59ce21c258bc0e03d23e8efb7"
+    },
+    {
+      "path": "KINETIC_PROTOCOL.json",
+      "bytes": 783,
+      "sha256": "6d4ad0fe63a50403fce6efebbf906499b3472dd1ed4a68af49d36869984b16b1"
+    },
+    {
+      "path": "KINETIC_SUMMARY.csv",
+      "bytes": 856,
+      "sha256": "a5d50ad198673b1a1129014eaa631ba22977100334bb1c655c02d9018c3fbfa2"
+    },
+    {
+      "path": "RATE_CONTROL.csv",
+      "bytes": 532257,
+      "sha256": "ea2742378ee314e664d95658e016014ce1ace7826852723ee52e10575cc31021"
+    },
+    {
+      "path": "RATE_CONTROL_MEAN_SD.csv",
+      "bytes": 135747,
+      "sha256": "1c5a1e322a2c35dec388f748b6222e39560de63ee86d20f5088a880ff743fd79"
+    },
+    {
+      "path": "RAW_VHT_REPLAY.csv",
+      "bytes": 139167,
+      "sha256": "c2b0a408dee12af6bfa2c5c828b04fd0d5192ca2f7033f7297d22a78fd3f7f01"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2244,
+      "sha256": "5ee17dd7d72f03b84cb609cedc97dbe1638ddb831e09ea485d5e7b238b9bdf2f"
+    },
+    {
+      "path": "TEMPLATE_RECONSTRUCTION.csv",
+      "bytes": 12156069,
+      "sha256": "6cf860f51d663d944bb343b1e63a1ad965e4b7a137a6a07c670c6e27a5b6a7c4"
+    },
+    {
+      "path": "VHT_SELECTED.json",
+      "bytes": 13531,
+      "sha256": "c4148f963f94a82778e8ed6b7185a0b0be5587ebd1ea435b29e975dd43bb188a"
+    }
+  ]
+}

@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "snapshot": "2026-09-27",
+  "snapshot": "2026-09-30",
   "scope": "Manuscript artwork and Figure 6 expected numerical tables",
-  "submission_manifest_sha256": "525a67909face2da8cead7d625f8250a2341837b265c16fd767abed5ce4ee9b7",
+  "submission_manifest_sha256": "643bd952598473b2579a0507a44496e684561918077538fc9be27b0c5602a141",
   "assets": [
     {
       "path": "figures/manuscript/Figure1.svg",
-      "sha256": "980e135fba1b31a7511da6eb34d2375eaec599a5d1056ccf1893d60031676621",
-      "bytes": 2651766,
+      "sha256": "075b02ed6cc814dcc0f3509aa8535a42d99d74f8eb33720286e9803eb170c8f5",
+      "bytes": 2968215,
       "kind": "svg",
       "figure": "Figure1"
     },
     {
       "path": "figures/manuscript/Figure1.png",
-      "sha256": "39aae93aff715f282bb8d8f6e0c7e7c65b5cd3549449597098676d5297653b88",
-      "bytes": 1151854,
+      "sha256": "6600396fdf44e2cd1f8a4c609080a05286c676754444886302e20842330424d6",
+      "bytes": 1151751,
       "kind": "png",
       "figure": "Figure1",
       "dimensions": [
@@ -96,15 +96,15 @@
     },
     {
       "path": "figures/manuscript/Figure6.svg",
-      "sha256": "c927d81cdd19fe3d07abf32b7bc0117089b8f49b1697d6d8924776cf91908a5e",
-      "bytes": 1669423,
+      "sha256": "99dd5400431d8c31424da35241863dee30f2873cd1e76d5b7461c7df52a6118a",
+      "bytes": 2302509,
       "kind": "svg",
       "figure": "Figure6"
     },
     {
       "path": "figures/manuscript/Figure6.png",
-      "sha256": "b5608c1ef22ae75f3133bad73300e82b4c93b0814936b674696b11c23c3f2180",
-      "bytes": 1201134,
+      "sha256": "1669bb0bac8064a1ecee4ba6d5aa8e50c760858d25daaa9270608c1dc837e1b4",
+      "bytes": 1199890,
       "kind": "png",
       "figure": "Figure6",
       "dimensions": [
@@ -120,32 +120,32 @@
     },
     {
       "path": "analysis/figure6/expected/PARAMETER_COORDINATES.csv",
-      "sha256": "79df12ff5d1b0234b97a54f31f26cc9de28ab89cddc0beb6cc5d0342ebe5b2b5",
-      "bytes": 1243,
+      "sha256": "73fc833020385e17af9941dcdb4b3f5bb8dda79640bff80a7c2e47da5970c460",
+      "bytes": 1234,
       "kind": "csv"
     },
     {
       "path": "analysis/figure6/expected/RATE_CONTROL_MEAN_SD.csv",
-      "sha256": "61bb571b816c9a03ce42bf6d890e74b657c60efdc891927cd56375ffac543d85",
-      "bytes": 138909,
+      "sha256": "cb52d3ea4e569b647cfae52c1f4fde3022d0483b2d76b78b77dd3909fa2b6218",
+      "bytes": 138772,
       "kind": "csv"
     },
     {
       "path": "analysis/figure6/expected/MEAN_CONTROL_CROSSINGS.csv",
-      "sha256": "065163eca0140e0fca4d8e496ed0957b998ff33d6a4b58deb357062c0a755c6a",
-      "bytes": 215,
+      "sha256": "93928eaef2ce2eabd435ba06a6a1dc46d98500f60f8ea0095bd2a190373a9a28",
+      "bytes": 214,
       "kind": "csv"
     },
     {
       "path": "analysis/figure6/expected/CONTROL_CROSSINGS.csv",
-      "sha256": "29e2321772d2e16333712c4ecd9eecf81a3a90196b30887e6953e49e874a6e60",
-      "bytes": 781,
+      "sha256": "1fa9dbf3df9f20bf897c05aba753c55cc61554c800d64921de8ac50ea5eac35b",
+      "bytes": 778,
       "kind": "csv"
     },
     {
       "path": "analysis/figure6/expected/RATE_CONTROL_FAMILY_GRID.csv",
-      "sha256": "1a3d54cecbacfad657796fe71f0e43a4316818d8ee54149398884ebeeabc05eb",
-      "bytes": 531574,
+      "sha256": "a264efa486d45d6523e0ce74340052741cd1fde4aed72f6e3ebf68e66957a984",
+      "bytes": 528264,
       "kind": "csv"
     }
   ],

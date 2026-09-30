@@ -47,7 +47,7 @@ class ArtworkTests(unittest.TestCase):
                         self.assertIn(ref,ids,(i,ref))
 
     def test_numeric_audit_matches_figure_manifest(self):
-        report=json.loads((ROOT/'reproducibility/artwork-effective-bv-20260927.json').read_text())
+        report=json.loads((ROOT/'reproducibility/artwork-effective-bv-20260930.json').read_text())
         self.assertEqual(report['figures']['4']['BV']['accepted'],1588)
         self.assertEqual(report['figures']['4']['BV+jR']['accepted'],2361)
         self.assertEqual(report['figures']['6']['members'],{'acid':59,'KOH':188})

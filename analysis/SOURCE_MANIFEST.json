@@ -11,7 +11,7 @@
       "path": "analysis/effective_bv/artwork.py",
       "source": "Effective-BV analysis and verified numerical tables",
       "bytes": 35616,
-      "sha256": "4488b09dcf193382e899c288bf4d0cfe6bbcaa814705f712fd3793605d5a1fca"
+      "sha256": "c57f756049a4b61a74e3c9b39b19edde54e3c2e2eff910f04409a8867264f036"
     },
     {
       "path": "analysis/effective_bv/examples.py",
@@ -22,8 +22,14 @@
     {
       "path": "analysis/effective_bv/families.py",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 15117,
-      "sha256": "0b5539607d6ee5e6919f4fa230390644644e87b55857aad8ef05308307c28fc2"
+      "bytes": 15523,
+      "sha256": "c72aa6893313720437abaa5434e224991a456f0d320b10b6e6587dbeb6ec9986"
+    },
+    {
+      "path": "analysis/effective_bv/kinetic_comparison.py",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 5754,
+      "sha256": "a1553cb711a4c4f827e572c10f5328fb290b8814d8e37541a19468886f7c841d"
     },
     {
       "path": "analysis/effective_bv/population.py",
@@ -32,35 +38,82 @@
       "sha256": "ed9cc0a57cd6746f665f6beb7694c2bd11d57c7bd883f8cee9b129a2d50f152a"
     },
     {
-      "path": "analysis/effective_bv/reference/acid/ASSIGNMENTS.csv",
-      "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 8413,
-      "sha256": "2de29cb161786db5b2a2b108048d0a18836c56b0b7526729fe013bce6365135a"
+      "path": "analysis/effective_bv/published/ALL_MODEL_RATE_CONTROL.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 1398827,
+      "sha256": "7b7f1280844a22f54fb437473aa4ef7ae35d0385e25eeb64c316da6c8ba41247"
     },
     {
-      "path": "analysis/effective_bv/reference/acid/COVERAGE_SCAN.csv",
-      "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 1420,
-      "sha256": "923a6d9ed434cd14cace9c6fc6df0bfc6ba6269f033d459c017bd1a26dd05b1a"
+      "path": "analysis/effective_bv/published/GHT_DUAL_PARAMETERS.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 1482,
+      "sha256": "419270cdd9615e69543b92685858705d02f9d9541b177f37189092d93dfbbf61"
     },
     {
-      "path": "analysis/effective_bv/reference/acid/PAPER_CV.csv",
-      "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 1353,
-      "sha256": "581f8b0d5397a381a87d4b4adb93a25a2e23cb50381f37feafff1cca414dd6df"
+      "path": "analysis/effective_bv/published/GHT_DUAL_RATE_CONTROL.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 370474,
+      "sha256": "9b24b6405ee1616b1408a171be4fe9cef16da8925bc1c1e24a3692f9778e4ce4"
     },
     {
-      "path": "analysis/effective_bv/reference/acid/SELECTED.json",
-      "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 355,
-      "sha256": "0d65dda3eba742fad2e0d35fbd9c2181f74d296e645d85c0c18da47e625490d9",
-      "previous_sha256": "4429bb2d0ef07341850179f5314a4e57956a84dc35e7e88c47b5f8a3dc37a317"
+      "path": "analysis/effective_bv/published/KINETIC_COMPARISON_CHECKS.json",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 1032,
+      "sha256": "116bbea28476ae66da2f2acd500c1691e50e2329000c18cadda994731366d68a"
     },
     {
-      "path": "analysis/effective_bv/reference/acid/TEMPLATES.csv",
-      "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 681,
-      "sha256": "6dc9bbb4e3ad96cb7b9ffe7227a994c347a2afe1112a300811995dd2a30aa887"
+      "path": "analysis/effective_bv/published/KINETIC_PARAMETERS.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 5308,
+      "sha256": "53592f2e63db4b1f1e89d2230d976dc0d88b9af59ce21c258bc0e03d23e8efb7"
+    },
+    {
+      "path": "analysis/effective_bv/published/KINETIC_PROTOCOL.json",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 783,
+      "sha256": "6d4ad0fe63a50403fce6efebbf906499b3472dd1ed4a68af49d36869984b16b1"
+    },
+    {
+      "path": "analysis/effective_bv/published/KINETIC_SUMMARY.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 856,
+      "sha256": "a5d50ad198673b1a1129014eaa631ba22977100334bb1c655c02d9018c3fbfa2"
+    },
+    {
+      "path": "analysis/effective_bv/published/MANIFEST.json",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 3380,
+      "sha256": "c17059ffd2a303679fcb90d117b3aa1fa045357d1a06d60ba1a7cae21279fed4"
+    },
+    {
+      "path": "analysis/effective_bv/published/RATE_CONTROL.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 532257,
+      "sha256": "ea2742378ee314e664d95658e016014ce1ace7826852723ee52e10575cc31021"
+    },
+    {
+      "path": "analysis/effective_bv/published/RATE_CONTROL_MEAN_SD.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 135747,
+      "sha256": "1c5a1e322a2c35dec388f748b6222e39560de63ee86d20f5088a880ff743fd79"
+    },
+    {
+      "path": "analysis/effective_bv/published/RAW_VHT_REPLAY.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 139167,
+      "sha256": "c2b0a408dee12af6bfa2c5c828b04fd0d5192ca2f7033f7297d22a78fd3f7f01"
+    },
+    {
+      "path": "analysis/effective_bv/published/TEMPLATE_RECONSTRUCTION.csv",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 12156069,
+      "sha256": "6cf860f51d663d944bb343b1e63a1ad965e4b7a137a6a07c670c6e27a5b6a7c4"
+    },
+    {
+      "path": "analysis/effective_bv/published/VHT_SELECTED.json",
+      "source": "Unified pooled VHT publication results 2026-09-30",
+      "bytes": 13531,
+      "sha256": "c4148f963f94a82778e8ed6b7185a0b0be5587ebd1ea435b29e975dd43bb188a"
     },
     {
       "path": "analysis/effective_bv/reference/KOH/ASSIGNMENTS.csv",
@@ -96,8 +149,8 @@
     {
       "path": "analysis/effective_bv/reference/MANIFEST.json",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 1644,
-      "sha256": "155e9586180cac7672f9bdd8780a728049edfe5452f4b306fdda82102fc74c67",
+      "bytes": 1737,
+      "sha256": "4d1c4bfea4bee1f1d5335c3a91db91f5a5dfd9ed95da64974a892b7edbb97974",
       "previous_sha256": "d3f7653751d3d26053e1147d10da5f210ab409e82b3cccd43c525016640d8762"
     },
     {
@@ -109,21 +162,52 @@
     {
       "path": "analysis/effective_bv/reference/VHT_SEEDS.json",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 12049,
-      "sha256": "72151b7ced7460a9effd671c7a49f1b0db7935265140e19bfffd3a2a8bc37664",
+      "bytes": 8299,
+      "sha256": "4c3536098b48463539a5d4689f3464a8daa01bf6ff4fcaae9739532f7bbe6032",
       "previous_sha256": "43c97f43d4c0e3cc669b461f6f8c61cac188282ba4ee3443a3bc052b312cb11b"
+    },
+    {
+      "path": "analysis/effective_bv/reference/acid/ASSIGNMENTS.csv",
+      "source": "Effective-BV analysis and verified numerical tables",
+      "bytes": 8413,
+      "sha256": "2de29cb161786db5b2a2b108048d0a18836c56b0b7526729fe013bce6365135a"
+    },
+    {
+      "path": "analysis/effective_bv/reference/acid/COVERAGE_SCAN.csv",
+      "source": "Effective-BV analysis and verified numerical tables",
+      "bytes": 1420,
+      "sha256": "923a6d9ed434cd14cace9c6fc6df0bfc6ba6269f033d459c017bd1a26dd05b1a"
+    },
+    {
+      "path": "analysis/effective_bv/reference/acid/PAPER_CV.csv",
+      "source": "Effective-BV analysis and verified numerical tables",
+      "bytes": 1353,
+      "sha256": "581f8b0d5397a381a87d4b4adb93a25a2e23cb50381f37feafff1cca414dd6df"
+    },
+    {
+      "path": "analysis/effective_bv/reference/acid/SELECTED.json",
+      "source": "Effective-BV analysis and verified numerical tables",
+      "bytes": 355,
+      "sha256": "0d65dda3eba742fad2e0d35fbd9c2181f74d296e645d85c0c18da47e625490d9",
+      "previous_sha256": "4429bb2d0ef07341850179f5314a4e57956a84dc35e7e88c47b5f8a3dc37a317"
+    },
+    {
+      "path": "analysis/effective_bv/reference/acid/TEMPLATES.csv",
+      "source": "Effective-BV analysis and verified numerical tables",
+      "bytes": 681,
+      "sha256": "6dc9bbb4e3ad96cb7b9ffe7227a994c347a2afe1112a300811995dd2a30aa887"
     },
     {
       "path": "analysis/effective_bv/report.py",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 18011,
-      "sha256": "3cb12302c989410d3acbf699429036d6b5ab57f8e74275345f4f0a55463f4bd3"
+      "bytes": 18843,
+      "sha256": "5e62d933e68e52dd40b0a2f5f9cdaab0aa35b0c9143b163a596b01f367ca4659"
     },
     {
       "path": "analysis/effective_bv/run.py",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 1408,
-      "sha256": "69515e4b4eabd0a0b9054f17c1c183c75f2cef4ac8173a8ae257bd852af99cdc"
+      "bytes": 1498,
+      "sha256": "4d5888db17d5863eb857020f97e2dd2231da65ceefaa8cbe21215401f066d817"
     },
     {
       "path": "analysis/effective_bv/search.py",
@@ -380,6 +464,14 @@
       "previous_sha256": "07a942128f402419ddba9228a1a4e799cc59f3a590affe611436c06b2ebac480"
     },
     {
+      "path": "analysis/figure5/reference/KSCN_MODEL.json",
+      "bytes": 1499,
+      "sha256": "aba4e71b2129d10edc1c8fd2d28843e50ed29e1337a5fd2e323a1978366c455b",
+      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/FROZEN_MODELS.json",
+      "source_sha256": "14d047b88424d8563c7f82e8ad11315e01e927d14d3eaf8fa6f1eccafaeeaab2",
+      "transformation": "Keep only the plotted KSCN case; exclude the unrelated Zn study"
+    },
+    {
       "path": "analysis/figure5/reference/NIFEP_MODEL_COMPARISON.csv",
       "source": "NiFeP independent and shared effective-BV comparisons; generated by analysis/effective_bv/examples.py",
       "bytes": 1774,
@@ -390,14 +482,6 @@
       "source": "NiFeP observations and predictions for both empirical models; generated by analysis/effective_bv/examples.py",
       "bytes": 10771,
       "sha256": "9d8b609f92ed7609a4eebf8c544c6573ec7b6d6a31ab09149f012387d3e99f7a"
-    },
-    {
-      "path": "analysis/figure5/reference/KSCN_MODEL.json",
-      "bytes": 1499,
-      "sha256": "aba4e71b2129d10edc1c8fd2d28843e50ed29e1337a5fd2e323a1978366c455b",
-      "source": "0-to_submit/public_submission_major_revision/figures/Figure6/data/FROZEN_MODELS.json",
-      "source_sha256": "14d047b88424d8563c7f82e8ad11315e01e927d14d3eaf8fa6f1eccafaeeaab2",
-      "transformation": "Keep only the plotted KSCN case; exclude the unrelated Zn study"
     },
     {
       "path": "analysis/figure5/refit_nimo.py",
@@ -431,8 +515,8 @@
     {
       "path": "analysis/figure6/expected/CONTROL_CROSSINGS.csv",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 781,
-      "sha256": "29e2321772d2e16333712c4ecd9eecf81a3a90196b30887e6953e49e874a6e60"
+      "bytes": 778,
+      "sha256": "1fa9dbf3df9f20bf897c05aba753c55cc61554c800d64921de8ac50ea5eac35b"
     },
     {
       "path": "analysis/figure6/expected/COVERAGE_BARS.csv",
@@ -443,26 +527,26 @@
     {
       "path": "analysis/figure6/expected/MEAN_CONTROL_CROSSINGS.csv",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 215,
-      "sha256": "065163eca0140e0fca4d8e496ed0957b998ff33d6a4b58deb357062c0a755c6a"
+      "bytes": 214,
+      "sha256": "93928eaef2ce2eabd435ba06a6a1dc46d98500f60f8ea0095bd2a190373a9a28"
     },
     {
       "path": "analysis/figure6/expected/PARAMETER_COORDINATES.csv",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 1243,
-      "sha256": "79df12ff5d1b0234b97a54f31f26cc9de28ab89cddc0beb6cc5d0342ebe5b2b5"
+      "bytes": 1234,
+      "sha256": "73fc833020385e17af9941dcdb4b3f5bb8dda79640bff80a7c2e47da5970c460"
     },
     {
       "path": "analysis/figure6/expected/RATE_CONTROL_FAMILY_GRID.csv",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 531574,
-      "sha256": "1a3d54cecbacfad657796fe71f0e43a4316818d8ee54149398884ebeeabc05eb"
+      "bytes": 528264,
+      "sha256": "a264efa486d45d6523e0ce74340052741cd1fde4aed72f6e3ebf68e66957a984"
     },
     {
       "path": "analysis/figure6/expected/RATE_CONTROL_MEAN_SD.csv",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 138909,
-      "sha256": "61bb571b816c9a03ce42bf6d890e74b657c60efdc891927cd56375ffac543d85"
+      "bytes": 138772,
+      "sha256": "cb52d3ea4e569b647cfae52c1f4fde3022d0483b2d76b78b77dd3909fa2b6218"
     },
     {
       "path": "analysis/figure6/inputs/acidic/cohort_all_points.csv",
@@ -521,8 +605,8 @@
     {
       "path": "analysis/figure6/sharing.py",
       "source": "Effective-BV analysis and verified numerical tables",
-      "bytes": 1392,
-      "sha256": "29ae76b3085a23dafaaedec3210e19c091704267f2dd8254beb25d25663b014b",
+      "bytes": 1457,
+      "sha256": "7dca5aa60d04cc730da42148eadb36c0459b9cbc7aaab056a34efe04872c2bb8",
       "previous_sha256": "11098ced8b3efa9a987f9a3b4f8b7cc90cf1204e238ac6eb354a80ab99269844"
     },
     {

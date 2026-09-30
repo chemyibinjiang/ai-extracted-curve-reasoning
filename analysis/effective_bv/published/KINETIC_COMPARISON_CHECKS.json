@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "alpha": [
+    0.5,
+    0.5
+  ],
+  "objective": "pooled voltage MSE",
+  "all_parameter_rows": 32,
+  "duality_checks": [
+    {
+      "family": "A1",
+      "max_DRC_exchange_error": 6.328271240363392e-12
+    },
+    {
+      "family": "A2",
+      "max_DRC_exchange_error": 9.603429163007604e-12
+    },
+    {
+      "family": "A3",
+      "max_DRC_exchange_error": 1.4876988529977098e-11
+    },
+    {
+      "family": "A4",
+      "max_DRC_exchange_error": 3.3306690738754696e-12
+    },
+    {
+      "family": "B1",
+      "max_DRC_exchange_error": 9.325873406851315e-12
+    },
+    {
+      "family": "B2",
+      "max_DRC_exchange_error": 1.7763568394002505e-12
+    },
+    {
+      "family": "B3",
+      "max_DRC_exchange_error": 8.881784197001252e-12
+    },
+    {
+      "family": "B4",
+      "max_DRC_exchange_error": 4.551914400963142e-12
+    }
+  ],
+  "GHT_convention": "Positive effective adsorption energy is the displayed representative, not a physical branch selection."
+}

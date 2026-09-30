@@ -16,7 +16,7 @@
     "KOH/SELECTED.json": "2d78c62ed27c000498ecd5ce9f6bd34515b7f9036be595e217a57c15e5e70bae",
     "KOH/TEMPLATES.csv": "1aecd66a7081574ce55bead9f85469210434e012f8af960fe647a71cfa4563d7",
     "POPULATION_SEEDS.csv": "13557379cf25989018e670e49c2344b5b0f74b82507c2c6bcc06e72a543f22d3",
-    "VHT_SEEDS.json": "72151b7ced7460a9effd671c7a49f1b0db7935265140e19bfffd3a2a8bc37664"
+    "VHT_SEEDS.json": "4c3536098b48463539a5d4689f3464a8daa01bf6ff4fcaae9739532f7bbe6032"
   },
-  "use": "Variable-coefficient solutions initialize new optimizations; no fixed-sum models are included."
+  "use": "Effective-BV population seeds and fixed-alpha pooled VHT seeds initialize new optimizations. All published VHT sharing schemes use the same pooled voltage objective."
 }

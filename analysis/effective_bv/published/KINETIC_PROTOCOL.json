@@ -1,0 +1,35 @@
+{
+  "fingerprint": "282bd79db3817a285e6e47fcadaf4809e484c277dc5cc3d02aef782951d0220b",
+  "starts": 12,
+  "VHT_added_R": 0,
+  "models": [
+    "DeltaG_only",
+    "DeltaG_T",
+    "DeltaG_H",
+    "independent_H_T_G"
+  ],
+  "alpha_V": 0.5,
+  "alpha_H": 0.5,
+  "reference_points": 5000,
+  "optimization_points": 200,
+  "polish_points": 1000,
+  "objective": "Mean squared voltage residual, with equal weight per template",
+  "selection": "Lowest pooled RMSE; worst-family RMSE is only a tie breaker",
+  "bounds_log10_h": [
+    -10,
+    10
+  ],
+  "bounds_log10_t": [
+    -16,
+    16
+  ],
+  "bounds_G_meV": [
+    -800,
+    800
+  ],
+  "bounds_log10_c": [
+    -24,
+    24
+  ],
+  "acceptance": "Each family: R2 >= 0.99 and RMSE <= 2 mV (acid) or 3 mV (KOH)"
+}

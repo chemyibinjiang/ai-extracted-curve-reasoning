@@ -176,7 +176,7 @@ def validate_science(tables):
                 "Publication/source family mapping changed")
         ratio, reference = float(row["kT_over_kV"]), float(row["acid_reference_kT_over_kV"])
         require(ratio > 0 and reference > 0, "Invalid rate ratio")
-        close(reference, 2.2584675346368877, "Acid reference changed")
+        close(reference, 2.198587079606414, "Acid reference changed")
         close(float(row["log10_relative_TV"]), math.log10(ratio / reference), "Rate transform changed")
         if row["condition"] == "acid":
             close(ratio, reference, "Shared acid rate-ratio constraint changed")

@@ -20,7 +20,7 @@ These calculations correspond to SI Sections 7-8.
 | Nonlinear family analysis | 73 | 234 |
 | Empirical coverage | 59 | 188 |
 | Selected families | 4 | 4 |
-| VHT individual-curve coverage | 46/59 | 164/188 |
+| VHT individual-curve coverage | 48/59 | 165/188 |
 
 The windows are 0-200 mV and 0-300 mV. Curves require at least five original
 points with nonzero potential variance. Linear and template fits use voltage
@@ -35,7 +35,10 @@ optimizes K=1..10 separately; its count certificate applies to that finite grid.
 Resistance-free VHT uses reversible Volmer, Heyrovsky and Tafel steps with
 detailed balance, V-H-2T=0, and alphaV=alphaH=0.5. Acid shares H/V and T/V and
 varies adsorption energy and current amplitude. KOH shares H/V and additionally
-varies T/V. The maximum template RMSE is 0.712 mV for acid and 1.407 mV for KOH.
+varies T/V. The maximum template RMSE is 0.762 mV for acid and 1.442 mV for KOH;
+the corresponding pooled RMSE values are 0.566 and 1.242 mV. All sharing schemes
+minimize the same equal-template pooled voltage error. See the
+[unified protocol and SI comparisons](../effective_bv/README.md#figure-6).
 
 Rate control perturbs forward and reverse constants together at fixed
 thermodynamics, then resolves coverage. Means weight the four families equally;

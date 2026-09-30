@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / "analysis/figure6"))
 sys.path.insert(0, str(ROOT / "analysis/figure6/vendor/vht"))
 import numpy as np
 import pandas as pd
-from scipy.optimize import least_squares, minimize, minimize_scalar
+from scipy.optimize import least_squares, minimize_scalar
 import effective_bv as bv
 import independent_model as engine
 from sharing import layout, prediction_jacobian
@@ -24,6 +24,13 @@ from numerics import optimize_scale
 from control_core import rate_control, state, independent_state
 
 MODELS = ("DeltaG_only", "DeltaG_T", "DeltaG_H", "independent_H_T_G")
+UNIT = engine.KBT_MEV*np.log(10.)
+BOUNDS = ([-10.,-16.,-800/UNIT,-24.], [10.,16.,800/UNIT,24.])
+FIT_POINTS, POLISH_POINTS, VERIFY_POINTS = 200, 1000, 5000
+
+
+def selection_key(result):
+    return result["pooled_rmse"], result["worst_rmse"]
 
 
 def dump(path, obj):
@@ -110,7 +117,7 @@ def empirical(output):
     dump(output / "EMPIRICAL_SUMMARY.json", summaries)
 
 
-def data(source, condition, count=160):
+def data(source, condition, count=FIT_POINTS):
     meta = read(Path(source) / condition / "TEMPLATES.csv")
     points = read(Path(source) / condition / "POINT_PREDICTIONS.csv")
     points = points[points.adequate].copy()
@@ -137,7 +144,7 @@ def worker(job):
     source, condition, name, start = job
     meta, _, xx, yy = data(source, condition)
     cap = 2. if condition == "acid" else 3.
-    ix, names, lo, hi = layout(name, len(meta))
+    ix, names, lo, hi = layout(name, len(meta), bounds=BOUNDS)
     seeds = json.loads((HERE / "reference/VHT_SEEDS.json").read_text())
     rec = np.array(seeds[condition + "_" + name]["records"])
     rng = np.random.default_rng(20260928 + start + sum(map(ord, condition+name)))
@@ -155,32 +162,24 @@ def worker(job):
     opt = least_squares(lambda p: errors(p)[0].ravel(), p0,
         jac=lambda p: errors(p)[1].reshape(-1, len(p)), bounds=(lo,hi),
         x_scale="jac", max_nfev=800, ftol=1e-10, xtol=1e-10, gtol=1e-7)
-    alternatives = [("seed", packed(np.array(seeds[condition+"_"+name]["records"]), ix), False),
-                    ("least_squares", opt.x, bool(opt.success))]
-    def ratios(p):
-        err, jac = errors(p)
-        return np.mean(err**2, axis=1), 2*np.mean(err[:,:,None]*jac, axis=1)
-    if name != "independent_H_T_G":
-        def constraint(v):
-            val, jac = ratios(v[:-1])
-            return v[-1]-val, np.column_stack([-jac, np.ones(len(meta))])
-        grad = np.r_[np.zeros(len(opt.x)), 1.]
-        mm = minimize(lambda v: (v[-1], grad), np.r_[opt.x, ratios(opt.x)[0].max()],
-            jac=True, method="SLSQP", bounds=list(zip(np.r_[lo,0.], np.r_[hi,1e7])),
-            constraints=dict(type="ineq", fun=lambda v: constraint(v)[0], jac=lambda v: constraint(v)[1]),
-            options=dict(maxiter=600, ftol=1e-10))
-        if np.isfinite(mm.x).all():
-            alternatives.append(("minimax", mm.x[:-1], bool(mm.success)))
-    _, _, xd, yd = data(source, condition, 1000)
+    alternatives = [("pooled_reference", packed(np.array(seeds[condition+"_"+name]["records"]), ix), False),
+                    ("pooled_200", opt.x, bool(opt.success))]
+    _, _, xx, yy = data(source, condition, POLISH_POINTS)
+    polished = least_squares(lambda p: errors(p)[0].ravel(), opt.x,
+        jac=lambda p: errors(p)[1].reshape(-1, len(p)), bounds=(lo,hi),
+        x_scale="jac", max_nfev=1000, ftol=1e-11, xtol=1e-11, gtol=1e-8)
+    alternatives.append(("pooled_1000", polished.x, bool(polished.success)))
+    _, _, xd, yd = data(source, condition, VERIFY_POINTS)
     snapshots = []
     for stage, p, success in alternatives:
         rec = records(p, ix)
         prediction = np.array([engine.response(x, *r) for x,r in zip(xd,rec)])
         rms = np.sqrt(np.mean((prediction-yd)**2, axis=1))
+        r2 = 1-np.sum((prediction-yd)**2,axis=1)/np.sum((yd-yd.mean(axis=1,keepdims=True))**2,axis=1)
         snapshots.append(dict(condition=condition, model=name, seed=start, stage=stage,
             optimizer_converged=success, records=rec.tolist(), params=p.tolist(), family_rmse=rms.tolist(),
             worst_rmse=float(rms.max()), pooled_rmse=float(np.sqrt(np.mean(rms**2))), cap=cap,
-            feasible=bool(rms.max() <= cap*(1+1e-5)), n_parameters=len(p)))
+            family_R2=r2.tolist(), feasible=bool(rms.max() <= cap and r2.min() >= .99), n_parameters=len(p)))
     return dict(condition=condition, model=name, seed=start, snapshots=snapshots)
 
 
@@ -188,7 +187,7 @@ def evaluate(selected, output):
     summary, parameters, replay, predictions, control = [], [], [], [], []
     for key, result in selected.items():
         condition, name = result["condition"], result["model"]
-        meta, points, xx, yy = data(output, condition, 1000)
+        meta, points, xx, yy = data(output, condition, VERIFY_POINTS)
         own = []
         for i, (t, rec) in enumerate(zip(meta.itertuples(), result["records"])):
             predictor = lambda x: engine.response(np.asarray(x), *rec)
@@ -243,12 +242,18 @@ def run(output, workers=6, starts=12):
     empirical(output)
     fingerprint = hashlib.sha256(Path(__file__).read_bytes() + (ROOT / "analysis/common/effective_bv.py").read_bytes()
         + (HERE / "reference/VHT_SEEDS.json").read_bytes()
+        + (ROOT / "analysis/figure6/sharing.py").read_bytes()
         + b"".join((output / c / "TEMPLATES.csv").read_bytes() for c in ("acid", "KOH"))).hexdigest()
     protocol = output / "KINETIC_PROTOCOL.json"
     if protocol.exists():
         assert json.loads(protocol.read_text())["fingerprint"] == fingerprint, "Code/input changed: use a new output"
     dump(protocol, dict(fingerprint=fingerprint, starts=starts, VHT_added_R=0,
-        models=list(MODELS), alpha_V=.5, alpha_H=.5, reference_points=1000, optimization_points=160))
+        models=list(MODELS), alpha_V=.5, alpha_H=.5, reference_points=VERIFY_POINTS,
+        optimization_points=FIT_POINTS, polish_points=POLISH_POINTS,
+        objective="Mean squared voltage residual, with equal weight per template",
+        selection="Lowest pooled RMSE; worst-family RMSE is only a tie breaker",
+        bounds_log10_h=[-10,10], bounds_log10_t=[-16,16], bounds_G_meV=[-800,800],
+        bounds_log10_c=[-24,24], acceptance="Each family: R2 >= 0.99 and RMSE <= 2 mV (acid) or 3 mV (KOH)"))
     target = output / "VHT_RUNS.json"
     runs = json.loads(target.read_text()) if target.exists() else []
     done = {(r["condition"], r["model"], r["seed"]) for r in runs}
@@ -259,12 +264,12 @@ def run(output, workers=6, starts=12):
             result = future.result()
             runs.append(result)
             dump(target, runs)
-            best = min(result["snapshots"], key=lambda r: r["worst_rmse"])
-            print(f"VHT {len(runs)}/{2*len(MODELS)*starts}: {result['condition']} {result['model']} worst RMSE {best['worst_rmse']:.4f}", flush=True)
+            best = min(result["snapshots"], key=selection_key)
+            print(f"VHT {len(runs)}/{2*len(MODELS)*starts}: {result['condition']} {result['model']} pooled RMSE {best['pooled_rmse']:.4f}", flush=True)
     selected = {}
     for c in ("acid", "KOH"):
         for m in MODELS:
             candidates = [s for r in runs if r["condition"] == c and r["model"] == m for s in r["snapshots"]]
-            selected[c+"_"+m] = min(candidates, key=lambda r: (r["worst_rmse"], r["pooled_rmse"]))
+            selected[c+"_"+m] = min(candidates, key=selection_key)
     dump(output / "VHT_SELECTED.json", selected)
     evaluate(selected, output)

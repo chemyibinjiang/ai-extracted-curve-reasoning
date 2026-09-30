@@ -623,8 +623,8 @@ def run(data,baseline,output,inkscape):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--data',type=Path,default=ROOT/'build/effective-bv-20260927')
+    p.add_argument('--data',type=Path,default=ROOT/'build/effective-bv-20260930')
     p.add_argument('--baseline',type=Path,default=ROOT/'figures/manuscript')
-    p.add_argument('--output',type=Path,default=ROOT/'build/manuscript-figures-effective-bv-20260927')
+    p.add_argument('--output',type=Path,default=ROOT/'build/manuscript-figures-effective-bv-20260930')
     p.add_argument('--inkscape',default=shutil.which('inkscape') or 'C:/Program Files/Inkscape/bin/inkscape.com')
     a=p.parse_args();run(a.data.resolve(),a.baseline.resolve(),a.output.resolve(),a.inkscape)

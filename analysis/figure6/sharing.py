@@ -7,11 +7,13 @@ UNIT=engine.KBT_MEV*np.log(10.)
 KEYS=["logh","logt","logK","logc"]
 SPECS={"DeltaG_only":("logK",),"DeltaG_H":("logK","logh"),"DeltaG_T":("logK","logt"),"independent_H_T_G":("logh","logt","logK")}
 
-def layout(name,n=5):
+def layout(name,n=5,bounds=None):
     free=SPECS[name]
     ix=np.empty((n,4),dtype=np.int64)
     names,lo,hi=[],[],[]
     lows=[-7.,-7.,-300/UNIT,-8.]; highs=[7.,7.,300/UNIT,8.]
+    if bounds is not None:
+        lows,highs=bounds
     for k,key in enumerate(KEYS):
         if key in free or key=="logc":
             for i in range(n):

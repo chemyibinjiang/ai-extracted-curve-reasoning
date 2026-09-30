@@ -29,7 +29,7 @@ class EffectivePackageTests(unittest.TestCase):
                 "--workers","6","--starts","2"], cwd=root, env=env,
                 capture_output=True, text=True, encoding="utf-8", timeout=600)
             self.assertEqual(result.returncode,0,result.stdout+result.stderr)
-            output = root/"build/effective-bv-20260927"
+            output = root/"build/effective-bv-20260930"
             fits = pd.read_csv(output/"figure4/FITS.csv")
             self.assertEqual(len(fits),6066)
             self.assertTrue(fits.equivalent_converged.all())
@@ -54,6 +54,11 @@ class EffectivePackageTests(unittest.TestCase):
             self.assertTrue(kinetic.loc[("acid","DeltaG_only"),"feasible"])
             self.assertTrue(kinetic.loc[("KOH","DeltaG_T"),"feasible"])
             self.assertFalse(kinetic.loc[("KOH","DeltaG_only"),"feasible"])
+            self.assertEqual(kinetic.loc[("acid","DeltaG_only"),"raw_pass"],48)
+            self.assertEqual(kinetic.loc[("KOH","DeltaG_T"),"raw_pass"],165)
+            checks=json.loads((output/"figure6/KINETIC_COMPARISON_CHECKS.json").read_text())
+            self.assertTrue(checks['passed'])
+            self.assertEqual(len(checks['duality_checks']),8)
             controls = pd.read_csv(output/"figure6/RATE_CONTROL.csv")
             np.testing.assert_allclose(controls[["X_V","X_H","X_T"]].sum(axis=1),1,atol=2e-5)
             self.assertTrue((output/"index.html").is_file())

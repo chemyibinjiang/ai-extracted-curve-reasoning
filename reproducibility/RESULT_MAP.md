@@ -1,7 +1,7 @@
 # Figure and SI Result Map
 
 All paths below are relative to the repository root. Numerical outputs default
-to `build/effective-bv-20260927/`, abbreviated `RESULTS/` below. The complete
+to `build/effective-bv-20260930/`, abbreviated `RESULTS/` below. The complete
 manuscript artwork is `figures/manuscript/Figure1.svg` through `Figure6.svg`.
 Older source-composition folder numbers are not manuscript figure numbers.
 
@@ -18,6 +18,8 @@ Older source-composition folder numbers are not manuscript figure numbers.
 | Figure 6A-D; SI Tables S17-S18 | `families` stage; acidic/alkaline `analysis/figure6/inputs/`; selected effective-BV references | `RESULTS/figure6/{acid,KOH}/COHORT_FLOW.csv`, `TEMPLATES.csv`, `ASSIGNMENTS.csv`, `POINT_PREDICTIONS.csv`; coverage 59/73 and 188/234 |
 | Figure 6C full template selection | `python analysis/effective_bv/search.py` | `build/effective-bv-search/CANDIDATES.csv`, `{acid,KOH}/COVERAGE_SCAN.csv`, `SELECTED.json`; 276,551 candidates, smallest K meeting 80% is four in each condition |
 | Figures 1D, 6E-F; SI Table S19 | `families` stage and VHT seeds | `RESULTS/figure6/KINETIC_PARAMETERS.csv`, `KINETIC_SUMMARY.csv`, `TEMPLATE_RECONSTRUCTION.csv`, `RAW_VHT_REPLAY.csv`, `RATE_CONTROL.csv`, `RATE_CONTROL_MEAN_SD.csv` |
+
+| SI Section 8.5; Tables S20-S21; Figures S14-S15 | Same `families` stage and `kinetic_comparison.py`; no separate fit | `RESULTS/figure6/ALL_MODEL_RATE_CONTROL.csv`, `GHT_DUAL_PARAMETERS.csv`, `comparison/`; checked copies of all Figure 6 numerical results in `analysis/effective_bv/published/` |
 
 ## Joining a Curve to Its Source
 
@@ -39,6 +41,6 @@ cathodic magnitude is used; no fitted potential offset is present.
 
 The complete dataset (4,211), fitting cohort (3,033), Pt/C electrolyte subset
 (348), nonlinear template cohorts (73/234), empirical members (59/188), and
-kinetic replay counts (46/164) answer different questions. They must not be
+kinetic replay counts (48/165) answer different questions. They must not be
 used interchangeably. Figure 6 means give equal weight to families and SD uses
 n-1, rather than weighting by member counts. Both use common fitted support.

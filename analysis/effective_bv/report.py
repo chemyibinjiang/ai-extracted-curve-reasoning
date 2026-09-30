@@ -265,13 +265,22 @@ Compensation accounting and KSCN predictions were recalculated without changing 
 <p>Four templates cover 59/73 acidic and 188/234 alkaline nonlinear responses. Current amplitudes have been reoptimized;
 the template library comes from the completed variable-coefficient finite-grid search.</p>
 {table(mainkin[['condition','model','pooled_rmse_mV','worst_rmse_mV','cap','raw_members','raw_pass']])}
-<p>Adsorption-energy variation reconstructs the acid families. The alkaline families additionally vary T/V.</p>
+<p>Adsorption-energy variation reconstructs the acid families. The alkaline families additionally vary T/V.
+All VHT schemes fix the elementary symmetry factors at 0.5 and minimize the same
+equal-template pooled voltage error. Fits use 200-point optimization, 1,000-point
+refinement, and 5,000-point evaluation. Effective BV coefficients remain independently fitted.</p>
 <img src="assets/rate_control.png" alt="Recomputed rate control of the main acid and alkaline VHT models">
 <details><summary>Additional VHT sharing models and optimization records</summary>{table(kin)}
-<p><code>selected_stage=seed</code> retains a previously optimized solution after the new search failed to improve it;
+<p><code>selected_stage=pooled_reference</code> retains a previously optimized pooled solution after the new search failed to improve it;
 it is not a newly converged optimization. All retained predictions and raw-curve replays were independently recalculated.</p></details>
 <p><a href="figure6/KINETIC_PARAMETERS.csv">VHT parameters</a> &middot; <a href="figure6/RAW_VHT_REPLAY.csv">Raw-curve replay</a> &middot;
 <a href="figure6/RATE_CONTROL.csv">Rate control and coverage</a></p>
+<h3>SI comparisons using the same fits</h3>
+<img src="figure6/comparison/FigureS14_alkaline_sharing_controls.png" alt="Alkaline GT, GH and GHT rate-control profiles">
+<img src="figure6/comparison/FigureS15_B3_complementary_controls.png" alt="B3 control profiles including the exact complementary GHT solution">
+<p><a href="figure6/ALL_MODEL_RATE_CONTROL.csv">All model profiles and H coverage</a> &middot;
+<a href="figure6/GHT_DUAL_PARAMETERS.csv">Complementary GHT parameters</a> &middot;
+<a href="figure6/KINETIC_PROTOCOL.json">Unified protocol</a></p>
 <h2>Scope</h2><p>These are numerical diagnostics, not replacement publication layouts.
 The manuscript figures are updated separately, preserving their finalized plot types:
 <a href="../../figures/manuscript/Figure4.svg">Figure 4</a>,

@@ -1,0 +1,9 @@
+condition,model,families,cap,pooled_rmse_mV,worst_rmse_mV,feasible,selected_stage,optimizer_converged,raw_members,raw_pass
+acid,DeltaG_only,4,2.0,0.5658979526566323,0.7623330433691156,True,pooled_1000,True,59,48
+acid,DeltaG_T,4,2.0,0.533954989741212,0.7431224519581597,True,pooled_1000,True,59,48
+acid,DeltaG_H,4,2.0,0.5006032773515846,0.7093896822691204,True,pooled_1000,True,59,48
+acid,independent_H_T_G,4,2.0,0.4963276688950522,0.7083508440049713,True,pooled_reference,False,59,48
+KOH,DeltaG_only,4,3.0,3.4482079812079567,4.334627610734278,False,pooled_1000,True,188,128
+KOH,DeltaG_T,4,3.0,1.2419230054417234,1.442071079493334,True,pooled_1000,True,188,165
+KOH,DeltaG_H,4,3.0,1.7467754160074198,2.40723045751204,True,pooled_1000,True,188,160
+KOH,independent_H_T_G,4,3.0,1.1235932499685715,1.2990936699227755,True,pooled_reference,False,188,165

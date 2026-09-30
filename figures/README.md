@@ -5,7 +5,7 @@ directly to Figures 1-6 in the paper.
 
 Figures 1D and 4-6 were updated on September 27, 2026 with the effective-BV results,
 preserving their finalized plot types and composition. Figure 1A-C and Figures 2-3 are unchanged.
-See [updated values and panel definitions](DATA_UPDATE_20260927.md).
+See [updated values and panel definitions](DATA_UPDATE_20260930.md).
 
 | Figure | Vector | Preview |
 | --- | --- | --- |

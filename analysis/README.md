@@ -22,7 +22,7 @@ The Figure 4 cohort-preparation command reads all 4,211 curves under
 `data_literature/`; the refit uses the verified 3,033-curve prepared coordinates.
 The commands do not require source-paper PDFs, image downloads, agent logs, or browser
 state. They start from digitized coordinates, not from image extraction.
-Outputs are written to `build/effective-bv-20260927/figure4/`, `figure5/`, and
+Outputs are written to `build/effective-bv-20260930/figure4/`, `figure5/`, and
 `figure6/`, with an HTML numerical review report at the output root.
 
 The default now reoptimizes both variable-coefficient empirical models and the

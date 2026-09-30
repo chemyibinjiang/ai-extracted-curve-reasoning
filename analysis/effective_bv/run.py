@@ -9,7 +9,7 @@ ROOT = HERE.parents[1]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("stage", choices=("population", "examples", "families", "report", "all"))
-    parser.add_argument("--output", type=Path, default=ROOT / "build/effective-bv-20260927")
+    parser.add_argument("--output", type=Path, default=ROOT / "build/effective-bv-20260930")
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--starts", type=int, default=12)
     args = parser.parse_args()
@@ -27,6 +27,8 @@ def main():
     if args.stage in ("families", "all"):
         import families
         families.run(args.output / "figure6", args.workers, args.starts)
+        import kinetic_comparison
+        kinetic_comparison.run(args.output / "figure6")
     if args.stage in ("report", "all"):
         import report
         report.run(args.output)

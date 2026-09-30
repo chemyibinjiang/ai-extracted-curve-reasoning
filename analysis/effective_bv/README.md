@@ -11,7 +11,7 @@ python tests/test_effective_bv.py
 ```
 
 The stages `population`, `examples`, `families`, and `report` can also be run
-separately. Outputs default to `build/effective-bv-20260927/`. No source PDFs,
+separately. Outputs default to `build/effective-bv-20260930/`. No source PDFs,
 external working directories, or exploration outputs are runtime dependencies.
 
 ## Empirical Form
@@ -75,16 +75,32 @@ from coordinates, run `python analysis/effective_bv/search.py`. This separately
 profiles every nonlinear curve and optimizes coverage for K=1..10. Use
 `--grid-only` to inspect the candidate library without running the search.
 
-VHT reconstruction is optimized from 12 starts per condition and parameter
-sharing scheme. Each family is checked on a 1,000-point template grid. Previously
-optimized seeds are retained if no new search improves the minimax error;
-`selected_stage` and `optimizer_converged` distinguish that from new convergence.
+VHT reconstruction uses alphaV=alphaH=0.5 and one objective for every scheme:
+pooled voltage mean squared error, with equal weight per template. Twelve starts
+per condition/scheme use 200 logarithmic-current points per template, followed
+by 1,000-point least-squares refinement and 5,000-point evaluation. The candidate
+with lowest pooled RMSE is retained; maximum-family RMSE is not optimized.
+Previously optimized pooled seeds remain candidates (`pooled_reference`);
+`optimizer_converged` is false when a supplied candidate wins, not a claim of
+new optimizer convergence. All predictions and controls are recalculated.
+Bounds are log10(H/V) [-10,10], log10(T/V) [-16,16], effective adsorption energy
+[-800,800] meV, and log10(current scale) [-24,24]. Adequacy requires every
+template to have R2 >= 0.99 and RMSE <= 2 mV (acid) or 3 mV (KOH).
 The main representation uses DeltaG alone in acid and DeltaG plus T/V in KOH.
 H/V and independent sharing schemes are additional kinetic controls.
 
 The main solutions are replayed on individual member curves, and their coverage,
 rate controls, equal-family means and sample SD are recomputed. Empirical
-family coverage and kinetic replay coverage are reported separately.
+family coverage and kinetic replay coverage are reported separately. The main
+kinetic replay covers 48/59 acidic and 165/188 alkaline empirical members.
+
+`kinetic_comparison.py` generates the SI GH/GT/GHT control profiles from these
+same parameter records. At equal symmetry factors, the full GHT model has an
+exact complementary solution: G'=-G, h'=1/h, t'=t*K^2/h, c'=c*h, K'=1/K.
+This preserves current, complements H coverage, and exchanges V/H rate control.
+It is a model symmetry for all families, not a property exclusive to B3.
+Checked parameters, reconstruction points, raw-curve replay, profiles, and SI
+figures are supplied in [published/](published/) without requiring a rerun.
 
 ## Reference and Output Integrity
 
