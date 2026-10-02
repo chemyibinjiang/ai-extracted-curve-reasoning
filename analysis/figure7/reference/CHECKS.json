@@ -1,0 +1,16 @@
+{
+  "curves": 2360,
+  "papers": 435,
+  "converged": true,
+  "iterations": 2282,
+  "amplitude_invariance_error": 3.543051702720179e-12,
+  "factor_variance_fraction": [
+    0.785019190318346,
+    0.18488565699420703,
+    0.030095152687446974
+  ],
+  "full_template_direct_vs_regularized_max": 0.00014860791404761053,
+  "fitting_labels_used": false,
+  "template_fit_gate": false,
+  "templates_used_to_train": false
+}

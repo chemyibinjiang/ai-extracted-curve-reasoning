@@ -1,5 +1,29 @@
 # Reproducing the Figures
 
+## Figure 7 and SI Section 9
+
+The 2 October population-to-template analysis is independently packaged in
+[`analysis/figure7`](analysis/figure7/README.md). After installing the dependencies:
+
+```text
+python analysis/figure7/run.py cv
+python analysis/figure7/run.py complete-window
+```
+
+The first command rebuilds the partially observed cohort, all 24 whole-paper
+tuning fits, the selected final model, posterior and template coordinates,
+support/uncertainty controls, native residual checks, achieved coverage and
+plots. The second reproduces the earlier complete-window SI sensitivity tables.
+`replay` skips retuning but still refits the final population model. Outputs
+default to `build/figure7`; `--output` accepts an independent destination.
+
+Candidate-library construction and new template selection are not rerun:
+compatibility and selected K=1-30 sets are frozen inputs whose unions and
+selected native residuals are re-evaluated. This distinction prevents coverage
+replay from being mistaken for independent rediscovery. See the
+[Figure 7 methods](analysis/figure7/METHODS.md) and
+[2 October verification record](reproducibility/VERIFICATION_20261002.md).
+
 See the [30 September unified-fitting record](reproducibility/VERIFICATION_20260930.md)
 for the clean-checkout checks and their scope.
 

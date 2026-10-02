@@ -2,7 +2,7 @@
 
 All paths below are relative to the repository root. Numerical outputs default
 to `build/effective-bv-20260930/`, abbreviated `RESULTS/` below. The complete
-manuscript artwork is `figures/manuscript/Figure1.svg` through `Figure6.svg`.
+manuscript artwork is `figures/manuscript/Figure1.svg` through `Figure7.svg`.
 Older source-composition folder numbers are not manuscript figure numbers.
 
 | Paper result | Inputs or command | Output / check |
@@ -20,6 +20,22 @@ Older source-composition folder numbers are not manuscript figure numbers.
 | Figures 1D, 6E-F; SI Table S19 | `families` stage and VHT seeds | `RESULTS/figure6/KINETIC_PARAMETERS.csv`, `KINETIC_SUMMARY.csv`, `TEMPLATE_RECONSTRUCTION.csv`, `RAW_VHT_REPLAY.csv`, `RATE_CONTROL.csv`, `RATE_CONTROL_MEAN_SD.csv` |
 
 | SI Section 8.5; Tables S20-S21; Figures S14-S15 | Same `families` stage and `kinetic_comparison.py`; no separate fit | `RESULTS/figure6/ALL_MODEL_RATE_CONTROL.csv`, `GHT_DUAL_PARAMETERS.csv`, `comparison/`; checked copies of all Figure 6 numerical results in `analysis/effective_bv/published/` |
+
+## Figure 7 and SI Section 9
+
+These outputs instead default to `build/figure7`. The detailed file-by-file
+map is in [analysis/figure7/README.md](../analysis/figure7/README.md#outputs-and-si-map).
+
+| Paper result | Command and output |
+| --- | --- |
+| Figure 7A/B/E; Tables S22-S26; Figures S16-S20 | `python analysis/figure7/run.py cv`; `08_PARTIAL_PCA_CANDIDATE/` contains cohort, tuning, posterior scores, template projections and support/uncertainty checks |
+| Figure 7C/D/F; Table S27 | Same command; `04_TABLES/` contains achieved coverage and composition unions; rescaled native points are in `08_PARTIAL_PCA_CANDIDATE/TEMPLATE_NATIVE_POINTS.csv` |
+| Tables S28-S29 | `python analysis/figure7/run.py complete-window`; `04_TABLES/complete_window_dispersion.csv` |
+
+The partial population (2,360), nonlinear discovery source (2,267), BV+jR
+adequacy denominator (1,667), covered union (1,343), and legacy complete-window
+cohort (457 in its primary window) are not interchangeable. No VHT fit enters
+the Figure 7 population model or its empirical-template projection.
 
 ## Joining a Curve to Its Source
 

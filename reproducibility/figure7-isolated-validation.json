@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "commands": [
+    "replay",
+    "complete-window"
+  ],
+  "scope": "Copy of analysis/figure7 only; no original Downloads or workspace analysis files",
+  "numerical_outputs": {
+    "CHECKS.json": "e7fbb6ad80ff0e35474173c903b8e75da353a6ffbb1a48424c449fc13e56a251",
+    "VALIDATION.json": "defea6f9a7622ed4e1ea2a7207f54740af8622180ef68d23a036cb11debd9e3b",
+    "DISPERSION_RATIOS.csv": "a7e07828672f2b0fb265ef2904f09dc1aff58eb37dab8b1a499e7f3e20c8d63e",
+    "PTC_NEAREST_TEMPLATES.csv": "8f99d505b076e0e05650abe131e017a4a4983a1b0e5d64c705f32814dcf571ba"
+  }
+}

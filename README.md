@@ -1,5 +1,9 @@
 # Curve Extraction and Electrochemical Analysis
 
+**2 October 2026:** [Figure 7 and SI Section 9](analysis/figure7/README.md) now
+include partial-observation population PCA, uncertainty/support controls,
+empirical-template projection and coverage, and complete-window sensitivity.
+
 **30 September 2026:** Figure 6 and its Figure 1D overview now use one fixed-alpha,
 equal-template pooled-error fit. [Protocol and SI comparisons](analysis/effective_bv/README.md#figure-6).
 
@@ -11,6 +15,8 @@ checking reported claims, and analyzing hydrogen-evolution polarization curves.
 
 The manuscript artwork is in [figures/manuscript/](figures/manuscript/).
 Each figure has an editable SVG and a PNG preview.
+Figure 7 is the 2 October population-to-template version; Figures 1-6 in this
+public artwork snapshot retain their 30 September versions.
 The current numerical revision uses the effective-BV analysis below. The
 manually edited artwork has been synchronized to these fits without changing
 the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20260930.md).
@@ -23,6 +29,7 @@ the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20
 | 4 | Local slopes, effective BV/BV+jR fit quality, and effective parameters | [Figure 4 analysis](analysis/effective_bv/README.md#figure-4) |
 | 5 | Apparent resistance and current rescaling | [Figure 5 analysis](analysis/effective_bv/README.md#figure-5) |
 | 6 | Pt/C response families and kinetic reconstruction | [Figure 6 analysis](analysis/effective_bv/README.md#figure-6) |
+| 7 | Population response shapes and empirical templates | [Figure 7 analysis and SI Section 9](analysis/figure7/README.md) |
 
 For the multilayer NiFeP example, see the [model comparison and complete point tables](analysis/figure5/README.md#nifep-layer-number), including both BV and BV+jR fits.
 
@@ -36,7 +43,7 @@ downloads so the next command can retrieve only the assets needed here:
 git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
 cd ai-extracted-curve-reasoning
 git lfs install
-git lfs pull --include="figures/manuscript/**,analysis/effective_bv/artwork_templates.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
+git lfs pull --include="figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
 python -m venv .venv
 ```
 
@@ -52,6 +59,8 @@ python scripts/validate_dataset.py
 python analysis/figure3/run.py
 python analysis/figure4/run.py prepare --output build/figure4-preparation
 python analysis/effective_bv/run.py all --workers 6 --starts 12
+python analysis/figure7/run.py cv
+python analysis/figure7/run.py complete-window
 python -m unittest discover -s tests -v
 ```
 

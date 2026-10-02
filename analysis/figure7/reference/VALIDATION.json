@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "curves": 2360,
+  "rank": 3,
+  "model_converged": true,
+  "paper_holdout": true,
+  "no_train_test_native_overlap_by_construction": true,
+  "positive_posterior_covariances": true,
+  "identical_shape_donors": 75,
+  "uncertainty_intervals": "Conditional on fitted basis, common Gaussian prior and support-matching target; not full model-bootstrap uncertainty. Prediction calibration is imperfect."
+}

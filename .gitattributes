@@ -17,6 +17,8 @@ analysis/figure4/inputs/*.csv -text
 analysis/figure4/reference/*.csv -text
 analysis/figure6/inputs/**/*.csv -text
 analysis/figure6/reference/**/*.csv -text
+analysis/figure7/inputs/** -text
+analysis/figure7/reference/** -text
 analysis/effective_bv/reference/**/*.csv -text
 analysis/effective_bv/reference/*.csv -text
 analysis/effective_bv/reference/*.json -text

@@ -57,11 +57,11 @@ def validate_assets(root):
     manifest = json.loads((root / RELEASE).read_text(encoding="utf-8"))
     require(manifest["schema_version"] == 1, "Unsupported manifest schema")
     expected = {f"figures/manuscript/Figure{i}.{ext}"
-                for i in range(1, 7) for ext in ("svg", "png")}
+                for i in range(1, 8) for ext in ("svg", "png")}
     expected |= {f"analysis/figure6/expected/{name}.csv" for name in TABLE_NAMES}
     paths = [record["path"] for record in manifest["assets"]]
     require(len(paths) == len(set(paths)) and set(paths) == expected,
-            "Figure manifest must contain exactly the 18 expected assets")
+            "Figure manifest must contain exactly the 20 expected assets")
     for record in manifest["assets"]:
         path = root / record["path"]
         require(path.is_file(), f"Missing asset: {path}")
