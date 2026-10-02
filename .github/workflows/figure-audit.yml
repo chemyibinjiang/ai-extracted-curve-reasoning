@@ -10,6 +10,7 @@ on:
       - 'analysis/figure4/**'
       - 'analysis/figure6/**'
       - 'analysis/figure7/**'
+      - 'analysis/effective_bv/**'
       - 'analysis/common/**'
       - 'analysis/SOURCE_MANIFEST.json'
       - 'data_literature/zenodo_extracted_curve_dataset_v1/**'
@@ -24,6 +25,7 @@ on:
       - 'tests/test_nimo_vht.py'
       - 'tests/test_repository_layout.py'
       - 'tests/test_raw_archive.py'
+      - 'tests/test_effective_search.py'
       - 'exploration/**'
       - 'README.md'
       - 'CODE_ORGANIZATION.md'
@@ -66,13 +68,13 @@ jobs:
           python-version: '3.13'
       - name: Install numerical dependencies
         run: python -m pip install -r requirements-analysis.txt
-      - name: Retrieve published coordinate archive
-        run: git lfs pull --include="data_literature/zenodo_extracted_curve_dataset_v1.zip" --exclude=""
+      - name: Retrieve coordinate and analysis archives
+        run: git lfs pull --include="data_literature/zenodo_extracted_curve_dataset_v1.zip,exploration/archive/*.zip" --exclude=""
       - name: Audit raw coordinates through analysis inputs
         run: python -m unittest discover -s tests -p test_raw_archive.py -v
       - name: Test numerical cores and isolated figure analyses
         run: python -m unittest discover -s tests -p test_figure_analysis.py -v
       - name: Test direct NiMo kinetic fitting and coverage
         run: python -m unittest discover -s tests -p test_nimo_vht.py -v
-      - name: Verify empirical template discovery
-        run: python analysis/figure6/run.py discover --output build/figure6-discovery
+      - name: Test candidate grid and selected-template residuals
+        run: python -m unittest discover -s tests -p test_effective_search.py -v
