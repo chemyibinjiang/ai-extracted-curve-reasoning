@@ -1,11 +1,10 @@
 # Curve Extraction and Electrochemical Analysis
 
-**2 October 2026:** [Figure 7 and SI Section 9](analysis/figure7/README.md) now
-include partial-observation population PCA, uncertainty/support controls,
-empirical-template projection and coverage, and complete-window sensitivity.
-
-**30 September 2026:** Figure 6 and its Figure 1D overview now use one fixed-alpha,
-equal-template pooled-error fit. [Protocol and SI comparisons](analysis/effective_bv/README.md#figure-6).
+**2 October 2026:** Current Figures 1, 3 and 7 are synchronized with the manuscript.
+[Figure 7 and SI Section 9](analysis/figure7/README.md) include partial-observation
+population PCA, template projection and coverage, and support/uncertainty controls.
+The [raw-data audit](reproducibility/REVIEW_20261002.md) traces the downloadable
+coordinate ZIP through preparation to the analysis inputs and rerun results.
 
 
 Data, code, and figures for extracting numerical evidence from scientific plots,
@@ -15,15 +14,15 @@ checking reported claims, and analyzing hydrogen-evolution polarization curves.
 
 The manuscript artwork is in [figures/manuscript/](figures/manuscript/).
 Each figure has an editable SVG and a PNG preview.
-Figure 7 is the 2 October population-to-template version; Figures 1-6 in this
-public artwork snapshot retain their 30 September versions.
-The current numerical revision uses the effective-BV analysis below. The
-manually edited artwork has been synchronized to these fits without changing
-the plot types or overall layout. See [the figure update](figures/DATA_UPDATE_20260930.md).
+Figures 1 and 7 connect observed LSVs, population shape coordinates and recurring
+templates. Figure 3 pairs the extraction benchmark with four claim-comparison
+examples. Figures 2 and 4-6 retain their 30 September versions.
+See the [current artwork notes](figures/UPDATE_20261002.md) and the
+[effective-BV numerical revision](figures/DATA_UPDATE_20260930.md).
 
 | Figure | Subject | Data and computation |
 | --- | --- | --- |
-| 1 | Overview: extraction, verification, response shapes, and kinetic interpretation | Scheme; panel D uses the [Figure 6 alkaline families](figures/DATA_UPDATE_20260930.md#figure-1) |
+| 1 | Overview: extraction, verification, LSVs and recurring shapes | Panel D uses the [Figure 7 population and templates](analysis/figure7/README.md) |
 | 2 | Worked example of axis calibration, curve extraction, and verification | Extraction workflow |
 | 3 | Extraction benchmark, literature validation, and claim comparisons | [Figure 3 evaluation](analysis/figure3/README.md) |
 | 4 | Local slopes, effective BV/BV+jR fit quality, and effective parameters | [Figure 4 analysis](analysis/effective_bv/README.md#figure-4) |
@@ -43,7 +42,7 @@ downloads so the next command can retrieve only the assets needed here:
 git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
 cd ai-extracted-curve-reasoning
 git lfs install
-git lfs pull --include="figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
+git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
 python -m venv .venv
 ```
 
@@ -56,6 +55,7 @@ If PowerShell blocks activation, use `.venv\Scripts\python.exe` instead of
 ```text
 python -m pip install -r requirements-analysis.txt
 python scripts/validate_dataset.py
+python scripts/audit_raw_to_analysis.py
 python analysis/figure3/run.py
 python analysis/figure4/run.py prepare --output build/figure4-preparation
 python analysis/effective_bv/run.py all --workers 6 --starts 12
@@ -88,6 +88,7 @@ selected for fitting:
 - [All coordinates](data_literature/zenodo_extracted_curve_dataset_v1/curve_points_long.csv)
 - [Curve metadata](data_literature/zenodo_extracted_curve_dataset_v1/curve_metadata.csv)
 - [Source publications](data_literature/zenodo_extracted_curve_dataset_v1/source_publication_records.csv)
+- [Downloadable coordinate ZIP](data_literature/zenodo_extracted_curve_dataset_v1.zip)
 - [Figure 4 inclusion/exclusion record](analysis/figure4/reference/COHORT_SELECTION.csv)
 
 These are coordinates extracted from published plots, not original instrument
@@ -100,6 +101,10 @@ python analysis/figure4/run.py prepare --output build/figure4-preparation
 python analysis/effective_bv/run.py population --workers 6
 ```
 
+`scripts/audit_raw_to_analysis.py` starts from the ZIP, verifies that every member
+matches the unpacked release, rebuilds preparation, and checks every native
+Pt/C and Figure 7 input coordinate and the analysis composition fields. Its
+report and complete selection ledger are written to `build/raw-to-analysis/`.
 The preparation command starts from the complete coordinate dataset. The refit
 uses the verified prepared coordinates, multistart optimization, and supplied
 variable-coefficient fits as additional feasible seeds. It independently checks
@@ -119,7 +124,7 @@ every resulting objective and the nesting of BV within BV+jR.
   superseded workflows; not used by the current analysis commands.
 
 Large binary assets use Git LFS; the curve CSV files use ordinary Git.
-The LFS command above retrieves the figures, artwork templates, benchmark images,
+The LFS command above retrieves the coordinate ZIP, figures, artwork templates, benchmark images,
 and the archive checked by the test suite. Without it, binary files may be small
 LFS pointer files rather than usable assets. Validate the manuscript figures with:
 

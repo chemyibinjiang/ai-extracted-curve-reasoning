@@ -19,8 +19,7 @@ default to `build/figure7`; `--output` accepts an independent destination.
 
 Candidate-library construction and new template selection are not rerun:
 compatibility and selected K=1-30 sets are frozen inputs whose unions and
-selected native residuals are re-evaluated. This distinction prevents coverage
-replay from being mistaken for independent rediscovery. See the
+selected native residuals are re-evaluated. See the
 [Figure 7 methods](analysis/figure7/METHODS.md) and
 [2 October verification record](reproducibility/VERIFICATION_20261002.md).
 
@@ -47,6 +46,7 @@ figure-analysis commands requires those records or their archives.
 | Command | Operation |
 | --- | --- |
 | `python scripts/validate_dataset.py` | Verify released file hashes, 4,211 curves/132,314 points, and source-panel-curve joins |
+| `python scripts/audit_raw_to_analysis.py` | Start from the published ZIP, rebuild preparation, and check all native Pt/C and Figure 7 inputs against it |
 | `python analysis/figure3/run.py` | Replay all 137 synthetic benchmark curves and tabulate recorded literature-review counts |
 | `python analysis/figure4/run.py prepare --output build/figure4-preparation` | Read all 4,211 extracted curves, rebuild the 3,033-curve cohort, and record every selection decision |
 | `python analysis/effective_bv/run.py population --workers 6` | Refit all 6,066 variable-coefficient BV/BV+jR models; recompute metrics, distributions, examples and local slopes |
@@ -97,10 +97,10 @@ files or archived analyses.
 
 ## Artwork
 
-The manuscript SVG/PNG files include the effective-BV numerical revision.
-Figure 1A-C and Figures 2-3 are unchanged. Figures 1D and 4-6 retain their manually edited plot types,
-frames, fonts and overall layout, with updated data artists and numeric labels.
-The four alkaline family plots occupy the same four-column grid as the acid row.
+The manuscript SVG/PNG files include the effective-BV numerical revision and
+the current Figure 1/3/7 layouts. Figure 1D uses the Figure 7 population and
+templates, aligned at 20 mV. Figure 3 contains benchmark and claim-comparison
+examples. See [current artwork notes](figures/UPDATE_20261002.md).
 
 After the numerical analysis, regenerate the data updates into a review folder:
 
@@ -108,10 +108,11 @@ After the numerical analysis, regenerate the data updates into a review folder:
 python analysis/effective_bv/artwork.py --data build/effective-bv-20260930 --output build/manuscript-figures --inkscape /path/to/inkscape
 ```
 
-This command uses the included compressed SVG templates and does not overwrite
-the published figures. Its output includes the six figures, an HTML gallery,
-Figure 6 audit tables and `ARTWORK_CHECKS.json`. To validate or export the
-published figures directly:
+This command uses the 30 September compressed layouts and does not overwrite
+the published figures. Its Figure 1D layout is historical; Figures 2 and 3 are
+copied from the baseline rather than regenerated. It produces six review figures,
+Figure 6 audit tables and `ARTWORK_CHECKS.json`. To validate or export all
+seven current manuscript figures directly:
 
 ```text
 git lfs pull --include="figures/manuscript/**,analysis/effective_bv/artwork_templates.zip" --exclude=""
@@ -119,7 +120,7 @@ python scripts/validate_figures.py
 python scripts/render_final_figures.py --inkscape /path/to/inkscape --output build/figures
 ```
 
-The validator checks all six SVG/PNG pairs and the six Figure 6 result tables
+The validator checks all seven SVG/PNG pairs and the six Figure 6 result tables
 against `reproducibility/manifest.json`. It also independently recalculates means,
 sample SD, support masks, parameter transforms, coverage counts, and crossings.
 

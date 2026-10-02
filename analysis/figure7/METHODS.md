@@ -1,8 +1,8 @@
 # Population shape model and template comparison
 
 This is the executable-method companion to SI Section 9. The model is an
-observed-only penalized probabilistic functional factor model. It is not PACE,
-ordinary complete-data PCA, or BV extrapolation followed by PCA.
+observed-only penalized probabilistic functional factor model: missing profiles
+are not completed before fitting.
 
 ## Observations
 
@@ -80,7 +80,7 @@ each template using only its supported cells. Acidic Pt/C templates end at
 190 or 200 mV; their upper tails are not supplied. Projection covariance is
 conditional on the population model, not template-parameter uncertainty.
 All eight Pt/C families have a nearest neighbor among the six PGM-rich shapes
-in the full three-coordinate space. This does not prove identical mechanisms.
+in the full three-coordinate space.
 
 ## Dispersion and Support
 
@@ -101,8 +101,7 @@ draws (seed 20261083), holding the fitted basis and support target fixed. They
 exclude basis uncertainty and do not correct current-dependent termination or
 publication selection. Identical-shape masking uses the same 75 complete donor
 curves from 61 papers for every group. Masks alone do not reproduce the wider
-non-PGM pattern, but this donor-dependent control does not prove ignorable
-missingness. Reliability >=0.9 comparisons provide a further sensitivity check.
+non-PGM pattern. Reliability >=0.9 comparisons provide a further sensitivity check.
 
 ## Empirical Templates
 
@@ -116,13 +115,15 @@ selected union. Independent selections for K=1-30 need not be nested.
 Removing duplicate/subset coverage rows and collapsing repeated curve patterns
 leaves 4,804 candidate rows and 1,660 column patterns with integer multiplicities.
 The public replay verifies this reduction and every achieved union, but does
-not search a new candidate library. No global minimality claim is made.
+not search a new candidate library.
 
 Native points in Figure 7D use log10[j_obs/(beta*f(50 mV))]; template lines use
 log10[f(eta)/f(50 mV)]. The reference current is fitted, not an exchange current.
 Native potentials and residuals are retained. All 50,127 matched point records
 are archived; 37,299 fall in the displayed 50-300 mV interval. Membership is
 overlapping, so bar counts and native-point records are not unique-curve totals.
+Figure 1D and the TOC instead align template lines at 20 mV. The TOC's j0 label
+denotes that alignment reference, not the fitted BV exchange-current parameter.
 
 ## Independent Complete-Window Check
 

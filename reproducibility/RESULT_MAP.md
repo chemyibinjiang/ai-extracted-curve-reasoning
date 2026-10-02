@@ -8,6 +8,8 @@ Older source-composition folder numbers are not manuscript figure numbers.
 | Paper result | Inputs or command | Output / check |
 | --- | --- | --- |
 | Figures 1A-C, 2; SI Section 1 | Extraction workflow illustrations; `code_reference/` | Schemes/worked example, not separate population analyses |
+| Figure 1D | Figure 7 population scores, observed curves and empirical templates | Current `figures/manuscript/Figure1.svg`; template lines aligned at 20 mV |
+| Raw coordinate release to analysis inputs | `python scripts/audit_raw_to_analysis.py` | `build/raw-to-analysis/RAW_TO_ANALYSIS_AUDIT.json`; ZIP integrity, full preparation ledger and native-coordinate joins |
 | Figure 3 benchmark; SI Tables S5-S6 | `python analysis/figure3/run.py`; included synthetic truth, anchors and extracted points | `build/figure3/BENCHMARK_CURVES.csv`, `SUMMARY.json`; 60 panels, 137 curves; rounded distances 0.36, 1.13, 1.44 pixels |
 | Figure 3 literature validation; SI Tables S8, S10-S14 | Released metadata plus `analysis/figure3/REVIEW_SUMMARY.json` | Dataset counts and review-percentage arithmetic; human judgments/source-specific claim evidence are not independently replayed |
 | Figure 4 cohort; SI Table S15 | `python analysis/figure4/run.py prepare --output build/figure4-preparation` | `build/figure4-preparation/`; 3,033 curves, 473 papers, 80,399 points; exclusion reasons for all 4,211 curves |
@@ -17,8 +19,7 @@ Older source-composition folder numbers are not manuscript figure numbers.
 | Figure 5C; SI Table S16 | Same `examples` stage; NiMo `C_PRIMARY_DATA.csv` | `RESULTS/figure5/nimo/C_NIMO_METRICS.csv`, `C_NIMO_CROSS_VALIDATION.csv`, `C_NIMO_PREDICTED_COVERAGE.csv`, `C_NIMO_LIMIT_CHECKS.json`; RMSE 2.096 / 0.427 / 0.661 mV |
 | Figure 6A-D; SI Tables S17-S18 | `families` stage; acidic/alkaline `analysis/figure6/inputs/`; selected effective-BV references | `RESULTS/figure6/{acid,KOH}/COHORT_FLOW.csv`, `TEMPLATES.csv`, `ASSIGNMENTS.csv`, `POINT_PREDICTIONS.csv`; coverage 59/73 and 188/234 |
 | Figure 6C full template selection | `python analysis/effective_bv/search.py` | `build/effective-bv-search/CANDIDATES.csv`, `{acid,KOH}/COVERAGE_SCAN.csv`, `SELECTED.json`; 276,551 candidates, smallest K meeting 80% is four in each condition |
-| Figures 1D, 6E-F; SI Table S19 | `families` stage and VHT seeds | `RESULTS/figure6/KINETIC_PARAMETERS.csv`, `KINETIC_SUMMARY.csv`, `TEMPLATE_RECONSTRUCTION.csv`, `RAW_VHT_REPLAY.csv`, `RATE_CONTROL.csv`, `RATE_CONTROL_MEAN_SD.csv` |
-
+| Figure 6E-F; SI Table S19 | `families` stage and VHT seeds | `RESULTS/figure6/KINETIC_PARAMETERS.csv`, `KINETIC_SUMMARY.csv`, `TEMPLATE_RECONSTRUCTION.csv`, `RAW_VHT_REPLAY.csv`, `RATE_CONTROL.csv`, `RATE_CONTROL_MEAN_SD.csv` |
 | SI Section 8.5; Tables S20-S21; Figures S14-S15 | Same `families` stage and `kinetic_comparison.py`; no separate fit | `RESULTS/figure6/ALL_MODEL_RATE_CONTROL.csv`, `GHT_DUAL_PARAMETERS.csv`, `comparison/`; checked copies of all Figure 6 numerical results in `analysis/effective_bv/published/` |
 
 ## Figure 7 and SI Section 9
