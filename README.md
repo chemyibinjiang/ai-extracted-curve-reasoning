@@ -1,10 +1,12 @@
 # Curve Extraction and Electrochemical Analysis
 
-**2 October 2026:** Current Figures 1, 3 and 7 are synchronized with the manuscript.
+**3 October 2026:** Current Figures 1, 3 and 7 are synchronized with the manuscript.
 [Figure 7 and SI Section 9](analysis/figure7/README.md) include partial-observation
 population PCA, template projection and coverage, and support/uncertainty controls.
-The [raw-data audit](reproducibility/REVIEW_20261002.md) traces the downloadable
-coordinate ZIP through preparation to the analysis inputs and rerun results.
+The [current update and audit](reproducibility/UPDATE_20261003.md) record the
+source-checked classification correction and trace the downloadable coordinate
+ZIP through preparation to the analysis inputs and rerun results. The 1,343
+template-compatible curves comprise 695 PGM and 648 non-PGM curves.
 
 
 Data, code, and figures for extracting numerical evidence from scientific plots,

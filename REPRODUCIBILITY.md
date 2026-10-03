@@ -2,7 +2,7 @@
 
 ## Figure 7 and SI Section 9
 
-The 2 October population-to-template analysis is independently packaged in
+The population-to-template analysis, updated on 3 October, is independently packaged in
 [`analysis/figure7`](analysis/figure7/README.md). After installing the dependencies:
 
 ```text
@@ -21,7 +21,9 @@ Candidate-library construction and new template selection are not rerun:
 compatibility and selected K=1-30 sets are frozen inputs whose unions and
 selected native residuals are re-evaluated. See the
 [Figure 7 methods](analysis/figure7/METHODS.md) and
-[2 October verification record](reproducibility/VERIFICATION_20261002.md).
+[current verification record](reproducibility/UPDATE_20261003.md). This update
+includes the observed-current and within-curve growth comparisons in SI Section 9.9,
+Table S30 and Figure S21; the replay and full-validation commands both regenerate them.
 
 See the [30 September unified-fitting record](reproducibility/VERIFICATION_20260930.md)
 for the clean-checkout checks and their scope.

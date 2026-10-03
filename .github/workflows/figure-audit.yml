@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'figures/manuscript/**'
+      - 'figures/supporting/figure7/**'
       - 'figures/Figure5_caption.md'
       - 'analysis/figure6/expected/**'
       - 'analysis/figure5/**'
@@ -20,12 +21,7 @@ on:
       - 'scripts/validate_figures.py'
       - 'scripts/audit_raw_to_analysis.py'
       - 'scripts/validate_dataset.py'
-      - 'tests/test_figure_tables.py'
-      - 'tests/test_figure_analysis.py'
-      - 'tests/test_nimo_vht.py'
-      - 'tests/test_repository_layout.py'
-      - 'tests/test_raw_archive.py'
-      - 'tests/test_effective_search.py'
+      - 'tests/**'
       - 'exploration/**'
       - 'README.md'
       - 'CODE_ORGANIZATION.md'
@@ -78,3 +74,5 @@ jobs:
         run: python -m unittest discover -s tests -p test_nimo_vht.py -v
       - name: Test candidate grid and selected-template residuals
         run: python -m unittest discover -s tests -p test_effective_search.py -v
+      - name: Test partial-observation PCA and observed-current summaries
+        run: python -m unittest discover -s tests -p test_figure7.py -v

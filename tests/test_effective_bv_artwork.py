@@ -71,7 +71,7 @@ class ArtworkTests(unittest.TestCase):
     def test_figure1_matches_figure7_population(self):
         root=E.parse(str(ROOT/'figures/manuscript/Figure1.svg')).getroot()
         scores=artwork.read(ROOT/'analysis/figure7/reference/SCORES.csv').set_index('curve_uid')
-        self.assertEqual(len(scores),2360)
+        self.assertEqual(len(scores),2361)
         for panel in ['D-observations','D-population-pca']:
             nodes=[n for n in artwork.byid(root,panel).iter() if n.get('data-curve-uid')]
             self.assertEqual(len(nodes),len(scores))

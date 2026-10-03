@@ -1,5 +1,6 @@
 """Original-curve cohort and full-support audit, independent of template labels."""
 from utils import *
+from metadata import corrected_metadata
 
 
 def main():
@@ -7,7 +8,7 @@ def main():
     audit=pd.read_csv(INPUT/'CATALYST_AUDIT.csv')[['curve_uid','is_ptc']]
     cols=['curve_uid','enrich_active_elements','enrich_current_normalization_basis',
           'enrich_ir_compensation_status','enrich_electrolyte_identity','enrich_reported_material_name']
-    canon=pd.read_csv(INPUT/'canonical_curves.csv',usecols=cols,low_memory=False)
+    canon=corrected_metadata(pd.read_csv(INPUT/'canonical_curves.csv',usecols=cols,low_memory=False))
     m=m.merge(audit,on='curve_uid',validate='one_to_one').merge(canon,on='curve_uid',validate='one_to_one')
     elements=m.enrich_active_elements.map(json.loads)
     m['composition_known']=elements.map(lambda x:isinstance(x,list) and len(x)>0)
@@ -23,7 +24,7 @@ def main():
     assert set(adequacy.loc[adequacy.adequate,'curve_uid'])==coverable
     m['original_template_cohort']=m.curve_uid.isin(library.curve_uid)
     m['original_template_eligible']=m.curve_uid.isin(coverable)
-    pairs=pd.read_csv(INPUT/'MEMBER_COMPATIBILITY.csv')
+    pairs=corrected_metadata(pd.read_csv(INPUT/'MEMBER_COMPATIBILITY.csv'))
     memberships=pairs.groupby('curve_uid').template.agg(lambda v:';'.join(sorted(set(v))))
     m['original_compatible_templates']=m.curve_uid.map(memberships).fillna('')
     m['original_covered16']=m.original_compatible_templates.ne('')

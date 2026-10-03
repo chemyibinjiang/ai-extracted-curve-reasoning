@@ -32,11 +32,17 @@ map is in [analysis/figure7/README.md](../analysis/figure7/README.md#outputs-and
 | Figure 7A/B/E; Tables S22-S26; Figures S16-S20 | `python analysis/figure7/run.py cv`; `08_PARTIAL_PCA_CANDIDATE/` contains cohort, tuning, posterior scores, template projections and support/uncertainty checks |
 | Figure 7C/D/F; Table S27 | Same command; `04_TABLES/` contains achieved coverage and composition unions; rescaled native points are in `08_PARTIAL_PCA_CANDIDATE/TEMPLATE_NATIVE_POINTS.csv` |
 | Tables S28-S29 | `python analysis/figure7/run.py complete-window`; `04_TABLES/complete_window_dispersion.csv` |
+| SI Section 9.9; Table S30; Figure S21 | `cv` or `replay`; `04_TABLES/observed_current_growth_summary.csv`, curve-level records and `05_FIGURES/SUPPORTING/SI_observed_current_growth.*` |
 
-The partial population (2,360), nonlinear discovery source (2,267), BV+jR
+The partial population (2,361), nonlinear discovery source (2,267), BV+jR
 adequacy denominator (1,667), covered union (1,343), and legacy complete-window
-cohort (457 in its primary window) are not interchangeable. No VHT fit enters
+cohort (458 in its primary window) are not interchangeable. No VHT fit enters
 the Figure 7 population model or its empirical-template projection.
+
+`analysis/figure7/inputs/METADATA_CORRECTIONS.json` records the source-checked
+ScCo2 assignment applied after reading the archived extraction metadata.
+Original coordinate and metadata files remain intact; corrected analysis
+labels are produced by `analysis/figure7/lib/metadata.py`.
 
 ## Joining a Curve to Its Source
 

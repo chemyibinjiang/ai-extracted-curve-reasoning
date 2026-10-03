@@ -1,0 +1,85 @@
+{
+  "archive_sha256": "3ea1846229c15be1363a9b1fbffdf6c34d393f3895a002ce6c084ad78946d992",
+  "archive_files": 11,
+  "coordinate_table_sha256": {
+    "DATA_DICTIONARY.csv": "ef56737af74498853fa61079a13256ac4680225b2446769ddc25785e92d52b10",
+    "axis_fits.csv": "778139a6f354e18192e68630cebfb1f0050861db08d9f6afdf8f5a4b95fe79f7",
+    "curve_metadata.csv": "c8fe2b71d34c5ccc7615b680fe0fb92e086d9a1548d98dc91db4f9ba15c27f8e",
+    "curve_points_long.csv": "aa61cc469d70e149b6c239272d3a3bbfdeb15c652cd5a44b053cd6048a4f7964",
+    "panel_metadata.csv": "5365df4fb9207ce40d91cff8937eaabca0f674b8073a73e4ce5aa50d21576934",
+    "source_publication_records.csv": "d7db023ed624bff49ee8d124775ad46cbc87cf4a53ddc3e4bc4675e22c986e1d"
+  },
+  "zip_matches_folder": true,
+  "raw_dataset": {
+    "checksums": "pass",
+    "provenance_joins": "pass",
+    "source_records": 590,
+    "unique_dois": 573,
+    "panels": 1035,
+    "curves": 4211,
+    "points": 132314,
+    "axis_fits": 2070
+  },
+  "preparation": {
+    "extracted_curves": 4211,
+    "extracted_points": 132314,
+    "fitting_curves": 3033,
+    "fitting_papers": 473,
+    "fitting_points": 80399,
+    "selection_counts": {
+      "included": 3033,
+      "current_below_20_mA_cm2": 403,
+      "insufficient_points_or_range": 336,
+      "unsupported_current_density_axes": 168,
+      "unsupported_potential_reference": 114,
+      "duplicate_publication_record": 98,
+      "nonlinear_axes": 59
+    },
+    "sources": [
+      {
+        "path": "data_literature/zenodo_extracted_curve_dataset_v1.zip!curve_metadata.csv",
+        "sha256": "c8fe2b71d34c5ccc7615b680fe0fb92e086d9a1548d98dc91db4f9ba15c27f8e"
+      },
+      {
+        "path": "data_literature/zenodo_extracted_curve_dataset_v1.zip!curve_points_long.csv",
+        "sha256": "aa61cc469d70e149b6c239272d3a3bbfdeb15c652cd5a44b053cd6048a4f7964"
+      },
+      {
+        "path": "data_literature/zenodo_extracted_curve_dataset_v1.zip!source_publication_records.csv",
+        "sha256": "d7db023ed624bff49ee8d124775ad46cbc87cf4a53ddc3e4bc4675e22c986e1d"
+      }
+    ],
+    "label_difference_records": 20,
+    "figure4_coordinates_and_selection_reproduced": true
+  },
+  "figure7_prepared_points": 80399,
+  "ptc_native_inputs": {
+    "acidic": {
+      "curves": 81,
+      "points": 1915
+    },
+    "alkaline": {
+      "curves": 267,
+      "points": 7290
+    }
+  },
+  "template_native_inputs": {
+    "curves": 2267,
+    "points": 51928
+  },
+  "composition_metadata": {
+    "analysis_curves": 3033,
+    "fields": 5,
+    "archived_rows_not_used": 2901
+  },
+  "source_checked_metadata_corrections": {
+    "records": 1,
+    "curve_uids": [
+      "batch1/case74/figure_1__c/curve_5"
+    ],
+    "raw_metadata_preserved": true,
+    "native_coordinates_changed": false
+  },
+  "status": "pass",
+  "scope": "Every released extracted curve is processed in the preparation ledger. All retained native Pt/C and Figure 7 inputs match that preparation. Digitization from source images and new template-library discovery are not rerun here."
+}

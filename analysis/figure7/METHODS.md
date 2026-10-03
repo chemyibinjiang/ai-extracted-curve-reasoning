@@ -127,7 +127,7 @@ denotes that alignment reference, not the fitted BV exchange-current parameter.
 
 ## Independent Complete-Window Check
 
-SI Tables S28-S29 use the older 2,266-record, composition-known, non-Pt/C nonlinear
+SI Tables S28-S29 use the separate 2,267-record, composition-known, non-Pt/C nonlinear
 source, without a BV or template gate. Curves must bracket the requested window,
 contain eight native in-window points, and have no bracketing gap >20 mV.
 Positive log current is interpolated to 41 positions and mean-centered; an
@@ -137,5 +137,22 @@ Dispersion is RMS profile distance between curves from **different original
 papers**, with equal paper/within-paper curve weights. Same-paper pairs remain
 excluded when resampling repeats a paper. The 3,000 coupled whole-paper
 bootstrap draws use seed 20260946. This pair-distance metric is distinct from
-the latent centroid metric above. The pooled old analysis also includes 36
-other/unclassified-condition curves in its 457-curve primary cohort.
+the latent centroid metric above. The pooled analysis also includes 36
+other/unclassified-condition curves in its 458-curve primary cohort.
+
+## Observed Current and Relative Growth
+
+SI Section 9.9 uses the population cohort without a template gate. At each
+potential, only locally bracketed log-current values enter the distribution;
+there is no extrapolation or full-range requirement. Papers have equal weight
+within each condition and composition group, and curves share their paper's
+weight. Exponentiating the mean log current gives a geometric-mean current.
+
+Growth is 100 times the change in log10 current divided by the potential-window
+width in mV. Each eligible curve must bracket both endpoints, have at least four
+native in-window points, and have no bracketing native gap above 20 mV. Windows
+are 20-50, 50-100, 100-150, 150-200, 200-250 and 250-300 mV. Growth is calculated
+within each curve, not by differentiating the changing population mean.
+Pointwise 95% intervals use 1,999 paper-bootstrap resamples (seed 20261104).
+Sample composition can change with potential; these are observed-support
+comparisons, not evidence of a unique flattening mechanism.

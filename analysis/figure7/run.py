@@ -50,6 +50,7 @@ def main():
         # Replay still refits the selected final model; only tuning is reused.
         run('17_partial_population.py', *([] if args.mode == 'cv' else ['--reuse-cv']))
         run('19_partial_diagnostics.py')
+        run('20_observed_growth.py')
         run('verify_reference.py')
     run('18_partial_figures.py')
     print(f'Results: {out}')

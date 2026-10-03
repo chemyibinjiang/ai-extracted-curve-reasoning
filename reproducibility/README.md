@@ -2,7 +2,7 @@
 
 `manifest.json` lists the SHA-256 hashes, sizes, and image dimensions for:
 
-- Six Figure 1-6 SVG/PNG pairs in `figures/manuscript/`.
+- Seven Figure 1-7 SVG/PNG pairs in `figures/manuscript/`.
 - Six numerical result tables in `analysis/figure6/expected/`.
 
 Run:
@@ -33,3 +33,7 @@ in [the Figure 6 guide](../analysis/figure6/README.md).
 For numerical analysis from the supplied curve coordinates, use
 [Reproducibility](../REPRODUCIBILITY.md). Integrity checks and artwork export
 are distinct from refitting models.
+
+The [2026-10-03 update](UPDATE_20261003.md) documents the source-checked ScCo2
+classification, regenerated Figure 7 analysis, and added SI current/growth comparison.
+`RAW_TO_ANALYSIS_20261003.json` records the audit from the unchanged released ZIP.

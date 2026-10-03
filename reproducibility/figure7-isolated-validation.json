@@ -1,14 +1,15 @@
 {
   "status": "PASS",
+  "date": "2026-10-03",
   "commands": [
     "replay",
     "complete-window"
   ],
   "scope": "Copy of analysis/figure7 only; no original Downloads or workspace analysis files",
   "numerical_outputs": {
-    "CHECKS.json": "e7fbb6ad80ff0e35474173c903b8e75da353a6ffbb1a48424c449fc13e56a251",
-    "VALIDATION.json": "defea6f9a7622ed4e1ea2a7207f54740af8622180ef68d23a036cb11debd9e3b",
-    "DISPERSION_RATIOS.csv": "a7e07828672f2b0fb265ef2904f09dc1aff58eb37dab8b1a499e7f3e20c8d63e",
-    "PTC_NEAREST_TEMPLATES.csv": "8f99d505b076e0e05650abe131e017a4a4983a1b0e5d64c705f32814dcf571ba"
+    "CHECKS.json": "5995c967b7cabbf5ba927322263a4e5ae9e9976b67d36ba033b80b7648310ead",
+    "VALIDATION.json": "64569c3d7cdd6208e6841eb008c55d4fa61acc6ef2c7d3773cf369b52872c64d",
+    "DISPERSION_RATIOS.csv": "08ceb919f3902a668acfaba8801f28ad86375f6ceea06edafccd59ccb540c53e",
+    "PTC_NEAREST_TEMPLATES.csv": "e6a41f82d43bb7e7823e8bcf21bb8934e0252469d8f40dabb4392370abde0df7"
   }
 }

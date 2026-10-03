@@ -1,9 +1,10 @@
 """Recompute composition bars and unique unions, never summing overlapping bars."""
 from utils import *
+from metadata import corrected_metadata
 
 
 def main():
-    pairs = pd.read_csv(INPUT/'MEMBER_COMPATIBILITY.csv')
+    pairs = corrected_metadata(pd.read_csv(INPUT/'MEMBER_COMPATIBILITY.csv'))
     elements = pairs.active_elements.fillna('[]').map(json.loads)
     pairs['known'] = elements.map(lambda e: isinstance(e, list) and bool(e))
     pairs['pgm'] = elements.map(lambda e: bool(set(e) & {'Pt', 'Pd', 'Rh', 'Ru', 'Ir', 'Os'}))
@@ -23,7 +24,8 @@ def main():
                             rich6_fraction=rich/denominator, other10_fraction=other/denominator))
     pd.DataFrame(records).to_csv(TABLE/'template_composition_union.csv', index=False)
     assert records[0]['covered_population'] == 695 and records[0]['rich6'] == 542
-    assert records[1]['covered_population'] == 647 and records[1]['other10'] == 494
+    assert records[1]['covered_population'] == 648 and records[1]['other10'] == 495
+    assert pairs.curve_uid.nunique() == 1343 and pairs.known.all()
 
 
 if __name__ == '__main__':

@@ -123,6 +123,20 @@ def audit(output):
     pd.testing.assert_frame_equal(canonical, expected, check_dtype=False)
     report["composition_metadata"] = dict(analysis_curves=len(canonical), fields=len(canonical.columns),
                                          archived_rows_not_used=archived_metadata_rows-len(canonical))
+    sys.path.insert(0, str(ROOT / 'analysis/figure7/lib'))
+    from metadata import corrected_metadata
+    annotations = json.loads((ROOT / 'analysis/figure7/inputs/METADATA_CORRECTIONS.json').read_text())
+    corrected = corrected_metadata(canonical.reset_index()).set_index('curve_uid')
+    for annotation in annotations:
+        uid = annotation['curve_uid']
+        assert uid in canonical.index
+        assert json.loads(corrected.loc[uid, 'enrich_active_elements']) == annotation['active_elements']
+        assert raw_metadata.loc[uid, 'enrich_reported_material_name'] == annotation['original_label']
+    unchanged = canonical.index.difference([a['curve_uid'] for a in annotations])
+    pd.testing.assert_frame_equal(canonical.loc[unchanged], corrected.loc[unchanged])
+    report['source_checked_metadata_corrections'] = dict(records=len(annotations),
+        curve_uids=[a['curve_uid'] for a in annotations], raw_metadata_preserved=True,
+        native_coordinates_changed=False)
     report["status"] = "pass"
     report["scope"] = ("Every released extracted curve is processed in the preparation ledger. "
                        "All retained native Pt/C and Figure 7 inputs match that preparation. "

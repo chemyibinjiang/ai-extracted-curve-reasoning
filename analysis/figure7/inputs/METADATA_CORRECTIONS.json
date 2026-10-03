@@ -1,0 +1,14 @@
+[
+  {
+    "curve_uid": "batch1/case74/figure_1__c/curve_5",
+    "paper_key": "10.1021/jacs.3c05287",
+    "original_label": "unlabeled light blue trace",
+    "material_name": "ScCo2 before chronoamperometry",
+    "active_elements": ["Sc", "Co"],
+    "electrolyte": "6.0 M KOH",
+    "source_url": "https://pubs.acs.org/doi/10.1021/jacs.3c05287",
+    "evidence": "Figure 1c pairs the light-blue trace with the darker-blue ScCo2 trace. The accompanying paragraph identifies the activity shift as ScCo2 before and after chronoamperometry; Figure 1e explicitly shows the corresponding ScCo2 comparison in 6.0 M KOH.",
+    "review_date": "2026-10-03",
+    "scope": "Metadata only; original extracted coordinates and archived compatibility factors are unchanged."
+  }
+]

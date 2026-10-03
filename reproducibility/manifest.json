@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "snapshot": "2026-10-02",
+  "snapshot": "2026-10-03",
   "scope": "Manuscript Figures 1-7 and Figure 6 expected numerical tables; Figure 7 inputs have a separate analysis manifest.",
   "submission_manifest_sha256": "643bd952598473b2579a0507a44496e684561918077538fc9be27b0c5602a141",
   "assets": [
     {
       "path": "figures/manuscript/Figure1.svg",
-      "sha256": "847de1f8e676e893fa800318821e43e66a255ba73f502aa1a9e5643ec7fe3cfd",
-      "bytes": 5050004,
+      "sha256": "e2afc99c968fcce15311fbdaf989189a638e0ece9c890bf4d7a77c784b063a25",
+      "bytes": 5051141,
       "kind": "svg",
       "figure": "Figure1"
     },
     {
       "path": "figures/manuscript/Figure1.png",
-      "sha256": "548b42408302815d0e0da527c128e4f87e3578b8115bea9dfac9adb765154adb",
-      "bytes": 1729585,
+      "sha256": "8b0a9a26ce625a6df6933464417bb1fef0c87a8d2e733e97ec05d4b1ac9139de",
+      "bytes": 1729489,
       "kind": "png",
       "figure": "Figure1",
       "dimensions": [
@@ -150,15 +150,15 @@
     },
     {
       "path": "figures/manuscript/Figure7.svg",
-      "sha256": "23ccf3ea7fcd23b6591d14d9a843311e7f0553d561b40102588aad4f83c0170f",
-      "bytes": 1892160,
+      "sha256": "629048035f033add1dfcd63f080faf4f240f012f9f9c973b353e839bad3ef290",
+      "bytes": 1891843,
       "kind": "svg",
       "figure": "Figure7"
     },
     {
       "path": "figures/manuscript/Figure7.png",
-      "sha256": "fa3c9971c7a8caf2a54067852c57cd3084eb45d56b5415578cea9ffa80b4c1db",
-      "bytes": 1601575,
+      "sha256": "eefe09b4427745f82734264753d5ef60c65c8aa0efe035e2be9261cbca935580",
+      "bytes": 1601888,
       "kind": "png",
       "figure": "Figure7",
       "dimensions": [
