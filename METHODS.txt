@@ -1,0 +1,105 @@
+ELEMENT COMPOSITION OF THE 16 FIGURE 7 TEMPLATES
+
+Population and source
+The frozen Figure 7 MEMBER_COMPATIBILITY.csv provides 2,028 compatible
+template-curve pairs involving 1,343 unique extracted curves. The existing
+METADATA_CORRECTIONS.json overlay is applied, including ScCo2 before
+chronoamperometry (Co, Sc; matches T11, T12, T15). No fits, coordinates,
+compatibility thresholds or template assignments are changed.
+
+The population is the union of curves compatible with the 16 templates,
+not all curves in the raw dataset. Pt/C reference families are separate
+and are not added to this catalog. A Pt-containing entry here is not
+automatically a commercial Pt/C reference.
+
+Composition comes from the recorded active_elements field. It denotes
+element presence, not atomic fraction or a verified active site. Supports
+and light elements may be recorded with different completeness between
+papers. Absence from the field means not recorded, not experimentally
+proven absent. No chemical formulas are parsed heuristically to add elements.
+
+Definitions
+Let S_t be the unique curves compatible with template t within the selected
+condition, E_e the unique covered curves recording element e, and n_te the
+number in their intersection.
+
+1. Within-template prevalence: n_te / |S_t|.
+   Example: what fraction of T08 member curves contains Fe?
+
+2. Among element-containing curves: n_te / |E_e|.
+   Example: what fraction of all Fe-containing covered curves matches T08?
+
+Both are percentages of curves, not composition by atomic percentage.
+An Fe-Co catalyst counts under both Fe and Co. A curve matching multiple
+templates counts once within each matching template. Neither percentages
+across elements nor percentages across templates must sum to 100%.
+The percentages should not be read as enrichment tests or causal effects.
+
+Element co-occurrence with PGM
+For every non-PGM element E, the feature "E-containing, non-PGM" means
+E is in the recorded active_elements list and none of Pt, Pd, Rh, Ru, Ir,
+or Os is in that list. "E-containing, PGM-containing" requires E and at
+least one of those six PGM elements. Au and Ag are not PGM elements.
+These are composition features of curves, not chemical phases or evidence
+of alloying, and differ from the PGM-rich/other template grouping.
+
+In the within-template view, the denominator remains ALL member curves
+of the template. With-PGM and without-PGM percentages therefore sum to
+the original prevalence of E, including with equal-paper weights. The
+paper denominator also remains all papers represented in that template.
+In the element-conditioned view, the denominator is the selected feature
+population: E-containing WITH PGM, or E-containing WITHOUT PGM. It is
+not all E-containing curves, so the two feature profiles do not add to
+the original profile in this view. Papers with no qualifying curves do
+not enter that feature-specific denominator.
+
+The HTML composition selector applies to the heatmap, profile and curve
+catalog. PGM element rows are omitted in co-occurrence modes, leaving
+57 non-PGM elements. Template order and fits are unchanged. The separate
+element_pgm_cooccurrence figure illustrates Ni/Mo/Co with equal-curve
+within-template percentages. element_pgm_statistics.csv contains all
+element/subset combinations, conditions and weighting modes.
+
+Paper weighting (optional)
+For within-template prevalence, each paper represented in S_t has equal
+total weight; its curves in S_t split that weight equally. The displayed
+value is the mean of paper-specific element fractions within that template.
+For the element-conditioned view, each paper represented in E_e has equal
+total weight; its element-containing curves split that weight equally.
+The value is the mean of paper-specific template-compatible fractions.
+The numbers printed as n/N remain unweighted curve counts in both views.
+Denominator populations differ between templates and between elements.
+
+Bubble map
+Bubble area is proportional to the raw number of matching curves in a cell,
+not the radius or diameter. The size reference is the largest cell count
+in the complete all-condition, all-composition matrix and is held fixed
+across all filters. Color encodes the same percentage as the heatmap,
+including the selected paper weighting. Bubble sizes remain unweighted.
+Zero matching curves have no bubble; zero and unavailable denominators
+are marked 0 and N/A respectively. Hover text gives counts and percentages.
+
+Conditions
+All conditions pools acidic, alkaline, buffered, neutral, saline/seawater
+and other/unclear observations. Acidic and alkaline filters use the existing
+regime_class field. Other conditions collects the remaining four classes.
+Filtering does not refit templates or change compatibility decisions.
+
+Unit and uncertainty
+The counting unit is an extracted curve record, not a unique catalyst
+material. Several curves can describe the same material, and separate
+panels can repeat experimental information. No additional experimental
+deduplication is performed. Paper weighting reduces the effect of papers
+contributing many curves but does not prove independence. Small counts
+are displayed alongside percentages; these figures are descriptive and
+contain no confidence intervals or significance claims.
+
+Files
+index.html: offline interactive heatmap, element profiles and curve catalog.
+element_template_heatmap.*: 24 selected recorded elements across templates.
+selected_element_profiles.*: Fe, Co, Ni, Ru, Pt and Mo prevalence profiles.
+element_template_statistics.csv: all 63 elements, conditions and both weights.
+corrected_template_members.csv: original compatible pairs with metadata overlay.
+data.json: all data embedded in index.html, also exposed for reproducibility.
+audit.json: source hashes, reconciled totals and independent validation status.
+build.py and viewer.html reproduce outputs from the existing Figure 7 inputs.

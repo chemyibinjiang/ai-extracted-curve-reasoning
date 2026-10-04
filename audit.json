@@ -1,0 +1,23 @@
+{
+  "unique_curves": 1343,
+  "unique_papers": 402,
+  "compatible_pairs": 2028,
+  "recorded_elements": 63,
+  "PGM_curves": 695,
+  "non_PGM_curves": 648,
+  "ScCo2_correction_applied": true,
+  "independent_count_and_weight_checks": "passed",
+  "element_PGM_subset_checks": "passed; with and without sum to original within-template prevalence",
+  "conditions": {
+    "alkaline": 914,
+    "acidic": 336,
+    "buffered": 42,
+    "saline_or_seawater": 37,
+    "other_or_unclear": 9,
+    "neutral": 5
+  },
+  "input_sha256": {
+    "MEMBER_COMPATIBILITY.csv": "2aeb4cb322a1007ca093feb1d257a6a58bb88a39d7c6990fc50436f52faa6091",
+    "METADATA_CORRECTIONS.json": "9188dd07e49ae23c8a793103874e334155c96244394a37730cb7b7202af1054c"
+  }
+}
