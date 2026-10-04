@@ -14,6 +14,13 @@ checking reported claims, and analyzing hydrogen-evolution polarization curves.
 
 ## Figures
 
+The [interactive Tafel explorer](https://chemyibinjiang.github.io/ai-extracted-curve-reasoning/tafel/)
+shows individual observed curves and local-slope distributions by potential or
+current window. Filter by element, PGM co-occurrence, condition and template
+membership, with equal-paper or equal-curve weighting. The
+[methods and build command](analysis/tafel_explorer/README.md) reproduce the
+viewer from the Figure 4 coordinates and Figure 7 composition records.
+
 The manuscript artwork is in [figures/manuscript/](figures/manuscript/).
 Each figure has an editable SVG and a PNG preview.
 Figures 1 and 7 connect observed LSVs, population shape coordinates and recurring
