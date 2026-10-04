@@ -126,6 +126,8 @@ def build(output, plotly_js=None):
         (output / "plotly.min.js").write_text(get_plotlyjs(), encoding="utf-8")
     shutil.copy2(HERE / "README.md", output / "METHODS.md")
     protocol = dict(source_curves=len(records), source_papers=int(points.paper_key.nunique()),
+                    interactive_classified_curves=sum(r["group"] != "unknown" for r in records),
+                    interactive_excluded_unclassified=[r["id"] for r in records if r["group"] == "unknown"],
                     source_points=len(points), eligible_derivative_centers=len(local),
                     curves_with_derivatives=len({r["curve_uid"] for r in local}),
                     derivative_status_counts=status_counts, windows=WINDOWS,

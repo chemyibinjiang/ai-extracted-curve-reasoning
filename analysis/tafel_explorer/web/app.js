@@ -1,9 +1,9 @@
 'use strict';
 const DATA = window.TAFEL_DATA;
 const $ = id => document.getElementById(id);
-const GROUPS = ['nonPGM', 'PGM', 'PtC', 'unknown'];
-const LABELS = {PtC:'Pt/C', PGM:'PGM (non-Pt/C)', nonPGM:'non-PGM', unknown:'Unknown composition'};
-const COLORS = {PtC:'#555d62', PGM:'#d94368', nonPGM:'#2187a6', unknown:'#a17527'};
+const GROUPS = ['nonPGM', 'PGM', 'PtC'];
+const LABELS = {PtC:'Pt/C', PGM:'PGM (non-Pt/C)', nonPGM:'non-PGM'};
+const COLORS = {PtC:'#555d62', PGM:'#d94368', nonPGM:'#2187a6'};
 const rich = new Set(DATA.rich);
 const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const config = {responsive:true, displaylogo:false, toImageButtonOptions:{format:'png',scale:3}, modeBarButtonsToRemove:['lasso2d','select2d']};
@@ -42,6 +42,7 @@ function filterRecords() {
   const c=$('condition').value, e=$('element').value, composition=$('composition').value;
   const t=$('template').value, basis=$('basis').value, query=$('search').value.trim().toLowerCase();
   return DATA.records.filter(r=>
+    GROUPS.includes(r.group) &&
     (c==='all'||(c==='other'?!['acidic','alkaline'].includes(r.condition):r.condition===c)) &&
     (e==='all'||r.elements.includes(e)) &&
     (basis==='all'||r.basis===basis) &&
@@ -186,7 +187,7 @@ function updateURL() {
 async function render() {
   const token=++renderToken;selected=filterRecords();
   $('summary').textContent=`${selected.length.toLocaleString()} curves / ${new Set(selected.map(r=>r.paper)).size} papers selected`;
-  $('unknown-key').hidden=!selected.some(r=>r.group==='unknown');$('basis-note').hidden=$('basis').value!=='all';
+  $('basis-note').hidden=$('basis').value!=='all';
   $('curves-panel').hidden=isDistribution();$('distribution-panel').hidden=!isDistribution();
   updateURL();
   if(isDistribution())await plotDistributions();else await plotCurves();
