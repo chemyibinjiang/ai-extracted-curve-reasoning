@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Tafel slopes | HER curve explorer</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="plotly.min.js"></script>
+<script defer src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<main>
+  <nav aria-label="Analysis"><a id="composition-link" href="../index.html">Template composition</a><a href="index.html" aria-current="page">Tafel curves &amp; slopes</a></nav>
+  <header><h1>Local Tafel slopes</h1><span class="muted">Published HER polarization curves</span></header>
+  <div class="filters">
+    <label>Condition<select id="condition"><option value="all">All conditions</option><option value="acidic">Acidic</option><option value="alkaline">Alkaline</option><option value="other">Other conditions</option></select></label>
+    <label>Element<select id="element"><option value="all">All elements</option></select></label>
+    <label>Composition<select id="composition"><option value="all">Any catalyst</option><option value="pgm">PGM-containing (incl. Pt/C)</option><option value="nonpgm">non-PGM</option><option value="ptc">Pt/C only</option></select></label>
+    <label>Template<select id="template"><option value="all">All prepared curves</option><option value="any">Any of the 16 templates</option><option value="rich">Six PGM-rich templates</option><option value="other">Ten other templates</option></select></label>
+    <label>Current basis<select id="basis"><option value="geometric_area">Geometric area</option><option value="all">Full Figure 4 cohort</option></select></label>
+    <label>Weight<select id="weight"><option value="paper">Equal papers</option><option value="curve">Equal curves</option></select></label>
+  </div>
+  <div class="filter-bottom"><input id="search" type="search" placeholder="Material, electrolyte, DOI or curve ID" aria-label="Search catalyst records"><button id="reset">Reset filters</button><span id="summary" aria-live="polite"></span></div>
+  <p id="basis-note" class="notice" hidden>Full Figure 4 cohort: includes non-geometric and unclear normalization bases. Absolute current levels are not on one geometric-area basis.</p>
+  <div class="chart-toolbar">
+    <div class="segments" role="group" aria-label="Chart view"><label><input type="radio" name="view" value="curves" checked><span>Tafel curves</span></label><label><input type="radio" name="view" value="distribution"><span>Slope distributions</span></label></div>
+    <label>Window axis<select id="axis"><option value="eta">Overpotential (mV)</option><option value="current">Current density (mA/cm²)</option></select></label>
+    <label>Window<select id="window"></select></label>
+  </div>
+  <div class="legend" aria-label="Catalyst groups"><span style="--group:#555d62">Pt/C</span><span style="--group:#d94368">PGM (non-Pt/C)</span><span style="--group:#2187a6">non-PGM</span><span id="unknown-key" style="--group:#a17527" hidden>Unknown composition</span></div>
+  <section id="curves-panel">
+    <div class="plot-heading"><h2>Individual polarization curves</h2><div class="inline"><label><input id="markers" type="checkbox">Native points</label><button id="clear-focus" hidden>Show all curves</button></div></div>
+    <div id="curve-plot" class="plot curve-plot" aria-label="Individual Tafel curves"></div>
+    <p id="curve-note" class="footnote"></p>
+  </section>
+  <section id="distribution-panel" hidden>
+    <div class="distribution-controls">
+      <label>Distribution<select id="density-mode"><option value="kde">Probability density</option><option value="ecdf">Cumulative distribution</option></select></label>
+      <label>Slope axis<select id="density-scale"><option value="linear">Linear</option><option value="log">Logarithmic</option></select></label>
+      <label id="bandwidth-label">Bandwidth (mV/dec)<select id="bandwidth"><option value="10">10</option><option value="20" selected>20</option><option value="40">40</option><option value="80">80</option></select></label>
+      <label>Slope display<select id="slope-range"><option value="600">Up to 600 mV/dec</option><option value="1200">Up to 1,200 mV/dec</option><option value="full">Full range</option></select></label>
+      <label><input id="slope-points" type="checkbox">Individual curve medians</label>
+    </div>
+    <div class="plots-grid">
+      <div><h2>Local slopes across windows</h2><div id="overview-plot" class="plot" aria-label="Local Tafel slopes across windows"></div></div>
+      <div><h2 id="density-title">Slope distribution</h2><div id="density-plot" class="plot" aria-label="Probability density of local Tafel slopes"></div></div>
+    </div>
+    <p id="distribution-note" class="footnote"></p>
+    <div class="table-scroll"><table id="statistics"><thead><tr><th>Group</th><th>Curves</th><th>Papers</th><th>Centers</th><th>Median</th><th>25-75%</th><th>5-95%</th><th>Outside display</th></tr></thead><tbody></tbody></table></div>
+    <p class="footnote">Slopes: mV/dec. Intervals describe the weighted distribution, not uncertainty in the median. Groups and windows can contain different curves.</p>
+  </section>
+  <section class="records">
+    <div class="plot-heading"><h2>Contributing curves</h2><div class="inline"><button id="export-statistics">Export slope CSV</button><button id="export-points">Export native points</button></div></div>
+    <p id="records-note" class="muted"></p>
+    <div class="table-scroll"><table class="catalog"><thead><tr><th>Material / curve ID</th><th>Elements</th><th>Condition / group</th><th>Paper DOI</th><th>Template membership</th><th>Slope / centers</th></tr></thead><tbody id="catalog"></tbody></table></div>
+    <div class="pagination"><span id="page-status"></span><div><button id="prev" aria-label="Previous page" title="Previous page">&lt;</button><button id="next" aria-label="Next page" title="Next page">&gt;</button></div></div>
+  </section>
+  <footer>
+    <p><b>Local apparent slope:</b> b = d|η| / d log₁₀|j|. Native nine-point quadratic derivatives; one median per curve and selected window. No BV/VHT fit or full-range requirement.</p>
+    <p>Prepared observations: 0.2-500 mA/cm², 0-2,000 mV. Potential bins extend to 500 mV; current-bin slopes use the full prepared potential range. Curve lines connect native points only. Current and potential cutoffs are analysis limits, not physical saturation.</p>
+    <p>Element and template memberships can overlap. PGM = Pt, Pd, Rh, Ru, Ir or Os; presence refers to recorded composition. Pt/C is a separate display group. Equal-paper weights are recalculated within each group and window.</p>
+    <div class="links"><a href="METHODS.md">Methods</a><a href="provenance.json">Data provenance</a><a href="curve_window_slopes.csv">All curve-window slopes</a><a href="all_paper_weighted_summary.csv">Figure 4 cohort summary</a><a href="local_slopes.csv">All local derivatives</a></div>
+  </footer>
+</main>
+</body>
+</html>

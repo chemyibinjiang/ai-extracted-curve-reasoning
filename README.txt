@@ -11,6 +11,12 @@ included files together so figure and data links continue to work.
 Opening publication DOI links requires internet access.
 
 Views
+Tafel curves & slopes: linked individual observed curves and local-slope
+distributions, using the same element and template filters. The distribution
+view has potential/current windows, paper/curve weighting, linear/logarithmic
+slope axes, and CSV exports. No full-window coverage or model extrapolation
+is required. See tafel/METHODS.md for the estimator and data provenance.
+
 Heatmap: cell color and text indicate a percentage.
 Bubble map: bubble AREA indicates the raw number of matching curves;
 color indicates the percentage. The size scale is fixed across filters.
@@ -30,6 +36,9 @@ Data
 The two denominators are explained in METHODS.txt. Elements and template
 memberships overlap; percentages across rows or columns need not sum to 100%.
 The separate Pt/C reference families are not added to this catalog.
+The Tafel explorer additionally includes the full Figure 4 prepared cohort:
+3,033 curves from 473 papers. Template filtering is optional there, and Pt/C
+is shown separately. Geometric-area normalization is its default selection.
 
 Included
 - The same HTML viewer and its embedded data.
@@ -37,6 +46,8 @@ Included
 - Detailed CSV tables and an additional JSON copy of the data.
 - Archived template PCA coordinates as a separate CSV.
 - Methods, source hashes and verification of the original calculations.
+- The self-contained tafel/ viewer, prepared points, local derivatives,
+  curve-window statistics and its local Plotly JavaScript dependency.
 
 This is a self-contained viewing package, not the full analysis repository.
 Developer scripts and workstation screenshots are intentionally excluded.

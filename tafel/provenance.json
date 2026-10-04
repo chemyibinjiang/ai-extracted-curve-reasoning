@@ -1,0 +1,56 @@
+{
+  "source_curves": 3033,
+  "source_papers": 473,
+  "source_points": 80399,
+  "eligible_derivative_centers": 50176,
+  "curves_with_derivatives": 2840,
+  "derivative_status_counts": {
+    "edge_support": 24206,
+    "too_wide_in_logcurrent": 5943,
+    "eligible": 50176,
+    "ill_conditioned_support": 8,
+    "too_narrow_in_logcurrent": 57,
+    "one_sided_support": 9
+  },
+  "windows": {
+    "eta": [
+      0,
+      25,
+      50,
+      100,
+      150,
+      200,
+      300,
+      400,
+      500
+    ],
+    "current": [
+      0.2,
+      1,
+      5,
+      10,
+      20,
+      40,
+      80,
+      160,
+      320,
+      500
+    ]
+  },
+  "source_sha256": {
+    "analysis/figure4/inputs/POINTS.csv": "ee00a18dfa54c4bd232bce59e996055662debc2e1aa13f01936adef7609a4a65",
+    "analysis/figure4/inputs/CURVES.csv": "48f69dd3ee009503d78fc25bb2dfcbfe116a5845f459871068211e894c73e376",
+    "analysis/figure7/inputs/canonical_curves.csv": "ff9c9520fa98069036c247806268085b534356c0b4bc96fa76a2b2755d9b649d",
+    "analysis/figure7/inputs/CATALYST_AUDIT.csv": "2c032c693c448b8af4a547ca3d8ee397901323a92a73dad25a41e09acb972f15",
+    "analysis/figure7/inputs/MEMBER_COMPATIBILITY.csv": "2aeb4cb322a1007ca093feb1d257a6a58bb88a39d7c6990fc50436f52faa6091",
+    "analysis/figure7/inputs/METADATA_CORRECTIONS.json": "9188dd07e49ae23c8a793103874e334155c96244394a37730cb7b7202af1054c",
+    "analysis/figure4/local_slopes.py": "9d434fdbf50da832b03ec3a0dc2bd5cca3144278140ead943f87a767c5f72670",
+    "analysis/figure4/weights.py": "af016f10bd3cb6c17547dc86219ee6247d8910c3387f289f024cd56981fb6288"
+  },
+  "builder_sha256": "3801d5a4d3f3e159f4ef3cacd4b2918ef87d2e79f9d464b75c478b5b1f0fcb3e",
+  "plotly_sha256": "91c4c2879c1cee9f5cab0693f4d7c27773cbe7e22ab6252e5eef0ccfc7f2a7ef",
+  "statistic": "Median eligible native local derivative per curve and bin; equal papers by default within each selected group and bin.",
+  "derivative": "d|eta| / d log10|j|; 9-point tricube-weighted quadratic, unchanged Figure 4 algorithm.",
+  "membership": "All prepared curves or union of existing template memberships; no new template fitting.",
+  "density": "Weighted Gaussian KDE with one common user-selected bandwidth in mV/dec; integrates to one over the real line; not a confidence interval."
+}

@@ -88,6 +88,7 @@ table { border-collapse: collapse; width: 100%; }
 </head>
 <body>
 <main>
+<nav aria-label="Analysis" style="display:flex;flex-wrap:wrap;gap:24px;padding-bottom:14px;margin-bottom:22px;border-bottom:1px solid #dfe5e8"><a href="index.html" aria-current="page">Template composition</a><a id="tafel-link" href="tafel/index.html">Tafel curves &amp; slopes</a></nav>
 <header>
   <h1>Element composition of the 16 templates</h1>
   <p class="muted">Existing Figure 7 compatible curves. Composition is recorded element presence, not atomic fraction.</p>
@@ -145,6 +146,14 @@ const pgmElements = new Set(DATA.pgmElements);
 const displayTemplates = [...DATA.templates.filter(t=>rich.has(t)), ...DATA.templates.filter(t=>!rich.has(t))];
 const color = t => rich.has(t) ? '#d94368' : '#2187a6';
 let selectedElement = 'Fe', selectedTemplate = 'all', page = 0, filtered = [];
+$('tafel-link').addEventListener('click', () => {
+  const target = new URL('tafel/index.html', location.href);
+  for (const id of ['condition', 'composition', 'weight']) target.searchParams.set(id, $(id).value);
+  target.searchParams.set('element', selectedElement);
+  target.searchParams.set('template', selectedTemplate === 'all' ? 'any' : selectedTemplate);
+  target.searchParams.set('basis', 'all');
+  $('tafel-link').href = target.href;
+});
 const pageSize = 30;
 const bubbleMax = Math.max(...DATA.summaries.all.counts.flat());
 const bubbleRadius = n => 18 * Math.sqrt(n / bubbleMax);
@@ -307,6 +316,12 @@ const initialElement=new URLSearchParams(location.search).get('element');
 if (DATA.elements.includes(initialElement)) selectedElement=initialElement;
 populateElements();
 displayTemplates.forEach(t => $('template').add(new Option(t,t)));
+const initialFilters = new URLSearchParams(location.search);
+for (const id of ['condition', 'weight', 'template']) {
+  const value = initialFilters.get(id);
+  if ([...$(id).options].some(option => option.value === value)) $(id).value = value;
+}
+selectedTemplate = $('template').value;
 ['condition','weight','mode','scope'].forEach(id => $(id).addEventListener('change',()=>{page=0;render();}));
 document.querySelectorAll('input[name="map-view"]').forEach(input=>input.addEventListener('change',renderHeatmap));
 $('composition').addEventListener('change',()=>{page=0;populateElements();render();});
