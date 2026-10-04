@@ -122,6 +122,7 @@ const path = require('node:path');
   assert.equal(await page.evaluate(()=>selected.length),bubbleCount);
   assert.doesNotMatch(await page.locator('#summary').innerText(),/^0 curves/);
   await page.locator('#composition-link').click();
+  await page.waitForFunction(() => typeof filtered !== 'undefined' && document.getElementById('element').options.length > 0);
   assert.equal(await page.locator('#element').inputValue(),'Ni');
   assert.equal(await page.locator('#template').inputValue(),'T13');
   assert.equal(await page.locator('#condition').inputValue(),'alkaline');
