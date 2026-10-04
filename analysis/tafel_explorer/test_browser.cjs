@@ -13,7 +13,7 @@ const path = require('node:path');
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
-  async function ready() { await page.waitForFunction(() => document.body.dataset.ready); }
+  async function ready() { await page.waitForFunction(() => document.body?.dataset.ready); }
   async function change(selector, value) {
     const old = await page.locator('body').getAttribute('data-ready');
     await page.locator(selector).selectOption(value);
