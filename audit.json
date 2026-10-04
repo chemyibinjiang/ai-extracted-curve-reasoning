@@ -8,6 +8,11 @@
   "ScCo2_correction_applied": true,
   "independent_count_and_weight_checks": "passed",
   "element_PGM_subset_checks": "passed; with and without sum to original within-template prevalence",
+  "PCA_coordinates": "16 unchanged archived Figure 7 template projections; no refit",
+  "PCA_source_sha256": {
+    "TEMPLATE_PROJECTIONS.csv": "615890e5ee2a625684279f6d136638e146308450afa1185597e33c7839864e84",
+    "MODEL.npz": "de2323a3ae688f715e4864f4344d428485e20ee479bcde827b4110d5cb2e1eda"
+  },
   "conditions": {
     "alkaline": 914,
     "acidic": 336,

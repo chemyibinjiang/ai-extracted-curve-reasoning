@@ -53,7 +53,7 @@ not all E-containing curves, so the two feature profiles do not add to
 the original profile in this view. Papers with no qualifying curves do
 not enter that feature-specific denominator.
 
-The HTML composition selector applies to the heatmap, profile and curve
+The HTML composition selector applies to both maps, the heatmap, profile and curve
 catalog. PGM element rows are omitted in co-occurrence modes, leaving
 57 non-PGM elements. Template order and fits are unchanged. The separate
 element_pgm_cooccurrence figure illustrates Ni/Mo/Co with equal-curve
@@ -79,6 +79,23 @@ including the selected paper weighting. Bubble sizes remain unweighted.
 Zero matching curves have no bubble; zero and unavailable denominators
 are marked 0 and N/A respectively. Hover text gives counts and percentages.
 
+PCA map
+The 16 template bubbles use the archived Figure 7 TEMPLATE_PROJECTIONS.csv
+coordinates from the pooled partial-observation shape model over 20-300 mV.
+No PCA is refitted and no missing curves are reconstructed for this map.
+Changing element, condition, composition or weighting changes only the
+counts and percentages, not the coordinates. The separate eight Pt/C
+reference families are not included in this membership catalog or map.
+
+Bubble area and color have the same definitions and fixed count scale as
+the matrix bubble map. Outlines and labels distinguish PGM-rich templates
+from the other templates; this grouping is not the selected composition
+of each member curve. Crosses mark no matching curves. Thin leaders join
+offset template labels to their unchanged positions. PC1 and PC2 use
+equal coordinate scales. Their 78.5% and 18.5% labels describe fitted latent
+shape variance, calculated from the archived MODEL.npz loading matrix.
+template_pca_coordinates.csv provides all 16 coordinates, including PC3.
+
 Conditions
 All conditions pools acidic, alkaline, buffered, neutral, saline/seawater
 and other/unclear observations. Acidic and alkaline filters use the existing
@@ -95,7 +112,8 @@ are displayed alongside percentages; these figures are descriptive and
 contain no confidence intervals or significance claims.
 
 Files
-index.html: offline interactive heatmap, element profiles and curve catalog.
+index.html: offline heatmap, bubble maps, element profiles and curve catalog.
+template_pca_coordinates.csv: unchanged Figure 7 template projections.
 element_template_heatmap.*: 24 selected recorded elements across templates.
 selected_element_profiles.*: Fe, Co, Ni, Ru, Pt and Mo prevalence profiles.
 element_template_statistics.csv: all 63 elements, conditions and both weights.

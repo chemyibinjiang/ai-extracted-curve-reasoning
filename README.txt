@@ -14,10 +14,14 @@ Views
 Heatmap: cell color and text indicate a percentage.
 Bubble map: bubble AREA indicates the raw number of matching curves;
 color indicates the percentage. The size scale is fixed across filters.
+PCA map: one bubble per template at its archived Figure 7 shape-PCA
+coordinates, with the same count-area and percentage-color encoding.
+Select an element; the positions remain fixed when filters change.
 With equal-paper weighting, colors change but bubble counts stay raw.
 Hover or select a cell for exact percentages and underlying counts.
 
-The six PGM-rich templates are on the left; the other ten are on the right.
+In the matrix and bar views, the six PGM-rich templates are on the left;
+the other ten are on the right. PCA positions follow the original model.
 Composition filters distinguish element-containing curves with and without
 recorded PGM. PGM means Pt, Pd, Rh, Ru, Ir or Os, not Au or Ag.
 
@@ -31,6 +35,7 @@ Included
 - The same HTML viewer and its embedded data.
 - PNG, PDF and SVG exports of the three summary figures.
 - Detailed CSV tables and an additional JSON copy of the data.
+- Archived template PCA coordinates as a separate CSV.
 - Methods, source hashes and verification of the original calculations.
 
 This is a self-contained viewing package, not the full analysis repository.
