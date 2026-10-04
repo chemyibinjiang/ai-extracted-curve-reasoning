@@ -1,6 +1,12 @@
 {
   "source_curves": 3033,
   "source_papers": 473,
+  "interactive_classified_curves": 3030,
+  "interactive_excluded_unclassified": [
+    "batch1/case27/figure_4__panel_a/curve_cnts",
+    "batch1/case27/figure_4__panel_a/curve_mh2tpyp",
+    "batch2/case210/figure_2__panel_f/curve_1"
+  ],
   "source_points": 80399,
   "eligible_derivative_centers": 50176,
   "curves_with_derivatives": 2840,
@@ -47,7 +53,7 @@
     "analysis/figure4/local_slopes.py": "9d434fdbf50da832b03ec3a0dc2bd5cca3144278140ead943f87a767c5f72670",
     "analysis/figure4/weights.py": "af016f10bd3cb6c17547dc86219ee6247d8910c3387f289f024cd56981fb6288"
   },
-  "builder_sha256": "3801d5a4d3f3e159f4ef3cacd4b2918ef87d2e79f9d464b75c478b5b1f0fcb3e",
+  "builder_sha256": "8ee7864ac92627d6ce5ab0e4a39514008693e77fc9abdb8e4dad9ef667428777",
   "plotly_sha256": "91c4c2879c1cee9f5cab0693f4d7c27773cbe7e22ab6252e5eef0ccfc7f2a7ef",
   "statistic": "Median eligible native local derivative per curve and bin; equal papers by default within each selected group and bin.",
   "derivative": "d|eta| / d log10|j|; 9-point tricube-weighted quadratic, unchanged Figure 4 algorithm.",

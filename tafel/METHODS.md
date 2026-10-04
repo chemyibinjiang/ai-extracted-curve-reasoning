@@ -2,7 +2,10 @@
 
 This viewer connects recorded catalyst composition and Figure 7 template
 membership to the original polarization curves and their local Tafel slopes.
-It uses the 3,033 prepared Figure 4 curves (473 papers, 80,399 observations).
+Its source is the 3,033 prepared Figure 4 curves (473 papers, 80,399 observations).
+Interactive views include the 3,030 composition-classified curves; three records
+with empty recorded-element fields are omitted from plots, counts, catalogs and
+selection exports. The full source tables remain available for reproduction.
 It does not select by BV fit quality, PCA eligibility or template compatibility
 unless a template filter is explicitly chosen.
 
@@ -64,15 +67,16 @@ the two endpoints of a complete current window.
 
 Filters use the same recorded-element definitions and corrected template
 memberships as the composition viewer. PGM means Pt, Pd, Rh, Ru, Ir or Os.
-Pt/C is displayed separately from other PGM catalysts. Unknown composition
-remains separate. An element feature records its presence, not its fraction.
+Pt/C is displayed separately from other PGM catalysts. Records without a
+composition classification are omitted, not assigned to non-PGM. An element
+feature records its presence, not its fraction.
 The non-PGM filter requires recorded composition with none of the six PGMs.
 Co-occurrence does not imply alloying.
 
-The default current-normalization filter is geometric area. The optional full
-prepared cohort reproduces the population used in Figure 4 but includes other
-reported normalization bases. Those currents are not directly comparable as
-geometric current density. Template membership can overlap; union selections
+The default current-normalization filter is geometric area. The optional
+all-normalization-bases selection includes other reported normalization bases;
+the composition restriction still applies. Those currents are not directly
+comparable as geometric current density. Template membership can overlap; union selections
 count each curve once. The sixteen non-Pt/C templates do not contain the
 separate Pt/C reference families.
 

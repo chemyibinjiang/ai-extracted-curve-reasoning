@@ -37,8 +37,10 @@ The two denominators are explained in METHODS.txt. Elements and template
 memberships overlap; percentages across rows or columns need not sum to 100%.
 The separate Pt/C reference families are not added to this catalog.
 The Tafel explorer additionally includes the full Figure 4 prepared cohort:
-3,033 curves from 473 papers. Template filtering is optional there, and Pt/C
-is shown separately. Geometric-area normalization is its default selection.
+3,033 curves from 473 papers. Its interactive views omit three unclassified
+composition records and retain 3,030 classified curves before further filtering.
+Template filtering is optional there, and Pt/C is shown separately.
+Geometric-area normalization is its default selection.
 
 Included
 - The same HTML viewer and its embedded data.
