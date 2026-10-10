@@ -2,7 +2,7 @@
 
 All paths below are relative to the repository root. Numerical outputs default
 to `build/effective-bv-20260930/`, abbreviated `RESULTS/` below. The complete
-manuscript artwork is `figures/manuscript/Figure1.svg` through `Figure7.svg`.
+manuscript artwork is `figures/manuscript/Figure1.svg` through `Figure8.svg`.
 Older source-composition folder numbers are not manuscript figure numbers.
 
 | Paper result | Inputs or command | Output / check |
@@ -45,6 +45,13 @@ Original coordinate and metadata files remain intact; corrected analysis
 labels are produced by `analysis/figure7/lib/metadata.py`.
 
 ## Joining a Curve to Its Source
+
+Figure 8 and SI Section 11 use `python analysis/figure8/run.py`. In
+`build/figure8/`, `panel_ABC_series_checks.csv` supplies Table S31 and
+`matched_support_dispersion.csv` supplies Table S32. The native experimental
+files, their source commit and per-file checksums are in
+[`analysis/figure8/inputs/`](../analysis/figure8/inputs/); sample labels join
+those files to `experimental_selection.csv` and the panel data tables.
 
 `curve_uid` joins `curve_points_long.csv` to `curve_metadata.csv` in
 `data_literature/zenodo_extracted_curve_dataset_v1/`. `panel_uid` then joins to

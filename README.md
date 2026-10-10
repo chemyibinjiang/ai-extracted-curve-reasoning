@@ -1,5 +1,9 @@
 # Curve Extraction and Electrochemical Analysis
 
+**10 October 2026:** [Figure 8 and SI Section 11](analysis/figure8/README.md)
+now include the native experimental LSV records and a reproducible comparison
+with the fixed literature shape model.
+
 **3 October 2026:** Current Figures 1, 3 and 7 are synchronized with the manuscript.
 [Figure 7 and SI Section 9](analysis/figure7/README.md) include partial-observation
 population PCA, template projection and coverage, and support/uncertainty controls.
@@ -38,6 +42,7 @@ See the [current artwork notes](figures/UPDATE_20261002.md) and the
 | 5 | Apparent resistance and current rescaling | [Figure 5 analysis](analysis/effective_bv/README.md#figure-5) |
 | 6 | Pt/C response families and kinetic reconstruction | [Figure 6 analysis](analysis/effective_bv/README.md#figure-6) |
 | 7 | Population response shapes and empirical templates | [Figure 7 analysis and SI Section 9](analysis/figure7/README.md) |
+| 8 | Experimental response series and literature-shape comparison | [Figure 8 analysis and SI Section 11](analysis/figure8/README.md) |
 
 For the multilayer NiFeP example, see the [model comparison and complete point tables](analysis/figure5/README.md#nifep-layer-number), including both BV and BV+jR fits.
 
@@ -51,7 +56,7 @@ downloads so the next command can retrieve only the assets needed here:
 git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
 cd ai-extracted-curve-reasoning
 git lfs install
-git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
+git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,analysis/figure8/inputs/*.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
 python -m venv .venv
 ```
 
@@ -70,6 +75,7 @@ python analysis/figure4/run.py prepare --output build/figure4-preparation
 python analysis/effective_bv/run.py all --workers 6 --starts 12
 python analysis/figure7/run.py cv
 python analysis/figure7/run.py complete-window
+python analysis/figure8/run.py
 python -m unittest discover -s tests -v
 ```
 

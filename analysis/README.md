@@ -7,6 +7,7 @@
 | 5 | Compensation, bubble/EIS trend, surface kinetics, and current rescaling | [Figure 5](effective_bv/README.md#figure-5) |
 | 6 | Pt/C response families, VHT reconstruction, and rate control | [Figure 6](effective_bv/README.md#figure-6) |
 | 7 | Partial-observation shape PCA, empirical template projection, coverage, and SI Section 9 controls | [Figure 7](figure7/README.md) |
+| 8 | Experimental series, fixed-model projection and matched-window dispersion; SI Section 11 | [Figure 8](figure8/README.md) |
 
 ## Setup and Run
 
@@ -17,10 +18,12 @@ python -m pip install -r requirements-analysis.txt
 python analysis/effective_bv/run.py all --workers 6 --starts 12
 python analysis/figure7/run.py cv
 python analysis/figure7/run.py complete-window
+python analysis/figure8/run.py
 python -m unittest discover -s tests -v
 ```
 
-These commands need only the included coordinate inputs and Python dependencies.
+These commands need only the included numerical inputs and Python dependencies.
+Figure 8 starts from native experimental records and writes to `build/figure8/`.
 The Figure 4 cohort-preparation command reads all 4,211 curves under
 `data_literature/`; the refit uses the verified 3,033-curve prepared coordinates.
 The commands do not require source-paper PDFs, image downloads, agent logs, or browser

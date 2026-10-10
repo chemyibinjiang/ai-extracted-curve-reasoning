@@ -2,7 +2,7 @@
 
 `manifest.json` lists the SHA-256 hashes, sizes, and image dimensions for:
 
-- Seven Figure 1-7 SVG/PNG pairs in `figures/manuscript/`.
+- Eight Figure 1-8 SVG/PNG pairs in `figures/manuscript/`.
 - Six numerical result tables in `analysis/figure6/expected/`.
 
 Run:

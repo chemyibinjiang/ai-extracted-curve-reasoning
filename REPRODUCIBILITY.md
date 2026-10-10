@@ -30,6 +30,12 @@ for the clean-checkout checks and their scope.
 
 ## Environment
 
+Figure 8 and SI Section 11 are reproduced with `python analysis/figure8/run.py`.
+This starts from the included native screening records and uses the fixed
+Figure 7 model. It rebuilds all six panels and Tables S31-S32, checks their
+numerical results, and writes to `build/figure8/`. See the
+[Figure 8 guide](analysis/figure8/README.md) for inputs and calculation details.
+
 Follow the [fresh-clone setup](README.md#run-the-analyses), including Git LFS and
 a virtual environment. Use Python 3.13 and the pinned numerical dependencies:
 
@@ -114,7 +120,7 @@ This command uses the 30 September compressed layouts and does not overwrite
 the published figures. Its Figure 1D layout is historical; Figures 2 and 3 are
 copied from the baseline rather than regenerated. It produces six review figures,
 Figure 6 audit tables and `ARTWORK_CHECKS.json`. To validate or export all
-seven current manuscript figures directly:
+eight current manuscript figures directly:
 
 ```text
 git lfs pull --include="figures/manuscript/**,analysis/effective_bv/artwork_templates.zip" --exclude=""

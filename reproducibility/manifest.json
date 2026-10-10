@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "snapshot": "2026-10-03",
-  "scope": "Manuscript Figures 1-7 and Figure 6 expected numerical tables; Figure 7 inputs have a separate analysis manifest.",
+  "snapshot": "2026-10-10",
+  "scope": "Manuscript Figures 1-8 and Figure 6 expected numerical tables; Figures 7 and 8 inputs have separate analysis manifests.",
   "submission_manifest_sha256": "643bd952598473b2579a0507a44496e684561918077538fc9be27b0c5602a141",
   "assets": [
     {
@@ -164,6 +164,24 @@
       "dimensions": [
         2499,
         1925
+      ]
+    },
+    {
+      "path": "figures/manuscript/Figure8.svg",
+      "sha256": "794ba98c60577c7825f38f5ee21c2262ff7af2c1004e5c42db9a5b5bfc5f0021",
+      "bytes": 402028,
+      "kind": "svg",
+      "figure": "Figure8"
+    },
+    {
+      "path": "figures/manuscript/Figure8.png",
+      "sha256": "dafd8a161fb7209a6edac6ff5b7e88e4bee98ccde2aa2c0b26224b92d09ddaf3",
+      "bytes": 580171,
+      "kind": "png",
+      "figure": "Figure8",
+      "dimensions": [
+        3300,
+        2100
       ]
     }
   ],
