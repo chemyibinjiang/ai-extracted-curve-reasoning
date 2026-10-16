@@ -6,9 +6,9 @@ published hydrogen evolution reaction (HER) curves, compares their response
 shapes, and examines related patterns in directly measured linear sweep
 voltammetry (LSV) data.
 
-**Review version:** Figures 1-8 and their analyses are on
-[`codex/major-revision-20260922`](https://github.com/chemyibinjiang/ai-extracted-curve-reasoning/tree/codex/major-revision-20260922).
-The clone command below selects this version explicitly.
+**Review version:** The default branch, `main`, contains Figures 1-8 and their
+analyses. Submitted numerical results and figure assets are preserved;
+separate correction checks are recorded in the [release checklist](RELEASE_CHECKLIST.md).
 
 ## Start Here
 
@@ -57,11 +57,11 @@ gives measurement conditions, the source repository and exact source commit.
 
 ## Run the Analyses
 
-Install Git, Git LFS and Python 3.13. Clone the review branch, then retrieve the
+Install Git, Git LFS and Python 3.13. Clone the default branch, then retrieve the
 binary assets needed for analysis, figure validation and the tests:
 
 ```text
-git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone --branch codex/major-revision-20260922 https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
+git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone --branch main https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
 cd ai-extracted-curve-reasoning
 git lfs install
 git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,analysis/effective_bv/published/**,analysis/figure8/inputs/*.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""

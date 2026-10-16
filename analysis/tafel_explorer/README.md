@@ -11,7 +11,7 @@ unless a template filter is explicitly chosen.
 
 ## Reproduction
 
-From the research repository's `codex/major-revision-20260922` branch:
+After [repository setup](../../README.md#run-the-analyses), run from the repository root:
 
 ```text
 python analysis/tafel_explorer/build.py --output build/tafel-explorer

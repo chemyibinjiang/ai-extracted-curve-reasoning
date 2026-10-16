@@ -2,7 +2,7 @@
 
 ## Environment
 
-Follow the [review-branch setup](README.md#run-the-analyses), including Git LFS
+Follow the [repository setup](README.md#run-the-analyses), including Git LFS
 and a virtual environment. Numerical dependencies are pinned in
 `requirements-analysis.txt`; the reference environment uses Python 3.13.12.
 Run commands from the repository root. Results go to ignored `build/`

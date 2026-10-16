@@ -2,6 +2,7 @@
 
 Reviewer-facing checks, 17 October 2026. Manuscript and SI files are maintained
 separately and were not edited during this repository review.
+The review package is distributed from the default branch, `main`.
 
 ## Verified
 
@@ -18,11 +19,11 @@ separately and were not edited during this repository review.
 - [x] Correct the Co-V instrument/geometric-area conversion; verify against the source eta10 value without changing submitted shape results.
 - [x] Protect Figure 8 source and reference folders from output overwrites.
 - [x] Update navigation, data links, clone instructions and the complete test-data download list.
+- [x] Preserve submitted numerical results and figure assets; keep the endpoint correction check separate.
 
 ## Follow-up
 
-- [ ] Reconcile the endpoint-rounding issue below before regenerating the frozen Figure 7 model and its dependent results.
-- [ ] Publish the verified revision or a clear review-version pointer on the default GitHub branch; `main` still held the older six-figure version when checked.
+- [ ] If a numerical revision is undertaken, resolve endpoint rounding before regenerating the Figure 7 model and its dependent results.
 - [ ] Confirm a repository-wide software license and third-party redistribution terms.
 - [ ] Coordinate any numerical changes with manuscript/SI revisions; no automatic document updates are made here.
 - [ ] Create a version tag and record an archive identifier when available.
@@ -46,6 +47,7 @@ and no inclusion changes: the population remains 2,361 curves from 435 papers.
 
 With the submitted Figure 7 model held fixed, a separate two-sided check leaves
 all six Figure 8F cohorts and ratios unchanged to numerical precision. Individual
-full-support coordinates do change. The submitted model and reference tables
-remain unchanged pending a coordinated numerical revision; successful replay
-of those tables does not resolve this processing issue.
+full-support coordinates do change. This correction check is separate from the
+submitted analysis: the model, reference tables and figures remain unchanged.
+No model refit with corrected masks was performed, so its effect has not been
+assessed. Reproducing the submitted tables does not resolve the endpoint issue.
