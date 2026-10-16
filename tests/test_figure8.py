@@ -17,6 +17,18 @@ np, pd = f.np, f.pd
 
 
 class Figure8Tests(unittest.TestCase):
+    def test_output_cannot_overwrite_source_or_reference_files(self):
+        for path in [ROOT, f.HERE, f.HERE / 'reference', f.HERE / 'inputs',
+                     f.FIG7 / 'reference', ROOT / 'figures/manuscript']:
+            with self.subTest(path=path), patch.object(sys, 'argv', ['run.py', '--output', str(path)]), \
+                    patch.object(f, 'load_inputs') as load:
+                with self.assertRaisesRegex(ValueError, 'write outputs under build/'):
+                    f.main()
+                load.assert_not_called()
+        self.assertEqual(f.output_directory(ROOT / 'build/check'), ROOT / 'build/check')
+        with tempfile.TemporaryDirectory() as folder:
+            self.assertEqual(f.output_directory(Path(folder)), Path(folder).resolve())
+
     def test_interpolation_respects_observed_brackets(self):
         y = f.observe(np.array([20., 40., 70.]), np.array([1., 3., 4.]), np.array([10., 20., 30., 50., 70., 80.]))
         np.testing.assert_allclose(y, [np.nan, 1, 2, np.nan, 4, np.nan], equal_nan=True)
@@ -29,13 +41,43 @@ class Figure8Tests(unittest.TestCase):
         np.testing.assert_allclose(x, [40., 50., 60.])
         np.testing.assert_allclose(logj, [np.mean(np.log10([.2, .4])), 1, np.log10(500)])
 
-    def test_native_density_header_is_not_divided_twice(self):
-        text = 'CSStudioFile,ID_LSVA,metadata\nE(V)\ti(A/cm\u00b2)\tT(s)\n'
-        text += '\n'.join(f'-1\t-0.01\t{k}' for k in range(4))
-        result = f.parse_raw(text.encode(), area=2)
-        np.testing.assert_allclose(result[:, 1], -.02)
+    def test_density_export_uses_instrument_area_not_geometric_area(self):
+        for instrument_area in [1., 3.]:
+            metadata = f'ExpParmas:ExpType=ID_LSVA&-&CellParam=Area={instrument_area}&|&AreaMode=0\r\n'
+            encoded = f.base64.b64encode(f.gzip.compress(metadata.encode())).decode('ascii')
+            text = f'CSStudioFile,ID_LSVA,{encoded}\nE(V)\ti(A/cm\u00b2)\tT(s)\n'
+            text += '\n'.join(f'-1\t-0.01\t{k}' for k in range(4))
+            result = f.parse_raw(text.encode())
+            np.testing.assert_allclose(result[:, 1], -.01 * instrument_area)
+            _, logj = f.prepare(result, area=2.)
+            np.testing.assert_allclose(10**logj, 5 * instrument_area)
+        with self.assertRaisesRegex(ValueError, 'instrument normalization area'):
+            f.parse_raw(('E(V)\ti(A/cm\u00b2)\tT(s)\n' + '\n'.join('-1 -0.01 0' for _ in range(4))).encode())
         with self.assertRaises(ValueError):
             f.parse_raw(b'unknown header\n1 2 3\n')
+
+    def test_co_v_current_density_agrees_with_source_metadata(self):
+        manifest = json.loads((f.HERE / 'inputs/manifest.json').read_text())
+        with f.ZipFile(f.HERE / 'inputs/initial_screening.zip') as archive:
+            metadata = pd.read_csv(f.io.BytesIO(archive.read(manifest['metadata_path'])))
+            row = metadata.set_index('sample').loc['Co-V']
+            data = f.parse_raw(archive.read('hd_separation_ml/data_extraction/all_data/LSV/Co-V.txt'))
+        x, logj = f.prepare(data, row.LSV_geometry_area_cm2)
+        self.assertEqual(row.LSV_geometry_area_cm2, 2.)
+        current = 10**logj
+        crossings = np.flatnonzero((current[:-1] - 10) * (current[1:] - 10) < 0)
+        self.assertEqual(len(crossings), 1)
+        i = crossings[0]
+        eta10 = x[i] + (10 - current[i]) * (x[i+1] - x[i]) / (current[i+1] - current[i])
+        self.assertAlmostEqual(eta10, row.eta10_mV_vs_RHE_full_lsv, places=6)
+
+    def test_startup_preserves_later_current_reversals(self):
+        eta = np.arange(20., 100., 10.)
+        current = np.array([4., -3., 2., 1., -.01, .5, 3., 5.])
+        data = np.column_stack([-eta/1000-.9268, -current/1000, np.arange(len(eta))])
+        x, logj = f.prepare(data, area=1.)
+        np.testing.assert_allclose(x, [40., 50., 70., 80., 90.])
+        np.testing.assert_allclose(10**logj, [2., 1., .5, 3., 5.])
 
     def test_partial_support_inclusion(self):
         x = np.array([80., 90., 100., 110.])

@@ -2,14 +2,17 @@
 
 | Location | Contents |
 | --- | --- |
-| `figures/manuscript/` | Figures 1-6, as editable SVGs and PNG previews |
+| `figures/manuscript/` | Figures 1-8, as editable SVGs and PNG previews |
 | `analysis/effective_bv/` | Current Figures 4-6 refit pipeline: independent effective coefficients, case studies, VHT reconstruction and review report |
 | `analysis/figure3/` | Synthetic benchmark replay and recorded literature-review counts |
 | `analysis/figure4/` | Cohort preparation and inclusion/exclusion record, prepared curves, BV/BV+jR refitting, local slopes and fit statistics |
 | `analysis/figure5/` | Compensation, bubble/EIS, surface-kinetic, and current-rescaling case studies |
 | `analysis/figure6/` | Pt/C template discovery, VHT reconstruction, and rate control |
+| `analysis/figure7/` | Population shape model, empirical-template comparisons and SI Section 9 |
+| `analysis/figure8/` | Native experimental records, response series and fixed-model comparisons; SI Section 11 |
+| `analysis/tafel_explorer/` | Interactive curve and local-slope viewer builder |
 | `analysis/common/` | Shared BV numerical functions |
-| `analysis/SOURCE_MANIFEST.json` | Input/code provenance and integrity hashes |
+| `analysis/SOURCE_MANIFEST.json` | Figures 4-6 input/code provenance and integrity hashes; Figures 7-8 have their own input manifests |
 | `benchmark_data/benchmark_curve_extraction/` | Synthetic benchmark inputs, extraction results, and evaluation code |
 | `data_literature/` | Complete dataset of 4,211 extracted curves (132,314 points) and source metadata |
 | `code_reference/` | Extraction-framework source |
@@ -20,11 +23,10 @@
 | `reproducibility/` | Figure manifest, validation documentation, and figure/SI result map |
 | `build/` | Generated results; excluded from Git |
 
-The current default entry point is `analysis/effective_bv/run.py`; its
-`reference/MANIFEST.json` verifies its coordinates and optimization seeds.
-The manuscript artwork is synchronized to this numerical revision. The data-only
-SVG updater is `analysis/effective_bv/artwork.py`; its compressed templates retain
-the manually edited composition and do not require external workspace files.
+Use the [analysis overview](analysis/README.md) to select a figure-specific
+entry point. Figures 4-6 share `analysis/effective_bv/run.py`; Figures 7 and 8
+have their own `run.py` commands. Figure 1D uses the Figure 7 population and
+templates, not the older Figure 6 overview.
 
 Within an analysis directory, `inputs/` contains observations and metadata,
 `reference/` contains fit parameters and comparison results, and `run.py` is the

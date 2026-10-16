@@ -1,77 +1,92 @@
 # Reproducing the Figures
 
+## Environment
+
+Follow the [review-branch setup](README.md#run-the-analyses), including Git LFS
+and a virtual environment. Numerical dependencies are pinned in
+`requirements-analysis.txt`; the reference environment uses Python 3.13.12.
+Run commands from the repository root. Results go to ignored `build/`
+directories and do not replace the supplied data or manuscript artwork.
+
+Start with the [quick checks](README.md#quick-checks). Then choose the figure
+or calculation needed below; there is no need to run every command.
+
+## Data and Figures 3-6
+
+| Task | Command |
+| --- | --- |
+| Verify the 4,211-curve release and its source links | `python scripts/validate_dataset.py` |
+| Rebuild preparation from the coordinate ZIP and check Pt/C and Figure 7 inputs | `python scripts/audit_raw_to_analysis.py` |
+| Replay all 137 synthetic benchmark curves and tabulate recorded literature-review counts | `python analysis/figure3/run.py` |
+| Rebuild the 3,033-curve fitting cohort, with every inclusion decision | `python analysis/figure4/run.py prepare --output build/figure4-preparation` |
+| Refit all 6,066 BV/BV+jR models and recalculate Figure 4 summaries | `python analysis/effective_bv/run.py population --workers 6` |
+| Refit the Figure 5 case studies and current-scaling comparisons | `python analysis/effective_bv/run.py examples` |
+| Refit current amplitudes and VHT reconstructions for the selected Figure 6 families | `python analysis/effective_bv/run.py families --workers 6 --starts 12` |
+| Build review plots after the preceding three fitting stages | `python analysis/effective_bv/run.py report` |
+
+Alternatively, `python analysis/effective_bv/run.py all --workers 6 --starts 12`
+runs `population`, `examples`, `families` and `report` in order. Do not repeat
+those stages separately if using `all`. Their default output is
+`build/effective-bv-20260930/`.
+
+The population refit uses multistart optimization, with the supplied fitted
+parameters as additional feasible starts. It independently checks voltage
+objectives and that BV is nested within BV+jR. The accepted counts are 1,588
+and 2,361, respectively. Figure 6 reuses the supplied selected families.
+To repeat its full 276,551-candidate grid search and K=1-10 selection, use the
+separate `python analysis/effective_bv/search.py` command. This is substantially
+more work than refitting the selected families.
+
+See the [analysis protocol](analysis/effective_bv/README.md) for fit bounds,
+seed provenance and output definitions. Figure-specific `analysis/figure4/run.py`,
+`analysis/figure5/run.py` and `analysis/figure6/run.py` call these same current
+stages. Historical workflows under `exploration/` are not runtime dependencies.
+
 ## Figure 7 and SI Section 9
 
-The population-to-template analysis, updated on 3 October, is independently packaged in
-[`analysis/figure7`](analysis/figure7/README.md). After installing the dependencies:
+Choose **one** of the following:
+
+```text
+python analysis/figure7/run.py replay
+```
+
+This rebuilds the observed-data cohort, refits the final population model
+using the supplied tuning results, and recalculates projections, uncertainty
+and support checks, native template residuals, achieved coverage and figures.
 
 ```text
 python analysis/figure7/run.py cv
+```
+
+This additionally repeats all 24 whole-paper tuning fits before the final
+model fit. Both commands reproduce the observed-current and growth comparisons
+in SI Section 9.9, Table S30 and Figure S21. Outputs default to `build/figure7`.
+
+For the additional complete-window sensitivity analysis in Tables S28-S29:
+
+```text
 python analysis/figure7/run.py complete-window
 ```
 
-The first command rebuilds the partially observed cohort, all 24 whole-paper
-tuning fits, the selected final model, posterior and template coordinates,
-support/uncertainty controls, native residual checks, achieved coverage and
-plots. The second reproduces the earlier complete-window SI sensitivity tables.
-`replay` skips retuning but still refits the final population model. Outputs
-default to `build/figure7`; `--output` accepts an independent destination.
+The 17,005-candidate library and selected K=1-30 sets are supplied inputs.
+Neither `replay` nor `cv` constructs a new library or selects new template sets:
+they recount the selected unions and independently evaluate every selected
+native match in voltage space. See the [Figure 7 guide](analysis/figure7/README.md)
+and [method details](analysis/figure7/METHODS.md).
 
-Candidate-library construction and new template selection are not rerun:
-compatibility and selected K=1-30 sets are frozen inputs whose unions and
-selected native residuals are re-evaluated. See the
-[Figure 7 methods](analysis/figure7/METHODS.md) and
-[current verification record](reproducibility/UPDATE_20261003.md). This update
-includes the observed-current and within-curve growth comparisons in SI Section 9.9,
-Table S30 and Figure S21; the replay and full-validation commands both regenerate them.
-
-See the [30 September unified-fitting record](reproducibility/VERIFICATION_20260930.md)
-for the clean-checkout checks and their scope.
-
-## Environment
-
-Figure 8 and SI Section 11 are reproduced with `python analysis/figure8/run.py`.
-This starts from the included native screening records and uses the fixed
-Figure 7 model. It rebuilds all six panels and Tables S31-S32, checks their
-numerical results, and writes to `build/figure8/`. See the
-[Figure 8 guide](analysis/figure8/README.md) for inputs and calculation details.
-
-Follow the [fresh-clone setup](README.md#run-the-analyses), including Git LFS and
-a virtual environment. Use Python 3.13 and the pinned numerical dependencies:
+## Figure 8 and SI Section 11
 
 ```text
-python -m pip install -r requirements-analysis.txt
+python analysis/figure8/run.py
 ```
 
-Run commands from the repository root. The complete extracted dataset is under
-`data_literature/zenodo_extracted_curve_dataset_v1/`; figure-specific inputs and
-references are under `analysis/`. Results go to ignored `build/` directories.
-The records under `exploration/` provide investigation context; none of the
-figure-analysis commands requires those records or their archives.
-
-## Numerical Analysis
-
-| Command | Operation |
-| --- | --- |
-| `python scripts/validate_dataset.py` | Verify released file hashes, 4,211 curves/132,314 points, and source-panel-curve joins |
-| `python scripts/audit_raw_to_analysis.py` | Start from the published ZIP, rebuild preparation, and check all native Pt/C and Figure 7 inputs against it |
-| `python analysis/figure3/run.py` | Replay all 137 synthetic benchmark curves and tabulate recorded literature-review counts |
-| `python analysis/figure4/run.py prepare --output build/figure4-preparation` | Read all 4,211 extracted curves, rebuild the 3,033-curve cohort, and record every selection decision |
-| `python analysis/effective_bv/run.py population --workers 6` | Refit all 6,066 variable-coefficient BV/BV+jR models; recompute metrics, distributions, examples and local slopes |
-| `python analysis/effective_bv/run.py examples` | Refit cycle/EIS, NiMo and NiFeP examples; calculate compensation, current scaling, VHT coverage and predictive checks |
-| `python analysis/effective_bv/run.py families --workers 6 --starts 12` | Reprofile the selected templates, refit VHT sharing models, replay member curves and recompute rate controls |
-| `python analysis/effective_bv/search.py` | Profile the complete 276,551-template grid and repeat maximum-coverage selection for K=1..10 |
-| `python analysis/effective_bv/run.py report` | Generate updated numerical review plots and an HTML summary |
-| `python analysis/effective_bv/run.py all --workers 6 --starts 12` | Run all four stages in order |
-
-See the [analysis guide](analysis/README.md) for inputs, outputs, fixed assumptions,
-and interpretation. Reconstructing a supplied fit is not the same as estimating
-its parameters again. Refit outputs are kept separate from figure references.
-
-The Figure 3 synthetic benchmark and evaluation commands are documented in
-[the Figure 3 guide](analysis/figure3/README.md).
-Figures 1 and 2 explain the conceptual and worked extraction workflows; they
-are not additional population-fitting analyses.
+This starts from native experimental records, rebuilds selection and response
+series, projects observations into the **fixed Figure 7 model**, and recalculates
+the matched-window dispersion comparisons. It produces all six panels and
+Tables S31-S32 in `build/figure8/`, checking against supplied numerical references.
+Use `--no-figure` for tables only, or `--output PATH` for a separate destination.
+The [Figure 8 guide](analysis/figure8/README.md) links the original data and
+describes the measurements and calculations.
 
 ## Tests
 
@@ -79,86 +94,53 @@ are not additional population-fitting analyses.
 python -m unittest discover -s tests -v
 ```
 
-Tests cover source hashes, cohort preparation from all extracted curves, local derivatives, weighting, kinetic Jacobians,
-current scaling, independent mass-action solutions, support masks, sample SD,
-and dominant-control crossings. Isolated-copy tests check that the figure-analysis
-entry points and the complete Figure 4 refit do not depend on files outside the
-included package. No network connection is used by these analyses.
-
-The effective-BV revision refits all 6,066 population models and independently
-checks their voltage objectives. Accepted counts are 1,588 for BV and 2,361 for
-BV+jR. Affected Figure 5 fits and the VHT sharing search on the new Figure 6
-templates have also been rerun. Selected variable-coefficient templates and
-the completed finite-grid coverage search are supplied as checked reference
-data; the `families` stage does not repeat that search. Current amplitudes and
-VHT models are reoptimized. See the [current analysis protocol](analysis/effective_bv/README.md)
-for numerical bounds, checkpoints and the distinction between a retained
-optimized seed and a newly converged fit.
-
-Figure-specific `analysis/figure4/run.py`, `analysis/figure5/run.py`, and
-`analysis/figure6/run.py` call the same current fitting stages. Earlier workflows
-are archived separately; they cannot be selected by a default analysis command.
-After archiving, all 6,066 population fits and the 12-start VHT sharing search
-were rerun on September 27, 2026. The principal kinetic parameters matched the
-Figure 6/SI tables exactly. An isolated-copy test also runs without exploration
-files or archived analyses.
+This is a full test-suite run, not a quick installation check. It runs all
+Figures 4-6 stages in an isolated copy with a reduced two-start test setting,
+and reproduces Figure 8 from native data. Use `--starts 12` in the analysis
+commands for the stated VHT fitting protocol.
+Tests also cover source hashes, cohort selection, local derivatives, weighting,
+kinetic Jacobians, current scaling, partial-observation inference and plotting
+with a fallback font. They require the LFS assets listed in the setup instructions.
+Once those assets and dependencies are installed, the numerical tests use no network.
 
 ## Artwork
 
-The manuscript SVG/PNG files include the effective-BV numerical revision and
-the current Figure 1/3/7 layouts. Figure 1D uses the Figure 7 population and
-templates, aligned at 20 mV. Figure 3 contains benchmark and claim-comparison
-examples. See [current artwork notes](figures/UPDATE_20261002.md).
-
-After the numerical analysis, regenerate the data updates into a review folder:
+The current eight SVG/PNG pairs are in [figures/manuscript/](figures/manuscript/).
+Validate them and export their final layouts with:
 
 ```text
-python analysis/effective_bv/artwork.py --data build/effective-bv-20260930 --output build/manuscript-figures --inkscape /path/to/inkscape
-```
-
-This command uses the 30 September compressed layouts and does not overwrite
-the published figures. Its Figure 1D layout is historical; Figures 2 and 3 are
-copied from the baseline rather than regenerated. It produces six review figures,
-Figure 6 audit tables and `ARTWORK_CHECKS.json`. To validate or export all
-eight current manuscript figures directly:
-
-```text
-git lfs pull --include="figures/manuscript/**,analysis/effective_bv/artwork_templates.zip" --exclude=""
 python scripts/validate_figures.py
 python scripts/render_final_figures.py --inkscape /path/to/inkscape --output build/figures
 ```
 
-The validator checks all seven SVG/PNG pairs and the six Figure 6 result tables
-against `reproducibility/manifest.json`. It also independently recalculates means,
-sample SD, support masks, parameter transforms, coverage counts, and crossings.
+The validator checks all eight SVG/PNG pairs and six Figure 6 result tables
+against `reproducibility/manifest.json`, and independently checks the table
+summaries. Inkscape exports at 3,000 pixels wide; add `--format pdf` and select
+a separate output directory for vector PDF. The manuscript layouts require
+Arial. Font or renderer differences can change text placement and pixels.
+Artwork export does not rerun the numerical analyses.
 
-Inkscape exports the final SVG layouts at 3,000 pixels wide. For vector PDF,
-add `--format pdf` and choose a separate output directory. Inkscape and Arial
-fonts are required; renderer/font differences can change text layout and pixels.
-Artwork export does not rerun numerical analyses.
+**Optional historical review layouts:**
+`python analysis/effective_bv/artwork.py --data build/effective-bv-20260930 --output build/manuscript-figures --inkscape /path/to/inkscape`
+updates the older six-figure layouts. Its Figure 1D is historical and Figures
+2-3 are copied from that baseline. Use the export commands above for the
+current manuscript set, or the Figure 7/8 analysis commands for newly drawn plots.
 
-## Scope
+## Scope and Outputs
 
-Numerical reproduction starts from the provided digitized coordinates and
-documented selection rules. It does not redigitize publisher figures or repeat manual
-claim adjudication. Figure 3 benchmark distances are replayed from coordinates.
-Literature quality/claim percentages are recomputed from recorded review counts,
-not independently re-reviewed. Publisher images and confidential case evidence
-are not distributed; see the [Figure 3 scope](analysis/figure3/README.md).
+Literature analyses start from released extracted coordinates; Figure 8 starts
+from native experimental records. Reproduction does not redigitize publisher
+figures or repeat human claim adjudication. Figure 3 benchmark distances are
+recalculated from coordinates; literature-review percentages use recorded
+review counts. See the [Figure 3 guide](analysis/figure3/README.md) for that scope.
 
-## Reading the Outputs
+The [result map](reproducibility/RESULT_MAP.md) identifies the input and output
+behind each figure panel and SI table. Lower `--workers` to reduce CPU demand;
+retain `--starts 12` for the stated VHT fitting protocol. After changing code or
+inputs, use a new output directory rather than reusing cached fits.
 
-The [result map](reproducibility/RESULT_MAP.md) links figure panels and SI tables
-to input and output files. `report` must follow all three numerical stages in
-the same output directory. Lower `--workers` to reduce CPU demand; retain
-`--starts 12` for the stated VHT protocol. Changed code or inputs invalidate
-checkpoints: choose a new `--output` directory rather than reusing them.
-
-Use tolerances rather than byte equality for optimizer outputs. Curves, cohort
-counts, acceptance thresholds, and certified coverage counts must agree.
-Multiple template sets can attain the same maximum coverage. The supplied
-selected set fixes the A/B family labels for the published artwork; a fresh
-search is not automatically substituted into that artwork. The finite grid
-does not certify a global optimum over all continuous shapes. Optimization
-seeds are additional feasible starts, not held-out observations or independent
-measurements. `selected_stage` distinguishes a retained seed from a new optimum.
+Compare optimizer outputs within numerical tolerances, not by file hashes.
+Input coordinates, cohort counts and acceptance rules should agree exactly.
+Different selected template sets can achieve the same coverage; supplied sets
+keep the published family labels stable. Reproducing their coverage does not
+establish a unique or globally minimal set of continuous shapes.

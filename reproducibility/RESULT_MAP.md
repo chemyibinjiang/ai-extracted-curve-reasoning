@@ -44,7 +44,7 @@ ScCo2 assignment applied after reading the archived extraction metadata.
 Original coordinate and metadata files remain intact; corrected analysis
 labels are produced by `analysis/figure7/lib/metadata.py`.
 
-## Joining a Curve to Its Source
+## Figure 8 and SI Section 11
 
 Figure 8 and SI Section 11 use `python analysis/figure8/run.py`. In
 `build/figure8/`, `panel_ABC_series_checks.csv` supplies Table S31 and
@@ -52,6 +52,8 @@ Figure 8 and SI Section 11 use `python analysis/figure8/run.py`. In
 files, their source commit and per-file checksums are in
 [`analysis/figure8/inputs/`](../analysis/figure8/inputs/); sample labels join
 those files to `experimental_selection.csv` and the panel data tables.
+
+## Joining a Curve to Its Source
 
 `curve_uid` joins `curve_points_long.csv` to `curve_metadata.csv` in
 `data_literature/zenodo_extracted_curve_dataset_v1/`. `panel_uid` then joins to

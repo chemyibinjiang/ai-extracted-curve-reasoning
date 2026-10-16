@@ -1,16 +1,51 @@
 # Release Checklist
 
-- [ ] Confirm one-to-one agreement between figure panels, input datasets, analysis outputs, and manuscript numbers.
-- [ ] Complete the Figure 3 benchmark/corpus/claim-result reproduction entry point.
-- [x] Rebuild Figure 4 from all 4,211 extracted curves and validate all 6,066 BV/BV+jR refits.
-- [x] Validate Figure 6 VHT multistart optimization and KOH parameter-sharing search in the pinned environment.
-- [ ] Run documented commands in a clean checkout with the pinned dependencies.
-- [ ] Verify all six figure hashes and export layouts with the required fonts.
-- [ ] Review third-party material and recorded sessions for privacy and redistribution permissions.
-- [ ] Confirm software licensing, data reuse terms, authorship, and citation metadata.
-- [ ] Reconcile manuscript and supporting-information methods, counts, captions, and repository links.
-- [ ] Review the exact release file set, then create a versioned commit and tag.
-- [ ] Record a verified archive identifier when available.
+Reviewer-facing checks, 17 October 2026. Manuscript and SI files are maintained
+separately and were not edited during this repository review.
 
-Do not treat artwork export or parameter reconstruction as evidence that every
-upstream extraction, optimization, or adjudication step has been repeated.
+## Verified
+
+- [x] Run all 83 regression tests in a fresh Windows checkout with Python 3.13.12 and pinned dependencies.
+- [x] Replay the 137-curve Figure 3 benchmark and recorded review-count arithmetic.
+- [x] Verify the released ZIP and rebuild all 4,211 curves into the 3,033-curve fitting cohort.
+- [x] Refit all 6,066 BV/BV+jR models; reproduce 1,588 and 2,361 accepted fits.
+- [x] Repeat the 12-start VHT family fitting protocol and its sharing-model comparisons.
+- [x] Repeat Figure 7's 24 tuning fits, final model, native residual checks and selected-template coverage.
+- [x] Reproduce the complete-window SI sensitivity tables.
+- [x] Reproduce Figure 8 from all 561 native records, retaining 524 eligible curves.
+- [x] Check all eight manuscript SVG/PNG pairs and six numerical tables against their manifest.
+- [x] Check the live Tafel viewer against all eight recorded source hashes and its builder hash.
+- [x] Correct the Co-V instrument/geometric-area conversion; verify against the source eta10 value without changing submitted shape results.
+- [x] Protect Figure 8 source and reference folders from output overwrites.
+- [x] Update navigation, data links, clone instructions and the complete test-data download list.
+
+## Follow-up
+
+- [ ] Reconcile the endpoint-rounding issue below before regenerating the frozen Figure 7 model and its dependent results.
+- [ ] Publish the verified revision or a clear review-version pointer on the default GitHub branch; `main` still held the older six-figure version when checked.
+- [ ] Confirm a repository-wide software license and third-party redistribution terms.
+- [ ] Coordinate any numerical changes with manuscript/SI revisions; no automatic document updates are made here.
+- [ ] Create a version tag and record an archive identifier when available.
+
+### Endpoint Rounding
+
+The Figure 7/8 observation routines check a near-exact grid match only on the
+right of the insertion point. A native endpoint infinitesimally below a grid
+position can therefore be marked missing. Four curves in the existing
+literature shape cohort gain one grid observation under a two-sided check:
+
+| Curve ID | Grid position (mV) |
+| --- | --- |
+| `batch0/case54/figure_5__panel_b/curve_3` | 150 |
+| `batch1/case89/figure_3__d/curve_orange_dashed` | 140 |
+| `batch3/case466/figure_5__panel_e2/curve_pure_water_black` | 270 |
+| `batch5/case799/figure_3__panel_a/curve_5` | 200 |
+
+A check of all 3,033 prepared source curves found no additional affected masks
+and no inclusion changes: the population remains 2,361 curves from 435 papers.
+
+With the submitted Figure 7 model held fixed, a separate two-sided check leaves
+all six Figure 8F cohorts and ratios unchanged to numerical precision. Individual
+full-support coordinates do change. The submitted model and reference tables
+remain unchanged pending a coordinated numerical revision; successful replay
+of those tables does not resolve this processing issue.

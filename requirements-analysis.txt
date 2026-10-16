@@ -1,4 +1,4 @@
-# Versions used for the Figure 4/5/6 checks with Python 3.13.12.
+# Versions used for the figure-analysis checks with Python 3.13.12.
 numpy==2.4.2
 pandas==3.0.1
 scipy==1.17.1

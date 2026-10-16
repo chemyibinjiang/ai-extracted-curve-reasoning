@@ -18,18 +18,20 @@ The command reads the original screening records, repeats curve selection and
 series grouping, projects curves into the fixed Figure 7 model, recalculates
 the dispersion comparisons, and checks the results against the figure data.
 It writes tables and PNG/SVG/PDF figures to `build/figure8/`. Use `--output PATH`
-for another destination or `--no-figure` for numerical results only. Runs are
+for another destination (under `build/` or outside the repository) or
+`--no-figure` for numerical results only. Source and reference directories
+cannot be used as output destinations. Runs are
 offline once the inputs and Python dependencies are installed. Arial is used
 when available; other systems use DejaVu Sans. The approved manuscript artwork
 in `figures/manuscript/` is not overwritten.
 
 ## Data and Measurement Conditions
 
-The input ZIP contains the 561 initial-screening LSV records and the original
+The [input ZIP](inputs/initial_screening.zip) contains the 561 initial-screening LSV records and the original
 metadata table from [Wang-Group/HD_separation](https://github.com/Wang-Group/HD_separation/tree/8dc5de3d8101cd86455626e4f710d96c3c2cd38e),
 commit `8dc5de3d8101cd86455626e4f710d96c3c2cd38e`. The metadata table also lists
 later experiments; only records labelled `initial_screening_561` enter Figure 8.
-Files retain their original bytes and paths. `inputs/manifest.json` records
+Files retain their original bytes and paths. The [input manifest](inputs/manifest.json) records
 their SHA-256 checksums and the Figure 7 model checksum.
 
 The library comprises single-metal controls and two-precursor formulations
@@ -38,14 +40,19 @@ containing 10% D2O at 2 mV/s with 90% iR compensation. Labels such as Mo-Pt
 identify nominal precursor combinations; Pt-Pt is the single-metal Pt control.
 The source's +0.9268 V conversion from Hg/HgO to RHE and geometric electrode
 areas are retained. No additional resistance correction is applied.
+For density-format instrument exports, the recorded instrument normalization
+area first recovers current in amperes; the source's geometric area then
+converts it to mA/cm2. These areas differ for Co-V (1 and 2 cm2, respectively).
 
 These experimental data are attributed to the Wang-Group source repository;
 this package does not assign new ownership or reuse terms to them.
 
 ## Calculations
 
-- **Preparation:** retain the scan after its initial minimum in current
-  magnitude, within 0.2-500 mA/cm2. Evaluate log10 current on the 20-300 mV
+- **Preparation:** begin at the minimum signed cathodic current
+  (`j = -1000 I / area`), then retain positive values within 0.2-500 mA/cm2.
+  Later reversals are preserved; this is not a cut at the last zero crossing.
+  Evaluate log10 current on the 20-300 mV
   grid at 10 mV increments, interpolating only across measured gaps of at most
   20 mV. At least four native points and four grid positions spanning 30 mV
   are required. This retains 524 curves: 60 PGM-containing and 464 non-PGM.
@@ -85,5 +92,5 @@ fitting and validation remain reproducible through `analysis/figure7/run.py`.
 | Coordinates used for each matched-window comparison | `matched_support_scores.csv` |
 | Numerical checks against the approved figure | `verification.json` |
 
-`reference/` contains the corresponding approved numerical results. Reference
+[The reference tables](reference/) contain the corresponding approved numerical results. Reference
 tables are used only for verification, not as inputs to the calculations.

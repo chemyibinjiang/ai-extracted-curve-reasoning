@@ -26,7 +26,9 @@ class RepositoryLayoutTests(unittest.TestCase):
     def test_exploration_documentation_links(self):
         self.assertFalse((ROOT / "agent_conversation_records").exists())
         paths = [ROOT / name for name in ("README.md", "CODE_ORGANIZATION.md", "REPRODUCIBILITY.md",
+                 "analysis/README.md", "reproducibility/RESULT_MAP.md", "reproducibility/README.md",
                  "exploration/README.md", "exploration/agent_conversation_records/README.md")]
+        paths.extend((ROOT / "analysis").glob("*/README.md"))
         paths.extend((ROOT / "figures").rglob("README*.md"))
         for path in paths:
             for link in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
@@ -36,6 +38,17 @@ class RepositoryLayoutTests(unittest.TestCase):
                 target = (path.parent / unquote(parts.path)).resolve()
                 self.assertTrue(target.is_relative_to(ROOT), (path, link))
                 self.assertTrue(target.exists(), (path, link))
+
+    def test_current_figure_index_has_all_eight_figures(self):
+        text = (ROOT / 'figures/README.md').read_text(encoding='utf-8')
+        for figure in range(1, 9):
+            for suffix in ('svg', 'png'):
+                self.assertIn(f'(manuscript/Figure{figure}.{suffix})', text)
+
+    def test_setup_downloads_supporting_vht_artwork(self):
+        text = (ROOT / 'README.md').read_text(encoding='utf-8')
+        commands = [line for line in text.splitlines() if line.startswith('git lfs pull ')]
+        self.assertTrue(any('analysis/effective_bv/published/**' in line for line in commands))
 
     def test_transcript_and_image_paths(self):
         with (RECORDS / "export_manifest.csv").open(encoding="utf-8-sig", newline="") as stream:

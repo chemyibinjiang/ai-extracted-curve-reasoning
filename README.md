@@ -1,152 +1,127 @@
 # Curve Extraction and Electrochemical Analysis
 
-**10 October 2026:** [Figure 8 and SI Section 11](analysis/figure8/README.md)
-now include the native experimental LSV records and a reproducible comparison
-with the fixed literature shape model.
+Data, code, and figures for **AI Agent Reveals Hidden Kinetic Structure in
+Published Hydrogen Evolution Polarization Curves**. The study reconstructs
+published hydrogen evolution reaction (HER) curves, compares their response
+shapes, and examines related patterns in directly measured linear sweep
+voltammetry (LSV) data.
 
-**3 October 2026:** Current Figures 1, 3 and 7 are synchronized with the manuscript.
-[Figure 7 and SI Section 9](analysis/figure7/README.md) include partial-observation
-population PCA, template projection and coverage, and support/uncertainty controls.
-The [current update and audit](reproducibility/UPDATE_20261003.md) record the
-source-checked classification correction and trace the downloadable coordinate
-ZIP through preparation to the analysis inputs and rerun results. The 1,343
-template-compatible curves comprise 695 PGM and 648 non-PGM curves.
+**Review version:** Figures 1-8 and their analyses are on
+[`codex/major-revision-20260922`](https://github.com/chemyibinjiang/ai-extracted-curve-reasoning/tree/codex/major-revision-20260922).
+The clone command below selects this version explicitly.
 
+## Start Here
 
-Data, code, and figures for extracting numerical evidence from scientific plots,
-checking reported claims, and analyzing hydrogen-evolution polarization curves.
+- **Browse the results:** [Figures 1-8](figures/README.md), with SVG originals and PNG previews.
+- **Explore materials:** [composition and template maps](https://chemyibinjiang.github.io/ai-extracted-curve-reasoning/)
+  and [individual curves and Tafel-slope distributions](https://chemyibinjiang.github.io/ai-extracted-curve-reasoning/tafel/).
+- **Get the data:** literature coordinates and native experimental records are linked below.
+- **Reproduce a result:** use the figure-specific guides below or
+  the [figure and supporting-information (SI) result map](reproducibility/RESULT_MAP.md).
 
-## Figures
+## Data
 
-The [interactive Tafel explorer](https://chemyibinjiang.github.io/ai-extracted-curve-reasoning/tafel/)
-shows individual observed curves and local-slope distributions by potential or
-current window. Filter by element, PGM co-occurrence, condition and template
-membership, with equal-paper or equal-curve weighting. The
-[methods and build command](analysis/tafel_explorer/README.md) reproduce the
-viewer from the Figure 4 coordinates and Figure 7 composition records.
-
-The manuscript artwork is in [figures/manuscript/](figures/manuscript/).
-Each figure has an editable SVG and a PNG preview.
-Figures 1 and 7 connect observed LSVs, population shape coordinates and recurring
-templates. Figure 3 pairs the extraction benchmark with four claim-comparison
-examples. Figures 2 and 4-6 retain their 30 September versions.
-See the [current artwork notes](figures/UPDATE_20261002.md) and the
-[effective-BV numerical revision](figures/DATA_UPDATE_20260930.md).
-
-| Figure | Subject | Data and computation |
-| --- | --- | --- |
-| 1 | Overview: extraction, verification, LSVs and recurring shapes | Panel D uses the [Figure 7 population and templates](analysis/figure7/README.md) |
-| 2 | Worked example of axis calibration, curve extraction, and verification | Extraction workflow |
-| 3 | Extraction benchmark, literature validation, and claim comparisons | [Figure 3 evaluation](analysis/figure3/README.md) |
-| 4 | Local slopes, effective BV/BV+jR fit quality, and effective parameters | [Figure 4 analysis](analysis/effective_bv/README.md#figure-4) |
-| 5 | Apparent resistance and current rescaling | [Figure 5 analysis](analysis/effective_bv/README.md#figure-5) |
-| 6 | Pt/C response families and kinetic reconstruction | [Figure 6 analysis](analysis/effective_bv/README.md#figure-6) |
-| 7 | Population response shapes and empirical templates | [Figure 7 analysis and SI Section 9](analysis/figure7/README.md) |
-| 8 | Experimental response series and literature-shape comparison | [Figure 8 analysis and SI Section 11](analysis/figure8/README.md) |
-
-For the multilayer NiFeP example, see the [model comparison and complete point tables](analysis/figure5/README.md#nifep-layer-number), including both BV and BV+jR fits.
-
-## Run the Analyses
-
-Start with Git, Git LFS, and Python 3.13 installed. Clone the repository rather
-than downloading individual files. The first command defers large binary
-downloads so the next command can retrieve only the assets needed here:
-
-```text
-git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
-cd ai-extracted-curve-reasoning
-git lfs install
-git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,analysis/figure8/inputs/*.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
-python -m venv .venv
-```
-
-Activate with `.venv\Scripts\Activate.ps1` in Windows PowerShell or
-`source .venv/bin/activate` on macOS/Linux. On Windows, `py -3.13 -m venv .venv`
-explicitly selects Python 3.13; on macOS/Linux use `python3.13 -m venv .venv`.
-If PowerShell blocks activation, use `.venv\Scripts\python.exe` instead of
-`python` in the commands below. Run them from the repository root:
-
-```text
-python -m pip install -r requirements-analysis.txt
-python scripts/validate_dataset.py
-python scripts/audit_raw_to_analysis.py
-python analysis/figure3/run.py
-python analysis/figure4/run.py prepare --output build/figure4-preparation
-python analysis/effective_bv/run.py all --workers 6 --starts 12
-python analysis/figure7/run.py cv
-python analysis/figure7/run.py complete-window
-python analysis/figure8/run.py
-python -m unittest discover -s tests -v
-```
-
-Results are written to `build/`. The commands use the included numerical inputs
-without a network connection, source-paper downloads, or workstation-specific
-paths. Figure 4 refits both models on all 3,033 selected curves and recalculates
-their distributions, examples and local slopes. Figure 5 reruns affected
-case-study fits and scaling. Figure 6 reprofiles the selected response families,
-refits VHT reconstructions and recomputes rate controls. Both effective
-coefficients vary; their sum is not fixed. Stage-specific commands are in
-[Reproducibility](REPRODUCIBILITY.md).
-
-The separate `python analysis/effective_bv/search.py` command repeats the full
-template search; `all` refits the supplied selected families but does not search
-the candidate grid. See [the result map](reproducibility/RESULT_MAP.md) for the
-exact output behind each figure and SI table. Internet access is needed for
-installation/download only. Numerical runs require neither an AI subscription
-nor access to the original workstation. Inkscape is needed only for artwork export.
-
-## Complete Curve Dataset
-
-All **4,211 extracted curves (132,314 points)** are included, not just the curves
-selected for fitting:
+The literature release contains **4,211 extracted curves (132,314 points)**,
+including curves not selected for fitting:
 
 - [All coordinates](data_literature/zenodo_extracted_curve_dataset_v1/curve_points_long.csv)
 - [Curve metadata](data_literature/zenodo_extracted_curve_dataset_v1/curve_metadata.csv)
 - [Source publications](data_literature/zenodo_extracted_curve_dataset_v1/source_publication_records.csv)
-- [Downloadable coordinate ZIP](data_literature/zenodo_extracted_curve_dataset_v1.zip)
+- [Coordinate ZIP](data_literature/zenodo_extracted_curve_dataset_v1.zip) and
+  [field descriptions](data_literature/zenodo_extracted_curve_dataset_v1/SCHEMA.md)
 - [Figure 4 inclusion/exclusion record](analysis/figure4/reference/COHORT_SELECTION.csv)
 
-These are coordinates extracted from published plots, not original instrument
-files supplied by the source authors. Figure 4 selects 3,033 curves from 473
-papers. The remaining curves stay in the complete dataset. Rebuild the selection
-or refit both models on the full fitting cohort with:
+These are coordinates extracted from published plots, not source authors'
+instrument files. Figure 4 selects 3,033 curves from 473 papers; the remaining
+curves stay in the complete release. `curve_uid` links coordinates to metadata;
+the [source-joining guide](reproducibility/RESULT_MAP.md#joining-a-curve-to-its-source)
+explains the remaining identifiers.
+
+Figure 8 instead uses [native experimental LSV records](analysis/figure8/inputs/initial_screening.zip)
+from the electrodeposited catalyst library: 561 screening records, of which 524
+meet the shape-analysis criteria. The [Figure 8 guide](analysis/figure8/README.md)
+gives measurement conditions, the source repository and exact source commit.
+
+## Figures and Analyses
+
+| Figure | Subject | Guide |
+| --- | --- | --- |
+| 1 | Extraction, verification, observed curves and recurring shapes | Panel D uses the [Figure 7 population and templates](analysis/figure7/README.md) |
+| 2 | Worked axis calibration, curve extraction and verification | [Extraction framework](code_reference/) |
+| 3 | Extraction benchmark and literature claim comparisons | [Figure 3](analysis/figure3/README.md) |
+| 4 | Local slopes and effective Butler-Volmer (BV) fits, with and without an apparent resistance term | [Figure 4](analysis/effective_bv/README.md#figure-4) |
+| 5 | Apparent resistance and current rescaling | [Figure 5](analysis/effective_bv/README.md#figure-5) |
+| 6 | Pt/C response families and Volmer-Heyrovsky-Tafel (VHT) reconstruction | [Figure 6](analysis/effective_bv/README.md#figure-6) |
+| 7 | Population shape analysis and empirical templates | [Figure 7 and SI Section 9](analysis/figure7/README.md) |
+| 8 | Experimental response series and literature-shape comparison | [Figure 8 and SI Section 11](analysis/figure8/README.md) |
+
+## Run the Analyses
+
+Install Git, Git LFS and Python 3.13. Clone the review branch, then retrieve the
+binary assets needed for analysis, figure validation and the tests:
 
 ```text
-python analysis/figure4/run.py prepare --output build/figure4-preparation
-python analysis/effective_bv/run.py population --workers 6
+git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone --branch codex/major-revision-20260922 https://github.com/chemyibinjiang/ai-extracted-curve-reasoning.git
+cd ai-extracted-curve-reasoning
+git lfs install
+git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,analysis/effective_bv/published/**,analysis/figure8/inputs/*.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
+python -m venv .venv
 ```
 
-`scripts/audit_raw_to_analysis.py` starts from the ZIP, verifies that every member
-matches the unpacked release, rebuilds preparation, and checks every native
-Pt/C and Figure 7 input coordinate and the analysis composition fields. Its
-report and complete selection ledger are written to `build/raw-to-analysis/`.
-The preparation command starts from the complete coordinate dataset. The refit
-uses the verified prepared coordinates, multistart optimization, and supplied
-variable-coefficient fits as additional feasible seeds. It independently checks
-every resulting objective and the nesting of BV within BV+jR.
+Activate with `.venv\Scripts\Activate.ps1` in Windows PowerShell or
+`source .venv/bin/activate` on macOS/Linux. If PowerShell blocks activation,
+use `.venv\Scripts\python.exe` instead of `python` below. To select Python 3.13
+explicitly, use `py -3.13 -m venv .venv` on Windows or
+`python3.13 -m venv .venv` on macOS/Linux, when those launchers are installed.
+Run all commands from the repository root.
 
-## Data and Files
+### Quick Checks
 
-- [Literature dataset](data_literature/zenodo_extracted_curve_dataset_v1/README.md):
-  extracted coordinates and paper/panel/curve provenance.
-- [Analysis guide](analysis/README.md): inputs, calculations, and output tables.
-- [Repository structure](CODE_ORGANIZATION.md): where to find each component.
-- [Figure validation](reproducibility/README.md): checksums and numerical checks.
-- `code_reference/`: extraction-framework source and provenance.
-- [Exploration](exploration/README.md): catalyst-performance and BV+jR
-  investigation records, separate from the figure-reproduction workflow.
-- [Analysis archive](exploration/archive/README.md): recoverable snapshots of
-  superseded workflows; not used by the current analysis commands.
-
-Large binary assets use Git LFS; the curve CSV files use ordinary Git.
-The LFS command above retrieves the coordinate ZIP, figures, artwork templates, benchmark images,
-and the archive checked by the test suite. Without it, binary files may be small
-LFS pointer files rather than usable assets. Validate the manuscript figures with:
+These validate supplied data and artwork without refitting the models:
 
 ```text
+python -m pip install -r requirements-analysis.txt
+python scripts/validate_dataset.py
 python scripts/validate_figures.py
+python analysis/figure7/run.py validate
 ```
 
-The manuscript and supporting-information documents are maintained separately.
-Software licensing and third-party reuse terms must be confirmed before release;
-the presence of a file does not grant a blanket license to its source material.
+### Choose a Calculation
+
+These are separate tasks, not a sequence that every reader needs to run.
+
+| Task | Command |
+| --- | --- |
+| Trace the coordinate ZIP through preparation and analysis inputs | `python scripts/audit_raw_to_analysis.py` |
+| Replay the extraction benchmark | `python analysis/figure3/run.py` |
+| Refit Figures 4-6 using the supplied selected families | `python analysis/effective_bv/run.py all --workers 6 --starts 12` |
+| Refit Figure 7 using supplied tuning results | `python analysis/figure7/run.py replay` |
+| Reproduce Figure 8 from native measurements | `python analysis/figure8/run.py` |
+
+Outputs go to `build/`, not over the inputs or manuscript artwork. These
+numerical runs are offline after setup and need neither an AI subscription
+nor source-paper downloads. Inkscape is needed only for artwork export.
+
+For Figure 7, choose `cv` **instead of** `replay` to repeat all model-tuning
+fits as well. The separate `complete-window` command reproduces SI Tables
+S28-S29. Empirical-template coverage is recalculated using the supplied
+candidate library and selected sets; it does not discover a new library.
+The [reproduction guide](REPRODUCIBILITY.md) explains individual stages,
+template-search scope, artwork export and the full test suite.
+
+## Further Details
+
+- [Repository structure](CODE_ORGANIZATION.md) and [analysis overview](analysis/README.md).
+- [Tafel explorer methods and build command](analysis/tafel_explorer/README.md).
+- [Verification records](reproducibility/README.md) and [October dataset update](reproducibility/UPDATE_20261003.md).
+- [Release status and remaining follow-up](RELEASE_CHECKLIST.md).
+- [Exploration records](exploration/README.md) and [superseded workflows](exploration/archive/README.md),
+  separate from the figure-analysis commands.
+
+Large binaries use Git LFS; a small text file beginning with `version https://git-lfs.github.com/spec/v1`
+is a pointer, not the downloaded asset. Run the LFS retrieval command above
+if a ZIP or image will not open.
+
+The manuscript and SI documents are maintained separately. No repository-wide
+software license has yet been specified. Source publications and third-party
+data retain their own reuse terms; inclusion here does not grant additional rights.

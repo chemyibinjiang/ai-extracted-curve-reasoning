@@ -11,25 +11,19 @@
 
 ## Setup and Run
 
-Use Python 3.13 from the repository root:
-
-```text
-python -m pip install -r requirements-analysis.txt
-python analysis/effective_bv/run.py all --workers 6 --starts 12
-python analysis/figure7/run.py cv
-python analysis/figure7/run.py complete-window
-python analysis/figure8/run.py
-python -m unittest discover -s tests -v
-```
+Follow the [repository setup](../README.md#run-the-analyses), then choose a
+figure-specific guide above. The [reproduction guide](../REPRODUCIBILITY.md)
+separates quick validation, model refits, template searches and the full tests.
 
 These commands need only the included numerical inputs and Python dependencies.
 Figure 8 starts from native experimental records and writes to `build/figure8/`.
 The Figure 4 cohort-preparation command reads all 4,211 curves under
 `data_literature/`; the refit uses the verified 3,033-curve prepared coordinates.
 The commands do not require source-paper PDFs, image downloads, agent logs, or browser
-state. They start from digitized coordinates, not from image extraction.
-Outputs are written to `build/effective-bv-20260930/figure4/`, `figure5/`, and
-`figure6/`, with an HTML numerical review report at the output root.
+state. Literature analyses start from extracted coordinates; Figure 8 starts
+from native experimental records. Figures 4-6 write to
+`build/effective-bv-20260930/figure4/`, `figure5/` and `figure6/`, with an HTML
+report at that output root. Figure 7 writes to `build/figure7/`.
 
 The default now reoptimizes both variable-coefficient empirical models and the
 affected case studies. Figure 6 reuses the completed template search, reoptimizes

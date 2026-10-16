@@ -1,9 +1,9 @@
 # Effective BV Analysis
 
-This is the analysis entry point for the revised Figures 4-6. Figure 1D uses the
-same alkaline family curves and kinetic coordinates as Figure 6. Both effective
-coefficients are fitted; their sum is not fixed. The report contains only this
-parameterization and its BV versus BV+jR comparison.
+This is the analysis entry point for Figures 4-6. Both effective BV coefficients
+are fitted; their sum is not fixed. The report contains this parameterization
+and its BV versus BV+jR comparison. The current Figure 1D instead uses the
+[Figure 7 population and empirical templates](../figure7/README.md).
 
 ```text
 python analysis/effective_bv/run.py all --workers 6 --starts 12

@@ -1,11 +1,13 @@
 # Manuscript Figures
 
 The figure set is in [`manuscript/`](manuscript/). These filenames correspond
-directly to Figures 1-6 in the paper.
+directly to Figures 1-8 in the paper.
 
-Figures 1D and 4-6 were updated on September 27, 2026 with the effective-BV results,
-preserving their finalized plot types and composition. Figure 1A-C and Figures 2-3 are unchanged.
-See [updated values and panel definitions](DATA_UPDATE_20260930.md).
+Figure 1D shows the Figure 7 population and empirical templates. Figure 3
+combines the extraction benchmark with claim-comparison examples; Figure 8
+adds the experimental response-shape comparison. See the
+[Figure 1/3/7 artwork notes](UPDATE_20261002.md) and
+[Figures 4-6 numerical revision](DATA_UPDATE_20260930.md) for their update history.
 
 | Figure | Vector | Preview |
 | --- | --- | --- |
@@ -15,6 +17,8 @@ See [updated values and panel definitions](DATA_UPDATE_20260930.md).
 | 4 | [SVG](manuscript/Figure4.svg) | [PNG](manuscript/Figure4.png) |
 | 5 | [SVG](manuscript/Figure5.svg) | [PNG](manuscript/Figure5.png) |
 | 6 | [SVG](manuscript/Figure6.svg) | [PNG](manuscript/Figure6.png) |
+| 7 | [SVG](manuscript/Figure7.svg) | [PNG](manuscript/Figure7.png) |
+| 8 | [SVG](manuscript/Figure8.svg) | [PNG](manuscript/Figure8.png) |
 
 Use [the analysis guide](../analysis/README.md) for numerical results and
 [the export instructions](../REPRODUCIBILITY.md#artwork) for PNG/PDF rendering.
@@ -25,5 +29,5 @@ NiMo BV/BV+jR/VHT comparison and the calculated, nonunique coverage solutions.
 Other directories retain extraction and validation source panels. Their
 directory numbers are not the manuscript figure numbers. Superseded BV and
 relative-performance calculations are in the [analysis archive](../exploration/archive/README.md).
-Use the table above for the manuscript figures and `analysis/effective_bv/`
+Use the table above for the manuscript figures and the linked analysis guide
 for their current numerical analyses.

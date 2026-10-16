@@ -1,6 +1,8 @@
 """Reproduce Figure 8 from native screening records and the fixed Figure 7 model."""
 from pathlib import Path
 import argparse
+import base64
+import gzip
 import hashlib
 import io
 import json
@@ -45,9 +47,17 @@ def elements(sample):
     return sorted(set(sample.split('-')))
 
 
-def parse_raw(raw, area=1.):
+def parse_raw(raw):
     lines = raw.decode('utf-8-sig').splitlines()
+    instrument_area = None
     if lines[0].startswith('CSStudioFile,ID_LSVA,'):
+        metadata = gzip.decompress(base64.b64decode(lines[0].split(',', 2)[2], validate=True)).decode('utf-8')
+        for line in metadata.splitlines():
+            if line.startswith('ExpParmas:'):
+                parameters = dict(part.split('=', 1) for part in line.split(':', 1)[1].split('&-&') if '=' in part)
+                cell = dict(part.split('=', 1) for part in parameters.get('CellParam', '').split('&|&') if '=' in part)
+                if 'Area' in cell:
+                    instrument_area = float(cell['Area'])
         lines = lines[1:]
     header = lines[0].split()
     density = header == ['E(V)', 'i(A/cm\u00b2)', 'T(s)']
@@ -55,7 +65,10 @@ def parse_raw(raw, area=1.):
     data = np.loadtxt(io.StringIO('\n'.join(lines[1:])), ndmin=2)
     require(data.shape[1] == 3 and len(data) >= 4 and np.isfinite(data).all(), 'Invalid native LSV record')
     if density:
-        data[:, 1] *= area
+        require(instrument_area is not None and np.isfinite(instrument_area) and instrument_area > 0,
+                'Density export requires its recorded instrument normalization area')
+        # Recover amperes using the instrument setting; preparation uses the actual geometric area.
+        data[:, 1] *= instrument_area
     return data
 
 
@@ -112,7 +125,7 @@ def load_inputs():
         records, observations, profiles = [], [], {}
         for row in meta.itertuples(index=False):
             name = f'hd_separation_ml/data_extraction/all_data/LSV/{row.sample}.txt'
-            x, y = prepare(parse_raw(z.read(name), row.LSV_geometry_area_cm2), row.LSV_geometry_area_cm2)
+            x, y = prepare(parse_raw(z.read(name)), row.LSV_geometry_area_cm2)
             v = observe(x, y)
             el = elements(row.sample)
             records.append(dict(sample=row.sample, id=row.sample, study='-'.join(el),
@@ -291,11 +304,19 @@ def verify(out, cohort, model, ey):
     return report
 
 
+def output_directory(path):
+    out = path.resolve()
+    require(not out.is_relative_to(ROOT) or out.is_relative_to(ROOT / 'build'),
+            'Inside the repository, write outputs under build/, not over source or reference files')
+    return out
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'build/figure8')
     parser.add_argument('--no-figure', action='store_true', help='Reproduce and verify numerical results only')
     args = parser.parse_args()
+    args.output = output_directory(args.output)
     args.output.mkdir(parents=True, exist_ok=True)
     model, cohort, exp, ey, native, lit, ly = load_inputs()
     cohort.to_csv(args.output / 'experimental_selection.csv', index=False)

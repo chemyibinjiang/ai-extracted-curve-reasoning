@@ -5,8 +5,12 @@ on:
     paths:
       - 'figures/manuscript/**'
       - 'figures/supporting/figure7/**'
-      - 'figures/Figure5_caption.md'
+      - 'figures/*.md'
       - 'analysis/figure6/expected/**'
+      - 'analysis/README.md'
+      - 'analysis/figure3/**'
+      - 'analysis/tafel_explorer/**'
+      - 'benchmark_data/benchmark_curve_extraction/**'
       - 'analysis/figure5/**'
       - 'analysis/figure4/**'
       - 'analysis/figure6/**'
@@ -22,11 +26,14 @@ on:
       - 'scripts/validate_figures.py'
       - 'scripts/audit_raw_to_analysis.py'
       - 'scripts/validate_dataset.py'
+      - 'scripts/validate_release_inventory.py'
+      - 'PUBLIC_REPO_FILE_LIST_SHA256.csv'
       - 'tests/**'
       - 'exploration/**'
       - 'README.md'
       - 'CODE_ORGANIZATION.md'
       - 'REPRODUCIBILITY.md'
+      - 'RELEASE_CHECKLIST.md'
       - '.gitignore'
       - '.github/workflows/figure-audit.yml'
   pull_request:
@@ -56,6 +63,7 @@ jobs:
 
   numerical-analysis:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -65,17 +73,9 @@ jobs:
           python-version: '3.13'
       - name: Install numerical dependencies
         run: python -m pip install -r requirements-analysis.txt
-      - name: Retrieve coordinate and analysis archives
-        run: git lfs pull --include="data_literature/zenodo_extracted_curve_dataset_v1.zip,analysis/figure8/inputs/*.zip,exploration/archive/*.zip" --exclude=""
-      - name: Audit raw coordinates through analysis inputs
-        run: python -m unittest discover -s tests -p test_raw_archive.py -v
-      - name: Test numerical cores and isolated figure analyses
-        run: python -m unittest discover -s tests -p test_figure_analysis.py -v
-      - name: Test direct NiMo kinetic fitting and coverage
-        run: python -m unittest discover -s tests -p test_nimo_vht.py -v
-      - name: Test candidate grid and selected-template residuals
-        run: python -m unittest discover -s tests -p test_effective_search.py -v
-      - name: Test partial-observation PCA and observed-current summaries
-        run: python -m unittest discover -s tests -p test_figure7.py -v
-      - name: Reproduce experimental Figure 8 from native records
-        run: python -m unittest discover -s tests -p test_figure8.py -v
+      - name: Retrieve data and artwork used by the full tests
+        run: git lfs pull --include="data_literature/*.zip,figures/manuscript/**,figures/supporting/figure7/**,analysis/effective_bv/artwork_templates.zip,analysis/effective_bv/published/**,analysis/figure8/inputs/*.zip,exploration/archive/**,benchmark_data/benchmark_curve_extraction/**" --exclude=""
+      - name: Validate the release inventory
+        run: python scripts/validate_release_inventory.py
+      - name: Run all regression and isolated-reproduction tests
+        run: python -m unittest discover -s tests -v

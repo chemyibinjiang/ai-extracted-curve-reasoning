@@ -7,12 +7,28 @@ Section 8 workflow.
 
 ## Run
 
-From the repository root, with `requirements-analysis.txt` installed:
+From the repository root, with `requirements-analysis.txt` installed, first
+check the supplied inputs:
 
 ```text
 python analysis/figure7/run.py validate
+```
+
+Choose `replay` to refit using the supplied tuning results:
+
+```text
 python analysis/figure7/run.py replay
+```
+
+Or choose `cv` instead to repeat model tuning as well. Do not run both:
+
+```text
 python analysis/figure7/run.py cv
+```
+
+The complete-window comparison is a separate SI calculation:
+
+```text
 python analysis/figure7/run.py complete-window
 ```
 
@@ -60,9 +76,9 @@ their conditional covariance is retained in quantitative comparisons.
 After support balancing, pooled non-PGM/PGM dispersion is 1.43 (95% interval
 1.25-1.63), and non-PGM/Pt/C is 1.58 (1.35-1.86). Intervals combine whole-paper
 resampling and score draws **with the basis and balancing target fixed**.
-Tail-150 and tail-200 predictive coverage is only 87.9% and 82.4%. These results
-do not establish exact missing tails, mechanisms, or absence of current-related
-operating losses.
+For held-out observations beyond 150 and 200 mV, prediction-interval coverage
+is 87.9% and 82.4%, respectively, for nominal 95% intervals. This checks
+predictions of unobserved portions, separately from observed-shape comparisons.
 
 ## Inputs and Frozen References
 
