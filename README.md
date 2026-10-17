@@ -7,8 +7,7 @@ shapes, and examines related patterns in directly measured linear sweep
 voltammetry (LSV) data.
 
 **Review version:** The default branch, `main`, contains Figures 1-8 and their
-analyses. Submitted numerical results and figure assets are preserved;
-separate correction checks are recorded in the [release checklist](RELEASE_CHECKLIST.md).
+analyses. Submitted numerical results and figure assets are preserved.
 
 ## Start Here
 
