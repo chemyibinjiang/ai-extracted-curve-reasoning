@@ -37,3 +37,8 @@ are distinct from refitting models.
 The [2026-10-03 update](UPDATE_20261003.md) documents the source-checked ScCo2
 classification, regenerated Figure 7 analysis, and added SI current/growth comparison.
 `RAW_TO_ANALYSIS_20261003.json` records the audit from the unchanged released ZIP.
+
+The [grid-rounding sensitivity evaluation](NUMERICAL_SENSITIVITY_20261017.md)
+compares Figure 7/8 coordinates, group dispersion and held-out predictions after
+a two-sided near-exact grid match. Its results are recorded separately from the
+submitted analysis; the production code, reference tables and figures are unchanged.

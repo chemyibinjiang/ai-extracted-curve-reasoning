@@ -113,6 +113,8 @@ template-search scope, artwork export and the full test suite.
 - [Repository structure](CODE_ORGANIZATION.md) and [analysis overview](analysis/README.md).
 - [Tafel explorer methods and build command](analysis/tafel_explorer/README.md).
 - [Verification records](reproducibility/README.md) and [October dataset update](reproducibility/UPDATE_20261003.md).
+- [PCA grid-rounding sensitivity](reproducibility/NUMERICAL_SENSITIVITY_20261017.md):
+  measured coordinate and validation differences, with submitted figures and results unchanged.
 - [Release status and remaining follow-up](RELEASE_CHECKLIST.md).
 - [Exploration records](exploration/README.md) and [superseded workflows](exploration/archive/README.md),
   separate from the figure-analysis commands.

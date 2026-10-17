@@ -1,0 +1,157 @@
+{
+  "source_hashes": {
+    "analysis\\figure7\\reference\\MODEL.npz": "de2323a3ae688f715e4864f4344d428485e20ee479bcde827b4110d5cb2e1eda",
+    "analysis\\figure7\\reference\\POSTERIOR.npz": "ae20adfdffc04780954b081c44ca753a1fe93c9064ba801a6ab7e439730a1ef4",
+    "analysis\\figure7\\reference\\SCORES.csv": "7d278201e29f3fefa07cd50a168478797dbe13be1ae2fffc67b7ebe67a33dfcf",
+    "analysis\\figure7\\inputs\\POINTS.csv": "ee00a18dfa54c4bd232bce59e996055662debc2e1aa13f01936adef7609a4a65",
+    "analysis\\figure8\\inputs\\initial_screening.zip": "19b76aed81120a45cbf9e754c84e752656ca63e19779d6c724a402c6bed187e5",
+    "analysis\\figure7\\inputs\\TEMPLATES.csv": "1c1691a4c9f4ccdf3b297be1bb65e008a65a43d13f5b065cc2be06be1dde6e20",
+    "analysis\\figure7\\lib\\partial_model.py": "ac2486f0d1a928924f9875fbbc0893cd29f19d19cd743c0e3a94f280e0793e21",
+    "analysis\\figure7\\lib\\17_partial_population.py": "ec9f0eed869666c55076478ca41137f80835d15c8ecfb8040fd35f1649bd49de",
+    "analysis\\endpoint_sensitivity\\observation.py": "3d2dee8697561fd44de92e51ab5d3ca8c7222cd938bbe88c841aa9eb18d48554"
+  },
+  "affected_curves": 4,
+  "literature_curves": 2361,
+  "literature_papers": 435,
+  "experiment_curves": 524,
+  "experimental_mask_changes": 0,
+  "baseline_iterations": 2282,
+  "corrected_iterations": 2282,
+  "principal_angles_degrees": [
+    0.0008353975596174738,
+    9.014141674197765e-05,
+    2.0940329233102928e-05
+  ],
+  "score_alignment": [
+    [
+      0.9999999999889777,
+      -3.2482278940199017e-06,
+      -3.390190890121984e-06
+    ],
+    [
+      3.2482696134082556e-06,
+      0.9999999999190043,
+      1.2306077139310167e-05
+    ],
+    [
+      3.390150916994444e-06,
+      -1.2306088151150833e-05,
+      0.9999999999185335
+    ]
+  ],
+  "submitted_selection": {
+    "rank": 3,
+    "smoothing": 1000.0,
+    "mean_rmse": 0.07839764027928603,
+    "threshold": 0.07883414530204108,
+    "minimum_rmse": 0.07638255746071768
+  },
+  "corrected_selection": {
+    "rank": 3,
+    "smoothing": 1000.0,
+    "mean_rmse": 0.07851062192025572,
+    "threshold": 0.07888731314205476,
+    "minimum_rmse": 0.07642704915890902
+  },
+  "same_selected_settings": true,
+  "variance_fractions": {
+    "submitted": [
+      0.7849400051867882,
+      0.18494314558086408,
+      0.03011684923234782
+    ],
+    "corrected": [
+      0.7849361021416298,
+      0.18494818312185535,
+      0.030115714736514917
+    ]
+  },
+  "shifts": {
+    "fixed_model": {
+      "shift_2D": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.006990386412398554
+      },
+      "shift_3D": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0075686066879472385
+      },
+      "full_grid_shape_RMSE": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.008743996206169512
+      }
+    },
+    "literature": {
+      "shift_2D": {
+        "median": 1.2844748280817015e-05,
+        "p95": 2.6750210550293403e-05,
+        "max": 0.006983100271219222
+      },
+      "shift_3D": {
+        "median": 1.3041761057683992e-05,
+        "p95": 2.7943079419703358e-05,
+        "max": 0.007561565103162783
+      },
+      "full_grid_shape_RMSE": {
+        "median": 6.027111554800269e-06,
+        "p95": 3.072454411021739e-05,
+        "max": 0.008747453030043229
+      }
+    },
+    "experiment": {
+      "shift_2D": {
+        "median": 1.354222445776477e-05,
+        "p95": 1.6787457059162118e-05,
+        "max": 3.247879691226843e-05
+      },
+      "shift_3D": {
+        "median": 1.3740533155779605e-05,
+        "p95": 1.7179175609860827e-05,
+        "max": 3.258831005227922e-05
+      },
+      "full_grid_shape_RMSE": {
+        "median": 1.1567339154327307e-06,
+        "p95": 1.8270123905725947e-05,
+        "max": 4.601005315619788e-05
+      }
+    },
+    "templates": {
+      "shift_2D": {
+        "median": 1.3440251579550503e-05,
+        "p95": 1.3494968481662302e-05,
+        "max": 1.3506411020397697e-05
+      },
+      "shift_3D": {
+        "median": 1.3599350625436488e-05,
+        "p95": 1.3683491474230644e-05,
+        "max": 1.3697336936501472e-05
+      },
+      "full_grid_shape_RMSE": {
+        "median": 7.114134191370347e-07,
+        "p95": 2.3999738045878203e-06,
+        "max": 3.169928083370725e-06
+      }
+    }
+  },
+  "experimental_series_unchanged": 118,
+  "validation_observations": {
+    "train": {
+      "changed_cases": 15,
+      "changed_cells": 15
+    },
+    "truth": {
+      "changed_cases": 11,
+      "changed_cells": 11
+    }
+  },
+  "validation_cases": 4352,
+  "figure7_ratio_max_absolute_change": 0.0004515489735534839,
+  "figure7_interval_relation_to_one_unchanged": true,
+  "ptc_nearest_template_changes": 0,
+  "figure8_ratio_max_absolute_change": 9.123279133493867e-06,
+  "figure8_interval_relation_to_one_unchanged": true,
+  "baseline_diagnostics_match_reference": true
+}

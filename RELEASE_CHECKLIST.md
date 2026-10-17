@@ -20,6 +20,7 @@ The review package is distributed from the default branch, `main`.
 - [x] Protect Figure 8 source and reference folders from output overwrites.
 - [x] Update navigation, data links, clone instructions and the complete test-data download list.
 - [x] Preserve submitted numerical results and figure assets.
+- [x] Record the separate [PCA grid-rounding sensitivity evaluation](reproducibility/NUMERICAL_SENSITIVITY_20261017.md), without replacing submitted code, results or figures.
 
 ## Follow-up
 
